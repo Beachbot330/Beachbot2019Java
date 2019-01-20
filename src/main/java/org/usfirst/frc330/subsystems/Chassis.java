@@ -15,7 +15,9 @@ import java.util.ArrayList;
 
 import org.usfirst.frc330.Robot;
 import org.usfirst.frc330.commands.*;
-import org.usfirst.frc330.commands.drivecommands.Waypoint;
+//import org.usfirst.frc330.commands.drivecommands.Waypoint; 
+//TODO remove comment when this is resolved - ejo
+
 import org.usfirst.frc330.constants.ChassisConst;
 import org.usfirst.frc330.util.CSVLoggable;
 import org.usfirst.frc330.util.CSVLogger;
@@ -419,6 +421,294 @@ public class Chassis extends Subsystem {
 
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
+
+	public void shiftHigh() {
+    	shifters.set(DoubleSolenoid.Value.kReverse);
+    }
+    
+    public void shiftLow() {
+    	shifters.set(DoubleSolenoid.Value.kForward);
+    }
+    
+    public void tankDrive(Joystick leftJoystick, Joystick rightJoystick) {
+    	if(Robot.getHeight() < 40) {
+    		left = -leftJoystick.getY();
+    		right = -rightJoystick.getY();
+    	}
+    	else {
+    		double scaleFactor = (1.10-0.64/68*Robot.getHeight());
+    		scaleFactor = Math.max(0.45, scaleFactor);
+    		left = -leftJoystick.getY() * scaleFactor;
+    		right = -rightJoystick.getY() *scaleFactor;
+    	}
+    	
+    }
+        
+    public void tankDrive(double left, double right) {
+        this.left = left;
+        this.right = right;
+    }
+    
+    /**
+     * Limit motor values to the -1.0 to +1.0 range.
+     */
+    protected double limit(double value) {
+      if (value > 1.0) {
+        return 1.0;
+      }
+      if (value < -1.0) {
+        return -1.0;
+      }
+      return value;
+  }
+    
+    public void cheesyDrive(double xSpeed, double zRotation, boolean isQuickTurn) {
+
+          xSpeed = limit(xSpeed);
+
+          zRotation = limit(zRotation);
+
+          double angularPower;
+          boolean overPower;
+
+          if (isQuickTurn) {
+            if (Math.abs(xSpeed) < m_quickStopThreshold) {
+              m_quickStopAccumulator = (1 - m_quickStopAlpha) * m_quickStopAccumulator
+                  + m_quickStopAlpha * limit(zRotation) * 2;
+            }
+            overPower = true;
+            angularPower = zRotation;
+          } else {
+            overPower = false;
+            angularPower = Math.abs(xSpeed) * zRotation - m_quickStopAccumulator;
+
+            if (m_quickStopAccumulator > 1) {
+              m_quickStopAccumulator -= 1;
+            } else if (m_quickStopAccumulator < -1) {
+              m_quickStopAccumulator += 1;
+            } else {
+              m_quickStopAccumulator = 0.0;
+            }
+          }
+
+          left = xSpeed + angularPower;
+          right = xSpeed - angularPower;
+
+          // If rotation is overpowered, reduce both outputs to within acceptable range
+          if (overPower) {
+            if (left > 1.0) {
+              right -= left - 1.0;
+              left = 1.0;
+            } else if (right > 1.0) {
+              left -= right - 1.0;
+              right = 1.0;
+            } else if (left < -1.0) {
+              right -= left + 1.0;
+              left = -1.0;
+            } else if (right < -1.0) {
+              left -= right + 1.0;
+              right = -1.0;
+            }
+          }
+
+          // Normalize the wheel speeds
+          double maxMagnitude = Math.max(Math.abs(left), Math.abs(right));
+          if (maxMagnitude > 1.0) {
+            left /= maxMagnitude;
+            right /= maxMagnitude;
+      }
+    }
+    
+    /**
+     * Sets the QuickStop speed threshold in curvature drive.
+     *
+     * <p>QuickStop compensates for the robot's moment of inertia when stopping after a QuickTurn.
+     *
+     * <p>While QuickTurn is enabled, the QuickStop accumulator takes on the rotation rate value
+     * outputted by the low-pass filter when the robot's speed along the X axis is below the
+     * threshold. When QuickTurn is disabled, the accumulator's value is applied against the computed
+     * angular power request to slow the robot's rotation.
+     *
+     * @param threshold X speed below which quick stop accumulator will receive rotation rate values
+     *                  [0..1.0].
+     */
+    public void setQuickStopThreshold(double threshold) {
+      m_quickStopThreshold = threshold;
+    }
+
+    /**
+     * Sets the low-pass filter gain for QuickStop in curvature drive.
+     *
+     * <p>The low-pass filter filters incoming rotation rate commands to smooth out high frequency
+     * changes.
+     *
+     * @param alpha Low-pass filter gain [0.0..2.0]. Smaller values result in slower output changes.
+     *              Values between 1.0 and 2.0 result in output oscillation. Values below 0.0 and
+     *              above 2.0 are unstable.
+     */
+    public void setQuickStopAlpha(double alpha) {
+      m_quickStopAlpha = alpha;
+  }
+    
+    public void stopDrive() {
+        if (gyroPID.isEnabled())
+            gyroPID.reset();
+        if (leftDrivePID.isEnabled())
+            leftDrivePID.reset();
+        if (rightDrivePID.isEnabled())
+            rightDrivePID.reset();        
+       
+        tankDrive(0, 0);  
+    }
+	
+	//Other 
+	public boolean isGyroCalibrating() {
+		return navX.isCalibrating();
+	}
+	
+	public void pidDrive() {
+	    double left, right;
+	    if (DriverStation.getInstance().isDisabled()) {
+	        stopDrive();
+	    }
+	    else {
+	        left = this.left+leftDriveOutput.getOutput() + gyroOutput.getOutput();
+	        right = this.right+rightDriveOutput.getOutput() - gyroOutput.getOutput();
+	        drive(left, right);
+	        this.left = 0;
+	        this.right = 0;
+	    }
+	}
+	
+    private void drive(double left, double right) {
+        leftDrive1.set(left);
+        leftDrive2.set(left);
+        leftDrive3.set(left);
+        
+        rightDrive1.set(-right);
+        rightDrive2.set(-right);
+        rightDrive3.set(-right);
+    }
+    
+    public void resetPosition() {
+    	driveEncoderLeft.reset();
+    	driveEncoderRight.reset();
+        navX.zeroYaw();
+        fFirstUse = true;
+        ctrRollOver = 0;
+        setXY(0,0);
+        this.prevLeftEncoderDistance = 0;
+        this.prevRightEncoderDistance = 0;
+    } /* End resetPosition */
+    
+    public void setXY(double x, double y) {
+        this.x = x;
+        this.y = y;
+    } /* End setXY */
+
+	public double getLeftDistance() 
+	{
+		return driveEncoderLeft.getDistance();
+	}
+
+	public double getRightDistance() {
+		return driveEncoderRight.getDistance();
+	}
+	
+    //Path methods
+	ArrayList<Waypoint> path;
+	int currentWaypoint = 0;
+	
+	public void setPath(ArrayList<Waypoint> path) {
+		if ((path == null)) {
+			Logger.getInstance().println("Null path in setPath", Severity.ERROR);
+			Logger.getInstance().printStackTrace(new NullPointerException());
+		}
+		this.path = path;
+		currentWaypoint = 0;
+	}
+
+	public int getNextWaypointNumber() {
+		return currentWaypoint;
+	}
+	
+	public Waypoint getNextWaypoint() {
+		return path.get(getNextWaypointNumber());
+	}
+	
+	public void incrementWaypoint() {
+		if (currentWaypoint + 1 < path.size()) {
+			currentWaypoint++;
+		}
+		else {
+			Logger.getInstance().println("Attempt to increment waypoint past path", Severity.ERROR);
+			Logger.getInstance().printStackTrace(new IndexOutOfBoundsException());
+		}
+	}
+	
+	public double getDistanceToEnd() {
+		return getDistanceToWaypoint(path.get(path.size()-1));
+	}
+	
+	public double getAngleToWaypoint(Waypoint waypt) {
+		double deltaX = waypt.getX() - getX();
+        double deltaY = waypt.getY() - getY();
+        
+		return Math.toDegrees(Math.atan2(deltaX, deltaY));
+	}
+
+	public double getAngleToNextWaypoint() {
+		return getAngleToWaypoint(getNextWaypoint());
+	}
+	
+	public double getDistanceBetweenWaypoints(Waypoint cur, Waypoint to) {
+		double deltaX = to.getX() - cur.getX();
+        double deltaY = to.getY() - cur.getY();
+        
+        return Math.sqrt(deltaX*deltaX+deltaY*deltaY);
+	}
+	
+	public double getDistanceToWaypoint(Waypoint waypt) {
+		Waypoint currentLocation = new Waypoint(Robot.chassis.getX(), Robot.chassis.getY(), Robot.chassis.getAngle());
+        return getDistanceBetweenWaypoints(currentLocation, waypt);
+	}
+	
+	public double getDistanceToNextWaypoint() {
+		return getDistanceToWaypoint(getNextWaypoint());
+	}
+	
+	public int getCurrentWaypointNumber() {
+		return currentWaypoint;
+	}
+	
+	public Waypoint getCurrentWaypoint() {
+		return path.get(currentWaypoint);
+	}
+	
+	public int getPreviousWaypointNumber() {
+		if (currentWaypoint - 1 >= 0) {
+			return currentWaypoint - 1;
+		}
+		else {
+			Logger.getInstance().println("Attempt to get negative previous waypoint", Severity.ERROR);
+			return currentWaypoint;
+		}
+	}
+	
+	public Waypoint getPreviousWaypoint() {
+		if (currentWaypoint - 1 >= 0) {
+			return path.get(currentWaypoint - 1);
+		}
+		else {
+			Logger.getInstance().println("Attempt to get negative previous waypoint", Severity.ERROR);
+			return path.get(currentWaypoint);
+		}
+	}
+	
+	public int getLastWaypointNumber() {
+		return path.size()-1;
+	}
+}
 
 }
 
