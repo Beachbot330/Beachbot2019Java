@@ -259,12 +259,12 @@ public class Chassis extends Subsystem {
     	CSVLogger.getInstance().add("GyroCompensation", temp);
     	
     	temp = new CSVLoggable(true) {
-			public double get() { return navX.isConnected() ? 1: 0; }  		
+			public double get() { return navX1.isConnected() ? 1: 0; }  		
     	};    	
     	CSVLogger.getInstance().add("GyroIsConnected", temp);
     	
     	temp = new CSVLoggable(true) {
-			public double get() { return navX.isCalibrating() ? 1: 0; }  		
+			public double get() { return navX1.isCalibrating() ? 1: 0; }  		
     	};    	
     	CSVLogger.getInstance().add("GyroIsCalibrating", temp);
     	
@@ -362,11 +362,11 @@ public class Chassis extends Subsystem {
 	}
 	
     public double getAngle() {  	
-    	return navX.getAngle();
+    	return navX1.getAngle();
     }
     
     public String getNavXFirmware() {
-    	return navX.getFirmwareVersion();
+    	return navX1.getFirmwareVersion();
     }
     
     public double getSpeed() {
@@ -398,7 +398,7 @@ public class Chassis extends Subsystem {
     double gyroComp = 0;
     
     public void setGyroComp(double compensation) {
-    	navX.setAngleAdjustment(compensation);    	
+    	navX1.setAngleAdjustment(compensation);    	
     	//gyroComp = compensation;
     }
        
