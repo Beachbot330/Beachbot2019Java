@@ -1,10 +1,11 @@
 // Robot Chassis Constants
 
-//copied from 2016 to 2018 chassis const - JB
+//copied from 2018 to 2019 chassis const - EJO
 
 package org.usfirst.frc330.constants;
 
-import org.usfirst.frc330.commands.drivecommands.DrivePIDGains;
+//import org.usfirst.frc330.commands.drivecommands.DrivePIDGains;
+//TODO figure out drivecommands - ejo
 import org.usfirst.frc330.wpilibj.PIDGains;
 
 public final class ChassisConst {
@@ -38,13 +39,14 @@ public final class ChassisConst {
     public static final double defaultTurnTolerance		= 2;
     
     //PID Gains
-    public static final DrivePIDGains DriveLow	   = new DrivePIDGains(0.100,0,0.000,0,defaultMaxOutput,defaultMaxOutputStep,defaultMinStartOutput, "DriveLow");
-    public static final DrivePIDGains DriveHigh     = new DrivePIDGains(0.100,0,0.80,0,defaultMaxOutput,defaultMaxOutputStep, defaultMinStartOutput,"DriveHigh"); //AP 3-30-18
-    public static final DrivePIDGains GyroTurnLow   = new DrivePIDGains(0.020,0,0.05,0,0.5,1,0,"GyroTurnLow");
-    public static final DrivePIDGains GyroTurnHigh  = new DrivePIDGains(0.030,0,0.000,0,1,1,0, "GyroTurnHigh"); //AP 3-9-18
-    public static final DrivePIDGains GyroDriveLow  = new DrivePIDGains(0.010,0,0.000,0,1,1,0, "GyroDriveLow");
-    public static final DrivePIDGains GyroDriveHigh = new DrivePIDGains(0.01,0,0.000,0,1,1,0, "GyroDriveHigh"); //AP 3-9-18
-    
+    //public static final DrivePIDGains DriveLow	   = new DrivePIDGains(0.100,0,0.000,0,defaultMaxOutput,defaultMaxOutputStep,defaultMinStartOutput, "DriveLow");
+    //public static final DrivePIDGains DriveHigh     = new DrivePIDGains(0.100,0,0.80,0,defaultMaxOutput,defaultMaxOutputStep, defaultMinStartOutput,"DriveHigh"); //AP 3-30-18
+    //public static final DrivePIDGains GyroTurnLow   = new DrivePIDGains(0.020,0,0.05,0,0.5,1,0,"GyroTurnLow");
+    //public static final DrivePIDGains GyroTurnHigh  = new DrivePIDGains(0.030,0,0.000,0,1,1,0, "GyroTurnHigh"); //AP 3-9-18
+    //public static final DrivePIDGains GyroDriveLow  = new DrivePIDGains(0.010,0,0.000,0,1,1,0, "GyroDriveLow");
+    //public static final DrivePIDGains GyroDriveHigh = new DrivePIDGains(0.01,0,0.000,0,1,1,0, "GyroDriveHigh"); //AP 3-9-18
+    //TODO - uncomment above code then fix DrivePIDGains errors once drivecommands have been added
+
     //Drive distances
     public static final double driveStraightAuto     = 100;
        
