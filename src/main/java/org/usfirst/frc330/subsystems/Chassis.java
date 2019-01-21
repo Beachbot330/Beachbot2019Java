@@ -302,16 +302,18 @@ public class Chassis extends Subsystem {
     	};  
     	CSVLogger.getInstance().add("Shifter", temp);
     	
-    	temp = new CSVLoggable(true) {
+		/*
+		temp = new CSVLoggable(true) {
 			public double get() { 
 				if (path == null) 
 					return -1;
 				return getNextWaypointNumber(); }  		
     	};  
-    	CSVLogger.getInstance().add("NextWaypointNumber", temp);
+		CSVLogger.getInstance().add("NextWaypointNumber", temp);
+		*/
+		//TODO enable this when waypoint is fixed - EJO
     }
 
-    }
 
     @Override
     public void initDefaultCommand() {
@@ -563,7 +565,7 @@ public class Chassis extends Subsystem {
 	
 	//Other 
 	public boolean isGyroCalibrating() {
-		return navX.isCalibrating();
+		return navX1.isCalibrating();
 	}
 	
 	public void pidDrive() {
@@ -593,7 +595,7 @@ public class Chassis extends Subsystem {
     public void resetPosition() {
     	driveEncoderLeft.reset();
     	driveEncoderRight.reset();
-        navX.zeroYaw();
+        navX1.zeroYaw();
         fFirstUse = true;
         ctrRollOver = 0;
         setXY(0,0);
@@ -615,100 +617,5 @@ public class Chassis extends Subsystem {
 		return driveEncoderRight.getDistance();
 	}
 	
-    //Path methods
-	ArrayList<Waypoint> path;
-	int currentWaypoint = 0;
-	
-	public void setPath(ArrayList<Waypoint> path) {
-		if ((path == null)) {
-			Logger.getInstance().println("Null path in setPath", Severity.ERROR);
-			Logger.getInstance().printStackTrace(new NullPointerException());
-		}
-		this.path = path;
-		currentWaypoint = 0;
-	}
-
-	public int getNextWaypointNumber() {
-		return currentWaypoint;
-	}
-	
-	public Waypoint getNextWaypoint() {
-		return path.get(getNextWaypointNumber());
-	}
-	
-	public void incrementWaypoint() {
-		if (currentWaypoint + 1 < path.size()) {
-			currentWaypoint++;
-		}
-		else {
-			Logger.getInstance().println("Attempt to increment waypoint past path", Severity.ERROR);
-			Logger.getInstance().printStackTrace(new IndexOutOfBoundsException());
-		}
-	}
-	
-	public double getDistanceToEnd() {
-		return getDistanceToWaypoint(path.get(path.size()-1));
-	}
-	
-	public double getAngleToWaypoint(Waypoint waypt) {
-		double deltaX = waypt.getX() - getX();
-        double deltaY = waypt.getY() - getY();
-        
-		return Math.toDegrees(Math.atan2(deltaX, deltaY));
-	}
-
-	public double getAngleToNextWaypoint() {
-		return getAngleToWaypoint(getNextWaypoint());
-	}
-	
-	public double getDistanceBetweenWaypoints(Waypoint cur, Waypoint to) {
-		double deltaX = to.getX() - cur.getX();
-        double deltaY = to.getY() - cur.getY();
-        
-        return Math.sqrt(deltaX*deltaX+deltaY*deltaY);
-	}
-	
-	public double getDistanceToWaypoint(Waypoint waypt) {
-		Waypoint currentLocation = new Waypoint(Robot.chassis.getX(), Robot.chassis.getY(), Robot.chassis.getAngle());
-        return getDistanceBetweenWaypoints(currentLocation, waypt);
-	}
-	
-	public double getDistanceToNextWaypoint() {
-		return getDistanceToWaypoint(getNextWaypoint());
-	}
-	
-	public int getCurrentWaypointNumber() {
-		return currentWaypoint;
-	}
-	
-	public Waypoint getCurrentWaypoint() {
-		return path.get(currentWaypoint);
-	}
-	
-	public int getPreviousWaypointNumber() {
-		if (currentWaypoint - 1 >= 0) {
-			return currentWaypoint - 1;
-		}
-		else {
-			Logger.getInstance().println("Attempt to get negative previous waypoint", Severity.ERROR);
-			return currentWaypoint;
-		}
-	}
-	
-	public Waypoint getPreviousWaypoint() {
-		if (currentWaypoint - 1 >= 0) {
-			return path.get(currentWaypoint - 1);
-		}
-		else {
-			Logger.getInstance().println("Attempt to get negative previous waypoint", Severity.ERROR);
-			return path.get(currentWaypoint);
-		}
-	}
-	
-	public int getLastWaypointNumber() {
-		return path.size()-1;
-	}
-}
-
 }
 
