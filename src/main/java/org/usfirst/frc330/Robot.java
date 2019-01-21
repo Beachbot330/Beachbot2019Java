@@ -117,4 +117,26 @@ public class Robot extends TimedRobot {
     public void teleopPeriodic() {
         Scheduler.getInstance().run();
     }
+
+    // -----------------------------------------------------------
+    // Get Methods
+    // -----------------------------------------------------------
+    
+    //Code copied from 2018 to 2019 -ejo
+    //BEGIN COPIED CODE
+
+    /*
+    public boolean getIsPracticeRobot() {
+    	return frills.getIsPracticeRobot();
+    }
+    */
+    /*
+    public static double getHeight() {
+    	double armContr = Math.sin(Math.toRadians(Robot.arm.getArmAngle())) * ArmConst.length;
+    	double handContr = Math.sin(Math.toRadians(Robot.hand.getHandAngle())) * HandConst.length;
+    	double liftContr = 40 + Robot.lift.getPosition();
+    	return liftContr + armContr + handContr;
+    }
+    */
+    //END COPIED CODE
 }
