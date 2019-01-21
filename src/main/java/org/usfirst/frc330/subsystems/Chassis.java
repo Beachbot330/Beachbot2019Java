@@ -431,7 +431,8 @@ public class Chassis extends Subsystem {
     public void shiftLow() {
     	shifters.set(DoubleSolenoid.Value.kForward);
     }
-    
+	
+	/*
     public void tankDrive(Joystick leftJoystick, Joystick rightJoystick) {
     	if(Robot.getHeight() < 40) {
     		left = -leftJoystick.getY();
@@ -444,7 +445,8 @@ public class Chassis extends Subsystem {
     		right = -rightJoystick.getY() *scaleFactor;
     	}
     	
-    }
+	}
+	*/
         
     public void tankDrive(double left, double right) {
         this.left = left;
