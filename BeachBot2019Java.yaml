@@ -445,12 +445,12 @@ Children:
     - Children: []
       Properties:
         Output Channel (Digital): !!robotbuilder.data.properties.ChoicesProperty
-          choices: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11',
-            '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23',
-            '24', '25']
+          choices: &id025 ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10',
+            '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22',
+            '23', '24', '25']
           default: '0'
           name: Output Channel (Digital)
-          validators: [DigitalChannel]
+          validators: &id026 [DigitalChannel]
           value: '4'
       Base: Digital Output
       Name: Buzzer
@@ -464,6 +464,16 @@ Children:
           value: '5'
       Base: Digital Input
       Name: isPracticeRobot
+    - Children: []
+      Properties:
+        Output Channel (Digital): !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id025
+          default: '0'
+          name: Output Channel (Digital)
+          validators: *id026
+          value: '7'
+      Base: Digital Output
+      Name: indicatorBar
     Properties:
       Send to SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: false,
         name: Send to SmartDashboard, validators: null, value: false}
