@@ -551,4 +551,4 @@ Properties:
   Export Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\makfr\FRCProjects',
     extension: null, folder: true, name: Export Directory, validators: null, value: ..\}
 Base: Robot
-Name: BeachBot2019
+Name: BeachBot2019Java
