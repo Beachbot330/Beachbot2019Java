@@ -12,9 +12,9 @@ public final class ChassisConst {
 	private ChassisConst(){}
 	
 	// Length
-	public static final double liftToFrame				  = 25.75; 	// (inches) EJO 1/28
-	public static final double liftToFramRear			  = 6.75; 	// (inches) EJO 1/28
-	public static final double maxExtension				  = 16;  	// (inches) EJO 1/28
+	public static final double liftToFrame				  = 25.75; 	    // (inches) EJO 1/28
+	public static final double liftToFramRear			  = 6.75; 	    // (inches) EJO 1/28
+	public static final double maxExtension				  = 16;  	    // (inches) EJO 1/28
 	
 	// PID MaxOutputs
 	public static final double backupThrottle       	  = 0.5;
@@ -31,8 +31,8 @@ public final class ChassisConst {
     
     //Turn Gyro 
     public static final double rotateProportional 		  = 0.11;
-    public static final int    gyroTolerancebuffer        = 5;  //JR 3/20
-    public static final double gyroTurnMin				  = 0.20; //JB 1/27
+    public static final int    gyroTolerancebuffer        = 5;          //JR 3/20
+    public static final double gyroTurnMin				  = 0.20;       //JB 1/27
     
     //Tolerances
     public static final double defaultTolerance 		= 3;
