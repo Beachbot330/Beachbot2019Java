@@ -8,9 +8,12 @@ public final class HandConst {
 	
 	private HandConst(){}
 
-	//angles relative to the ground
-	public static final double defense 	= 0.0; //TODO: Get value from Shane -AP
-	public static final double extended = 0.0; //TODO: Get value from Shane -AP
+	//angles relative to the ground (degrees)
+	public static final double defense 			= 57.0; 	//ejo 2.2.19
+	public static final double hardStop 		= 57.0;		//ejo 2.2.19
+	public static final double hatchPlacement 	= 0.0; 		//ejo 2.2.19
+	public static final double ballPickup 		= -46.0;	//ejo 2.2.19
+	public static final double ballPlacement 	= 35.0;		//ejo 2.2.19
 	
 	
 
