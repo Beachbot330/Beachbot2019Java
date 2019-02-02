@@ -26,7 +26,7 @@ public class KillAll extends BBCommand {
         requires(Robot.chassis);
         requires(Robot.lift);
         requires(Robot.hand);
-        requires(Robot.pickUp);
+        requires(Robot.pickup);
     	requires(Robot.frills);
     	
     	
@@ -41,7 +41,7 @@ public class KillAll extends BBCommand {
         Robot.chassis.stopDrive();
         Robot.lift.stopLift();
         Robot.hand.stopHand();
-    	Robot.pickUp.stopPickup();
+    	Robot.pickup.stopPickup();
     	
     }
 
