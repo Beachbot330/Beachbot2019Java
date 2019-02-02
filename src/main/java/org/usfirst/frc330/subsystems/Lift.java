@@ -11,7 +11,7 @@
 
 package org.usfirst.frc330.subsystems;
 
-
+import org.usfirst.frc330.util.Logger;
 import org.usfirst.frc330.commands.*;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.command.Subsystem;
@@ -75,7 +75,9 @@ public class Lift extends Subsystem {
     }
 
 	public void stopLift() {
-        //TODO: Implement - AP
+        lift1.disable();
+        Logger.getInstance().println("Lift disabled", Logger.Severity.INFO);
+        //implemented 2.2.19 -ejo
 	}
 
 	public void setLiftPosition(double position) {

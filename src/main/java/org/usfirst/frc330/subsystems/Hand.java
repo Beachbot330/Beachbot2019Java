@@ -75,7 +75,7 @@ public class Hand extends Subsystem {
 	public void stopHand() {
         hand.disable();
         Logger.getInstance().println("Hand disabled", Logger.Severity.INFO);
-        //TODO check if i did this right - ejo
+        //implemented 2.2.19 -ejo
 	}
 
 	public void setAngle(double angle) {
