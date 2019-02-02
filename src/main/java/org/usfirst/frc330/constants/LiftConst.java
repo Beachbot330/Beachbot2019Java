@@ -23,10 +23,9 @@ public final class LiftConst {
 	public static final double tolerance		= 0; //TODO: find 2019 value -AP
 
 	//Encoder Distance Constants
-    public static final double  wheelDiameter        = 1.751;   //inches ejo 2.2.19
     public static final double  pulsePerRevolution   = 1024;
-    public static final int     encoderGearRatio     = 0;       //TODO - Get Correct Value from Shane - EJO
-    public static final int     gearRatio            = 1;       //ejo 2.2.19
+    public static final double  encoderGearRatio     = 1/1;     //ejo 2.2.19
+    public static final double 	gearRatio            = 1.751;    //ejo 2.2.19
     public static final double  Fudgefactor          = 0;       //TODO - Find the 2019 value - ejo
 
 	//encoder is on the output shaft, so it should be gearRation should be 1:1
