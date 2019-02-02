@@ -7,6 +7,10 @@ import org.usfirst.frc330.wpilibj.PIDGains;
 public final class HandConst {
 	
 	private HandConst(){}
+
+	public static final double defense 	= 0.0; //TODO: Get value from Shane -AP
+	public static final double extended = 0.0; //TODO: Get value from Shane -AP
+	
 	
 
 }	

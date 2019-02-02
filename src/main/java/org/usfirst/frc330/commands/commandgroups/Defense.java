@@ -14,7 +14,7 @@ package org.usfirst.frc330.commands.commandgroups;
 import edu.wpi.first.wpilibj.command.BBCommandGroup;
 
 import org.usfirst.frc330.commands.*;
-import org.usfirst.frc330.constants.LiftConst;
+import org.usfirst.frc330.constants.*;
 import org.usfirst.frc330.subsystems.*;
 
 /**
@@ -26,8 +26,7 @@ public class Defense extends BBCommandGroup {
 
         addSequential(new PickupOff());
         addParallel(new SetLiftPosition(LiftConst.defense));
-        //TODO: uncomment the following line and implement everything it breaks
-    	//addParallel(new SetHandAngle(HandConst.defense));
+    	addParallel(new SetHandAngle(HandConst.defense));
  
     } 
 }
