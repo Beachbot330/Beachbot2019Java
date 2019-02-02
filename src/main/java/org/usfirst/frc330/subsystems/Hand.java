@@ -14,6 +14,7 @@ package org.usfirst.frc330.subsystems;
 
 import org.usfirst.frc330.commands.*;
 import org.usfirst.frc330.util.Logger;
+import org.usfirst.frc330.constants.*;
 
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.command.Subsystem;
@@ -78,7 +79,6 @@ public class Hand extends Subsystem {
         //implemented 2.2.19 -ejo
     }
     
-
     
     //------------------------
     //      SET METHODS
@@ -94,8 +94,8 @@ public class Hand extends Subsystem {
     //------------------------
 
 	public boolean getHandOnTarget() {
-        //TODO: Implement - AP
-		return false;
+        double error = this.getSetpointRelArm() - this.getHandAngle();
+      	return (Math.abs(error) < HandConst.tolerance);
 	}
 
 	public double getSetpointRelArm() {

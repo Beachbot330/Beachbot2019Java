@@ -8,6 +8,8 @@ public final class HandConst {
 	
 	private HandConst(){}
 
+	public static final double tolerance		= 0; 		//WAG -ejo 2.2.19
+
 	//angles relative to the ground (degrees)
 	public static final double defense 			= 57.0; 	//ejo 2.2.19
 	public static final double hardStop 		= 57.0;		//ejo 2.2.19
