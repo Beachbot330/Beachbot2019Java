@@ -13,6 +13,8 @@ package org.usfirst.frc330.subsystems;
 
 
 import org.usfirst.frc330.commands.*;
+import org.usfirst.frc330.util.Logger;
+
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.PIDOutput;
@@ -71,7 +73,9 @@ public class Hand extends Subsystem {
     }
 
 	public void stopHand() {
-        //TODO: Implement - AP
+        hand.disable();
+        Logger.getInstance().println("Hand disabled", Logger.Severity.INFO);
+        //TODO check if i did this right - ejo
 	}
 
 	public void setAngle(double angle) {
