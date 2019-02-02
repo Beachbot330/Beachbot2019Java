@@ -91,14 +91,14 @@ public class Lift extends Subsystem {
 		return false;
 	}
 
-	public String getSetpoint() {
+	public double getSetpoint() {
         //TODO: Implement - AP
-		return null;
+		return 0.0;
 	}
 
-	public String getPosition() {
+	public double getPosition() {
         //TODO: Implement - AP
-		return null;
+		return 0.0;
 	}
 
 	public void calibrateMove() {
