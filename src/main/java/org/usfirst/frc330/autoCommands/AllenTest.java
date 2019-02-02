@@ -25,13 +25,7 @@ public class AllenTest extends BBCommandGroup {
     	//addSequential(new DriveTime(3.0, 1.0, 1.0)); //Timeout, left out, right out
     	addSequential(new DriveWaypointBackward(0, -12*5, ChassisConst.defaultTolerance, 5, true, ChassisConst.DriveHigh, ChassisConst.GyroDriveHigh));
        
-//    	addSequential(new TurnGyroRel(90, 2, 3, false, ChassisConst.GyroTurnLow));
-//       addSequential(new WaitCommand(1.0));
-//       addSequential(new TurnGyroRel(90, 2, 3, false, ChassisConst.GyroTurnLow));
-//       addSequential(new WaitCommand(1.0));
-//       addSequential(new TurnGyroRel(90, 2, 3, false, ChassisConst.GyroTurnLow));
-//       addSequential(new WaitCommand(1.0));
-//       addSequential(new TurnGyroRel(90, 2, 3, false, ChassisConst.GyroTurnLow));
+
        
     }
 }
