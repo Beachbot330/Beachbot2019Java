@@ -177,7 +177,7 @@ Children:
           value: null}
         SpeedController3: !!robotbuilder.data.properties.ChildSelectionProperty {
           default: null, name: SpeedController3, type: PIDOutput, validators: null,
-          value: null}
+          value: rightDrive3}
         SpeedController2: !!robotbuilder.data.properties.ChildSelectionProperty
           default: 1
           name: SpeedController2
@@ -253,7 +253,7 @@ Children:
           value: null}
         SpeedController3: !!robotbuilder.data.properties.ChildSelectionProperty {
           default: null, name: SpeedController3, type: PIDOutput, validators: null,
-          value: null}
+          value: leftDrive3}
         SpeedController2: !!robotbuilder.data.properties.ChildSelectionProperty
           default: 1
           name: SpeedController2
@@ -267,7 +267,7 @@ Children:
           validators: *id011
           value: leftDrive1
       Base: Speed Controller Group
-      Name: leftDriive
+      Name: leftDrive
     - Children: []
       Properties:
         Input Channel (Analog): !!robotbuilder.data.properties.ChoicesProperty
@@ -544,11 +544,11 @@ Properties:
     name: Export Subsystems, validators: null, value: true}
   Simulation World File: !!robotbuilder.data.properties.StringProperty {default: /usr/share/frcsim/worlds/GearsBotDemo.world,
     name: Simulation World File, validators: null, value: /usr/share/frcsim/worlds/GearsBotDemo.world}
-  Wiring file location: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\makfr\',
+  Wiring file location: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\micro\',
     extension: null, folder: true, name: Wiring file location, validators: null, value: 'C:\Users\makfr\'}
   Autonomous Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
     name: Autonomous Command, type: Command, validators: null, value: Autonomous Command}
-  Export Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\makfr\FRCProjects',
+  Export Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\micro\FRCProjects',
     extension: null, folder: true, name: Export Directory, validators: null, value: ..\}
 Base: Robot
 Name: BeachBot2019Java
