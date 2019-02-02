@@ -201,14 +201,14 @@ public class Chassis extends Subsystem {
     	pulsePerRevolutionLeft = ChassisConst.pulsePerRevolution;
         
         double distanceperpulse = Math.PI*ChassisConst.wheelDiameter/pulsePerRevolutionLeft /
-        		ChassisConst.encoderGearRatio/ChassisConst.gearRatio * ChassisConst.Fudgefactor;
+        		ChassisConst.encoderGearRatio * ChassisConst.Fudgefactor;
 
         //VERIFY Fix these lines of code -JB
         driveEncoderRight.setReverseDirection(true);
         driveEncoderLeft.setDistancePerPulse(distanceperpulse);
         
         distanceperpulse = Math.PI*ChassisConst.wheelDiameter/pulsePerRevolutionRight /
-        		ChassisConst.encoderGearRatio/ChassisConst.gearRatio * ChassisConst.Fudgefactor;
+        		ChassisConst.encoderGearRatio * ChassisConst.Fudgefactor;
         
         driveEncoderRight.setDistancePerPulse(distanceperpulse);
 
