@@ -76,11 +76,22 @@ public class Hand extends Subsystem {
         hand.disable();
         Logger.getInstance().println("Hand disabled", Logger.Severity.INFO);
         //implemented 2.2.19 -ejo
-	}
+    }
+    
+
+    
+    //------------------------
+    //      SET METHODS
+    //------------------------
 
 	public void setAngle(double angle) {
         //TODO: Implement - AP
-	}
+    }
+    
+
+    //------------------------
+    //      GET METHODS
+    //------------------------
 
 	public boolean getHandOnTarget() {
         //TODO: Implement - AP
