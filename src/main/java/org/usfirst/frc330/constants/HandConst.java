@@ -12,8 +12,12 @@ public final class HandConst {
 	public static final double defense 			= 57.0; 	//ejo 2.2.19
 	public static final double hardStop 		= 57.0;		//ejo 2.2.19
 	public static final double hatchPlacement 	= 0.0; 		//ejo 2.2.19
+
+	
 	public static final double ballPickup 		= -46.0;	//ejo 2.2.19
-	public static final double ballPlacement 	= 35.0;		//ejo 2.2.19
+
+	public static final double ballPlacementHi 	= 35.0;		//ejo 2.2.19
+	
 	
 	
 

@@ -11,7 +11,7 @@ public final class ChassisConst {
     private ChassisConst(){}
 
     //Encoder Distance Constants
-    public static final double  wheelDiameter        = 0;       //TODO - Get Correct Value from Shane - AP
+    public static final double  wheelDiameter        = 6.0;       //ejo 2.2.19
     public static final double  pulsePerRevolution   = 1024;
     public static final int     encoderGearRatio     = 0;       //TODO - Get Correct Value from Shane - AP
     public static final int     gearRatio            = 0;       //TODO - Get Correct Value from Shane - AP
