@@ -12,7 +12,7 @@
 package org.usfirst.frc330;
 
 import org.usfirst.frc330.commands.*;
-//import org.usfirst.frc330.commands.commandgroups.*;
+import org.usfirst.frc330.commands.commandgroups.*;
 import org.usfirst.frc330.commands.commandgroups.*;
 
 import edu.wpi.first.wpilibj.Joystick;
@@ -21,6 +21,7 @@ import edu.wpi.first.wpilibj.Joystick;
 
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
+//TODO There are two Defense classes, one in commands and one in commandgroups. Only one can exist - JR
 
 /**
  * This class is the glue that binds the controls on the physical operator
