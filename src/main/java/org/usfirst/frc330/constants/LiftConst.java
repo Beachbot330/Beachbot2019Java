@@ -35,6 +35,7 @@ public final class LiftConst {
 
 	//Pogo Distance Constants
 	public static final double  PogoInchesPerRev	= 5.105088062083414; //AP 02/09/2019
+	public static final double  PogoDriveDistance	= 25; //AP 2/9/19
 	
 	//Talon SRX Settings
 	public static final double VoltageRampRate				= 1.23;	// AP 2018 value

@@ -9,7 +9,6 @@
 // it from being updated in the future.
 package org.usfirst.frc330.commands.drivecommands;
 import org.usfirst.frc330.Robot;
-import org.usfirst.frc330.constants.ChassisConst;
 import org.usfirst.frc330.wpilibj.PIDGains;
 /**
  *

@@ -14,6 +14,8 @@ package org.usfirst.frc330.commands.commandgroups;
 import edu.wpi.first.wpilibj.command.BBCommandGroup;
 import org.usfirst.frc330.subsystems.*;
 import org.usfirst.frc330.commands.*;
+import org.usfirst.frc330.commands.drivecommands.*;
+import org.usfirst.frc330.constants.ChassisConst;
 import org.usfirst.frc330.constants.LiftConst;
 
 /**
@@ -23,7 +25,11 @@ public class Climb extends BBCommandGroup {
 
 
     public Climb() {
+        addSequential(new ShiftLow());
         addSequential(new SetLiftPosition(LiftConst.PogoDrive, LiftConst.tolerance));
-        addSequential(new DrivePogo());
+        addSequential(new DrivePogo(LiftConst.PogoDriveDistance));
+        addSequential(new ConditionalPogoRetract());
+        addSequential(new DriveDistanceAtCurAngle(ChassisConst.PlatformDrive, 1.0, 3.0, false, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
+        //double distance, double tolerance, double timeout, boolean stopAtEnd, DrivePIDGains driveGains, DrivePIDGains gyroGains
     } 
 }
