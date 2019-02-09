@@ -536,7 +536,7 @@ Children:
           validators: null
           value: whenPressed
       Base: Joystick Button
-      Name: 1_ShiftLow
+      Name: ShiftLow_1
     - Children: []
       Properties:
         Joystick: !!robotbuilder.data.properties.ParentProperty {default: parent,
@@ -565,7 +565,7 @@ Children:
           validators: null
           value: whileHeld
       Base: Joystick Button
-      Name: 2_ClimbDeploy_WH
+      Name: ClimbDeploy_2WH
     - Children: []
       Properties:
         Joystick: !!robotbuilder.data.properties.ParentProperty {default: parent,
@@ -594,7 +594,7 @@ Children:
           validators: null
           value: whileHeld
       Base: Joystick Button
-      Name: 3_AutoStear_WH
+      Name: AutoStear_3WH
     - Children: []
       Properties:
         Joystick: !!robotbuilder.data.properties.ParentProperty {default: parent,
@@ -623,7 +623,7 @@ Children:
           validators: null
           value: whenPressed
       Base: Joystick Button
-      Name: 4_EjectBall
+      Name: EjectBall_4
     - Children: []
       Properties:
         Joystick: !!robotbuilder.data.properties.ParentProperty {default: parent,
@@ -652,7 +652,7 @@ Children:
           validators: null
           value: whenPressed
       Base: Joystick Button
-      Name: 5_EjectBall
+      Name: EjectBall_5
     Properties:
       Number: !!robotbuilder.data.properties.ChoicesProperty
         choices: &id030 ['0', '1', '2', '3', '4', '5']
@@ -691,7 +691,7 @@ Children:
           validators: null
           value: whenPressed
       Base: Joystick Button
-      Name: 1_ShiftHigh
+      Name: ShiftHigh_1
     - Children: []
       Properties:
         Joystick: !!robotbuilder.data.properties.ParentProperty {default: parent,
@@ -720,7 +720,7 @@ Children:
           validators: null
           value: whenPressed
       Base: Joystick Button
-      Name: 4R_EjectBall
+      Name: EjectBall_4R
     - Children: []
       Properties:
         Joystick: !!robotbuilder.data.properties.ParentProperty {default: parent,
@@ -749,7 +749,7 @@ Children:
           validators: null
           value: whenPressed
       Base: Joystick Button
-      Name: 5R_EjectBall
+      Name: EjectBall_5R
     - Children: []
       Properties:
         Joystick: !!robotbuilder.data.properties.ParentProperty {default: parent,
@@ -778,7 +778,7 @@ Children:
           validators: null
           value: whileHeld
       Base: Joystick Button
-      Name: 3_Climb_WH
+      Name: Climb_3WH
     Properties:
       Number: !!robotbuilder.data.properties.ChoicesProperty
         choices: *id030
@@ -817,7 +817,7 @@ Children:
           validators: null
           value: whileHeld
       Base: Joystick Button
-      Name: 1_LoadHatch_WH
+      Name: LoadHatch_1WH
     - Children: []
       Properties:
         Joystick: !!robotbuilder.data.properties.ParentProperty {default: parent,
@@ -846,7 +846,7 @@ Children:
           validators: null
           value: whenReleased
       Base: Joystick Button
-      Name: 1_Defense_WR
+      Name: Defense_1WR
     - Children: []
       Properties:
         Joystick: !!robotbuilder.data.properties.ParentProperty {default: parent,
@@ -875,7 +875,7 @@ Children:
           validators: null
           value: whileHeld
       Base: Joystick Button
-      Name: 2_BallPickup_WH
+      Name: BallPickup_2WH
     - Children: []
       Properties:
         Joystick: !!robotbuilder.data.properties.ParentProperty {default: parent,
@@ -904,7 +904,7 @@ Children:
           validators: null
           value: whenReleased
       Base: Joystick Button
-      Name: 2_Defense_WR
+      Name: Defense_2WR
     - Children: []
       Properties:
         Joystick: !!robotbuilder.data.properties.ParentProperty {default: parent,
@@ -933,7 +933,7 @@ Children:
           validators: null
           value: whileHeld
       Base: Joystick Button
-      Name: 3_LoadHatch_WH
+      Name: LoadHatch_3WH
     - Children: []
       Properties:
         Joystick: !!robotbuilder.data.properties.ParentProperty {default: parent,
@@ -962,7 +962,7 @@ Children:
           validators: null
           value: whenReleased
       Base: Joystick Button
-      Name: 3_Defense_WR
+      Name: Defense_3WR
     - Children: []
       Properties:
         Joystick: !!robotbuilder.data.properties.ParentProperty {default: parent,
@@ -991,7 +991,7 @@ Children:
           validators: null
           value: whileHeld
       Base: Joystick Button
-      Name: 4_HandOut_WH
+      Name: HandOut_4WH
     - Children: []
       Properties:
         Joystick: !!robotbuilder.data.properties.ParentProperty {default: parent,
@@ -1020,7 +1020,7 @@ Children:
           validators: null
           value: whenPressed
       Base: Joystick Button
-      Name: 5_RaiseLift
+      Name: RaiseLift_5
     - Children: []
       Properties:
         Joystick: !!robotbuilder.data.properties.ParentProperty {default: parent,
@@ -1049,7 +1049,7 @@ Children:
           validators: null
           value: whileHeld
       Base: Joystick Button
-      Name: 6_OpenClawReverseRoller
+      Name: OpenClawReverseRoller_6
     - Children: []
       Properties:
         Joystick: !!robotbuilder.data.properties.ParentProperty {default: parent,
@@ -1078,7 +1078,7 @@ Children:
           validators: null
           value: whenPressed
       Base: Joystick Button
-      Name: 7_LowerLift
+      Name: LowerLift_7
     - Children: []
       Properties:
         Joystick: !!robotbuilder.data.properties.ParentProperty {default: parent,
@@ -1107,7 +1107,7 @@ Children:
           validators: null
           value: whenPressed
       Base: Joystick Button
-      Name: 9_HatchRelese
+      Name: HatchRelese_9
     - Children: []
       Properties:
         Joystick: !!robotbuilder.data.properties.ParentProperty {default: parent,
@@ -1136,7 +1136,7 @@ Children:
           validators: null
           value: whenPressed
       Base: Joystick Button
-      Name: 10_KillAll
+      Name: KillAll_10
     Properties:
       Number: !!robotbuilder.data.properties.ChoicesProperty
         choices: *id030
@@ -1543,7 +1543,7 @@ Children:
       Commands: !!robotbuilder.data.properties.ListProperty
         default: []
         name: Commands
-        validators: &id034 [List]
+        validators: &id032 [List]
         value: []
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: true}
@@ -1761,10 +1761,10 @@ Children:
       Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
         name: Requires, type: Subsystem, validators: null, value: None}
       Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
-        default: &id032 []
+        default: []
         name: Parameter presets
         validators: null
-        value: *id032
+        value: []
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: true}
     Base: Command
@@ -1781,15 +1781,15 @@ Children:
       Run When Disabled: !!robotbuilder.data.properties.BooleanProperty {default: false,
         name: Run When Disabled, validators: null, value: false}
       Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
-        default: &id033 []
+        default: []
         name: Parameter presets
         validators: null
-        value: *id033
+        value: []
       Commands: !!robotbuilder.data.properties.ListProperty
-        default: &id035 []
+        default: []
         name: Commands
-        validators: *id034
-        value: *id035
+        validators: *id032
+        value: []
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: true}
     Base: Command Group
@@ -1817,11 +1817,11 @@ Properties:
     name: Export Subsystems, validators: null, value: true}
   Simulation World File: !!robotbuilder.data.properties.StringProperty {default: /usr/share/frcsim/worlds/GearsBotDemo.world,
     name: Simulation World File, validators: null, value: /usr/share/frcsim/worlds/GearsBotDemo.world}
-  Wiring file location: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\Joe\',
+  Wiring file location: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\micro\',
     extension: null, folder: true, name: Wiring file location, validators: null, value: .\}
   Autonomous Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
     name: Autonomous Command, type: Command, validators: null, value: Autonomous Command}
-  Export Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\Joe\FRCProjects',
+  Export Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\micro\FRCProjects',
     extension: null, folder: true, name: Export Directory, validators: null, value: ..\}
 Base: Robot
 Name: BeachBot2019Java
