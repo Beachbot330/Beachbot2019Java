@@ -1817,11 +1817,11 @@ Properties:
     name: Export Subsystems, validators: null, value: true}
   Simulation World File: !!robotbuilder.data.properties.StringProperty {default: /usr/share/frcsim/worlds/GearsBotDemo.world,
     name: Simulation World File, validators: null, value: /usr/share/frcsim/worlds/GearsBotDemo.world}
-  Wiring file location: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\micro\',
-    extension: null, folder: true, name: Wiring file location, validators: null, value: 'C:\Users\makfr\'}
+  Wiring file location: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\Joe\',
+    extension: null, folder: true, name: Wiring file location, validators: null, value: .\}
   Autonomous Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
     name: Autonomous Command, type: Command, validators: null, value: Autonomous Command}
-  Export Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\micro\FRCProjects',
+  Export Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\Joe\FRCProjects',
     extension: null, folder: true, name: Export Directory, validators: null, value: ..\}
 Base: Robot
 Name: BeachBot2019Java
