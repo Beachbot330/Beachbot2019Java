@@ -118,7 +118,162 @@ public class Frills extends Subsystem {
 
 	public boolean getIsPracticeRobot() {	
 		return isPracticeRobot.get();
-	}
+    }
+    
+}
+  
+ private class Color{
+    int r, g, b;
+    private Color(int r, int g, int b) {
+        this.r = r;
+        this.g = g;
+        this.b = b;
+    }
+
+    public int getRed(){
+        return r;
+    }
+
+    public int getGreen(){
+        return g;
+    }
+
+    public int getBlue(){
+        return b;
+    }
+}
+
+public void setColor(Color color){
+    r.disablePWM();
+    g.disablePWM();
+    b.disablePWM();
+    r.setPWMRate(500);
+    g.setPWMRate(500);
+    b.setPWMRate(500);
+    r.enablePWM(((color.getRed())/5)/255.0);
+    g.enablePWM(((color.getGreen())/5)/255.0);
+    b.enablePWM(((color.getBlue())/5)/255.0);
+}
+
+public void setColorRGB(int red, int green, int blue){
+    r.disablePWM();
+    g.disablePWM();
+    b.disablePWM();
+    r.setPWMRate(500);
+    g.setPWMRate(500);
+    b.setPWMRate(500);
+    r.enablePWM((red/5)/255.0);
+    g.enablePWM((green/5)/255.0);
+    b.enablePWM((blue/5)/255.0);
+}
+
+public void disableAllPWM() {
+    r.disablePWM();
+    g.disablePWM();
+    b.disablePWM();
+}
+
+
+
+int Pred = 0;
+int Pgreen = 55;
+int Pblue = 174;
+int i = 0;
+
+public void fadeLoop() {
+   
+
+   
+   
+
+    Timer timer = new Timer();
+    timer.scheduleAtFixedRate(new TimerTask()
+    {
+        public void run()
+        {
+            r.disablePWM();
+            g.disablePWM();
+            b.disablePWM();
+            r.setPWMRate(500);
+            g.setPWMRate(500);
+            b.setPWMRate(500);
+            r.enablePWM((Pred/5)/255.0);
+            g.enablePWM((Pgreen/5)/255.0);
+            b.enablePWM((Pblue/5)/255.0);
+            Pred++;
+            Pgreen++;
+            Pblue++;
+            if(Pred > 255) Pred = 0;
+            if(Pgreen > 255) Pgreen = 0;
+            if(Pblue > 255) Pblue = 0;
+            SmartDashboard.putNumber("green", Pgreen);
+            SmartDashboard.putNumber("red", Pred);
+            SmartDashboard.putNumber("blue", Pblue);
+           
+            i++;
+            System.out.println(i);
+        }
+       
+    }, 0, 1500);
+}
+
+public Color RED = new Color(255, 0, 0);
+public Color GREEN = new Color(0, 255, 0);
+public Color BLUE = new Color(0, 0, 255);
+public Color YELLOW1 = new Color(115, 80, 0); //also 255, 255, 0
+public Color YELLOW2 = new Color(255, 255, 0);
+public Color PURPLE = new Color(127, 0, 255);
+
+public boolean getIsVisionTargetInSight() {
+    return false;
+}
+
+public boolean getIsHatchAttained() {
+    return false;
+}
+
+public boolean getIsMisaligned() {
+    return false;
+}
+
+public boolean getIsBallAttained() {
+    return false;
+}
+
+public boolean getIsInAssistMode(){
+    return false;
+}
+
+public void indicatorBarYellow() {
+    if(getIsVisionTargetInSight()) {
+        setColor(YELLOW2);
+    }
+}
+
+public void indicatorBarGreen() {
+    if(getIsHatchAttained()) {
+        setColor(GREEN);
+    }
+}
+
+public void indicatorBarRed() {
+    if(getIsMisaligned()) {
+        setColor(RED);
+    }
+}
+
+public void indicatorBarBlue() {
+    if(getIsBallAttained()) {
+        setColor(BLUE);
+    }
+}
+
+public void indicatorBarPurple() {
+    if(!getIsBallAttained() && getIsInAssistMode()) {
+        setColor(PURPLE);
+    }
+}
+
 
 	public void disableLockout() {
         this.lockout = false;
