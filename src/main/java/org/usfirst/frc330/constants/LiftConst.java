@@ -21,6 +21,7 @@ public final class LiftConst {
 
 	public static final double HatchPickup 		= 0.0;		//ejo 2.2.19
 	public static final double ClimbLatchDeploy = 21.75;	//AP  2/9/19
+	public static final double PogoDrive		= 0.5;		//AP 2/9/19 WAG
 
 	public static final double tolerance		= 0.5; 		//TODO: find 2019 value -AP
 
@@ -30,7 +31,10 @@ public final class LiftConst {
     public static final double  encoderGearRatio    = 1/1;     //ejo 2.2.19
     public static final double 	sprocketDiameter    = 1.751;    //ejo 2.2.19
 	public static final double  Fudgefactor         = 0;       //TODO - Find the 2019 value - ejo
-	//encoder is on the output shaft, so it should be gearRation should be 1:1
+	//encoder is on the output shaft, so it should be gearRatio should be 1:1
+
+	//Pogo Distance Constants
+	public static final double  PogoInchesPerRev	= 5.105088062083414; //AP 02/09/2019
 	
 	//Talon SRX Settings
 	public static final double VoltageRampRate				= 1.23;	// AP 2018 value
@@ -40,11 +44,24 @@ public final class LiftConst {
 	public static final int    CAN_Status_Frame_13_Period 	= 20; // AP 2018 value
 	public static final int    CAN_Status_Frame_10_Period 	= 20; // AP 2018 value
 
+	//Pogo Talon SRX Settings
+	public static final double PogoVoltageRampRate			= 1.23;	// AP 2018 value
+	public static final double PogoMaxOutputPercent			= 0.3;	// AP Testing Value
+	// Pogo Motion Magic Constants
+	public static final int PogoVelocityLimit             	= 2000;   // AP 2018 value
+	public static final int PogoAccelLimit                 	= 6000;   // AP 2018 value
+
 	// PID Constants
 	public static final double proportional      	= 0.3;   	// AP 2018 value
 	public static final double integral         	= 0.000; 	// AP 2018 value
 	public static final double derivative        	= 15.0;   	// AP 2018 value
 	public static final double feedforward          = 0.5;   	// AP 2018 value
+
+	// Pogo PID Constants
+	public static final double PogoP      	= 0.3;   	// AP 2018 value
+	public static final double PogoI        = 0.000; 	// AP 2018 value
+	public static final double PogoD        = 15.0;   	// AP 2018 value
+	public static final double PogoF        = 0.5;   	// AP 2018 value
 
 	// Motion Magic Constants
 	public static final int velocityLimit              = 2000;   // AP 2018 value
