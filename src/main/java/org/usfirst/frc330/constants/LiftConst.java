@@ -20,8 +20,9 @@ public final class LiftConst {
 	public static final double DeployHatchHi	= 27.5;		//ejo 2.2.19
 
 	public static final double HatchPickup 		= 0.0;		//ejo 2.2.19
+	public static final double ClimbLatchDeploy = 21.75;	//AP  2/9/19
 
-	public static final double tolerance		= 0; //TODO: find 2019 value -AP
+	public static final double tolerance		= 0.5; 		//TODO: find 2019 value -AP
 
 	//Encoder Distance Constants
 	public static final double  ticksPerRev   		= 4096;	//AP 02/02/2019
