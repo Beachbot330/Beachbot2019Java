@@ -81,9 +81,9 @@ public class Pickup extends Subsystem {
 
 	public void stopPickup() {
         intake.disable();
-        Logger.getInstance().println("Wrist disabled", Logger.Severity.INFO);
+        Logger.getInstance().println("Pickup disabled", Logger.Severity.INFO);
         //implemented 2.2.19 -ejo
-        //TODO the print shouldn't say wrist - JR
+        //VERIFY the print shouldn't say wrist - JR (fixed 2.10.19 - ejo)
 	}
 
 	public void closeClaw() {
