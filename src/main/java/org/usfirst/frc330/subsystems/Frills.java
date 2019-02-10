@@ -180,36 +180,6 @@ int Pgreen = 55;
 int Pblue = 174;
 int i = 0;
 
-public void fadeLoop() {
-
-    Timer timer = new Timer();
-    timer.scheduleAtFixedRate(new TimerTask()
-    {
-        public void run()
-        {
-            redLED.disablePWM();
-            greenLED.disablePWM();
-            blueLED.disablePWM();
-            redLED.setPWMRate(500);
-            greenLED.setPWMRate(500);
-            blueLED.setPWMRate(500);
-            redLED.enablePWM((Pred/5)/255.0);
-            greenLED.enablePWM((Pgreen/5)/255.0);
-            blueLED.enablePWM((Pblue/5)/255.0);
-            Pred++;
-            Pgreen++;
-            Pblue++;
-            if(Pred > 255) Pred = 0;
-            if(Pgreen > 255) Pgreen = 0;
-            if(Pblue > 255) Pblue = 0;
-            i++;
-            System.out.println(i);
-        }
-    
-    }, 0, 1500);
-}
-
-
 class Color{
     int r, g, b;
     private Color(int r, int g, int b) {
