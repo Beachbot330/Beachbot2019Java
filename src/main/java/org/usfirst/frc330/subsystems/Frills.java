@@ -46,6 +46,12 @@ public class Frills extends Subsystem {
     private DigitalOutput greenLED;
     private DigitalOutput blueLED;
 
+    private DigitalInput visionTarget;
+    private DigitalInput hatch;
+    private DigitalInput alignment;
+    private DigitalInput ball;
+    private DigitalInput assistMode;
+
 
     private UsbCamera driverCam;
 
@@ -73,6 +79,26 @@ public class Frills extends Subsystem {
         
         blueLED = new DigitalOutput(11);
         addChild("blueLED",blueLED);
+        
+        
+        visionTarget = new DigitalInput(12);
+        addChild("visionTarget",visionTarget);
+        
+        
+        hatch = new DigitalInput(13);
+        addChild("hatch",hatch);
+        
+        
+        alignment = new DigitalInput(14);
+        addChild("alignment",alignment);
+        
+        
+        ball = new DigitalInput(15);
+        addChild("ball",ball);
+        
+        
+        assistMode = new DigitalInput(16);
+        addChild("assistMode",assistMode);
         
         
 
@@ -175,10 +201,6 @@ public void disableAllPWM() {
     blueLED.disablePWM();
 }
 
-int Pred = 0;
-int Pgreen = 55;
-int Pblue = 174;
-int i = 0;
 
 class Color{
     int r, g, b;
@@ -210,23 +232,23 @@ class Color{
     public Color WHITE = new Color(51, 51, 51);
 
     public boolean getIsVisionTargetInSight() {
-        return false;
+        return visionTarget.get();
     }
 
     public boolean getIsHatchAttained() {
-        return false;
+        return hatch.get();
     }
 
     public boolean getIsMisaligned() {
-        return false;
+        return alignment.get();
     }
 
     public boolean getIsBallAttained() {
-        return false;
+        return ball.get();
     }
 
     public boolean getIsInAssistMode(){
-        return false;
+        return assistMode.get();
     }
 
     public void indicatorBarYellow() {

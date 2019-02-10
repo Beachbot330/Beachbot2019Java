@@ -580,6 +580,56 @@ Children:
           value: '11'
       Base: Digital Output
       Name: blueLED
+    - Children: []
+      Properties:
+        Input Channel (Digital): !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id022
+          default: '0'
+          name: Input Channel (Digital)
+          validators: *id023
+          value: '12'
+      Base: Digital Input
+      Name: visionTarget
+    - Children: []
+      Properties:
+        Input Channel (Digital): !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id022
+          default: '0'
+          name: Input Channel (Digital)
+          validators: *id023
+          value: '13'
+      Base: Digital Input
+      Name: hatch
+    - Children: []
+      Properties:
+        Input Channel (Digital): !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id022
+          default: '0'
+          name: Input Channel (Digital)
+          validators: *id023
+          value: '14'
+      Base: Digital Input
+      Name: alignment
+    - Children: []
+      Properties:
+        Input Channel (Digital): !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id022
+          default: '0'
+          name: Input Channel (Digital)
+          validators: *id023
+          value: '15'
+      Base: Digital Input
+      Name: ball
+    - Children: []
+      Properties:
+        Input Channel (Digital): !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id022
+          default: '0'
+          name: Input Channel (Digital)
+          validators: *id023
+          value: '16'
+      Base: Digital Input
+      Name: assistMode
     Properties:
       Send to SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: false,
         name: Send to SmartDashboard, validators: null, value: false}
@@ -2120,11 +2170,11 @@ Properties:
     name: Export Subsystems, validators: null, value: true}
   Simulation World File: !!robotbuilder.data.properties.StringProperty {default: /usr/share/frcsim/worlds/GearsBotDemo.world,
     name: Simulation World File, validators: null, value: /usr/share/frcsim/worlds/GearsBotDemo.world}
-  Wiring file location: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\micro\',
+  Wiring file location: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\makfr\',
     extension: null, folder: true, name: Wiring file location, validators: null, value: .\}
   Autonomous Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
     name: Autonomous Command, type: Command, validators: null, value: Autonomous Command}
-  Export Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\micro\FRCProjects',
+  Export Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\makfr\FRCProjects',
     extension: null, folder: true, name: Export Directory, validators: null, value: ..\}
 Base: Robot
 Name: BeachBot2019Java
