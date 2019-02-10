@@ -19,6 +19,7 @@ public final class LiftConst {
 	public static final double DeployHatchMid	= 13.5;		//ejo 2.2.19
 	public static final double DeployHatchHi	= 27.5;		//ejo 2.2.19
 
+	public static final double BallPickup		= 0.0;		// TBD 2/9/19 (TBD)
 	public static final double HatchPickup 		= 0.0;		//ejo 2.2.19
 	public static final double ClimbLatchDeploy = 21.75;	//AP  2/9/19
 	public static final double PogoDrive		= 0.5;		//AP 2/9/19 WAG
