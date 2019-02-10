@@ -5,6 +5,7 @@ import org.usfirst.frc330.wpilibj.PIDGains;
 /**
  * @deprecated use PIDGains instead.
  */
+@Deprecated
 public class DrivePIDGains extends PIDGains{
 	
 	/**
