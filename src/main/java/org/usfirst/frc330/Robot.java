@@ -136,19 +136,49 @@ public class Robot extends TimedRobot {
      */
     @Override
     public void disabledInit(){
-
+        Logger.getInstance().println("Disabled Init", Severity.INFO);
+    	Logger.getInstance().println("Battery Voltage: " + DriverStation.getInstance().getBatteryVoltage(), Severity.INFO);
     }
+
+    String autoName;
 
     @Override
     public void disabledPeriodic() {
         Scheduler.getInstance().run();
+        chassis.calcXY();
+    	CSVLogger.getInstance().writeData();
+    	Logger.getInstance().updateDate();
+    	CSVLogger.getInstance().updateDate();
+    	if (chooser.getSelected().getName() != null)
+    		autoName = chooser.getSelected().getName();
+    	else
+    		autoName = "None Selected";
+    	SmartDashboard.putString("Selected Auto", autoName );
+    	buzzer.update();
     }
 
     @Override
     public void autonomousInit() {
+        buzzer.enable(1.25);
+    	Logger.getInstance().println("Autonomous Init",true);
+    	
+        Robot.chassis.resetPosition();
+        
         autonomousCommand = chooser.getSelected();
         // schedule the autonomous command (example)
         if (autonomousCommand != null) autonomousCommand.start();
+
+        Logger.getInstance().println("Running Auto: " + autonomousCommand.getName(),true);
+    	Logger.getInstance().println("Game Data received: " + DriverStation.getInstance().getGameSpecificMessage(),true);
+    	Logger.getInstance().println("Event: " + DriverStation.getInstance().getEventName() + 
+    			" Match Type: " + DriverStation.getInstance().getMatchType() + " Match Number: " +
+    			DriverStation.getInstance().getMatchNumber(), true);
+
+    	
+	    if(Math.abs(Robot.chassis.getAngle()) > 0.2){
+	    	Robot.chassis.resetPosition();
+	    	Logger.getInstance().println("Gyro failed to reset, retrying", Severity.ERROR);
+	    }
     }
 
     /**
@@ -156,11 +186,19 @@ public class Robot extends TimedRobot {
      */
     @Override
     public void autonomousPeriodic() {
+        chassis.calcXY();
+
         Scheduler.getInstance().run();
+        chassis.pidDriveAuto();
+    	CSVLogger.getInstance().writeData();
+		buzzer.update();
     }
 
     @Override
     public void teleopInit() {
+        Logger.getInstance().println("Teleop Init", Severity.INFO);
+        buzzer.enable(1.25);
+        
         // This makes sure that the autonomous stops running when
         // teleop starts running. If you want the autonomous to
         // continue until interrupted by another command, remove
@@ -173,7 +211,11 @@ public class Robot extends TimedRobot {
      */
     @Override
     public void teleopPeriodic() {
+        chassis.calcXY();
         Scheduler.getInstance().run();
+        chassis.pidDrive();
+        CSVLogger.getInstance().writeData();
+        buzzer.update();
     }
 
     // -----------------------------------------------------------
