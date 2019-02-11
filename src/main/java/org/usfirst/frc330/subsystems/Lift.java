@@ -45,7 +45,6 @@ public class Lift extends Subsystem {
     private WPI_TalonSRX lift1;
     private WPI_TalonSRX lift2;
     private WPI_TalonSRX lift3;
-    private DigitalInput magLimitLift;
     private BBDoubleSolenoid climbPin;
     private WPI_TalonSRX pogo;
 
@@ -64,10 +63,6 @@ public class Lift extends Subsystem {
         
         lift3 = new WPI_TalonSRX(2);
         
-        
-        
-        magLimitLift = new DigitalInput(8);
-        addChild("MagLimitLift",magLimitLift);
         
         
         climbPin = new BBDoubleSolenoid(0, 4, 5);
