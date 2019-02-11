@@ -15,8 +15,7 @@ import java.util.ArrayList;
 
 import org.usfirst.frc330.Robot;
 import org.usfirst.frc330.commands.*;
-//import org.usfirst.frc330.commands.drivecommands.Waypoint; 
-//TODO remove comment when this is resolved - ejo
+import org.usfirst.frc330.commands.drivecommands.*; 
 
 import org.usfirst.frc330.constants.ChassisConst;
 import org.usfirst.frc330.util.CSVLoggable;
@@ -167,10 +166,9 @@ public class Chassis extends Subsystem {
         //MultiPIDController(PIDGains gains, PIDSource source, PIDOutput output, double period, String name)
         //PIDController(double Kp, double Ki, double Kd, double Kf, PIDSource source, PIDOutput output, double period)
 		
-		//gyroPID = new MultiPIDController(ChassisConst.GyroTurnLow, gyroSource,gyroOutput, 0.02,"Gyro");
-        //leftDrivePID = new MultiPIDController(ChassisConst.DriveLow, driveEncoderLeft, leftDriveOutput, 0.02,"LeftDrive");
-        //rightDrivePID = new MultiPIDController(ChassisConst.DriveLow, driveEncoderRight,rightDriveOutput, 0.02, "RightDrive");
-		//TODO - fix above code when drivecommands is resolved (check ChassisConst notes) - ejo
+		gyroPID = new MultiPIDController(ChassisConst.GyroTurnLow, gyroSource,gyroOutput, 0.02,"Gyro");
+        leftDrivePID = new MultiPIDController(ChassisConst.DriveLow, driveEncoderLeft, leftDriveOutput, 0.02,"LeftDrive");
+        rightDrivePID = new MultiPIDController(ChassisConst.DriveLow, driveEncoderRight,rightDriveOutput, 0.02, "RightDrive");
 		
         SmartDashboard.putData("gyroPID", gyroPID);
         SmartDashboard.putData("leftDrivePID", leftDrivePID);

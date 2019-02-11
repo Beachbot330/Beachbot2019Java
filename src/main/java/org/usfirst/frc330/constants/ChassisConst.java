@@ -20,8 +20,8 @@ public final class ChassisConst {
     public static final double  Fudgefactor          = 0;       //TODO - Find the 2019 value - AP
 
     //Turn Gyro
-	public static final int     gyroTolerancebuffer = 0;        //TODO - Find the 2019 value - AP
-    public static final double  gyroTurnMin         = 0;        //TODO - Find the 2019 value - AP
+	public static final int     gyroTolerancebuffer = 5;        //TODO - Find the 2019 value - AP
+    public static final double  gyroTurnMin         = 0.2;        //TODO - Find the 2019 value - AP
 
     //Distances
     public static final double  PlatformDrive   = 18;   //AP 2/9/19

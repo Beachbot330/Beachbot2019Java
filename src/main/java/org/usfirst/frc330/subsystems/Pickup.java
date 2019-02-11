@@ -81,9 +81,9 @@ public class Pickup extends Subsystem {
 
 	public void stopPickup() {
         intake.disable();
-        Logger.getInstance().println("Wrist disabled", Logger.Severity.INFO);
+        Logger.getInstance().println("Pickup disabled", Logger.Severity.INFO);
         //implemented 2.2.19 -ejo
-        //TODO the print shouldn't say wrist - JR
+        //VERIFY the print shouldn't say wrist - JR (fixed 2.10.19 - ejo)
 	}
 
 	public void closeClaw() {
@@ -124,6 +124,16 @@ public class Pickup extends Subsystem {
 
     //Ball is in range of the rollers
 	public boolean getBallInRange() {
+		return false;
+	}
+
+	public boolean getHasBall() {
+        //TODO Implement
+		return false;
+    }
+    
+    public boolean getHasHatch() {
+        //TODO Implement
 		return false;
 	}
 
