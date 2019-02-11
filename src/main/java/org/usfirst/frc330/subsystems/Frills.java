@@ -61,39 +61,43 @@ public class Frills extends Subsystem {
         addChild("Buzzer",buzzer);
         
         
-        indicatorBar = new DigitalOutput(3);
+        isPracticeRobot = new DigitalInput(5);
+        addChild("isPracticeRobot",isPracticeRobot);
+        
+        
+        indicatorBar = new DigitalOutput(7);
         addChild("indicatorBar",indicatorBar);
         
         
-        redLED = new DigitalOutput(0);
+        redLED = new DigitalOutput(9);
         addChild("redLED",redLED);
         
         
-        greenLED = new DigitalOutput(1);
+        greenLED = new DigitalOutput(10);
         addChild("greenLED",greenLED);
         
         
-        blueLED = new DigitalOutput(2);
+        blueLED = new DigitalOutput(11);
         addChild("blueLED",blueLED);
         
         
-        visionTarget = new DigitalInput(5);
+        visionTarget = new DigitalInput(12);
         addChild("visionTarget",visionTarget);
         
         
-        hatch = new DigitalInput(6);
+        hatch = new DigitalInput(13);
         addChild("hatch",hatch);
         
         
-        alignment = new DigitalInput(7);
+        alignment = new DigitalInput(14);
         addChild("alignment",alignment);
         
         
-        ball = new DigitalInput(8);
+        ball = new DigitalInput(15);
         addChild("ball",ball);
         
         
-        assistMode = new DigitalInput(9);
+        assistMode = new DigitalInput(16);
         addChild("assistMode",assistMode);
         
         
