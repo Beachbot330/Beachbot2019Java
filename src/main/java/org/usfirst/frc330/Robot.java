@@ -146,9 +146,9 @@ public class Robot extends TimedRobot {
     public void disabledPeriodic() {
         Scheduler.getInstance().run();
         chassis.calcXY();
-    	CSVLogger.getInstance().writeData();
-    	Logger.getInstance().updateDate();
-    	CSVLogger.getInstance().updateDate();
+    	//CSVLogger.getInstance().writeData();
+    	//Logger.getInstance().updateDate();
+    	//CSVLogger.getInstance().updateDate();
     	if (chooser.getSelected().getName() != null)
     		autoName = chooser.getSelected().getName();
     	else
