@@ -129,12 +129,12 @@ public class Chassis extends Subsystem {
         shifters = new BBDoubleSolenoid(0, 0, 1);
         addChild("Shifters",shifters);
 
-        driveEncoderRight = new Encoder(0, 1, false, EncodingType.k4X);
+        driveEncoderRight = new Encoder(15, 16, false, EncodingType.k4X);
         addChild("DriveEncoderRight",driveEncoderRight);
         driveEncoderRight.setDistancePerPulse(1.0);
         driveEncoderRight.setPIDSourceType(PIDSourceType.kRate);
         
-        driveEncoderLeft = new Encoder(2, 3, false, EncodingType.k4X);
+        driveEncoderLeft = new Encoder(17, 18, false, EncodingType.k4X);
         addChild("DriveEncoderLeft",driveEncoderLeft);
         driveEncoderLeft.setDistancePerPulse(1.0);
         driveEncoderLeft.setPIDSourceType(PIDSourceType.kRate);
