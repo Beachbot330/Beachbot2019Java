@@ -19,8 +19,6 @@ import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj.util.WPILibVersion;
-
-import org.usfirst.frc330.commands.*;
 import org.usfirst.frc330.subsystems.*;
 import org.usfirst.frc330.util.*;
 import org.usfirst.frc330.util.Logger.Severity;
@@ -138,7 +136,7 @@ public class Robot extends TimedRobot {
     @Override
     public void disabledInit(){
         Logger.getInstance().println("Disabled Init", Severity.INFO);
-    	Logger.getInstance().println("Battery Voltage: " + DriverStation.getInstance().getBatteryVoltage(), Severity.INFO);
+    	Logger.getInstance().println("Battery Voltage: " + RobotController.getBatteryVoltage(), Severity.INFO);
         Scheduler.getInstance().removeAll();
 		Robot.lift.stopLift();
 		Robot.hand.stopHand();

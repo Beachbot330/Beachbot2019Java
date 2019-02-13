@@ -1,9 +1,7 @@
 package org.usfirst.frc330.commands.drivecommands;
 
 import org.usfirst.frc330.Robot;
-
 import edu.wpi.first.wpilibj.command.BBCommand;
-import edu.wpi.first.wpilibj.command.Command;
 
 /**
  *

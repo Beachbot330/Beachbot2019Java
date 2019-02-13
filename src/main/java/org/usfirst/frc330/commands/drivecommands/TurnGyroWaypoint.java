@@ -5,7 +5,6 @@
 package org.usfirst.frc330.commands.drivecommands;
 
 import org.usfirst.frc330.Robot;
-import org.usfirst.frc330.constants.ChassisConst;
 import org.usfirst.frc330.util.Logger;
 import org.usfirst.frc330.util.Logger.Severity;
 import org.usfirst.frc330.wpilibj.PIDGains;
@@ -17,7 +16,7 @@ public class TurnGyroWaypoint extends TurnGyroAbs {
     double x, y;
     
     
-    public TurnGyroWaypoint(double x, double y, double tolerance, double timeout, DrivePIDGains gains)
+    public TurnGyroWaypoint(double x, double y, double tolerance, double timeout, PIDGains gains)
     {
         super(0,tolerance,timeout,false,true, gains);
         this.x=x;
@@ -25,7 +24,7 @@ public class TurnGyroWaypoint extends TurnGyroAbs {
         
     }
     
-    public TurnGyroWaypoint(Waypoint wp, boolean invertX, double tolerance, double timeout, DrivePIDGains gains) {
+    public TurnGyroWaypoint(Waypoint wp, boolean invertX, double tolerance, double timeout, PIDGains gains) {
     	super(0,tolerance,timeout,false,true, gains);
     	if (invertX)
     		this.x = -wp.getX();
@@ -81,7 +80,7 @@ public class TurnGyroWaypoint extends TurnGyroAbs {
             while (Math.abs(robotAngle-calcAngle)>180)
                 calcAngle -= 360;
         }
-       Logger.getInstance().println("angle: " + calcAngle);
+       Logger.getInstance().println("angle: " + calcAngle, Severity.INFO);
         
         angle = calcAngle;
     }
