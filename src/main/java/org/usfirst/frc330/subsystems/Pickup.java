@@ -13,6 +13,8 @@ package org.usfirst.frc330.subsystems;
 
 
 import org.usfirst.frc330.commands.*;
+import org.usfirst.frc330.constants.GrabberConst;
+
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.PIDOutput;
@@ -100,11 +102,21 @@ public class Pickup extends Subsystem {
 	}
 
 	public void rollerOff() {
-        //TODO: Implement - AP
+        intake.stopMotor();
+        Logger.getInstance().println("Turning Roller off", Logger.Severity.INFO);
+        //VERIFY my implment -ejo 2.12.19
 	}
 
 	public void rollerOn() {
-        //TODO: Implement - AP
+        intake.set(GrabberConst.DefaultRollerSpeed);
+        Logger.getInstance().println("Turning Roller On", Logger.Severity.INFO);
+        //VERIFY my implment -ejo 2.12.19
+    }
+
+    public void rollerOn(double speed) {
+        intake.set(speed);
+        Logger.getInstance().println("Turning Roller On to " +speed +"% speed", Logger.Severity.INFO);
+        //VERIFY my implment -ejo 2.12.19
     }
     
     public void ballKickExtend(){
