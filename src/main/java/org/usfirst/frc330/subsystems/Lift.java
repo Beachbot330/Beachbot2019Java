@@ -409,17 +409,17 @@ public class Lift extends Subsystem {
 		return (int)(inches*LiftConst.ticksPerRev/LiftConst.inchesPerRev);
 	}
 	
-	public double getLift1FirwareVersion() {
+	public double getLift1FirmwareVersion() {
 		int firmwareVersion = lift1.getFirmwareVersion();
 		return ((firmwareVersion & 0xFF00) >> 8) + (firmwareVersion & 0xFF) / 100.0;
 	}
 	
-	public double getLift2FirwareVersion() {
+	public double getLift2FirmwareVersion() {
 		int firmwareVersion = lift2.getFirmwareVersion();
 		return ((firmwareVersion & 0xFF00) >> 8) + (firmwareVersion & 0xFF) / 100.0;
 	}
 	
-	public double getLift3FirwareVersion() {
+	public double getLift3FirmwareVersion() {
 		int firmwareVersion = lift3.getFirmwareVersion();
 		return ((firmwareVersion & 0xFF00) >> 8) + (firmwareVersion & 0xFF) / 100.0;
 	}
