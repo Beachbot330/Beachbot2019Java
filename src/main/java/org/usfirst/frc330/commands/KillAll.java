@@ -41,7 +41,7 @@ public class KillAll extends BBCommand {
         Robot.chassis.stopDrive();
         Robot.lift.stopLift();
         Robot.hand.stopHand();
-    	Robot.pickup.stopPickup();
+    	Robot.pickup.rollerOff();
     	
     }
 

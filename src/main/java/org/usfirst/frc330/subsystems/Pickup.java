@@ -76,41 +76,29 @@ public class Pickup extends Subsystem {
 
     }
 
-	public void stopPickup() {
-        intake.disable();
-        Logger.getInstance().println("Pickup disabled", Logger.Severity.INFO);
-        //implemented 2.2.19 -ejo
-        //VERIFY the print shouldn't say wrist - JR (fixed 2.10.19 - ejo)
-	}
-
 	public void closeClaw() {
         claw.set(DoubleSolenoid.Value.kReverse);
-        Logger.getInstance().println("Opening Claw", Logger.Severity.INFO);
-        //VERIFY my implment -ejo 2.12.19
+        Logger.getInstance().println("CLosing Claw", Logger.Severity.INFO);
 	}
 
 	public void openClaw() {
         claw.set(DoubleSolenoid.Value.kForward);
-        Logger.getInstance().println("Closing Claw", Logger.Severity.INFO);
-        //VERIFY my implment -ejo 2.12.19
+        Logger.getInstance().println("Opening Claw", Logger.Severity.INFO);
 	}
 
 	public void rollerOff() {
         intake.stopMotor();
         Logger.getInstance().println("Turning Roller off", Logger.Severity.INFO);
-        //VERIFY my implment -ejo 2.12.19
 	}
 
 	public void rollerOn() {
         intake.set(GrabberConst.DefaultRollerSpeed);
         Logger.getInstance().println("Turning Roller On", Logger.Severity.INFO);
-        //VERIFY my implment -ejo 2.12.19
     }
 
     public void rollerOn(double speed) {
         intake.set(speed);
         Logger.getInstance().println("Turning Roller On to " +speed +"% speed", Logger.Severity.INFO);
-        //VERIFY my implment -ejo 2.12.19
     }
     
     public void ballKickExtend(){
