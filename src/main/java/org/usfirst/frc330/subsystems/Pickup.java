@@ -79,29 +79,30 @@ public class Pickup extends Subsystem {
     CSVLoggable temp = new CSVLoggable(true) {
         public double get() { return getSensorLDistance(); }
     };
-    CSVLogger.getInstance().add("GetSensorLOutput", temp);
+    CSVLogger.getInstance().add("left sensor output", temp);
     
     temp = new CSVLoggable(true) {
         public double get() { return getSensorRDistance(); }
     };
-    CSVLogger.getInstance().add("GetSensorROutput", temp);
+    CSVLogger.getInstance().add("right sensor output", temp);
     
     temp = new CSVLoggable(true) {
         public double get() { return getSensorCDistance(); }
     };
-    CSVLogger.getInstance().add("GetSensorCOutput", temp);
+    CSVLogger.getInstance().add("middle sensor output", temp);
+
     temp = new CSVLoggable(true) {
-        public double get() { return grabberIRLeft.getDistance(); }
+        public double get() { return leftSensor.getDistance(); }
     };
     CSVLogger.getInstance().add("GrabberIRLeft", temp);
     
     temp = new CSVLoggable(true) {
-        public double get() { return grabberIRCenter.getDistance(); }
+        public double get() { return middleSensor.getDistance(); }
     };
     CSVLogger.getInstance().add("GrabberIRCenter", temp);
     
     temp = new CSVLoggable(true) {
-        public double get() { return grabberIRRight.getDistance(); }
+        public double get() { return rightSensor.getDistance(); }
     };
     CSVLogger.getInstance().add("GrabberIRRight", temp);
     
