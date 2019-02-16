@@ -23,6 +23,7 @@ import com.ctre.phoenix.motorcontrol.*;
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj.DoubleSolenoid;
+import edu.wpi.first.wpilibj.RobotController;
 
 /**
  *
@@ -154,16 +155,6 @@ public class Lift extends Subsystem {
 		CSVLogger.getInstance().add("LiftOutput", temp);
 		
 		temp = new CSVLoggable(true) {
-			public double get() { return getSecondOutput(); }
-		};
-		CSVLogger.getInstance().add("LiftOutput2", temp);
-		
-		temp = new CSVLoggable(true) {
-			public double get() { return getThirdOutput(); }
-		};
-		CSVLogger.getInstance().add("LiftOutput3", temp);
-		
-		temp = new CSVLoggable(true) {
 			public double get() { return getSetpoint(); }
 		};
 		CSVLogger.getInstance().add("LiftSetpoint", temp);
@@ -241,15 +232,15 @@ public class Lift extends Subsystem {
     }
     
     public double getOutput() {
-    	return lift1.getMotorOutputVoltage();
+    	return lift1.getMotorOutputPercent() * RobotController.getBatteryVoltage();
     }
     
     public double getSecondOutput() {
-    	return lift1.getMotorOutputVoltage();
+    	return lift1.getMotorOutputPercent() * RobotController.getBatteryVoltage();
     }
     
     public double getThirdOutput() {
-    	return lift1.getMotorOutputVoltage();
+    	return lift1.getMotorOutputPercent() * RobotController.getBatteryVoltage();
     }
     
     public double getSetpoint() {
@@ -279,7 +270,7 @@ public class Lift extends Subsystem {
     }
     
     public double getPogoOutput() {
-    	return pogo.getMotorOutputVoltage();
+    	return pogo.getMotorOutputPercent() * RobotController.getBatteryVoltage();
 	}
 	
 	public double getPogoSetpoint() {
