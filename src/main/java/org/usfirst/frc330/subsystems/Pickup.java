@@ -76,12 +76,12 @@ public class Pickup extends Subsystem {
     }
 
 	public void closeClaw() {
-        claw.set(DoubleSolenoid.Value.kReverse);
+        claw.set(BBDoubleSolenoid.Value.kReverse);
         Logger.getInstance().println("CLosing Claw", Logger.Severity.INFO);
 	}
 
 	public void openClaw() {
-        claw.set(DoubleSolenoid.Value.kForward);
+        claw.set(BBDoubleSolenoid.Value.kForward);
         Logger.getInstance().println("Opening Claw", Logger.Severity.INFO);
 	}
 
