@@ -38,11 +38,17 @@ public class LimelightTurn extends BBCommand {
     // Called just before this Command runs the first time
     @Override
     protected void initialize() {
+        Robot.chassis.limelightPID.enable();
+    	Robot.chassis.gyroPID.disable();
+    	Robot.chassis.leftDrivePID.disable();
+    	Robot.chassis.rightDrivePID.disable();
     }
 
     // Called repeatedly when this Command is scheduled to run
     @Override
     protected void execute() {
+        double drive = -Robot.oi.driverL.getY();
+    	Robot.chassis.tankDrive(drive, drive);
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -54,11 +60,13 @@ public class LimelightTurn extends BBCommand {
     // Called once after isFinished returns true
     @Override
     protected void end() {
+        Robot.chassis.limelightPID.disable();
     }
 
     // Called when another command which requires one or more of the same
     // subsystems is scheduled to run
     @Override
     protected void interrupted() {
+        Robot.chassis.limelightPID.disable();
     }
 }
