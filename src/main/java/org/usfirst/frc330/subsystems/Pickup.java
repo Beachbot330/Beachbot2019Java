@@ -118,6 +118,8 @@ public class Pickup extends Subsystem {
     	System.out.println(updateSensorDistance());
 
     }
+
+    //-----------SENSORS-------------
     
     private double updateSensorDistance() {
     	Kalman.setParameters(Robot.chassis.getSpeed() + GrabberConst.kalmanProcessNoise, iRSensor.getNoise());

@@ -10,7 +10,8 @@ public final class GrabberConst {
 	public static final double MaxRollerSpeed			= 1.0;	//WAG -ejo 2.12.19
 
 	//Sensor (all ported from 2018 unless otherwise specificed -ejo 2.16.19)
-	public static final double distanceToTriggerOnDiamond				= 5.0;				//AP 4/5/18
+	public static final double distanceToTriggerHatch					= 8.0;				//(inches) EJO 2.16.19
+	public static final double distanceToTriggerBall					= 2.0;				//(inches) EJO 2.16.19
 	public static final double distanceBetweenSensors					= 0.5; 				//(inches) EJO 2.16.19
 	public static final double sensorMaximumInnerDistance				= 2.2; 				//How far the sensor is from the gripper back wall     //(inches) JR 3.3.18    
 	public static final double sensorMinLength							= 1.5748031496; 	//(inches) EJO 2.4.18
