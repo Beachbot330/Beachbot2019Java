@@ -15,7 +15,9 @@ public final class GrabberConst {
 
 	public static final double minDistanceToTriggerBall					= 2.0;				//(inches) EJO 2.16.19
 	public static final double maxDistanceToTriggerBall					= 3.0;				//(inches) EJO 2.16.19
-	
+
+	public static final double distanceFromRollersToSensors				= 0.0;				//TODO update value -ejo 2.16.19
+
 	public static final double distanceBetweenSensors					= 0.5; 				//(inches) EJO 2.16.19
 	public static final double sensorMaximumInnerDistance				= 2.2; 				//How far the sensor is from the gripper back wall     //(inches) JR 3.3.18    
 	public static final double sensorMinLength							= 1.5748031496; 	//(inches) EJO 2.4.18
