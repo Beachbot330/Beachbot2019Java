@@ -143,13 +143,6 @@ public class Pickup extends Subsystem {
     	return distance < GrabberConst.sensorMaxLength;
     }
 
-    public boolean hasHatch() {
-        double currentDistance = getSensorDistance();
-
-
-        return (GrabberConst.minDistanceToTriggerHatch < currentDistance) && (currentDistance < GrabberConst.maxDistanceToTriggerHatch);
-    }
-
 
 
 
@@ -221,8 +214,8 @@ public class Pickup extends Subsystem {
     }
     
     public boolean getHasHatch() {
-        //TODO Implement
-		return false;
+        double currentDistance = getSensorDistance();
+        return (GrabberConst.minDistanceToTriggerHatch < currentDistance) && (currentDistance < GrabberConst.maxDistanceToTriggerHatch);
     }
     
     public double getIntakeFirmwareVersion() {
