@@ -143,6 +143,16 @@ public class Pickup extends Subsystem {
     	return distance < GrabberConst.sensorMaxLength;
     }
 
+    public boolean hasHatch() {
+        double currentDistance = getSensorDistance();
+
+
+        return (GrabberConst.minDistanceToTriggerHatch < currentDistance) && (currentDistance < GrabberConst.maxDistanceToTriggerHatch);
+    }
+
+
+
+
 	public void stopPickup() {
         intake.disable();
         Logger.getInstance().println("Pickup disabled", Logger.Severity.INFO);
