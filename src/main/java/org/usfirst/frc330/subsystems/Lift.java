@@ -175,11 +175,6 @@ public class Lift extends Subsystem {
 		CSVLogger.getInstance().add("PogoPosition", temp);
 		
 		temp = new CSVLoggable(true) {
-			public double get() { return getPogoVelocity();}
-		};
-		CSVLogger.getInstance().add("PogoVelocity", temp);
-		
-		temp = new CSVLoggable(true) {
 			public double get() { return getPogoOutput(); }
 		};
 		CSVLogger.getInstance().add("PogoOutput", temp);
