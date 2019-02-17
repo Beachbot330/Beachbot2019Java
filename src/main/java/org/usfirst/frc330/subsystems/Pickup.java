@@ -85,12 +85,12 @@ public class Pickup extends Subsystem {
     CSVLoggable temp = new CSVLoggable(true) {
         public double get() { return getSensorDistance(); }
     };
-    CSVLogger.getInstance().add(" sensor output", temp);
+    CSVLogger.getInstance().add("sensor output", temp);
     
     temp = new CSVLoggable(true) {
         public double get() { return iRSensor.getDistance(); }
     };
-    CSVLogger.getInstance().add("GrabberIRCenter", temp);
+    CSVLogger.getInstance().add("iRSensor", temp);
     
     temp = new CSVLoggable(true) {
         public double get() { 
