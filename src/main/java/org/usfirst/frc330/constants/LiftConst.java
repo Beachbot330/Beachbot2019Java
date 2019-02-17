@@ -70,7 +70,7 @@ public final class LiftConst {
 	public static final int accelLimit                 = 6000;   // AP 2018 value
 
 	// Other
-	public static final double calibrationSpeed			= -0.15; // AP 2018 value
+	public static final double calibrationSpeed			= -0.3; // AP 2018 value
 
 
 

@@ -100,13 +100,17 @@ public class Lift extends Subsystem {
         lift1.configMotionCruiseVelocity(LiftConst.velocityLimit, LiftConst.CAN_Timeout);
         lift1.configMotionAcceleration(LiftConst.accelLimit, LiftConst.CAN_Timeout);
         
-        lift2.set(ControlMode.Follower, lift1.getDeviceID());
+		lift2.set(ControlMode.Follower, lift1.getDeviceID());
+		lift2.configPeakOutputForward(LiftConst.MaxOutputPercent, LiftConst.CAN_Timeout);
+        lift2.configPeakOutputReverse(-LiftConst.MaxOutputPercent, LiftConst.CAN_Timeout);
         lift2.configForwardSoftLimitEnable(false, LiftConst.CAN_Timeout);
         lift2.configReverseSoftLimitEnable(false, LiftConst.CAN_Timeout);
         lift2.setInverted(false);
         lift2.setNeutralMode(NeutralMode.Brake);
         
-        lift3.set(ControlMode.Follower, lift1.getDeviceID());
+		lift3.set(ControlMode.Follower, lift1.getDeviceID());
+		lift3.configPeakOutputForward(LiftConst.MaxOutputPercent, LiftConst.CAN_Timeout);
+        lift3.configPeakOutputReverse(-LiftConst.MaxOutputPercent, LiftConst.CAN_Timeout);
         lift3.configForwardSoftLimitEnable(false, LiftConst.CAN_Timeout);
         lift3.configReverseSoftLimitEnable(false, LiftConst.CAN_Timeout);
         lift3.setNeutralMode(NeutralMode.Brake);
