@@ -209,8 +209,8 @@ public class Pickup extends Subsystem {
 	}
 
 	public boolean getHasBall() {
-        //TODO Implement
-		return false;
+        double currentDistance = getSensorDistance();
+        return (GrabberConst.minDistanceToTriggerBall < currentDistance) && (currentDistance < GrabberConst.maxDistanceToTriggerBall);
     }
     
     public boolean getHasHatch() {
