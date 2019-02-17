@@ -13,7 +13,6 @@ package org.usfirst.frc330.commands.drivecommands;
 
 
 import org.usfirst.frc330.Robot;
-import org.usfirst.frc330.constants.ChassisConst;
 import org.usfirst.frc330.util.Logger;
 import org.usfirst.frc330.util.Logger.Severity;
 import org.usfirst.frc330.wpilibj.PIDGains;
@@ -29,20 +28,20 @@ public class  DriveDistance extends BBCommand {
 	double leftSetpoint, rightSetpoint;
 	double origDistance;
     boolean stopAtEnd = false;
-    DrivePIDGains gains;
+    PIDGains gains;
     
-    public DriveDistance(double distance, DrivePIDGains gains) {
+    public DriveDistance(double distance, PIDGains gains) {
         this(distance, 5, 15, false, gains);
     }
     
-    public DriveDistance(double distance, double tolerance, DrivePIDGains gains)
+    public DriveDistance(double distance, double tolerance, PIDGains gains)
     {
         this(distance, tolerance, 15, false, gains);
     }
     
     
     public DriveDistance(	double distance, double tolerance,
-    						double timeout, boolean stopAtEnd, DrivePIDGains gains) {
+    						double timeout, boolean stopAtEnd, PIDGains gains) {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
 	

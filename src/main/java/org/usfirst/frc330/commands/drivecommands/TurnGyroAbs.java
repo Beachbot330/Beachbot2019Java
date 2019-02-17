@@ -10,7 +10,6 @@
 package org.usfirst.frc330.commands.drivecommands;
 
 import org.usfirst.frc330.Robot;
-import org.usfirst.frc330.constants.ChassisConst;
 import org.usfirst.frc330.util.Logger;
 import org.usfirst.frc330.util.Logger.Severity;
 import org.usfirst.frc330.wpilibj.PIDGains;
@@ -24,31 +23,31 @@ public class  TurnGyroAbs extends BBCommand {
     double angle, tolerance, maxOutput, maxOutputStep, maxOutputMax;
     boolean stopAtEnd = false;
     boolean enable = true;
-    DrivePIDGains gains;
+    PIDGains gains;
     
-    public TurnGyroAbs(double angle, DrivePIDGains gains) {
+    public TurnGyroAbs(double angle, PIDGains gains) {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
         this(angle, 0, 15, false, gains);
     }
     
-    public TurnGyroAbs(double angle, double tolerance, DrivePIDGains gains)
+    public TurnGyroAbs(double angle, double tolerance, PIDGains gains)
     {
         this(angle, tolerance, 15, false, gains);
     
     }
     
-    public TurnGyroAbs(double angle, double tolerance, double timeout, DrivePIDGains gains)
+    public TurnGyroAbs(double angle, double tolerance, double timeout, PIDGains gains)
     {
         this(angle, tolerance, timeout, false, gains);
     
     }
     
-    public TurnGyroAbs(double angle, double tolerance, double timeout, boolean stopAtEnd, DrivePIDGains gains) {
+    public TurnGyroAbs(double angle, double tolerance, double timeout, boolean stopAtEnd, PIDGains gains) {
         this(angle, tolerance, timeout, stopAtEnd, true, gains);
     }
     
-    public TurnGyroAbs(double angle, double tolerance, double timeout, boolean stopAtEnd, boolean enable, DrivePIDGains gains) {
+    public TurnGyroAbs(double angle, double tolerance, double timeout, boolean stopAtEnd, boolean enable, PIDGains gains) {
                 // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
 	
@@ -75,8 +74,8 @@ public class  TurnGyroAbs extends BBCommand {
         Robot.chassis.gyroPID.setSetpoint(angle);
         maxOutputMax = gains.getMaxOutput();
         maxOutputStep = gains.getMaxOutputStep();
-        Logger.getInstance().println("TurnGyroAbs Setpoint: " + angle);
-        Logger.getInstance().println("Max output: " + gains.getMaxOutput());
+        Logger.getInstance().println("TurnGyroAbs Setpoint: " + angle, Severity.INFO);
+        Logger.getInstance().println("Max output: " + gains.getMaxOutput(), Severity.INFO);
         if (enable) 
             Robot.chassis.gyroPID.enable();
     }

@@ -8,7 +8,6 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in the future.
 package org.usfirst.frc330.commands.drivecommands;
-import org.usfirst.frc330.constants.ChassisConst;
 import org.usfirst.frc330.wpilibj.PIDGains;
 
 import edu.wpi.first.wpilibj.command.BBCommandGroup;
@@ -18,13 +17,13 @@ import edu.wpi.first.wpilibj.command.BBCommandGroup;
  */
 public class  DriveDistanceAtRelAngle extends BBCommandGroup{
     
-    public DriveDistanceAtRelAngle(double distance, double angle, DrivePIDGains driveGains, DrivePIDGains gyroDriveGains, DrivePIDGains gyroTurnGains)
+    public DriveDistanceAtRelAngle(double distance, double angle, PIDGains driveGains, PIDGains gyroDriveGains, PIDGains gyroTurnGains)
     {
     	addSequential(new TurnGyroRel(angle, 5,gyroTurnGains));
         addSequential(new DriveDistanceAtRelAngle_NoTurn(distance, 6, angle, 5, true, driveGains, gyroDriveGains));
     }
     
-    public DriveDistanceAtRelAngle(double distance, double distanceTolerance, double angle, double timeout, boolean stopAtEnd, DrivePIDGains driveGains, DrivePIDGains gyroDriveGains, DrivePIDGains gyroTurnGains)
+    public DriveDistanceAtRelAngle(double distance, double distanceTolerance, double angle, double timeout, boolean stopAtEnd, PIDGains driveGains, PIDGains gyroDriveGains, PIDGains gyroTurnGains)
     {
         addSequential(new TurnGyroRel(angle,5,1.0,false,gyroTurnGains));
         addSequential(new DriveDistanceAtRelAngle_NoTurn(distance, distanceTolerance, angle, timeout, stopAtEnd, driveGains, gyroDriveGains));

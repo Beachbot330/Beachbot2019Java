@@ -9,7 +9,6 @@
 // it from being updated in th future.
 package org.usfirst.frc330.commands.drivecommands;
 import org.usfirst.frc330.Robot;
-import org.usfirst.frc330.constants.ChassisConst;
 import org.usfirst.frc330.wpilibj.PIDGains;
  
 /**
@@ -17,18 +16,18 @@ import org.usfirst.frc330.wpilibj.PIDGains;
  */
 public class  TurnGyroRel extends TurnGyroAbs{
     double origAngle = 0;
-    public TurnGyroRel(double angle, DrivePIDGains gains) {
+    public TurnGyroRel(double angle, PIDGains gains) {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
         this(angle, 0, 15, false, gains);
     }
     
-    public TurnGyroRel(double angle, double tolerance, DrivePIDGains gains)
+    public TurnGyroRel(double angle, double tolerance, PIDGains gains)
     {
         this(angle, tolerance, 15, false, gains);
     }
     
-    public TurnGyroRel(double angle, double tolerance, double timeout, boolean stopAtEnd, DrivePIDGains gains) {
+    public TurnGyroRel(double angle, double tolerance, double timeout, boolean stopAtEnd, PIDGains gains) {
         super(angle,tolerance,timeout,stopAtEnd,true, gains);
         origAngle = angle;
     }

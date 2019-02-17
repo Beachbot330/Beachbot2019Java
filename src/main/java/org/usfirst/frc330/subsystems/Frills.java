@@ -10,12 +10,8 @@
 
 package org.usfirst.frc330.subsystems;
 
-import org.usfirst.frc330.Robot;
-import org.usfirst.frc330.util.CSVLoggable;
-import org.usfirst.frc330.util.CSVLogger;
 import org.usfirst.frc330.util.Logger;
 import org.usfirst.frc330.util.Logger.Severity;
-
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.cscore.UsbCamera;
 import edu.wpi.first.cameraserver.*;

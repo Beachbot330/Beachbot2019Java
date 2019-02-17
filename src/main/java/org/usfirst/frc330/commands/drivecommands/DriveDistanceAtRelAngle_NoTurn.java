@@ -9,30 +9,30 @@
 // it from being updated in the future.
 package org.usfirst.frc330.commands.drivecommands;
 import org.usfirst.frc330.Robot;
-import org.usfirst.frc330.constants.ChassisConst;
 import org.usfirst.frc330.wpilibj.PIDGains;
+
 /**
  *
  */
 
 public class DriveDistanceAtRelAngle_NoTurn extends DriveDistanceAtAbsAngle_NoTurn{
     
-    public DriveDistanceAtRelAngle_NoTurn(double distance, double angle, DrivePIDGains driveGains, DrivePIDGains gyroGains)
+    public DriveDistanceAtRelAngle_NoTurn(double distance, double angle, PIDGains driveGains, PIDGains gyroGains)
     {
         this(distance, 6, angle, 5, true, driveGains, gyroGains);
     }
     
-    public DriveDistanceAtRelAngle_NoTurn(double distance, double angle, double tolerance, DrivePIDGains driveGains, DrivePIDGains gyroGains)
+    public DriveDistanceAtRelAngle_NoTurn(double distance, double angle, double tolerance, PIDGains driveGains, PIDGains gyroGains)
     {
         this(distance, tolerance, angle, 5, true, driveGains, gyroGains);
     }
     
-    public DriveDistanceAtRelAngle_NoTurn(double distance, double angle, double tolerance, double timeout, DrivePIDGains driveGains, DrivePIDGains gyroGains)
+    public DriveDistanceAtRelAngle_NoTurn(double distance, double angle, double tolerance, double timeout, PIDGains driveGains, PIDGains gyroGains)
     {
         this(distance, tolerance, angle, timeout, true, driveGains, gyroGains);
     }
     
-    public DriveDistanceAtRelAngle_NoTurn(double distance, double tolerance, double angle, double timeout, boolean stopAtEnd, DrivePIDGains driveGains, DrivePIDGains gyroGains)
+    public DriveDistanceAtRelAngle_NoTurn(double distance, double tolerance, double angle, double timeout, boolean stopAtEnd, PIDGains driveGains, PIDGains gyroGains)
     {
         super(distance, tolerance, timeout, 0, stopAtEnd, driveGains, gyroGains);
         this.angle = angle;
