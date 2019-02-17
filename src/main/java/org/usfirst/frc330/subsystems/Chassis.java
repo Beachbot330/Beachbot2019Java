@@ -419,8 +419,15 @@ public class Chassis extends Subsystem {
     }
 	
     public void tankDrive(Joystick leftJoystick, Joystick rightJoystick) {
-        left = -leftJoystick.getY();
-        right = -rightJoystick.getY();
+        double leftTemp = -leftJoystick.getY();
+        double rightTemp = -rightJoystick.getY();
+        
+        if(Math.abs(leftTemp) > ChassisConst.DeadBand){
+            left = -leftJoystick.getY();
+        }
+        if(Math.abs(rightTemp) > ChassisConst.DeadBand){
+            right = -rightJoystick.getY();
+        }
 	}
         
     public void tankDrive(double left, double right) {
