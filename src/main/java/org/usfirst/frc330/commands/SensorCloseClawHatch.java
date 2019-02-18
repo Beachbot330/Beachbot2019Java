@@ -60,7 +60,7 @@ public class SensorCloseClawHatch extends BBCommand {
     protected void end() {
         Robot.pickup.closeClaw();
         Logger.getInstance().println("Has Hatch: " + Robot.pickup.getHasHatch(), Severity.INFO);
-    	Logger.getInstance().println("LeftSensor: " + Robot.pickup.getSensorDistance(), Severity.INFO);
+    	Logger.getInstance().println("Sensor: " + Robot.pickup.getSensorDistance(), Severity.INFO);
     }
 
     // Called when another command which requires one or more of the same
