@@ -2241,7 +2241,7 @@ Children:
       Run When Disabled: !!robotbuilder.data.properties.BooleanProperty {default: false,
         name: Run When Disabled, validators: null, value: false}
       Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
-        name: Requires, type: Subsystem, validators: null, value: None}
+        name: Requires, type: Subsystem, validators: null, value: Pickup}
       Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
         default: &id040 []
         name: Parameter presets
@@ -2263,7 +2263,7 @@ Children:
       Run When Disabled: !!robotbuilder.data.properties.BooleanProperty {default: false,
         name: Run When Disabled, validators: null, value: false}
       Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
-        name: Requires, type: Subsystem, validators: null, value: None}
+        name: Requires, type: Subsystem, validators: null, value: Pickup}
       Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
         default: &id041 []
         name: Parameter presets
@@ -2285,7 +2285,7 @@ Children:
       Run When Disabled: !!robotbuilder.data.properties.BooleanProperty {default: false,
         name: Run When Disabled, validators: null, value: false}
       Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
-        name: Requires, type: Subsystem, validators: null, value: None}
+        name: Requires, type: Subsystem, validators: null, value: Pickup}
       Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
         default: &id042 []
         name: Parameter presets
