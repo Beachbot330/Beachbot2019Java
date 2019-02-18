@@ -10,11 +10,13 @@ public final class GrabberConst {
 	public static final double MaxRollerSpeed			= 1.0;	//WAG -ejo 2.12.19
 
 	//Sensor (all ported from 2018 unless otherwise specificed -ejo 2.16.19)
-	public static final double minDistanceToTriggerHatch				= 7.0;				//(inches) EJO 2.16.19
-	public static final double maxDistanceToTriggerHatch				= 9.0;				//(inches) EJO 2.16.19
+	public static final double hatchPickupMinDistance					= 7.0;				//(inches) EJO 2.16.19
+	public static final double hatchPickupMaxDistance					= 9.0;				//(inches) EJO 2.16.19
+	public static final double ballPickupMinDistance					= 2.0;				//(inches) EJO 2.16.19
+	public static final double ballPickupMaxDistance					= 3.0;				//(inches) EJO 2.16.19
 
-	public static final double minDistanceToTriggerBall					= 2.0;				//(inches) EJO 2.16.19
-	public static final double maxDistanceToTriggerBall					= 3.0;				//(inches) EJO 2.16.19
+	public static final double ballAcquiredDistance						= 2.0;				//(inches) EJO 2.18.19
+	public static final double hatchAcquiredDistance					= 7.0;				//(inches) EJO 2.18.19
 
 	public static final double distanceFromRollersToSensors				= 0.0;				//TODO update value -ejo 2.16.19
 
