@@ -205,8 +205,13 @@ public class Pickup extends Subsystem {
     //Ball is in range of the rollers
 	public boolean getBallInRange() {
         double currentDistance = getSensorDistance();
-        return currentDistance < GrabberConst.distanceFromRollersToSensors;
-	}
+        return currentDistance < GrabberConst.ballPickupMaxDistance;
+    }
+    
+    public boolean getHatchInRange() {
+        double currentDistance = getSensorDistance();
+        return currentDistance < GrabberConst.hatchPickupMaxDistance;
+    }
 
 	public boolean getHasBall() {
         double currentDistance = getSensorDistance();
