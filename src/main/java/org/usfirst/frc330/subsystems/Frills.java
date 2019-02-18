@@ -42,6 +42,12 @@ public class Frills extends Subsystem {
     private DigitalOutput greenLED;
     private DigitalOutput blueLED;
 
+    private DigitalInput visionTarget;
+    private DigitalInput haveHatch;
+    private DigitalInput isAligned;
+    private DigitalInput haveBall;
+    private DigitalInput assistMode;
+
 
     private UsbCamera driverCam;
 
@@ -226,23 +232,23 @@ class Color{
     public Color WHITE = new Color(51, 51, 51);
 
     public boolean getIsVisionTargetInSight() {
-        return false;
+        return visionTarget.get();
     }
 
     public boolean getIsHatchAttained() {
-        return false;
+        return haveHatch.get();
     }
 
     public boolean getIsMisaligned() {
-        return false;
+        return isAligned.get();
     }
 
     public boolean getIsBallAttained() {
-        return false;
+        return haveBall.get();
     }
 
     public boolean getIsInAssistMode(){
-        return false;
+        return assistMode.get();
     }
 
     public void indicatorBarYellow() {
