@@ -281,7 +281,7 @@ public class Lift extends Subsystem {
 	}
 	
 	public double getPogoSetpoint() {
-    	if(pogo.getControlMode() == ControlMode.Position || Robot.lift.getMode() == ControlMode.MotionMagic) {
+    	if(pogo.getControlMode() == ControlMode.Position || pogo.getControlMode() == ControlMode.MotionMagic) {
     		return ticksToInches_Pogo(pogo.getClosedLoopTarget(0));
     	}
     	else {
