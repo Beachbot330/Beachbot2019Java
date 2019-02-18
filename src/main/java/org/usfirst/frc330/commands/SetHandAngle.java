@@ -49,7 +49,7 @@ public class SetHandAngle extends BBCommand {
     // Called once after isFinished returns true
     @Override
     protected void end() {
-        Logger.getInstance().println("Final wrist setpoint: " + Robot.hand.getSetpointRelArm(), Logger.Severity.INFO);
+        Logger.getInstance().println("Final wrist setpoint: " + Robot.hand.getSetpoint(), Logger.Severity.INFO);
     	Logger.getInstance().println("Final hand angle: " + Robot.hand.getHandAngle(), Logger.Severity.INFO);
     }
 
