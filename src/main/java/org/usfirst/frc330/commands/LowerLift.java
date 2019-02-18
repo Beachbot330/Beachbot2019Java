@@ -56,7 +56,7 @@ public class LowerLift extends BBCommand {
     protected void initialize() {
         currentSetpoint = Robot.lift.getSetpoint();
         for(int i=positions.length-1; i>=0; i--){
-            if(positions[i] < currentSetpoint){
+            if(positions[i] < currentSetpoint && Math.abs(currentSetpoint - positions[i]) > 0.01 ){
                 Robot.lift.setLiftPosition(positions[i]);
                 break;
             }
