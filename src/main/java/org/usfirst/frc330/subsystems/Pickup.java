@@ -193,8 +193,7 @@ public class Pickup extends Subsystem {
 
     //Ball nested deeply in hand, or hatch in claw
 	public boolean getHasObject() {
-        //TODO Implement
-        return false;
+        return getHasBall() || getHasHatch();
 	}
 
     //Triggered when limit switches engage
@@ -211,12 +210,12 @@ public class Pickup extends Subsystem {
 
 	public boolean getHasBall() {
         double currentDistance = getSensorDistance();
-        return (GrabberConst.minDistanceToTriggerBall < currentDistance) && (currentDistance < GrabberConst.maxDistanceToTriggerBall);
+        return (GrabberConst.ballAcquiredMinDistance < currentDistance) && (currentDistance < GrabberConst.ballAcquiredMinDistance);
     }
     
     public boolean getHasHatch() {
         double currentDistance = getSensorDistance();
-        return (GrabberConst.minDistanceToTriggerHatch < currentDistance) && (currentDistance < GrabberConst.maxDistanceToTriggerHatch);
+        return (GrabberConst.hatchAcquiredMinDistance < currentDistance) && (currentDistance < GrabberConst.hatchAcquiredMaxDistance);
     }
     
     public double getIntakeFirmwareVersion() {
