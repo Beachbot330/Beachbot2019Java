@@ -75,7 +75,7 @@ public class LowerLiftSensor extends BBCommand {
         }
 
         for(int i=sortedArray.length-1; i>=0; i--){
-            if(sortedArray[i] < currentSetpoint){
+            if(sortedArray[i] < currentSetpoint && Math.abs(currentSetpoint - sortedArray[i]) > 0.01 ){
                 Robot.lift.setLiftPosition(sortedArray[i]);
                 break;
             }
