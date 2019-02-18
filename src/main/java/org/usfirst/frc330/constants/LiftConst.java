@@ -71,6 +71,7 @@ public final class LiftConst {
 
 	// Other
 	public static final double calibrationSpeed			= -0.15; // AP 2018 value
+	public static final double GamepadDeadZone			= 0.1; //AP 2/17/19
 
 
 

@@ -38,4 +38,5 @@ public final class ChassisConst {
     public static final PIDGains GyroDriveLow  = new PIDGains(0.010,0,0.000,0,1,1,0, "GyroDriveLow"); //TODO - Find the 2019 value - AP
     public static final PIDGains GyroDriveHigh = new PIDGains(0.01,0,0.000,0,1,1,0, "GyroDriveHigh"); //TODO - Find the 2019 value - AP
        
+    public static final double DeadBand = 0.1;
 }
