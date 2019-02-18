@@ -38,15 +38,15 @@ public class Frills extends Subsystem {
     private DigitalInput isPracticeRobot;
     private DigitalOutput indicatorBar;
 
-    private DigitalOutput redLED;
-    private DigitalOutput greenLED;
-    private DigitalOutput blueLED;
+    public DigitalOutput redLED;
+    public DigitalOutput greenLED;
+    public DigitalOutput blueLED;
 
-    private DigitalInput visionTarget;
-    private DigitalInput haveHatch;
-    private DigitalInput isAligned;
-    private DigitalInput haveBall;
-    private DigitalInput assistMode;
+    public DigitalInput visionTarget;
+    public DigitalInput haveHatch;
+    public DigitalInput isAligned;
+    public DigitalInput haveBall;
+    public DigitalInput assistMode;
 
 
     private UsbCamera driverCam;
@@ -166,6 +166,25 @@ public class Frills extends Subsystem {
         this.lockout = true;
 	}
 
+    public boolean getIsVisionTargetInSight() {
+        return visionTarget.get();
+    }
+
+    public boolean getIsHatchAttained() {
+        return haveHatch.get();
+    }
+
+    public boolean getIsMisaligned() {
+        return isAligned.get();
+    }
+
+    public boolean getIsBallAttained() {
+        return haveBall.get();
+    }
+
+    public boolean getIsInAssistMode(){
+        return assistMode.get();
+    }
 
 public void setColor(Color color){
     redLED.disablePWM();
@@ -197,14 +216,59 @@ public void disableAllPWM() {
     blueLED.disablePWM();
 }
 
+
+public void indicatorBarYellow() {
+    if(getIsVisionTargetInSight()) {
+        setColor(YELLOW2);
+    }
+}
+
+public void indicatorBarGreen() {
+    if(getIsHatchAttained()) {
+        setColor(GREEN);
+    }
+}
+
+public void indicatorBarRed() {
+    if(getIsMisaligned()) {
+        setColor(RED);
+    }
+}
+
+public void indicatorBarBlue() {
+    if(getIsBallAttained()) {
+        setColor(BLUE);
+    }
+}
+
+public void indicatorBarPurple() {
+    if(!getIsBallAttained() && getIsInAssistMode()) {
+        setColor(PURPLE);
+    }
+}
+
+public void indicatorBarWhite(){
+    if(lockout) {
+        setColor(WHITE);
+    }
+}
+
+    public Color RED = new Color(255, 0, 0);
+    public Color GREEN = new Color(0, 255, 0);
+    public Color BLUE = new Color(0, 0, 255);
+    public Color YELLOW1 = new Color(115, 80, 0); //also 255, 255, 0
+    public Color YELLOW2 = new Color(255, 255, 0);
+    public Color PURPLE = new Color(127, 0, 255);
+    public Color WHITE = new Color(51, 51, 51);
+
 int Pred = 0;
 int Pgreen = 55;
 int Pblue = 174;
 int i = 0;
 
-class Color{
+final class Color{
     int r, g, b;
-    private Color(int r, int g, int b) {
+    public Color(int r, int g, int b) {
         this.r = r;
         this.g = g;
         this.b = b;
@@ -222,73 +286,10 @@ class Color{
         return b;
     }
 
+}
 
-    public Color RED = new Color(255, 0, 0);
-    public Color GREEN = new Color(0, 255, 0);
-    public Color BLUE = new Color(0, 0, 255);
-    public Color YELLOW1 = new Color(115, 80, 0); //also 255, 255, 0
-    public Color YELLOW2 = new Color(255, 255, 0);
-    public Color PURPLE = new Color(127, 0, 255);
-    public Color WHITE = new Color(51, 51, 51);
-
-    public boolean getIsVisionTargetInSight() {
-        return visionTarget.get();
-    }
-
-    public boolean getIsHatchAttained() {
-        return haveHatch.get();
-    }
-
-    public boolean getIsMisaligned() {
-        return isAligned.get();
-    }
-
-    public boolean getIsBallAttained() {
-        return haveBall.get();
-    }
-
-    public boolean getIsInAssistMode(){
-        return assistMode.get();
-    }
-
-    public void indicatorBarYellow() {
-        if(getIsVisionTargetInSight()) {
-            setColor(YELLOW2);
-        }
-    }
-
-    public void indicatorBarGreen() {
-        if(getIsHatchAttained()) {
-            setColor(GREEN);
-        }
-    }
-
-    public void indicatorBarRed() {
-        if(getIsMisaligned()) {
-            setColor(RED);
-        }
-    }
-
-    public void indicatorBarBlue() {
-        if(getIsBallAttained()) {
-            setColor(BLUE);
-        }
-    }
-
-    public void indicatorBarPurple() {
-        if(!getIsBallAttained() && getIsInAssistMode()) {
-            setColor(PURPLE);
-        }
-    }
-
-    public void indicatorBarWhite(){
-        if(lockout) {
-            setColor(WHITE);
-        }
-    }
 
 }
 
-}
 
 
