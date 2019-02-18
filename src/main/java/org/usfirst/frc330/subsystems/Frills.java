@@ -85,7 +85,7 @@ public class Frills extends Subsystem {
         addChild("haveBall",haveBall);
         
         
-        isAligned = new DigitalInput(14);
+        isAligned = new DigitalInput(14); //TODO robot thinks that this is being used by something else
         addChild("isAligned",isAligned);
         
         
