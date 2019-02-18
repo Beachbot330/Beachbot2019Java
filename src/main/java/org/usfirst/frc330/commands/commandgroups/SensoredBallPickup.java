@@ -60,7 +60,16 @@ public class SensoredBallPickup extends BBCommandGroup {
         addParallel(new SetLiftPosition(LiftConst.BallPickup));
         addSequential(new SetHandAngle(HandConst.ballPickup));
 
-        //close claw once we have cube
+        //close claw once we have ball
         addSequential(new WaitCommand(0.4)); //this can be changed if needed
+        addSequential(new SensorCloseClawBall());
+
+
+        //now that the ball is in the claw, we turn on the rollers until it is secure
+        addSequential(new RollerUntilBall());
+
+        //once everything is finished, enter defense mode
+        addSequential(new Defense());
+        addSequential(new IsFinishedFalse());
     } 
 }
