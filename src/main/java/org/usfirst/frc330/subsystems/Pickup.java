@@ -82,10 +82,14 @@ public class Pickup extends Subsystem {
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public void openClaw() {
         claw.set(BBDoubleSolenoid.Value.kForward);
         Logger.getInstance().println("Opening Claw", Logger.Severity.INFO);
 =======
+=======
+	public void closeClaw() {
+>>>>>>> parent of b36e566... implemented open,closeClaw methods
 =======
 	public void closeClaw() {
 >>>>>>> parent of b36e566... implemented open,closeClaw methods
@@ -95,6 +99,9 @@ public class Pickup extends Subsystem {
 	public void openClaw() {
         //TODO: Implement - AP
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of b36e566... implemented open,closeClaw methods
+=======
 >>>>>>> parent of b36e566... implemented open,closeClaw methods
 =======
 >>>>>>> parent of b36e566... implemented open,closeClaw methods
