@@ -24,11 +24,8 @@ import org.usfirst.frc330.util.Logger.Severity;
  */
 public class LowerLiftSensor extends BBCommand {
 
-    //TODO: Move the arrays into the constants file;
-    
     double currentSetpoint;
    
-
     public LowerLiftSensor() {
 
         requires(Robot.lift);
