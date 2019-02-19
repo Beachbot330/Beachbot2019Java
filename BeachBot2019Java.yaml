@@ -2133,6 +2133,15 @@ Children:
         value: *id033
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: true}
+    Base: Command
+    Name: CalibrateHand
+      Commands: !!robotbuilder.data.properties.ListProperty
+        default: &id034 []
+        name: Commands
+        validators: *id032
+        value: *id034
+      Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
+        name: Button on SmartDashboard, validators: null, value: true}
     Base: Command Group
     Name: SensoredHatchPickup
   - Children: []
