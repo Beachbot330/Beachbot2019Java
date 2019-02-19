@@ -27,34 +27,14 @@ public class LowerLiftSensor extends BBCommand {
     //TODO: Move the arrays into the constants file;
     
     double currentSetpoint;
-    double[] ballPositions = new double[]{
-        LiftConst.defense,
-        LiftConst.DeployBallLow,
-        LiftConst.DeployBallMid,
-        LiftConst.DeployBallHi,
-    };
-    double[] hatchPositions = new double[]{
-        LiftConst.defense,
-        LiftConst.DeployHatchLow,
-        LiftConst.DeployHatchMid,
-        LiftConst.DeployHatchHi
-    };
-    double[] allPositions = new double[]{
-        LiftConst.defense,
-        LiftConst.DeployBallLow,
-        LiftConst.DeployBallMid,
-        LiftConst.DeployBallHi,
-        LiftConst.DeployHatchLow,
-        LiftConst.DeployHatchMid,
-        LiftConst.DeployHatchHi
-    };
+   
 
     public LowerLiftSensor() {
 
         requires(Robot.lift);
-        Arrays.sort(ballPositions);
-        Arrays.sort(hatchPositions);
-        Arrays.sort(allPositions);
+        Arrays.sort(LiftConst.ballPositions);
+        Arrays.sort(LiftConst.hatchPositions);
+        Arrays.sort(LiftConst.allPositions);
 
     }
 
@@ -64,13 +44,13 @@ public class LowerLiftSensor extends BBCommand {
         currentSetpoint = Robot.lift.getSetpoint();
         double[] sortedArray;
         if(Robot.pickup.getHasBall()){
-            sortedArray = ballPositions;
+            sortedArray = LiftConst.ballPositions;
         }
         else if(Robot.pickup.getHasHatch()){
-            sortedArray = hatchPositions;
+            sortedArray = LiftConst.hatchPositions;
         }
         else{
-            sortedArray = allPositions;
+            sortedArray = LiftConst.allPositions;
             Logger.getInstance().println("Set Lift Postion Using Sensor: Unknown Object!", true, Severity.WARNING);
         }
 
