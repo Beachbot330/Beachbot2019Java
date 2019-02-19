@@ -2135,6 +2135,22 @@ Children:
         name: Button on SmartDashboard, validators: null, value: true}
     Base: Command
     Name: CalibrateHand
+  - Children: []
+    Properties:
+      Autonomous Selection: !!robotbuilder.data.properties.BooleanProperty {default: false,
+        name: Autonomous Selection, validators: null, value: false}
+      Parameters: !!robotbuilder.data.properties.ParametersProperty
+        default: []
+        name: Parameters
+        validators: null
+        value: []
+      Run When Disabled: !!robotbuilder.data.properties.BooleanProperty {default: false,
+        name: Run When Disabled, validators: null, value: false}
+      Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
+        default: &id043 []
+        name: Parameter presets
+        validators: null
+        value: *id043
       Commands: !!robotbuilder.data.properties.ListProperty
         default: &id034 []
         name: Commands
