@@ -162,7 +162,6 @@ public class OI {
         SmartDashboard.putData("EjectBall", new EjectBall());
         SmartDashboard.putData("BallKickExtend", new BallKickExtend());
         SmartDashboard.putData("BallKickRetract", new BallKickRetract());
-        SmartDashboard.putData("CalibrateHand", new CalibrateHand());
         SmartDashboard.putData("SensoredHatchPickup", new SensoredHatchPickup());
         SmartDashboard.putData("SensoredBallPickup", new SensoredBallPickup());
         SmartDashboard.putData("LoopIfWeHaveBall", new LoopIfWeHaveBall());
