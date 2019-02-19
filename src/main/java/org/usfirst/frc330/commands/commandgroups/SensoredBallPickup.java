@@ -71,5 +71,6 @@ public class SensoredBallPickup extends BBCommandGroup {
         //once everything is finished, enter defense mode
         addSequential(new Defense());
         addSequential(new IsFinishedFalse());
+        //VERIFY ejo 2.18.19
     } 
 }
