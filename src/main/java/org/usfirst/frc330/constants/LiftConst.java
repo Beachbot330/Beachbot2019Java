@@ -26,6 +26,28 @@ public final class LiftConst {
 
 	public static final double tolerance		= 0.5; 		//TODO: find 2019 value -AP
 
+	public static double[] ballPositions = new double[]{
+        defense,
+        DeployBallLow,
+        DeployBallMid,
+        DeployBallHi,
+    };
+    public static double[] hatchPositions = new double[]{
+        defense,
+        DeployHatchLow,
+        DeployHatchMid,
+        DeployHatchHi
+    };
+    public static double[] allPositions = new double[]{
+        defense,
+        DeployBallLow,
+        DeployBallMid,
+        DeployBallHi,
+        DeployHatchLow,
+        DeployHatchMid,
+        DeployHatchHi
+    };
+
 	//Encoder Distance Constants
 	public static final double  ticksPerRev   		= 4096;	//AP 02/02/2019
 	public static final double  inchesPerRev		= 5.50093; //AP 02/02/2019
