@@ -50,6 +50,7 @@ public class SensoredHatchPickup extends BBCommandGroup {
         addSequential(new LoopIfWeHaveHatch());
         //if the pickup has no hatch in it, execute the following code:
         
+        /*
         //Prep Pickup
         addSequential(new OpenClaw());
 
@@ -60,6 +61,8 @@ public class SensoredHatchPickup extends BBCommandGroup {
         //close claw once we have hatch
         addSequential(new WaitCommand(0.4)); //this can be changed if needed
         addSequential(new SensorCloseClawHatch());
+        */
+        addSequential(new LoadHatch());
 
         //hatch should be securely in claw at this point
 

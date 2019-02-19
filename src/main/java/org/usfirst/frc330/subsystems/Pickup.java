@@ -179,7 +179,7 @@ public class Pickup extends Subsystem {
 
     public void rollerOn(double speed) {
         intake.set(speed);
-        Logger.getInstance().println("Turning Roller On to " +speed +"% speed", Logger.Severity.INFO);
+        Logger.getInstance().println("Turning Roller On to " +(speed * 100) +"% speed", Logger.Severity.INFO);
         //VERIFY my implment -ejo 2.12.19
     }
     
@@ -214,11 +214,13 @@ public class Pickup extends Subsystem {
     }
 
 	public boolean getHasBall() {
+        //sensors say ball is within the min and max ball distance
         double currentDistance = getSensorDistance();
         return (GrabberConst.ballAcquiredMinDistance < currentDistance) && (currentDistance < GrabberConst.ballAcquiredMinDistance);
     }
     
     public boolean getHasHatch() {
+        //sensors say hatch is within the min and max hatch distance
         double currentDistance = getSensorDistance();
         return (GrabberConst.hatchAcquiredMinDistance < currentDistance) && (currentDistance < GrabberConst.hatchAcquiredMaxDistance);
     }
