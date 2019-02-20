@@ -22,7 +22,7 @@ public final class HandConst {
 	public static final double ballPickup 		= -46.0;	//ejo 2.2.19
 
 	//TODO temporary use versaplanetary. Real robot will be 1.0;
-	public static final double encoderGearRatio = 66.0/18.0;	  // JR Practice Robot 2/18/19
+	public static final double encoderGearRatio = 1.0;	  // JR Practice Robot 2/18/19
 
 	public static final int    CAN_Timeout					= 10; // AP 2018 value
 	public static final int    CAN_Timeout_No_Wait      	= 0;  // AP 2018 value

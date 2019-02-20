@@ -71,7 +71,7 @@ public class Hand extends Subsystem {
 
         hand.configSelectedFeedbackSensor(FeedbackDevice.CTRE_MagEncoder_Absolute, 0, HandConst.CAN_Timeout);
         hand.setInverted(false); // Set true if the motor direction does not match the sensor direction
-        hand.setSensorPhase(false);
+        hand.setSensorPhase(true);
 
         if (!calibrated) {
             hand.configForwardSoftLimitEnable(false, HandConst.CAN_Timeout); //False until after calibration
