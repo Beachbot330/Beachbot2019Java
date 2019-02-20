@@ -15,8 +15,8 @@ public final class GrabberConst {
 	//Sensor (all ported from 2018 unless otherwise specificed -ejo 2.16.19)
 	public static final double hatchPickupMinDistance					= 7.0;				//(inches) EJO 2.16.19
 	public static final double hatchPickupMaxDistance					= 9.0;				//(inches) EJO 2.16.19
-	public static final double ballPickupMinDistance					= 2.0;				//(inches) EJO 2.16.19
-	public static final double ballPickupMaxDistance					= 3.0;				//(inches) EJO 2.16.19
+	public static final double ballPickupMinDistance					= 7.0;				//(inches) JR 2.19.19
+	public static final double ballPickupMaxDistance					= 9.0;				//(inches) JR 2.19.19
 
 	public static final double ballAcquiredMinDistance					= 2.0;				//(inches) EJO 2.18.19
 	public static final double ballAcquiredMaxDistance					= 3.0;				//(inches) EJO 2.18.19

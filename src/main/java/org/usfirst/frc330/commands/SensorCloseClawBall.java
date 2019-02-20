@@ -43,7 +43,7 @@ public class SensorCloseClawBall extends BBCommand {
     // Called repeatedly when this Command is scheduled to run
     @Override
     protected void execute() {
-        if (Robot.pickup.getHasBall()){
+        if (Robot.pickup.getBallInRange()){
     		this.consecutiveHasBalls ++;
     	}
     	else {
@@ -61,7 +61,7 @@ public class SensorCloseClawBall extends BBCommand {
     @Override
     protected void end() {
         Robot.pickup.closeClaw();
-        Logger.getInstance().println("Has Ball: " + Robot.pickup.getHasBall(), Severity.INFO);
+        Logger.getInstance().println("Ball in range: " + Robot.pickup.getBallInRange(), Severity.INFO);
     	Logger.getInstance().println("Sensor: " + Robot.pickup.getSensorDistance(), Severity.INFO);
     }
 
