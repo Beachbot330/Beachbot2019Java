@@ -101,7 +101,7 @@ public class Hand extends Subsystem {
         }
 
         zero = Preferences.getInstance().getInt(zeroString, 0);
-        if (zero > 0)
+        if (zero != 0)
             calibrated = true;
 
             CSVLoggable temp = new CSVLoggable(true) {
