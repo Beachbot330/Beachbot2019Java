@@ -77,19 +77,12 @@ public class Pickup extends Subsystem {
     CSVLoggable temp = new CSVLoggable(true) {
         public double get() { return getSensorDistance(); }
     };
-    CSVLogger.getInstance().add("sensor output", temp);
+    CSVLogger.getInstance().add("FilteredPickupDistance", temp);
     
     temp = new CSVLoggable(true) {
         public double get() { return iRSensor.getDistance(); }
     };
-    CSVLogger.getInstance().add("iRSensor", temp);
-    
-    temp = new CSVLoggable(true) {
-        public double get() { 
-            return getNumberOfSensorsReceivingInput();
-        }			
-    };
-    CSVLogger.getInstance().add("Sensors Receiving Input", temp);
+    CSVLogger.getInstance().add("RawPickupDistance", temp);
     }
 
     @Override
@@ -106,9 +99,7 @@ public class Pickup extends Subsystem {
     @Override
     public void periodic() {
         // Put code here to be run every loop
-
-    	System.out.println(updateSensorDistance());
-
+        updateSensorDistance();
     }
 
     //-----------SENSORS-------------
