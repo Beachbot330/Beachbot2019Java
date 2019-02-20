@@ -139,7 +139,9 @@ public class Robot extends TimedRobot {
 		Robot.lift.stopLift();
 		Robot.hand.stopHand();
 		Robot.pickup.rollerOff();
-		Robot.chassis.stopDrive();
+        Robot.chassis.stopDrive();
+        Robot.pickup.ballKickOff();
+        Robot.pickup.clawOff();
     }
 
     String autoName;

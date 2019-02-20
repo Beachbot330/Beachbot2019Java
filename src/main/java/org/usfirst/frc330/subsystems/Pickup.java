@@ -125,7 +125,12 @@ public class Pickup extends Subsystem {
 	public void openClaw() {
         claw.set(BBDoubleSolenoid.Value.kForward);
         Logger.getInstance().println("Opening Claw", Logger.Severity.INFO);
-	}
+    }
+    
+    public void clawOff() {
+        claw.set(Value.kOff);
+        Logger.getInstance().println("Turning Claw off", Logger.Severity.INFO);
+    }
 
 	public void rollerOff() {
         intake.stopMotor();
@@ -149,10 +154,17 @@ public class Pickup extends Subsystem {
     
     public void ballKickExtend(){
         ballKicker.set(Value.kForward);
+        Logger.getInstance().println("Extending Kicker", Logger.Severity.INFO);
     }
 
     public void ballKickRetract(){
         ballKicker.set(Value.kReverse);
+        Logger.getInstance().println("Retracting Kicker", Logger.Severity.INFO);
+    }
+
+    public void ballKickOff() {
+        ballKicker.set(Value.kOff);
+        Logger.getInstance().println("Turning off Kicker", Logger.Severity.INFO);
     }
 
     //Ball nested deeply in hand, or hatch in claw
