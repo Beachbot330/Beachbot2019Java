@@ -37,6 +37,7 @@ public final class HandConst {
 
 	public static final double GamepadDeadZone			= 0.1; //AP 2/17/19
 	
-	
+	public static final String PracticeZeroString = "PracticeHandZero";
+    public static final String CompZeroString = "CompHandZero";
 
 }	
