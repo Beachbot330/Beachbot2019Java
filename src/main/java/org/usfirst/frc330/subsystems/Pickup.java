@@ -12,7 +12,7 @@
 package org.usfirst.frc330.subsystems;
 
 
-import org.usfirst.frc330.Robot;
+
 import org.usfirst.frc330.constants.GrabberConst;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.DoubleSolenoid.Value;
@@ -112,17 +112,10 @@ public class Pickup extends Subsystem {
     	return Median.getFilteredValue();
     }
 
-    private int getNumberOfSensorsReceivingInput() { 
-    	int numberOfSensorsReceivingInput = 0;
-    	if (isSensorReceivingInput(getSensorDistance()))
-    		numberOfSensorsReceivingInput++;
-    	
-    	return numberOfSensorsReceivingInput; 
-    }
 
-    private boolean isSensorReceivingInput(double distance) {
-    	return distance < GrabberConst.sensorMaxLength;
-    }
+    //private boolean isSensorReceivingInput(double distance) {
+    //	return distance < GrabberConst.sensorMaxLength;
+    //}
 
 	public void closeClaw() {
         claw.set(BBDoubleSolenoid.Value.kReverse);

@@ -185,7 +185,7 @@ public class Hand extends Subsystem {
     
     public void manualHand() {
 		double gamepadCommand = -Robot.oi.gamePad.getRawAxis(5);
-    	double position;
+    	//double position;
     	
     	if (Math.abs(gamepadCommand) > HandConst.GamepadDeadZone) {
     		setThrottle(gamepadCommand/Math.abs(gamepadCommand)*Math.pow(gamepadCommand, 2)*0.4); //scaled to 0.4 max

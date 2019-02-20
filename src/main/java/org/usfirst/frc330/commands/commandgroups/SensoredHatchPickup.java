@@ -12,9 +12,7 @@
 package org.usfirst.frc330.commands.commandgroups;
 
 import edu.wpi.first.wpilibj.command.BBCommandGroup;
-import org.usfirst.frc330.subsystems.*;
 import org.usfirst.frc330.commands.*;
-import org.usfirst.frc330.constants.*;
 
 /**
  *
