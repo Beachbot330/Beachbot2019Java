@@ -127,7 +127,7 @@ public class Hand extends Subsystem {
                     else
                         return 0.0;}
             };
-            CSVLogger.getInstance().add("LiftCalibrated", temp);
+            CSVLogger.getInstance().add("HandCalibrated", temp);
     }
 
     @Override
