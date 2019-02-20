@@ -176,7 +176,11 @@ public class Hand extends Subsystem {
 	}
 
 	public double getSetpoint() {
-		return (ticksToAngle((int)hand.getClosedLoopTarget()));
+        ControlMode mode = hand.getControlMode();
+        if(mode == ControlMode.Position || mode == ControlMode.Velocity || mode == ControlMode.MotionMagic)
+            return (ticksToAngle((int)hand.getClosedLoopTarget()));
+        else
+            return 999.0;
     }
     
     public double getHandOutput() {
