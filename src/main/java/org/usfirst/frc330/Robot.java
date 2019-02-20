@@ -20,6 +20,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj.util.WPILibVersion;
 import org.usfirst.frc330.subsystems.*;
+import org.usfirst.frc330.constants.*;
 import org.usfirst.frc330.util.*;
 import org.usfirst.frc330.util.Logger.Severity;
 import org.usfirst.frc330.autoCommands.*;
@@ -136,9 +137,17 @@ public class Robot extends TimedRobot {
         Logger.getInstance().println("Disabled Init", Severity.INFO);
     	Logger.getInstance().println("Battery Voltage: " + RobotController.getBatteryVoltage(), Severity.INFO);
         Scheduler.getInstance().removeAll();
-		Robot.lift.stopLift();
-		Robot.hand.stopHand();
-		Robot.pickup.rollerOff();
+
+        Robot.lift.setLiftPosition(LiftConst.defense);
+        Robot.lift.stopLift();
+        
+        Robot.hand.setAngle(HandConst.defense);
+        Robot.hand.stopHand();
+        
+        Robot.pickup.closeClaw();
+        Robot.pickup.ballKickRetract();
+        Robot.pickup.rollerOff();
+        
 		Robot.chassis.stopDrive();
     }
 

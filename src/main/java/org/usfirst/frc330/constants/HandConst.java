@@ -27,8 +27,8 @@ public final class HandConst {
 	public static final int    CAN_Timeout					= 10; // AP 2018 value
 	public static final int    CAN_Timeout_No_Wait      	= 0;  // AP 2018 value
 
-	public static final double VoltageRampRate				= 12;	// AP 2018 value
-	public static final double MaxOutputPercent				= 0.3;	// AP Testing Value
+	public static final double VoltageRampRate				= 0;	// JR disable voltage ramp 2/19/19
+	public static final double MaxOutputPercent				= 0.4;	// AP Testing Value
 
 	
 	// Motion Magic Constants

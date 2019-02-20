@@ -234,7 +234,7 @@ public class Hand extends Subsystem {
     	//double position;
     	
     	if (Math.abs(gamepadCommand) > HandConst.GamepadDeadZone) {
-    		setThrottle(gamepadCommand/Math.abs(gamepadCommand)*Math.pow(gamepadCommand, 2)*0.4); //scaled to 0.4 max
+    		setThrottle(gamepadCommand/Math.abs(gamepadCommand)*Math.pow(gamepadCommand, 2)*HandConst.MaxOutputPercent); //scaled to 0.4 max
     	}
     	else if (hand.getControlMode() != ControlMode.Position && hand.getControlMode() != ControlMode.MotionMagic) {
 			//position = getHandAngle();
