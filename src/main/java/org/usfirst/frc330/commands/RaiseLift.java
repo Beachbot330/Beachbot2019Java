@@ -57,7 +57,7 @@ public class RaiseLift extends BBCommand {
     protected void initialize() {
         currentSetpoint = Robot.lift.getSetpoint();
         for(int i=0; i<positions.length; i++){
-            if(positions[i] > currentSetpoint){
+            if(positions[i] > currentSetpoint && Math.abs(currentSetpoint - positions[i]) > 0.01 ){
                 Robot.lift.setLiftPosition(positions[i]);
                 break;
             }
