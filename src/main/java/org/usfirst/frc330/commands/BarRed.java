@@ -38,7 +38,7 @@ public class BarRed extends BBCommand {
     // Called just before this Command runs the first time
     @Override
     protected void initialize() {
-        Robot.frills.indicatorBarRed();
+        Robot.frills.setColor(Robot.frills.RED);
     }
 
     // Called repeatedly when this Command is scheduled to run

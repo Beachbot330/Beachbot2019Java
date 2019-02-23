@@ -271,7 +271,7 @@ public class Frills extends Subsystem {
     public Color RED = new Color(255, 0, 0);
     public Color GREEN = new Color(0, 255, 0);
     public Color BLUE = new Color(0, 0, 255);
-    public Color YELLOW1 = new Color(115, 80, 0); //also 255, 255, 0
+    public Color YELLOW = new Color(115, 80, 0); //also 255, 255, 0
     public Color YELLOW2 = new Color(255, 255, 0);
     public Color PURPLE = new Color(127, 0, 255);
     public Color WHITE = new Color(51, 51, 51);
