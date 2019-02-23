@@ -14,7 +14,7 @@ import org.usfirst.frc330.commands.*;
 import org.usfirst.frc330.commands.commandgroups.*;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
-import edu.wpi.first.wpilibj.shuffleboard.ShuffleboardTab;
+import edu.wpi.first.wpilibj.shuffleboard.*;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 /**
@@ -148,7 +148,6 @@ public class OI {
         pickupTab.add("RollerOn", new RollerOn());
         pickupTab.add("AllenTestCommand", new AllenCommand());
         pickupTab.add("ReversePickup", new ReversePickup());
-        pickupTab.add("PickupOff", new PickupOff());
         pickupTab.add("CloseClaw", new CloseClaw());
         pickupTab.add("OpenClaw", new OpenClaw());
         pickupTab.add("RollerOff", new RollerOff());
