@@ -100,13 +100,17 @@ public class Robot extends TimedRobot {
 				else if (DriverStation.getInstance().isAutonomous())
 					return 1.0;
 				else if (DriverStation.getInstance().isOperatorControl())
-					return 2.0;
+                    return 2.0;
+                else if (DriverStation.getInstance().isTest())
+                    return 3.0;
 				else
 					return -1.0;}
     	};
     	CSVLogger.getInstance().add("RobotMode", temp);
         
         CSVLogger.getInstance().writeHeader();
+
+        CSVLogger.getInstance().setPrintOnTimeout(true);    //TODO set to false for competition
         
         Logger.getInstance().println("BeachbotLib Version:                " + BeachbotLibVersion.Version, Severity.INFO);
         Logger.getInstance().println("WPILib Version:                     " + WPILibVersion.Version, Severity.INFO);
