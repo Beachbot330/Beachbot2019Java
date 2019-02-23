@@ -20,7 +20,6 @@ import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj.util.WPILibVersion;
 import org.usfirst.frc330.subsystems.*;
-import org.usfirst.frc330.constants.*;
 import org.usfirst.frc330.util.*;
 import org.usfirst.frc330.util.Logger.Severity;
 import org.usfirst.frc330.autoCommands.*;

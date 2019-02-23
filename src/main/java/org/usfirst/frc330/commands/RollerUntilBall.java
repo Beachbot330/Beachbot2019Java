@@ -12,7 +12,6 @@
 package org.usfirst.frc330.commands;
 import edu.wpi.first.wpilibj.command.BBCommand;
 import org.usfirst.frc330.Robot;
-import org.usfirst.frc330.constants.*;
 import org.usfirst.frc330.util.Logger;
 import org.usfirst.frc330.util.Logger.Severity;
 
@@ -81,7 +80,7 @@ public class RollerUntilBall extends BBCommand {
     @Override
     protected void end() {
         Robot.pickup.rollerOff();
-    	Logger.getInstance().println("Center Sensor Distance: " + Robot.pickup.getSensorDistance(), Severity.INFO);
+    	Logger.getInstance().println("Sensor Distance: " + Robot.pickup.getSensorDistance(), Severity.INFO);
     }
 
     // Called when another command which requires one or more of the same
