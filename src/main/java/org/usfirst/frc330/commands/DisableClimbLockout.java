@@ -28,6 +28,7 @@ public class DisableClimbLockout extends BBCommand {
         Robot.hand.disableLockout();
         Robot.lift.disableLockout();
         Robot.frills.disableLockout();
+        Robot.pickup.disableLockout();
     }
 
     // Called repeatedly when this Command is scheduled to run
