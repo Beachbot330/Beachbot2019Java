@@ -191,72 +191,82 @@ public class Frills extends Subsystem {
         return assistMode.get();
     }
 
-public void setColor(Color color){
-    redLED.disablePWM();
-    greenLED.disablePWM();
-    blueLED.disablePWM();
-    redLED.setPWMRate(500);
-    greenLED.setPWMRate(500);
-    blueLED.setPWMRate(500);
-    redLED.enablePWM(((color.getRed())/5)/255.0);
-    greenLED.enablePWM(((color.getGreen())/5)/255.0);
-    blueLED.enablePWM(((color.getBlue())/5)/255.0);
-}
+    /////////////////////////
+    //LED
+    /////////////////////////
 
-public void setColorRGB(int red, int green, int blue){
-    redLED.disablePWM();
-    greenLED.disablePWM();
-    blueLED.disablePWM();
-    redLED.setPWMRate(500);
-    greenLED.setPWMRate(500);
-    blueLED.setPWMRate(500);
-    redLED.enablePWM((red/5)/255.0);
-    greenLED.enablePWM((green/5)/255.0);
-    blueLED.enablePWM((blue/5)/255.0);
-}
+    public static final double brightnessPercent = 20.0;    //EJO 2.23.18
+    // ^ update this to modify the brightness level of the leds
+    //eg 20.0 = 20% brightness
 
-public void disableAllPWM() {
-    redLED.disablePWM();
-    greenLED.disablePWM();
-    blueLED.disablePWM();
-}
+    public static final double brightnessDivisor = 100/brightnessPercent; // don't touch this unless you know what you're doing
 
-
-public void indicatorBarYellow() {
-    if(getIsVisionTargetInSight()) {
-        setColor(YELLOW2);
+    public void setColor(Color color){
+        redLED.disablePWM();
+        greenLED.disablePWM();
+        blueLED.disablePWM();
+        redLED.setPWMRate(500);
+        greenLED.setPWMRate(500);
+        blueLED.setPWMRate(500);
+        redLED.enablePWM(((color.getRed())/brightnessDivisor)/255.0);
+        greenLED.enablePWM(((color.getGreen())/brightnessDivisor)/255.0);
+        blueLED.enablePWM(((color.getBlue())/brightnessDivisor)/255.0);
     }
-}
 
-public void indicatorBarGreen() {
-    if(getIsHatchAttained()) {
-        setColor(GREEN);
+    public void setColorRGB(int red, int green, int blue){
+        redLED.disablePWM();
+        greenLED.disablePWM();
+        blueLED.disablePWM();
+        redLED.setPWMRate(500);
+        greenLED.setPWMRate(500);
+        blueLED.setPWMRate(500);
+        redLED.enablePWM((red/brightnessDivisor)/255.0);
+        greenLED.enablePWM((green/brightnessDivisor)/255.0);
+        blueLED.enablePWM((blue/brightnessDivisor)/255.0);
     }
-}
 
-public void indicatorBarRed() {
-    if(getIsMisaligned()) {
-        setColor(RED);
+    public void disableAllPWM() {
+        redLED.disablePWM();
+        greenLED.disablePWM();
+        blueLED.disablePWM();
     }
-}
 
-public void indicatorBarBlue() {
-    if(getIsBallAttained()) {
-        setColor(BLUE);
-    }
-}
 
-public void indicatorBarPurple() {
-    if(!getIsBallAttained() && getIsInAssistMode()) {
-        setColor(PURPLE);
+    public void indicatorBarYellow() {
+        if(getIsVisionTargetInSight()) {
+            setColor(YELLOW2);
+        }
     }
-}
 
-public void indicatorBarWhite(){
-    if(lockout) {
-        setColor(WHITE);
+    public void indicatorBarGreen() {
+        if(getIsHatchAttained()) {
+            setColor(GREEN);
+        }
     }
-}
+
+    public void indicatorBarRed() {
+        if(getIsMisaligned()) {
+            setColor(RED);
+        }
+    }
+
+    public void indicatorBarBlue() {
+        if(getIsBallAttained()) {
+            setColor(BLUE);
+        }
+    }
+
+    public void indicatorBarPurple() {
+        if(!getIsBallAttained() && getIsInAssistMode()) {
+            setColor(PURPLE);
+        }
+    }
+
+    public void indicatorBarWhite(){
+        if(lockout) {
+            setColor(WHITE);
+        }
+    }
 
     public Color RED = new Color(255, 0, 0);
     public Color GREEN = new Color(0, 255, 0);
