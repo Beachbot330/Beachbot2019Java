@@ -12,6 +12,7 @@
 package org.usfirst.frc330.commands.commandgroups;
 import edu.wpi.first.wpilibj.command.BBCommandGroup;
 import org.usfirst.frc330.commands.*;
+import org.usfirst.frc330.constants.HandConst;
 import org.usfirst.frc330.constants.LiftConst;
 
 /**
@@ -21,6 +22,7 @@ public class ClimbDeploy extends BBCommandGroup {
 
     public ClimbDeploy() {
 
+        addParallel(new SetHandAngle(HandConst.defense));
         addSequential(new SetLiftPosition(LiftConst.ClimbLatchDeploy, LiftConst.tolerance));
         addSequential(new DeployClimbPins());
         addSequential(new EngageClimbLockout());
