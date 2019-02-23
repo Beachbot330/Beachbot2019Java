@@ -74,7 +74,7 @@ public class RollerUntilBall extends BBCommand {
     // Make this return true when this Command no longer needs to run execute()
     @Override
     protected boolean isFinished() {
-        return (isTimedOut() || Robot.pickup.getSensorDistance() < GrabberConst.sensorMaximumInnerDistance+1) && this.timeSinceInitialized() > minTime;
+        return (isTimedOut() || Robot.pickup.getHasBall()) && this.timeSinceInitialized() > minTime;
     }
 
     // Called once after isFinished returns true

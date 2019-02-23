@@ -20,6 +20,8 @@ import org.usfirst.frc330.constants.LiftConst;
  */
 public class LoadBall extends BBCommand {
 
+    boolean ballInRange = false;
+
     public LoadBall() {
         requires(Robot.pickup);
         requires(Robot.lift);
@@ -29,6 +31,7 @@ public class LoadBall extends BBCommand {
     // Called just before this Command runs the first time
     @Override
     protected void initialize() {
+        ballInRange = false;
         Robot.lift.setLiftPosition(LiftConst.BallPickup);
         Robot.hand.setAngle(HandConst.ballPickup);
         Robot.pickup.ballKickRetract();
@@ -39,7 +42,8 @@ public class LoadBall extends BBCommand {
     // Called repeatedly when this Command is scheduled to run
     @Override
     protected void execute() {
-        if(Robot.pickup.getBallInRange()){
+        if(Robot.pickup.getBallInRange() && ballInRange == false){
+            ballInRange = true;
             Robot.pickup.closeClaw();
         }
     }
@@ -47,7 +51,7 @@ public class LoadBall extends BBCommand {
     // Make this return true when this Command no longer needs to run execute()
     @Override
     protected boolean isFinished() {
-        return Robot.pickup.getHasObject();
+        return Robot.pickup.getHasBall();
     }
 
     // Called once after isFinished returns true

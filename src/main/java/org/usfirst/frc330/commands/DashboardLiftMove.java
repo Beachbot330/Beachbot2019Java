@@ -22,7 +22,9 @@ public class DashboardLiftMove extends BBCommand {
 
     public DashboardLiftMove() {
     	this.setRunWhenDisabled(false);
-    	this.requires(Robot.lift);
+        this.requires(Robot.lift);
+        if (!SmartDashboard.containsKey("DashboardLiftMoveSetpoint"))
+            SmartDashboard.putNumber("DashboardLiftMoveSetpoint", Robot.lift.getPosition());
     }
 
     protected void initialize() {

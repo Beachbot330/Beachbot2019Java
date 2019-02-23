@@ -144,7 +144,6 @@ public class OI {
         SmartDashboard.putData("ShiftHigh", new ShiftHigh());
         SmartDashboard.putData("ShiftLow", new ShiftLow());
         SmartDashboard.putData("Defense", new Defense());
-        SmartDashboard.putData("PickupOff", new PickupOff());
         SmartDashboard.putData("CloseClaw", new CloseClaw());
         SmartDashboard.putData("OpenClaw", new OpenClaw());
         SmartDashboard.putData("CalibrateLift", new CalibrateLift());

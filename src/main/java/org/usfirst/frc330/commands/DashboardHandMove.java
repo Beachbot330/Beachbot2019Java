@@ -22,7 +22,10 @@ public class DashboardHandMove extends BBCommand {
 
     public DashboardHandMove() {
     	this.setRunWhenDisabled(false);
-    	this.requires(Robot.hand);
+        this.requires(Robot.hand);
+        if (SmartDashboard.containsKey("DashboardHandMoveSetpoint"))
+            SmartDashboard.putNumber("DashboardHandMoveSetpoint", Robot.hand.getHandAngle());
+
     }
 
     protected void initialize() {
