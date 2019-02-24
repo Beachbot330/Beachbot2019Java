@@ -6,7 +6,7 @@ public final class HandConst {
 	
 	private HandConst(){}
 
-	public static final double tolerance		= 0; 		//WAG -ejo 2.2.19
+	public static final double tolerance		= 2.0; 		//WAG AP 2/24/19
 
 	//angles relative to the ground (degrees)
 	public static final double upperHardStop 		= 57.0;		//ejo 2.2.19

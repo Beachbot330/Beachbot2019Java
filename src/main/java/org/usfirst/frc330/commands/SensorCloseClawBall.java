@@ -44,7 +44,7 @@ public class SensorCloseClawBall extends BBCommand {
     @Override
     protected void execute() {
         if (Robot.pickup.getBallInRange()){
-    		this.consecutiveGetBallInRanges ++;
+            this.consecutiveGetBallInRanges ++;
     	}
     	else {
     		this.consecutiveGetBallInRanges = 0;
@@ -54,7 +54,7 @@ public class SensorCloseClawBall extends BBCommand {
     // Make this return true when this Command no longer needs to run execute()
     @Override
     protected boolean isFinished() {
-        return consecutiveGetBallInRanges > GrabberConst.getBallInRangeMinRepititions;
+        return (consecutiveGetBallInRanges > GrabberConst.getBallInRangeMinRepititions);
     }
 
     // Called once after isFinished returns true

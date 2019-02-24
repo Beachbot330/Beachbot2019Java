@@ -93,6 +93,16 @@ public class Pickup extends Subsystem {
             public double get() { return iRSensor.getVoltage(); }
         };
         CSVLogger.getInstance().add("SensorVoltage", temp);
+
+        temp = new CSVLoggable(this.shuffleboardTab) {
+            public double get() { 
+                if(getBallInRange())
+                    return 1.0;
+                else
+                    return 0.0;
+            }
+        };
+        CSVLogger.getInstance().add("BallInRange", temp);
     }
 
     /////////////////////////////////////////////////////////////
@@ -145,7 +155,7 @@ public class Pickup extends Subsystem {
 	public boolean getHasBall() {
         //sensors say ball is within the min and max ball distance
         double currentDistance = getSensorDistance();
-        return (GrabberConst.ballAcquiredMinDistance < currentDistance) && (currentDistance < GrabberConst.ballAcquiredMinDistance);
+        return (currentDistance < GrabberConst.ballAcquiredMaxDistance);
     }
     
     public boolean getHasHatch() {
