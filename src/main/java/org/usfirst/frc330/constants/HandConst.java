@@ -20,7 +20,7 @@ public final class HandConst {
 	public static final double hatchPickup	 	= -2.0; 		//AP 2/9/19
 	public static final double postHatchPickup	= 0.0; 		//AP 2/9/19
 	public static final double ballPickup 		= -46.0;	//ejo 2.2.19
-	public static final double lowerHardStop	= -50;		//AP 2/24/19  -53.2 is actual hard stop
+	public static final double lowerHardStop	= -48;		//AP 2/24/19  -53.2 is actual hard stop
 
 
 	//TODO temporary use versaplanetary. Real robot will be 1.0;
@@ -29,7 +29,7 @@ public final class HandConst {
 	public static final int    CAN_Timeout					= 10; // AP 2018 value
 	public static final int    CAN_Timeout_No_Wait      	= 0;  // AP 2018 value
 
-	public static final double VoltageRampRate				= 0;	// JR disable voltage ramp 2/19/19
+	public static final double VoltageRampRate				= 0.0;	// JR disable voltage ramp 2/19/19
 	public static final double MaxOutputPercent				= 0.4;	// AP Testing Value
 
 	
@@ -43,7 +43,7 @@ public final class HandConst {
 	public static final String CompZeroString = "CompHandZero";
 	
 	// PID Constants
-	public static final double proportional      	= 0.05;   	// AP WAG
+	public static final double proportional      	= 10.0;   	// AP WAG
 	public static final double integral         	= 0.000; 	// AP WAG
 	public static final double derivative        	= 0.0;   	// AP WAG
 	public static final double feedforward          = 0.0;   	// AP WAG

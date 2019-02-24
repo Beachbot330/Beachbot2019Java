@@ -81,7 +81,8 @@ public class Hand extends Subsystem {
         /////////////////////////////////////////////////////////////
         // CAN Talon Setup
         /////////////////////////////////////////////////////////////
-        hand.configSelectedFeedbackSensor(FeedbackDevice.CTRE_MagEncoder_Relative, 0, HandConst.CAN_Timeout);
+        
+        hand.configSelectedFeedbackSensor(FeedbackDevice.CTRE_MagEncoder_Absolute, 0, HandConst.CAN_Timeout);
         hand.setInverted(false); // Set true if the motor direction does not match the sensor direction
         hand.setSensorPhase(true);
 

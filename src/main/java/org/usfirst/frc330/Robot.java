@@ -110,7 +110,7 @@ public class Robot extends TimedRobot {
         
         CSVLogger.getInstance().writeHeader();
 
-        CSVLogger.getInstance().setPrintOnTimeout(true);    //TODO set to false for competition
+        CSVLogger.getInstance().setPrintOnTimeout(false);    //TODO set to false for competition
         
         Logger.getInstance().println("BeachbotLib Version:                " + BeachbotLibVersion.Version, Severity.INFO);
         Logger.getInstance().println("WPILib Version:                     " + WPILibVersion.Version, Severity.INFO);
