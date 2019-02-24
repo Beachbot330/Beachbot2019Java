@@ -50,7 +50,7 @@ dependencies {
     compile wpi.deps.vendor.java()
     nativeZip wpi.deps.vendor.jni(wpi.platforms.roborio)
     nativeDesktopZip wpi.deps.vendor.jni(wpi.platforms.desktop)
-    compile 'com.github.Beachbot330:BeachbotLib:v2019.1.4'
+    compile 'com.github.beachbot330:beachbotlib:2019.1.4'
     testCompile 'junit:junit:4.12'
 }
 
