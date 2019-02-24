@@ -78,8 +78,8 @@ public class Hand extends Subsystem {
             hand.configForwardSoftLimitEnable(false, HandConst.CAN_Timeout); //False until after calibration
             hand.configReverseSoftLimitEnable(false, HandConst.CAN_Timeout);
         } else {
-            hand.configForwardSoftLimitThreshold(angleToTicks(HandConst.hardStop), HandConst.CAN_Timeout);
-            hand.configReverseSoftLimitThreshold(angleToTicks(HandConst.ballPickup),  HandConst.CAN_Timeout);
+            hand.configForwardSoftLimitThreshold(angleToTicks(HandConst.upperHardStop), HandConst.CAN_Timeout);
+            hand.configReverseSoftLimitThreshold(angleToTicks(HandConst.lowerHardStop),  HandConst.CAN_Timeout);
             hand.configForwardSoftLimitEnable(true, HandConst.CAN_Timeout); //False until after calibration
             hand.configReverseSoftLimitEnable(true, HandConst.CAN_Timeout);
         }
@@ -95,6 +95,8 @@ public class Hand extends Subsystem {
         hand.configMotionCruiseVelocity(HandConst.velocityLimit, HandConst.CAN_Timeout);
         hand.configMotionAcceleration(HandConst.accelLimit, HandConst.CAN_Timeout);
 
+        setPIDConstants(HandConst.proportional, HandConst.integral, HandConst.derivative, HandConst.feedforward, true);
+
         if (Robot.frills.getIsPracticeRobot()) {
             zeroString = HandConst.PracticeZeroString;
         } else {
@@ -108,22 +110,22 @@ public class Hand extends Subsystem {
         if (zero != 0)
             calibrated = true;
 
-            CSVLoggable temp = new CSVLoggable(true) {
+            CSVLoggable temp = new CSVLoggable(this.shuffleboardTab) {
                 public double get() { return getHandAngle(); }
             };
             CSVLogger.getInstance().add("HandAngle", temp);
             
-            temp = new CSVLoggable(true) {
+            temp = new CSVLoggable(this.shuffleboardTab) {
                 public double get() { return getHandOutput(); }
             };
             CSVLogger.getInstance().add("HandOutput", temp);
             
-            temp = new CSVLoggable(true) {
+            temp = new CSVLoggable(this.shuffleboardTab) {
                 public double get() { return getSetpoint(); }
             };
             CSVLogger.getInstance().add("HandSetpoint", temp);
     
-            temp = new CSVLoggable(true) {
+            temp = new CSVLoggable(this.shuffleboardTab) {
                 public double get() {
                     if( getCalibrated()) {
                         return 1.0;
@@ -147,18 +149,36 @@ public class Hand extends Subsystem {
     }
 
     public double ticksToAngle(int ticks) {
-        return (ticks - zero) * 360.0 * HandConst.encoderGearRatio / 4096.0 + HandConst.hardStop;
+        return (ticks - zero) * 360.0 * HandConst.encoderGearRatio / 4096.0 + HandConst.upperHardStop;
     }
 
     public int angleToTicks(double angle) {
-        int ticks = (int)((angle-HandConst.hardStop) * 4096 /360.0 / HandConst.encoderGearRatio + 0.5);
+        int ticks = (int)((angle-HandConst.upperHardStop) * 4096 /360.0 / HandConst.encoderGearRatio + 0.5);
         return ticks + zero;
     }
 
     /////////////////////////////////////////////////////////////
     // Set Methods
     /////////////////////////////////////////////////////////////
-    
+    public void setPIDConstants (double P, double I, double D, double F, boolean timeout)
+	{
+    	if(timeout) {
+    		//assume using main PID loop (index 0)
+    		hand.config_kP(0, P, HandConst.CAN_Timeout);
+    		hand.config_kI(0, I, HandConst.CAN_Timeout);
+    		hand.config_kD(0, D, HandConst.CAN_Timeout);
+    		hand.config_kF(0, F, HandConst.CAN_Timeout);
+    	}
+    	else {
+	    	//assume using main PID loop (index 0)
+			hand.config_kP(0, P, HandConst.CAN_Timeout_No_Wait);
+			hand.config_kI(0, I, HandConst.CAN_Timeout_No_Wait);
+			hand.config_kD(0, D, HandConst.CAN_Timeout_No_Wait);
+			hand.config_kF(0, F, HandConst.CAN_Timeout_No_Wait);
+    	}
+	
+        Logger.getInstance().println("Hand PIDF set to: " + P + ", " + I + ", " + D + ", " + F, Severity.INFO);
+	}
         
     /////////////////////////////////////////////////////////////
     // Get Methods
@@ -196,9 +216,21 @@ public class Hand extends Subsystem {
     /////////////////////////////////////////////////////////////
     // Control Methods
     /////////////////////////////////////////////////////////////
-    public void setAngle(double angle) {
+    public void setAngle(double setpoint) {
         if(!lockout){
-            //hand.set(mode, value);
+            if(calibrated) {
+				if(setpoint > HandConst.upperHardStop) {
+					hand.set(ControlMode.Position, angleToTicks(HandConst.upperHardStop));
+					Logger.getInstance().println("Lift setpoint request above upper limit: " + setpoint, Logger.Severity.WARNING);
+				}
+				else if(setpoint < HandConst.lowerHardStop) {
+					hand.set(ControlMode.Position, angleToTicks(HandConst.lowerHardStop));
+					Logger.getInstance().println("Lift setpoint request below lower limit: " + setpoint, Logger.Severity.WARNING);
+				}
+				else {
+					hand.set(ControlMode.Position, angleToTicks(setpoint));
+				}
+			}
         }
     }
     
@@ -213,8 +245,8 @@ public class Hand extends Subsystem {
             calibrated = true;
             Preferences.getInstance().putInt(zeroString, newZero);
             zero = newZero;
-            hand.configForwardSoftLimitThreshold(angleToTicks(HandConst.hardStop), HandConst.CAN_Timeout_No_Wait);
-            hand.configReverseSoftLimitThreshold(angleToTicks(HandConst.ballPickup),  HandConst.CAN_Timeout_No_Wait);
+            hand.configForwardSoftLimitThreshold(angleToTicks(HandConst.upperHardStop), HandConst.CAN_Timeout_No_Wait);
+            hand.configReverseSoftLimitThreshold(angleToTicks(HandConst.lowerHardStop),  HandConst.CAN_Timeout_No_Wait);
             hand.configForwardSoftLimitEnable(true, HandConst.CAN_Timeout_No_Wait); //False until after calibration
             hand.configReverseSoftLimitEnable(true, HandConst.CAN_Timeout_No_Wait);
             Logger.getInstance().println("Hand Calibrated: " + newZero, Severity.WARNING);
@@ -230,6 +262,7 @@ public class Hand extends Subsystem {
     }
     
     public void manualHand() {
+        double position;
         if(!lockout){
             double gamepadCommand = -Robot.oi.gamePad.getRawAxis(5);
             //double position;
@@ -238,9 +271,9 @@ public class Hand extends Subsystem {
                 setThrottle(gamepadCommand/Math.abs(gamepadCommand)*Math.pow(gamepadCommand, 2)*HandConst.MaxOutputPercent); //scaled to 0.4 max
             }
             else if (hand.getControlMode() != ControlMode.Position && hand.getControlMode() != ControlMode.MotionMagic) {
-                //position = getHandAngle();
-                //setAngle(position);
-                setThrottle(0);
+                position = getHandAngle();
+                setAngle(position);
+                //setThrottle(0);
             }  	
         }
     }

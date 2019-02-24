@@ -9,8 +9,8 @@ public final class HandConst {
 	public static final double tolerance		= 0; 		//WAG -ejo 2.2.19
 
 	//angles relative to the ground (degrees)
+	public static final double upperHardStop 		= 57.0;		//ejo 2.2.19
 	public static final double defense 			= 57.0; 	//ejo 2.2.19
-	public static final double hardStop 		= 57.0;		//ejo 2.2.19
 	public static final double hatchPlacementLow 	= 0.0; 		//ejo 2.2.19
 	public static final double hatchPlacementMid 	= 0.0; 		//AP 2/10/19
 	public static final double hatchPlacementHigh 	= 0.0; 		//AP 2/10/19
@@ -20,6 +20,8 @@ public final class HandConst {
 	public static final double hatchPickup	 	= -2.0; 		//AP 2/9/19
 	public static final double postHatchPickup	= 0.0; 		//AP 2/9/19
 	public static final double ballPickup 		= -46.0;	//ejo 2.2.19
+	public static final double lowerHardStop	= -50;		//AP 2/24/19  -53.2 is actual hard stop
+
 
 	//TODO temporary use versaplanetary. Real robot will be 1.0;
 	public static final double encoderGearRatio = 1.0;	  // JR Practice Robot 2/18/19
@@ -38,6 +40,12 @@ public final class HandConst {
 	public static final double GamepadDeadZone			= 0.1; //AP 2/17/19
 	
 	public static final String PracticeZeroString = "PracticeHandZero";
-    public static final String CompZeroString = "CompHandZero";
+	public static final String CompZeroString = "CompHandZero";
+	
+	// PID Constants
+	public static final double proportional      	= 0.05;   	// AP WAG
+	public static final double integral         	= 0.000; 	// AP WAG
+	public static final double derivative        	= 0.0;   	// AP WAG
+	public static final double feedforward          = 0.0;   	// AP WAG
 
 }	
