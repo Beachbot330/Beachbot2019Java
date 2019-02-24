@@ -64,7 +64,7 @@ public class Pickup extends Subsystem {
         addChild("BallKicker",ballKicker);
         
         
-        iRSensor = new SharpIR(SharpType.GP2Y0A41SK0F, 1);
+        iRSensor = new SharpIR(SharpType.GP2Y0A41SK0F, 2);
         addChild(iRSensor);
         
         
@@ -88,7 +88,8 @@ public class Pickup extends Subsystem {
             public double get() { return iRSensor.getDistance(); }
         };
         CSVLogger.getInstance().add("SensorPickupDistanceRaw", temp);
-        temp = new CSVLoggable(true) {
+
+        temp = new CSVLoggable(this.shuffleboardTab) {
             public double get() { return iRSensor.getVoltage(); }
         };
         CSVLogger.getInstance().add("SensorVoltage", temp);
