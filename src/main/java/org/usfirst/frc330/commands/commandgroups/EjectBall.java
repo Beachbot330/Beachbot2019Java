@@ -21,9 +21,10 @@ import org.usfirst.frc330.commands.*;
 public class EjectBall extends BBCommandGroup {
 
     public EjectBall() {
+        addSequential(new BallKickExtend());
+        addSequential(new WaitCommand(0.1));
         addSequential(new OpenClaw());
         addSequential(new ReversePickup());
-        addSequential(new BallKickExtend());
         addSequential(new WaitCommand(1.0));
         addSequential(new BallKickRetract());
         addSequential(new WaitCommand(1.0));
