@@ -19,6 +19,9 @@ import org.usfirst.frc330.commands.*;
 import org.usfirst.frc330.constants.LiftConst;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.command.Subsystem;
+import edu.wpi.first.wpilibj.shuffleboard.Shuffleboard;
+import edu.wpi.first.wpilibj.shuffleboard.ShuffleboardTab;
+
 import com.ctre.phoenix.motorcontrol.*;
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 import edu.wpi.first.wpilibj.DigitalInput;
@@ -29,6 +32,8 @@ import edu.wpi.first.wpilibj.RobotController;
  *
  */
 public class Lift extends Subsystem {
+
+	public ShuffleboardTab shuffleboardTab = Shuffleboard.getTab("Lift");
 
 	boolean calibrated = false; //Has the encoder been properly zeroed?
 	boolean lockout = false;

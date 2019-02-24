@@ -143,14 +143,14 @@ public class OI {
         
 
         //Add items to shuffleboard
-        liftTab = Shuffleboard.getTab("Lift");
+        liftTab = Robot.lift.shuffleboardTab;
         liftTab.add("RaiseLift", new RaiseLift());
         liftTab.add("LowerLift", new LowerLift());
         liftTab.add("RaiseLiftSensor", new RaiseLiftSensor());
         liftTab.add("LowerLiftSensor", new LowerLiftSensor());
         liftTab.add("CalibrateLift", new CalibrateLift());
 
-        pickupTab = Shuffleboard.getTab("Pickup");
+        pickupTab = Robot.pickup.shuffleboardTab;
         pickupTab.add("RollerOn", new RollerOn());
         pickupTab.add("AllenTestCommand", new AllenCommand());
         pickupTab.add("ReversePickup", new ReversePickup());
@@ -162,11 +162,11 @@ public class OI {
         pickupTab.add("BallKickExtend", new BallKickExtend());
         pickupTab.add("BallKickRetract", new BallKickRetract());
 
-        chassisTab = Shuffleboard.getTab("Chassis");
+        chassisTab = Robot.chassis.shuffleboardTab;
         chassisTab.add("ShiftHigh", new ShiftHigh());
         chassisTab.add("ShiftLow", new ShiftLow());
 
-        handTab = Shuffleboard.getTab("Hand");
+        handTab = Robot.hand.shuffleboardTab;
         handTab.add("HandOut", new HandOut());
 
         complexTab = Shuffleboard.getTab("Complex");
