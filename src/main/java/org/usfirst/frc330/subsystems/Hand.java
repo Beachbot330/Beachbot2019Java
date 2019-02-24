@@ -32,6 +32,8 @@ import org.usfirst.frc330.util.Logger.Severity;
 
 import edu.wpi.first.wpilibj.Preferences;
 import edu.wpi.first.wpilibj.command.Subsystem;
+import edu.wpi.first.wpilibj.shuffleboard.Shuffleboard;
+import edu.wpi.first.wpilibj.shuffleboard.ShuffleboardTab;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 
@@ -40,6 +42,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
  */
 public class Hand extends Subsystem {
 
+    public ShuffleboardTab shuffleboardTab = Shuffleboard.getTab("Hand");
     boolean lockout = false;
     String zeroString = HandConst.CompZeroString;
     boolean calibrated = false;

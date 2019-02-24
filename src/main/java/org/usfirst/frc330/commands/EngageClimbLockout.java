@@ -28,6 +28,7 @@ public class EngageClimbLockout extends BBCommand {
         Robot.hand.engageLockout();
         Robot.lift.engageLockout();
         Robot.frills.engageLockout();
+        Robot.pickup.engageLockout();
     }
 
     // Called repeatedly when this Command is scheduled to run

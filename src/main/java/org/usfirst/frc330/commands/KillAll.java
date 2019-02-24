@@ -37,6 +37,11 @@ public class KillAll extends BBCommand {
     @Override
     protected void initialize() {
         Logger.getInstance().println("Kill All!", Logger.Severity.WARNING);
+        Robot.hand.disableLockout();
+        Robot.lift.disableLockout();
+        Robot.frills.disableLockout();
+        Robot.pickup.disableLockout();
+        Logger.getInstance().println("ClimbLockout Disabled by Kill All", Logger.Severity.WARNING);
     	Scheduler.getInstance().removeAll();
         Robot.chassis.stopDrive();
         Robot.lift.stopLift();
