@@ -82,12 +82,12 @@ public class Pickup extends Subsystem {
         CSVLoggable temp = new CSVLoggable(true) {
             public double get() { return getSensorDistance(); }
         };
-        CSVLogger.getInstance().add("FilteredPickupDistance", temp);
+        CSVLogger.getInstance().add("PickupDistanceFiltered", temp);
         
         temp = new CSVLoggable(true) {
             public double get() { return iRSensor.getDistance(); }
         };
-        CSVLogger.getInstance().add("RawPickupDistance", temp);
+        CSVLogger.getInstance().add("PickupDistanceRaw", temp);
     }
 
     /////////////////////////////////////////////////////////////
