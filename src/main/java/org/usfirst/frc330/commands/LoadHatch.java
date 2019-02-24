@@ -49,14 +49,15 @@ public class LoadHatch extends BBCommand {
     // Make this return true when this Command no longer needs to run execute()
     @Override
     protected boolean isFinished() {
-        return Robot.pickup.getHatchAligned();
+        return false;
+        //return Robot.pickup.getHatchInRange();
     }
 
     // Called once after isFinished returns true
     @Override
     protected void end() {
-        Robot.pickup.closeClaw();
-        Robot.hand.setAngle(HandConst.postHatchPickup);
+        //Robot.pickup.closeClaw();
+        //Robot.hand.setAngle(HandConst.postHatchPickup);
     }
 
     // Called when another command which requires one or more of the same

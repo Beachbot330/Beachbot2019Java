@@ -53,7 +53,7 @@ public class SensoredHatchPickup extends BBCommandGroup {
         //hatch should be securely in claw at this point
 
         //once everything is finished, enter defense mode
-        addSequential(new Defense());
+        addSequential(new HatchDefense());
         addSequential(new IsFinishedFalse());
         //VERIFY ejo 2.18.19
     } 

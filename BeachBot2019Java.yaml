@@ -1008,7 +1008,7 @@ Children:
           name: Command
           type: Command
           validators: *id028
-          value: Defense
+          value: HatchDefense
         When to Run: !!robotbuilder.data.properties.ChoicesProperty
           choices: *id029
           default: whileHeld
@@ -1066,7 +1066,7 @@ Children:
           name: Command
           type: Command
           validators: *id028
-          value: Defense
+          value: HatchDefense
         When to Run: !!robotbuilder.data.properties.ChoicesProperty
           choices: *id029
           default: whileHeld
@@ -2269,6 +2269,31 @@ Children:
         name: Button on SmartDashboard, validators: null, value: true}
     Base: Command Group
     Name: LoadBall
+  - Children: []
+    Properties:
+      Autonomous Selection: !!robotbuilder.data.properties.BooleanProperty {default: false,
+        name: Autonomous Selection, validators: null, value: false}
+      Parameters: !!robotbuilder.data.properties.ParametersProperty
+        default: []
+        name: Parameters
+        validators: null
+        value: []
+      Run When Disabled: !!robotbuilder.data.properties.BooleanProperty {default: false,
+        name: Run When Disabled, validators: null, value: false}
+      Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
+        default: &id033 []
+        name: Parameter presets
+        validators: null
+        value: *id033
+      Commands: !!robotbuilder.data.properties.ListProperty
+        default: &id034 []
+        name: Commands
+        validators: *id032
+        value: *id034
+      Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
+        name: Button on SmartDashboard, validators: null, value: true}
+    Base: Command Group
+    Name: HatchDefense
   Properties: {}
   Base: Commands
   Name: Commands
