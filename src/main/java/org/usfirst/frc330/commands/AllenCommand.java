@@ -11,6 +11,8 @@
 
 package org.usfirst.frc330.commands;
 import edu.wpi.first.wpilibj.command.BBCommand;
+
+import org.usfirst.frc330.Robot;
 import org.usfirst.frc330.util.Logger;
 import org.usfirst.frc330.util.Logger.Severity;
 
@@ -20,11 +22,12 @@ import org.usfirst.frc330.util.Logger.Severity;
 public class AllenCommand extends BBCommand {
 	
     public AllenCommand() {
-    	this.setRunWhenDisabled(true);
+    	//this.setRunWhenDisabled(true);
     }
 
     protected void initialize() {
-    	Logger.getInstance().println("Allen is too cool!", true, Severity.ERROR);
+        Logger.getInstance().println("Allen is too cool!", true, Severity.ERROR);
+        Robot.hand.setAngle(-30);
     }
 
 

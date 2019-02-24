@@ -10,7 +10,8 @@ public final class HandConst {
 
 	//angles relative to the ground (degrees)
 	public static final double upperHardStop 		= 57.0;		//ejo 2.2.19
-	public static final double defense 			= 57.0; 	//ejo 2.2.19
+	public static final double defense 			= 53.0; 	//AP 2/24/19
+	//public static final double defense 			= -30.0; 	//AP 2/24/19
 	public static final double hatchPlacementLow 	= 0.0; 		//ejo 2.2.19
 	public static final double hatchPlacementMid 	= 0.0; 		//AP 2/10/19
 	public static final double hatchPlacementHigh 	= 0.0; 		//AP 2/10/19
@@ -45,7 +46,7 @@ public final class HandConst {
 	// PID Constants
 	public static final double proportional      	= 10.0;   	// AP WAG
 	public static final double integral         	= 0.000; 	// AP WAG
-	public static final double derivative        	= 0.0;   	// AP WAG
+	public static final double derivative        	= 40.0;   	// AP WAG
 	public static final double feedforward          = 0.0;   	// AP WAG
 
 }	

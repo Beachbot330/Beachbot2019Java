@@ -146,27 +146,27 @@ public class Lift extends Subsystem {
 		/////////////////////////////////////////////////////////////
         // Logging
         /////////////////////////////////////////////////////////////
-        CSVLoggable temp = new CSVLoggable(true) {
+        CSVLoggable temp = new CSVLoggable(this.shuffleboardTab) {
 			public double get() { return getPosition(); }
 		};
 		CSVLogger.getInstance().add("LiftPosition", temp);
 		
-		temp = new CSVLoggable(true) {
+		temp = new CSVLoggable(this.shuffleboardTab) {
 			public double get() { return getVelocity();}
 		};
 		CSVLogger.getInstance().add("LiftVelocity", temp);
 		
-		temp = new CSVLoggable(true) {
+		temp = new CSVLoggable(this.shuffleboardTab) {
 			public double get() { return getOutput(); }
 		};
 		CSVLogger.getInstance().add("LiftOutput", temp);
 		
-		temp = new CSVLoggable(true) {
+		temp = new CSVLoggable(this.shuffleboardTab) {
 			public double get() { return getSetpoint(); }
 		};
 		CSVLogger.getInstance().add("LiftSetpoint", temp);
 
-		temp = new CSVLoggable(true) {
+		temp = new CSVLoggable(this.shuffleboardTab) {
 			public double get() {
 				if( getCalibrated()) {
 					return 1.0;
@@ -177,17 +177,17 @@ public class Lift extends Subsystem {
 		CSVLogger.getInstance().add("LiftCalibrated", temp);
 
 		// Pogo Logging
-		temp = new CSVLoggable(true) {
+		temp = new CSVLoggable(this.shuffleboardTab) {
 			public double get() { return getPogoPosition(); }
 		};
 		CSVLogger.getInstance().add("PogoPosition", temp);
 		
-		temp = new CSVLoggable(true) {
+		temp = new CSVLoggable(this.shuffleboardTab) {
 			public double get() { return getPogoOutput(); }
 		};
 		CSVLogger.getInstance().add("PogoOutput", temp);
 
-		temp = new CSVLoggable(true) {
+		temp = new CSVLoggable(this.shuffleboardTab) {
 			public double get() { return getPogoSetpoint(); }
 		};
 		CSVLogger.getInstance().add("PogoSetpoint", temp);
@@ -371,9 +371,7 @@ public class Lift extends Subsystem {
 	}
 
 	public void calibrateMove() {
-    	if(!calibrated) {
-    		setThrottle(LiftConst.calibrationSpeed);
-    	}
+    	lift1.set(ControlMode.PercentOutput, LiftConst.calibrationSpeed);
     }
 
 	public void manualLift() {

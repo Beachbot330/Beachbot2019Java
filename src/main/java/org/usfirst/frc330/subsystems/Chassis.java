@@ -206,22 +206,22 @@ public class Chassis extends Subsystem {
         //-----------------------------------------------------------------------
         // Logging
         //-----------------------------------------------------------------------
-        CSVLoggable temp = new CSVLoggable(true) {
+        CSVLoggable temp = new CSVLoggable(this.shuffleboardTab) {
 			public double get() { return driveEncoderLeft.getDistance(); }
     	};
     	CSVLogger.getInstance().add("DriveTrainDistanceL", temp);
     	
-    	temp = new CSVLoggable(true) {
+    	temp = new CSVLoggable(this.shuffleboardTab) {
 			public double get() { return driveEncoderRight.getDistance(); }
     	};
     	CSVLogger.getInstance().add("DriveTrainDistanceR", temp);
     	
-    	temp = new CSVLoggable(true) {
+    	temp = new CSVLoggable(this.shuffleboardTab) {
 			public double get() { return driveEncoderLeft.getRate(); }  		
     	};
     	CSVLogger.getInstance().add("DriveTrainRateL", temp);
     	
-    	temp = new CSVLoggable(true) {
+    	temp = new CSVLoggable(this.shuffleboardTab) {
 			public double get() { return driveEncoderRight.getRate(); }  		
     	};
     	CSVLogger.getInstance().add("DriveTrainRateR", temp);    	
@@ -236,52 +236,52 @@ public class Chassis extends Subsystem {
     	};
     	CSVLogger.getInstance().add("DriveTrainRight", temp);
     	
-    	temp = new CSVLoggable(true) {
+    	temp = new CSVLoggable(this.shuffleboardTab) {
 			public double get() { return getAngle(); }  		
     	};    	
     	CSVLogger.getInstance().add("ChassisAngle", temp);
     	
-    	temp = new CSVLoggable(true) {
+    	temp = new CSVLoggable(this.shuffleboardTab) {
 			public double get() { return gyroPID.getSetpoint(); }  		
     	};    	
     	CSVLogger.getInstance().add("GyroSetpoint", temp);
     	
-    	temp = new CSVLoggable(true) {
+    	temp = new CSVLoggable(this.shuffleboardTab) {
 			public double get() { return getGyroComp(); }  		
     	};    	
     	CSVLogger.getInstance().add("GyroCompensation", temp);
     	
-    	temp = new CSVLoggable(true) {
+    	temp = new CSVLoggable(this.shuffleboardTab) {
 			public double get() { return navX1.isConnected() ? 1: 0; }  		
     	};    	
     	CSVLogger.getInstance().add("GyroIsConnected", temp);
     	
-    	temp = new CSVLoggable(true) {
+    	temp = new CSVLoggable(this.shuffleboardTab) {
 			public double get() { return navX1.isCalibrating() ? 1: 0; }  		
     	};    	
     	CSVLogger.getInstance().add("GyroIsCalibrating", temp);
     	
-    	temp = new CSVLoggable(true) {
+    	temp = new CSVLoggable(this.shuffleboardTab) {
 			public double get() { return getX(); }  		
     	};     	
     	CSVLogger.getInstance().add("ChassisX", temp);
     	
-    	temp = new CSVLoggable(true) {
+    	temp = new CSVLoggable(this.shuffleboardTab) {
 			public double get() { return getY(); }  		
     	};      	
     	CSVLogger.getInstance().add("ChassisY", temp);
     	
-    	temp = new CSVLoggable(true) {
+    	temp = new CSVLoggable(this.shuffleboardTab) {
     		public double get() {return leftDrivePID.getError(); }
     	};
     	CSVLogger.getInstance().add("leftDrivePID Error", temp);
     	
-    	temp = new CSVLoggable(true) {
+    	temp = new CSVLoggable(this.shuffleboardTab) {
 			public double get() { return getPressure(); }  		
     	};  
     	CSVLogger.getInstance().add("Pressure", temp);
     	
-    	temp = new CSVLoggable(true) {
+    	temp = new CSVLoggable(this.shuffleboardTab) {
 			public double get() { 
 				DoubleSolenoid.Value state = shifters.get();
 				double state_int;
