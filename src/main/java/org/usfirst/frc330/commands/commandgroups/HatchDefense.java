@@ -25,7 +25,7 @@ public class HatchDefense extends BBCommandGroup {
 
         addSequential(new RollerOff());
         addSequential(new CloseClaw());
-        addSequential(new WaitCommand(1.0));
+        addSequential(new WaitCommand(0.5));
         addParallel(new SetLiftPosition(LiftConst.defense));
     	addParallel(new SetHandAngle(HandConst.defense));
  
