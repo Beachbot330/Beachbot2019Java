@@ -168,6 +168,7 @@ public class OI {
 
         handTab = Robot.hand.shuffleboardTab;
         handTab.add("HandOut", new HandOut());
+        handTab.add("Calibrate", new CalibrateHand());
 
         complexTab = Shuffleboard.getTab("Complex");
         complexTab.add("LoadHatch", new LoadHatch());
