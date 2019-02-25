@@ -13,6 +13,7 @@ package org.usfirst.frc330.commands.commandgroups;
 
 import edu.wpi.first.wpilibj.command.BBCommandGroup;
 
+import org.usfirst.frc330.Robot;
 import org.usfirst.frc330.commands.*;
 
 /**
@@ -30,4 +31,10 @@ public class EjectBall extends BBCommandGroup {
         addSequential(new WaitCommand(1.0));
         addSequential(new RollerOff());
     } 
+
+    @Override
+    protected void interrupted() {
+        Robot.pickup.rollerOff();
+        Robot.pickup.ballKickRetract();
+    }
 }
