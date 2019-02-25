@@ -315,7 +315,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id013
-          value: '1'
+          value: '5'
       Base: Talon SRX
       Name: Lift2
     - Children: []
@@ -375,7 +375,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id013
-          value: '5'
+          value: '1'
       Base: Talon SRX
       Name: Pogo
     Properties:
@@ -2281,15 +2281,15 @@ Children:
       Run When Disabled: !!robotbuilder.data.properties.BooleanProperty {default: false,
         name: Run When Disabled, validators: null, value: false}
       Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
-        default: &id033 []
+        default: []
         name: Parameter presets
         validators: null
-        value: *id033
+        value: []
       Commands: !!robotbuilder.data.properties.ListProperty
-        default: &id034 []
+        default: []
         name: Commands
         validators: *id032
-        value: *id034
+        value: []
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: true}
     Base: Command Group

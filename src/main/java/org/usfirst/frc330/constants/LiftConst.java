@@ -9,15 +9,15 @@ public final class LiftConst {
 	//Positions
 	public static final double defense			= 0.0;		//ejo 2.2.19
 	public static final double lowerLimit 		= 0.0;		//ejo 2.2.19
-	public static final double upperLimit	 	= 30.50;	//ejo 2.2.19
+	public static final double upperLimit	 	= 31;	//ejo 2.2.19
 
-	public static final double DeployBallLow	= 5.0;		//ejo 2.2.19
-	public static final double DeployBallMid	= 18.5;		//ejo 2.2.19
-	public static final double DeployBallHi		= 30.50;	//ejo 2.2.19 (might be changed)
+	public static final double DeployBallLow	= 3.20;		//ejo 2.2.19
+	public static final double DeployBallMid	= 17.3;		//ejo 2.2.19
+	public static final double DeployBallHi		= 31;	//AP 2/24/19
 
 	public static final double DeployHatchLow	= 0.0;		//ejo 2.2.19
-	public static final double DeployHatchMid	= 13.5;		//ejo 2.2.19
-	public static final double DeployHatchHi	= 27.5;		//ejo 2.2.19
+	public static final double DeployHatchMid	= 14.01;		//AP 2/24/19
+	public static final double DeployHatchHi	= 27.87;		//AP 2/24/19
 
 	public static final double BallPickup		= 0.0;		// TBD 2/9/19 (TBD)
 	public static final double HatchPickup 		= 0.0;		//ejo 2.2.19
