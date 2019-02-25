@@ -159,6 +159,7 @@ public class OI {
         liftTab.add("RaiseLiftSensor", new RaiseLiftSensor());
         liftTab.add("LowerLiftSensor", new LowerLiftSensor());
         liftTab.add("CalibrateLift", new CalibrateLift());
+        liftTab.add("PogoAndDrivetrain", new DrivePogoAndDriveTrain());
 
         pickupTab = Robot.pickup.shuffleboardTab;
         pickupTab.add("RollerOn", new RollerOn());

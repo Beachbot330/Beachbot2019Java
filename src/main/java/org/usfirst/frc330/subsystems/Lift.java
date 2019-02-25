@@ -56,7 +56,7 @@ public class Lift extends Subsystem {
         
         
         
-        lift2 = new WPI_TalonSRX(1);
+        lift2 = new WPI_TalonSRX(5);
         
         
         
@@ -72,7 +72,7 @@ public class Lift extends Subsystem {
         addChild("ClimbPin",climbPin);
         
         
-        pogo = new WPI_TalonSRX(5);
+        pogo = new WPI_TalonSRX(1);
         
         
         
