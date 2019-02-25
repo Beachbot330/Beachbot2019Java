@@ -435,5 +435,12 @@ public class Lift extends Subsystem {
 		pogo.set(ControlMode.MotionMagic, inchesToTicks_Pogo(setpoint));
 	}
 
+	public void pogoDrive(double speed) {
+		if (lockout)
+			pogo.set(ControlMode.PercentOutput, speed);
+		else
+			pogo.set(ControlMode.PercentOutput, 0);
+	}
+
 }
 
