@@ -159,6 +159,7 @@ public class OI {
         liftTab.add("RaiseLiftSensor", new RaiseLiftSensor());
         liftTab.add("LowerLiftSensor", new LowerLiftSensor());
         liftTab.add("CalibrateLift", new CalibrateLift());
+        liftTab.add("PogoAndDrivetrain", new DrivePogoAndDriveTrain());
 
         pickupTab = Robot.pickup.shuffleboardTab;
         pickupTab.add("RollerOn", new RollerOn());
@@ -184,7 +185,7 @@ public class OI {
         complexTab.add("LoadHatch", new LoadHatch());
         //complexTab.add("LoadBall", new LoadBall());
         complexTab.add("Defense", new Defense());
-        complexTab.add("ClimbDeploy", new ClimbDeploy());
+        //complexTab.add("ClimbDeploy", new ClimbDeploy());
         complexTab.add("DeployClimbPins", new DeployClimbPins());
         complexTab.add("RetractClimbPins", new RetractClimbPins());
         complexTab.add("EngageClimbLockout", new EngageClimbLockout());

@@ -150,6 +150,7 @@ public class Robot extends TimedRobot {
         
         Robot.pickup.ballKickOff();
         Robot.pickup.clawOff();
+        Robot.lift.retractClimbPin();
     }
 
     String autoName;
