@@ -61,8 +61,8 @@ public final class LiftConst {
 	public static final double  PogoDriveDistance	= 25; //AP 2/9/19
 	
 	//Talon SRX Settings
-	public static final double VoltageRampRate				= 1.23;	// AP 2018 value
-	public static final double MaxOutputPercent				= 0.3;	// AP Testing Value
+	public static final double VoltageRampRate				= 1.00;	// AP 2/24/19
+	public static final double MaxOutputPercent				= 0.5;	// AP Testing Value
 	public static final int    CAN_Timeout					= 10; // AP 2018 value
 	public static final int    CAN_Timeout_No_Wait      	= 0;  // AP 2018 value
 	public static final int    CAN_Status_Frame_13_Period 	= 20; // AP 2018 value
