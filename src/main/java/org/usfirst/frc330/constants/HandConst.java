@@ -18,7 +18,7 @@ public final class HandConst {
 	public static final double ballPlacementLow 	= 0.0; 		//AP 2/10/19
 	public static final double ballPlacementMid 	= 0.0; 		//AP 2/10/19
 	public static final double ballPlacementHigh 	= 35.0; 	//ejo 2.2.19
-	public static final double hatchPickup	 	= -10.0; 		//AP 2/9/19
+	public static final double hatchPickup	 	= -2.0; 		//AP 2/9/19
 	public static final double postHatchPickup	= 0.0; 		//AP 2/9/19
 	public static final double ballPickup 		= -50.0;	//ejo 2.2.19
 	public static final double lowerHardStop	= -50;		//AP 2/24/19  -53.2 is actual hard stop
