@@ -42,14 +42,14 @@ public class DrivePogoAndDriveTrain extends BBCommand {
         pogoSpeed = (left + right)/2;
         pogoRatio = LiftConst.pogoMaxSpeed / ChassisConst.LowGearMaxSpeed;
 
-        Robot.chassis.tankDrive(left*pogoRatio, right*pogoRatio);
+        Robot.chassis.tankDrive(-left*pogoRatio, -right*pogoRatio);
         Robot.lift.pogoDrive(pogoSpeed);
     }
 
     // Make this return true when this Command no longer needs to run execute()
     @Override
     protected boolean isFinished() {
-        return (Robot.oi.driverR.getRawButton(2));
+        return (Robot.oi.driverR.getRawButton(3));
     }
 
     // Called once after isFinished returns true

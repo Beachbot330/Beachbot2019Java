@@ -48,7 +48,7 @@ public class ConditionalPogoRetract extends BBCommand {
     // Make this return true when this Command no longer needs to run execute()
     @Override
     protected boolean isFinished() {
-        if (Robot.oi.driverR.getRawButton(2)){
+        if (Robot.oi.driverR.getRawButton(3)){
             Robot.lift.retractClimbPin();
             return true;
         }

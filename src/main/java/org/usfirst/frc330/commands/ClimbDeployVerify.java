@@ -36,7 +36,7 @@ public class ClimbDeployVerify extends BBCommand {
     // Called repeatedly when this Command is scheduled to run
     @Override
     protected void execute() {
-        if(Robot.oi.driverR.getRawButton(2) && !twoButtonComplete) {
+        if(Robot.oi.driverR.getRawButton(3) && !twoButtonComplete) {
             Scheduler.getInstance().add(new ClimbDeploy());
             twoButtonComplete = true;
     	}

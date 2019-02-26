@@ -25,13 +25,10 @@ public class Climb extends BBCommandGroup {
 
     public Climb() {
         addSequential(new ShiftLow());
-        addSequential(new SetLiftPosition(LiftConst.PogoDrive, LiftConst.tolerance));
-        addSequential(new WaitCommand(10.0));
+        addSequential(new SetLiftPosition(LiftConst.PogoDrive, LiftConst.tolerance, true));
         //addSequential(new DrivePogo(LiftConst.PogoDriveDistance));  //JR DISABLED 2/24/19 until time to tune pogo
         addSequential(new DrivePogoAndDriveTrain());
-        addSequential(new WaitCommand(10.0));
         addSequential(new ConditionalPogoRetract());
-        addSequential(new WaitCommand(10.0));
         //addSequential(new DriveDistanceAtCurAngle(ChassisConst.PlatformDrive, 1.0, 3.0, false, ChassisConst.DriveLow, ChassisConst.GyroDriveLow)); //JR DISABLED 2/24/19 until time to tune drivetrain
         addSequential(new TankDrive());
         //double distance, double tolerance, double timeout, boolean stopAtEnd, DrivePIDGains driveGains, DrivePIDGains gyroGains

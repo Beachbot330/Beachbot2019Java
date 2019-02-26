@@ -70,7 +70,7 @@ public final class LiftConst {
 
 	//Pogo Talon SRX Settings
 	public static final double PogoVoltageRampRate			= 1.23;	// AP 2018 value
-	public static final double PogoMaxOutputPercent			= 0.3;	// AP Testing Value
+	public static final double PogoMaxOutputPercent			= 1.0;	// JR 2/25/19
 	// Pogo Motion Magic Constants
 	public static final int PogoVelocityLimit             	= 2000;   // AP 2018 value
 	public static final int PogoAccelLimit                 	= 6000;   // AP 2018 value

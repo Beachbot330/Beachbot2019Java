@@ -20,24 +20,41 @@ import org.usfirst.frc330.util.Logger;
  */
 public class SetLiftPosition extends BBCommand {
 	
-	double position, tolerance;
+    double position, tolerance;
+    boolean override;
 	
     public SetLiftPosition(double position) {
         requires(Robot.lift);
         this.position = position;
         this.tolerance = LiftConst.tolerance;
+        this.override = false;
+    }
+
+    public SetLiftPosition(double position, boolean override) {
+        requires(Robot.lift);
+        this.position = position;
+        this.tolerance = LiftConst.tolerance;
+        this.override = override;
     }
     
     public SetLiftPosition(double position, double tolerance) {
         requires(Robot.lift);
         this.position = position;
         this.tolerance = tolerance;
+        this.override = false;
+    }
+
+    public SetLiftPosition(double position, double tolerance, boolean override) {
+        requires(Robot.lift);
+        this.position = position;
+        this.tolerance = tolerance;
+        this.override = override;
     }
 
     // Called just before this Command runs the first time
     @Override
     protected void initialize() {
-    	Robot.lift.setLiftPosition(position);
+    	Robot.lift.setLiftPosition(position, override);
     	Robot.lift.setLiftAbsoluteTolerance(tolerance);
     }
 

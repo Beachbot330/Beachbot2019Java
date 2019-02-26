@@ -23,9 +23,8 @@ public class ClimbDeploy extends BBCommandGroup {
     public ClimbDeploy() {
 
         addParallel(new SetHandAngle(HandConst.defense));
-        addSequential(new WaitCommand(10.0));
         addSequential(new SetLiftPosition(LiftConst.ClimbLatchDeploy, LiftConst.tolerance));
-        addSequential(new WaitCommand(10.0));
+        addSequential(new WaitCommand(5.0));
         addSequential(new DeployClimbPins());
         addSequential(new EngageClimbLockout());
         
