@@ -60,7 +60,8 @@ public class OI {
     public Joystick driverL;
     public JoystickButton shiftHigh_2;
     public JoystickButton ejectBall_4R;
-    public JoystickButton climb_3;
+    public JoystickButton climb_5;
+    public JoystickButton ejectBall_1;
     public Joystick driverR;
     public JoystickButton ballPickup_1WH;
     public JoystickButton defense_1WR;
@@ -115,8 +116,10 @@ public class OI {
         ballPickup_1WH.whileHeld(new SensoredBallPickup());
         driverR = new Joystick(1);
         
-        climb_3 = new JoystickButton(driverR, 5);
-        climb_3.whenPressed(new Climb());
+        ejectBall_1 = new JoystickButton(driverR, 1);
+        ejectBall_1.whenPressed(new EjectBall());
+        climb_5 = new JoystickButton(driverR, 5);
+        climb_5.whenPressed(new Climb());
         ejectBall_4R = new JoystickButton(driverR, 4);
         ejectBall_4R.whenPressed(new EjectBall());
         shiftHigh_2 = new JoystickButton(driverR, 2);
