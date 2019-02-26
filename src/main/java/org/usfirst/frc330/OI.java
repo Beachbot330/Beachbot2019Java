@@ -72,7 +72,7 @@ public class OI {
     public JoystickButton handOut_4WH;
     public JoystickButton raiseLift_5;
     public JoystickButton openClawReverseRoller_6;
-    public JoystickButton hatchRelese_7;
+    public JoystickButton loadBall_7;
     public JoystickButton killAll_8;
     public Joystick gamePad;
 
@@ -94,8 +94,8 @@ public class OI {
         
         killAll_8 = new JoystickButton(gamePad, 8);
         killAll_8.whenPressed(new KillAll());
-        hatchRelese_7 = new JoystickButton(gamePad, 7);
-        hatchRelese_7.whenPressed(new HatchRelease());
+        loadBall_7 = new JoystickButton(gamePad, 7);
+        loadBall_7.whenPressed(new LoadBall());
         openClawReverseRoller_6 = new JoystickButton(gamePad, 6);
         openClawReverseRoller_6.whileHeld(new OpenClawReverseRoller());
         raiseLift_5 = new JoystickButton(gamePad, 5);
