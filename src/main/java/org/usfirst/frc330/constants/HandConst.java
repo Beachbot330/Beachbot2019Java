@@ -12,16 +12,17 @@ public final class HandConst {
 	public static final double upperHardStop 		= 57.0;		//ejo 2.2.19
 	public static final double defense 			= 53.0; 	//AP 2/24/19
 	//public static final double defense 			= -30.0; 	//AP 2/24/19
-	public static final double hatchPlacementLow 	= 0.0; 		//ejo 2.2.19
-	public static final double hatchPlacementMid 	= 0.0; 		//AP 2/10/19
-	public static final double hatchPlacementHigh 	= 0.0; 		//AP 2/10/19
-	public static final double ballPlacementLow 	= 32.74; 		//AP 2/24/19
-	public static final double ballPlacementMid 	= 32.74; 		//AP 2/24/19
-	public static final double ballPlacementHigh 	= 32.74; 	//AP 2/24/19
-	public static final double hatchPickup	 	= -7.0; 		//AP 2/9/19
-	public static final double postHatchPickup	= 0.0; 		//AP 2/9/19
-	public static final double ballPickup 		= -50.0;	//ejo 2.2.19
-	public static final double lowerHardStop	= -50;		//AP 2/24/19  -53.2 is actual hard stop
+	public static final double hatchPlacementLow 		= 0.0; 		//ejo 2.2.19
+	public static final double hatchPlacementMid 		= 0.0; 		//AP 2/10/19
+	public static final double hatchPlacementHigh 		= 0.0; 		//AP 2/10/19
+	public static final double ballPlacementLow 		= 32.74; 		//AP 2/24/19
+	public static final double ballPlacementMid 		= 32.74; 		//AP 2/24/19
+	public static final double ballPlacementHigh 		= 32.74; 	//AP 2/24/19
+	public static final double hatchPickup	 			= -7.0; 		//AP 2/9/19
+	public static final double postHatchPickup			= 0.0; 		//AP 2/9/19
+	public static final double ballPickupGround 		= -50.0;	//ejo 2.2.19
+	public static final double ballPickupHumanPlayer	= -50.0;	//ejo 2.25.18
+	public static final double lowerHardStop			= -50.0;		//AP 2/24/19  -53.2 is actual hard stop
 
 
 	//TODO temporary use versaplanetary. Real robot will be 1.0;
