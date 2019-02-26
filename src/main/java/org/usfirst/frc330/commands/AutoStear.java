@@ -12,6 +12,7 @@
 package org.usfirst.frc330.commands;
 import edu.wpi.first.wpilibj.command.BBCommand;
 import org.usfirst.frc330.Robot;
+import org.usfirst.frc330.constants.ChassisConst;
 
 /**
  *
@@ -42,6 +43,22 @@ public class AutoStear extends BBCommand {
     @Override
     protected void execute() {
         double drive = -Robot.oi.driverR.getY();
+        if (drive < 0.05){
+            if(Robot.chassis.getIsLowGear()){
+                Robot.chassis.setLimelightPID(ChassisConst.LimelightTurnLow);
+            }
+            else{
+                Robot.chassis.setLimelightPID(ChassisConst.LimelightTurnHigh);
+            }
+        }
+        else{
+            if(Robot.chassis.getIsLowGear()){
+                Robot.chassis.setLimelightPID(ChassisConst.LimelightDriveLow);
+            }
+            else{
+                Robot.chassis.setLimelightPID(ChassisConst.LimelightDriveHigh);
+            }
+        }
     	Robot.chassis.tankDrive(drive, drive);
     }
 
