@@ -23,7 +23,8 @@ public final class LiftConst {
 	public static final double BallPickupPlayer = 4.0;		//ejo 2.26.10
 	public static final double HatchPickup 		= 0.0;		//ejo 2.2.19
 	public static final double ClimbLatchDeploy = 21.75;	//AP  2/9/19
-	public static final double PogoDrive		= 0.5;		//AP 2/9/19 WAG
+	public static final double PogoDrive		= 0.0;		//JR 2/26/19
+	public static final double PogoRetract		= 2.0;		//JR 2/26/19
 
 	public static final double tolerance		= 0.5; 		//TODO: find 2019 value -AP
 
@@ -77,7 +78,7 @@ public final class LiftConst {
 	public static final int PogoAccelLimit                 	= 6000;   // AP 2018 value
 
 	// PID Constants
-	public static final double proportional      	= 0.6;   	// AP 2/26/19
+	public static final double proportional      	= 0.8;   	// JR 2/26/19
 	public static final double integral         	= 0.000; 	// AP 2018 value
 	public static final double derivative        	= 15.0;   	// AP 2018 value
 	public static final double feedforward          = 0.5;   	// AP 2018 value

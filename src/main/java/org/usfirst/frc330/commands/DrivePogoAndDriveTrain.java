@@ -42,7 +42,7 @@ public class DrivePogoAndDriveTrain extends BBCommand {
         pogoSpeed = (left + right)/2;
         pogoRatio = LiftConst.pogoMaxSpeed / ChassisConst.LowGearMaxSpeed;
 
-        Robot.chassis.tankDrive(-left*pogoRatio, -right*pogoRatio);
+        Robot.chassis.tankDrive(-pogoSpeed*pogoRatio, -pogoSpeed*pogoRatio);
         Robot.lift.pogoDrive(pogoSpeed);
     }
 

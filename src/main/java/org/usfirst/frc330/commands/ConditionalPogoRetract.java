@@ -12,6 +12,7 @@
 package org.usfirst.frc330.commands;
 import edu.wpi.first.wpilibj.command.BBCommand;
 import org.usfirst.frc330.Robot;
+import org.usfirst.frc330.constants.LiftConst;
 
 /**
  *
@@ -49,7 +50,8 @@ public class ConditionalPogoRetract extends BBCommand {
     @Override
     protected boolean isFinished() {
         if (Robot.oi.driverR.getRawButton(3)){
-            Robot.lift.retractClimbPin();
+            //Robot.lift.retractClimbPin();
+            Robot.lift.setLiftPosition(LiftConst.PogoRetract, true);
             return true;
         }
         else
