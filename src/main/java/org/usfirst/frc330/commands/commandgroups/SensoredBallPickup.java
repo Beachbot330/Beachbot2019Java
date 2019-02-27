@@ -35,7 +35,7 @@ public class SensoredBallPickup extends BBCommandGroup {
         addSequential(new RollerOn());
 
         //lower lift and pickup to ball intake positon
-        addParallel(new SetLiftPosition(LiftConst.BallPickup));
+        addParallel(new SetLiftPosition(LiftConst.BallPickupGround));
         addSequential(new SetHandAngle(HandConst.ballPickupGround));
 
         //close claw once we have ball
