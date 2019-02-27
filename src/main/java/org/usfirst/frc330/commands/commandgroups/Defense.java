@@ -23,6 +23,7 @@ public class Defense extends BBCommandGroup {
 
     public Defense() {
 
+        addSequential(new BallKickRetract());
         addSequential(new RollerOff());
         addSequential(new CloseClaw());
         addParallel(new SetLiftPosition(LiftConst.defense));

@@ -103,6 +103,26 @@ public class Pickup extends Subsystem {
             }
         };
         CSVLogger.getInstance().add("BallInRange", temp);
+
+        temp = new CSVLoggable(this.shuffleboardTab) {
+            public double get(){
+                if(getHasBall())
+                    return 1.0;
+                else
+                    return 0.0;
+            }
+        };
+        CSVLogger.getInstance().add("HasBall", temp);
+
+        temp = new CSVLoggable(this.shuffleboardTab) {
+            public double get(){
+                if(getHasHatch())
+                    return 1.0;
+                else
+                    return 0.0;
+            }
+        };
+        CSVLogger.getInstance().add("HasHatch", temp);
     }
 
     /////////////////////////////////////////////////////////////
