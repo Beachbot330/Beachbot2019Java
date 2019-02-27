@@ -40,7 +40,7 @@ public class LoadBall extends BBCommandGroup {
     addSequential(new RollerOn());
 
     //lower lift and pickup to ball intake positon
-    addParallel(new SetLiftPosition(LiftConst.BallPickup));
+    addParallel(new SetLiftPosition(LiftConst.BallPickupPlayer));
     addSequential(new SetHandAngle(HandConst.ballPickupHumanPlayer));
 
     //close claw once we have ball
