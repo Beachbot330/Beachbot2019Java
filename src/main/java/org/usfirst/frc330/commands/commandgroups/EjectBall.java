@@ -27,7 +27,7 @@ public class EjectBall extends BBCommandGroup {
         addSequential(new OpenClaw());
         addSequential(new ReversePickup());
         addSequential(new WaitCommand(1.0));
-        addSequential(new BallKickRetract());
+        //addSequential(new BallKickRetract());
         addSequential(new WaitCommand(1.0));
         addSequential(new RollerOff());
     } 
