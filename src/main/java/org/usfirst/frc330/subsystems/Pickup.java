@@ -181,7 +181,7 @@ public class Pickup extends Subsystem {
     public boolean getHasHatch() {
         //sensors say hatch is within the min and max hatch distance
         double currentDistance = getSensorDistance();
-        return ((GrabberConst.hatchAcquiredMinDistance) > currentDistance) && (currentDistance < (GrabberConst.hatchAcquiredMaxDistance));
+        return ((GrabberConst.hatchAcquiredMinDistance) < currentDistance) && (currentDistance < (GrabberConst.hatchAcquiredMaxDistance));
     }
     
     public double getIntakeFirmwareVersion() {
