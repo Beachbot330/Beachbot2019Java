@@ -9,8 +9,8 @@ public final class HandConst {
 	public static final double tolerance		= 2.0; 		//WAG AP 2/24/19
 
 	//angles relative to the ground (degrees)
-	public static final double upperHardStop 		= 57.0;		//ejo 2.2.19
-	public static final double defense 			= 53.0; 	//AP 2/24/19
+	public static final double upperHardStop 		= 57.0+3.9;		//AP Compbot 2/28/19
+	public static final double defense 			= 57.0; 	//AP 2/24/19
 	//public static final double defense 			= -30.0; 	//AP 2/24/19
 	public static final double hatchPlacementLow 	= 0.0; 		//ejo 2.2.19
 	public static final double hatchPlacementMid 	= 0.0; 		//AP 2/10/19
@@ -32,7 +32,7 @@ public final class HandConst {
 	public static final int    CAN_Timeout_No_Wait      	= 0;  // AP 2018 value
 
 	public static final double VoltageRampRate				= 0.0;	// JR disable voltage ramp 2/19/19
-	public static final double MaxOutputPercent				= 0.4;	// AP Testing Value
+	public static final double MaxOutputPercent				= 0.7;	// AP 2/28/19
 
 	
 	// Motion Magic Constants

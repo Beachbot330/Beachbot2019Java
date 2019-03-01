@@ -20,14 +20,17 @@ import org.usfirst.frc330.util.Logger.Severity;
  *
  */
 public class AllenCommand extends BBCommand {
-	
-    public AllenCommand() {
-    	//this.setRunWhenDisabled(true);
+    int r,g,b;
+    
+    public AllenCommand(int r, int g, int b) {
+        this.r = r;
+        this.g = g;
+        this.b = b;
+    	this.setRunWhenDisabled(true);
     }
 
     protected void initialize() {
-        Logger.getInstance().println("Allen is too cool!", true, Severity.ERROR);
-        Robot.hand.setAngle(-30);
+        //Robot.frills.redOn();
     }
 
 

@@ -35,7 +35,7 @@ public class LoadBall extends BBCommandGroup {
     //if the pickup has no ball in it, execute the following code:
     
     //Prep Pickup
-    addParallel(new BallKickRetract());
+    addSequential(new BallKickRetract());
     addSequential(new OpenClaw());
     addSequential(new RollerOn());
 

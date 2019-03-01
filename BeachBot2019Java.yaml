@@ -430,7 +430,7 @@ Children:
         default: []
         name: Constants
         validators: null
-        value: &id024 []
+        value: &id027 []
     Base: Subsystem
     Name: Hand
   - Children:
@@ -503,19 +503,35 @@ Children:
     - Children: []
       Properties:
         SharpType: !!robotbuilder.data.properties.ChoicesProperty
-          choices: [GP2Y0A41SK0F, GP2Y0A51SK0F]
+          choices: &id024 [GP2Y0A41SK0F, GP2Y0A51SK0F]
           default: GP2Y0A51SK0F
           name: SharpType
           validators: null
           value: GP2Y0A41SK0F
         Sharp IR Channel (Analog): !!robotbuilder.data.properties.ChoicesProperty
-          choices: ['0', '1', '2', '3', '4', '5', '6', '7']
+          choices: &id025 ['0', '1', '2', '3', '4', '5', '6', '7']
           default: '0'
           name: Sharp IR Channel (Analog)
-          validators: [AnalogInput]
+          validators: &id026 [AnalogInput]
           value: '2'
       Base: Sharp IR
       Name: IRSensor
+    - Children: []
+      Properties:
+        SharpType: !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id024
+          default: GP2Y0A51SK0F
+          name: SharpType
+          validators: null
+          value: GP2Y0A51SK0F
+        Sharp IR Channel (Analog): !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id025
+          default: '0'
+          name: Sharp IR Channel (Analog)
+          validators: *id026
+          value: '3'
+      Base: Sharp IR
+      Name: IRSensor2
     Properties:
       Send to SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: false,
         name: Send to SmartDashboard, validators: null, value: false}
@@ -530,19 +546,19 @@ Children:
         default: []
         name: Constants
         validators: null
-        value: *id024
+        value: *id027
     Base: Subsystem
     Name: Pickup
   - Children:
     - Children: []
       Properties:
         Output Channel (Digital): !!robotbuilder.data.properties.ChoicesProperty
-          choices: &id025 ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10',
+          choices: &id028 ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10',
             '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22',
             '23', '24', '25']
           default: '0'
           name: Output Channel (Digital)
-          validators: &id026 [DigitalChannel]
+          validators: &id029 [DigitalChannel]
           value: '4'
       Base: Digital Output
       Name: Buzzer
@@ -553,47 +569,37 @@ Children:
           default: '0'
           name: Input Channel (Digital)
           validators: *id023
-          value: '5'
+          value: '10'
       Base: Digital Input
       Name: isPracticeRobot
     - Children: []
       Properties:
         Output Channel (Digital): !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id025
+          choices: *id028
           default: '0'
           name: Output Channel (Digital)
-          validators: *id026
-          value: '7'
-      Base: Digital Output
-      Name: indicatorBar
-    - Children: []
-      Properties:
-        Output Channel (Digital): !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id025
-          default: '0'
-          name: Output Channel (Digital)
-          validators: *id026
-          value: '9'
+          validators: *id029
+          value: '5'
       Base: Digital Output
       Name: redLED
     - Children: []
       Properties:
         Output Channel (Digital): !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id025
+          choices: *id028
           default: '0'
           name: Output Channel (Digital)
-          validators: *id026
-          value: '10'
+          validators: *id029
+          value: '9'
       Base: Digital Output
       Name: greenLED
     - Children: []
       Properties:
         Output Channel (Digital): !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id025
+          choices: *id028
           default: '0'
           name: Output Channel (Digital)
-          validators: *id026
-          value: '11'
+          validators: *id029
+          value: '7'
       Base: Digital Output
       Name: blueLED
     Properties:
@@ -610,7 +616,7 @@ Children:
         default: []
         name: Constants
         validators: null
-        value: *id024
+        value: *id027
     Base: Subsystem
     Name: Frills
   Properties: {}
@@ -628,7 +634,7 @@ Children:
           validators: null
           value: []
         Button: !!robotbuilder.data.properties.ChoicesProperty
-          choices: &id027 ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11',
+          choices: &id030 ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11',
             '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23',
             '24', '25', '26', '27', '28', '29', '30', '31', '32']
           default: '1'
@@ -639,10 +645,10 @@ Children:
           default: None
           name: Command
           type: Command
-          validators: &id028 [TypeDropdownSelected]
+          validators: &id031 [TypeDropdownSelected]
           value: ShiftLow
         When to Run: !!robotbuilder.data.properties.ChoicesProperty
-          choices: &id029 [whileHeld, whenPressed, whenReleased]
+          choices: &id032 [whileHeld, whenPressed, whenReleased]
           default: whileHeld
           name: When to Run
           validators: null
@@ -659,7 +665,7 @@ Children:
           validators: null
           value: []
         Button: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id027
+          choices: *id030
           default: '1'
           name: Button
           validators: null
@@ -668,10 +674,10 @@ Children:
           default: None
           name: Command
           type: Command
-          validators: *id028
+          validators: *id031
           value: ClimbDeployVerify
         When to Run: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id029
+          choices: *id032
           default: whileHeld
           name: When to Run
           validators: null
@@ -688,7 +694,7 @@ Children:
           validators: null
           value: []
         Button: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id027
+          choices: *id030
           default: '1'
           name: Button
           validators: null
@@ -697,10 +703,10 @@ Children:
           default: None
           name: Command
           type: Command
-          validators: *id028
+          validators: *id031
           value: AutoStear
         When to Run: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id029
+          choices: *id032
           default: whileHeld
           name: When to Run
           validators: null
@@ -717,7 +723,7 @@ Children:
           validators: null
           value: []
         Button: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id027
+          choices: *id030
           default: '1'
           name: Button
           validators: null
@@ -726,10 +732,10 @@ Children:
           default: None
           name: Command
           type: Command
-          validators: *id028
+          validators: *id031
           value: EjectBall
         When to Run: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id029
+          choices: *id032
           default: whileHeld
           name: When to Run
           validators: null
@@ -746,7 +752,7 @@ Children:
           validators: null
           value: []
         Button: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id027
+          choices: *id030
           default: '1'
           name: Button
           validators: null
@@ -755,10 +761,10 @@ Children:
           default: None
           name: Command
           type: Command
-          validators: *id028
+          validators: *id031
           value: EjectBall
         When to Run: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id029
+          choices: *id032
           default: whileHeld
           name: When to Run
           validators: null
@@ -767,10 +773,10 @@ Children:
       Name: EjectBall_5
     Properties:
       Number: !!robotbuilder.data.properties.ChoicesProperty
-        choices: &id030 ['0', '1', '2', '3', '4', '5']
+        choices: &id033 ['0', '1', '2', '3', '4', '5']
         default: 1
         name: Number
-        validators: &id031 [Joystick]
+        validators: &id034 [Joystick]
         value: '0'
     Base: Joystick
     Name: DriverL
@@ -785,7 +791,7 @@ Children:
           validators: null
           value: []
         Button: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id027
+          choices: *id030
           default: '1'
           name: Button
           validators: null
@@ -794,10 +800,10 @@ Children:
           default: None
           name: Command
           type: Command
-          validators: *id028
+          validators: *id031
           value: ShiftHigh
         When to Run: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id029
+          choices: *id032
           default: whileHeld
           name: When to Run
           validators: null
@@ -814,7 +820,7 @@ Children:
           validators: null
           value: []
         Button: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id027
+          choices: *id030
           default: '1'
           name: Button
           validators: null
@@ -823,10 +829,10 @@ Children:
           default: None
           name: Command
           type: Command
-          validators: *id028
+          validators: *id031
           value: EjectBall
         When to Run: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id029
+          choices: *id032
           default: whileHeld
           name: When to Run
           validators: null
@@ -843,7 +849,7 @@ Children:
           validators: null
           value: []
         Button: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id027
+          choices: *id030
           default: '1'
           name: Button
           validators: null
@@ -852,10 +858,10 @@ Children:
           default: None
           name: Command
           type: Command
-          validators: *id028
+          validators: *id031
           value: Climb
         When to Run: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id029
+          choices: *id032
           default: whileHeld
           name: When to Run
           validators: null
@@ -872,7 +878,7 @@ Children:
           validators: null
           value: []
         Button: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id027
+          choices: *id030
           default: '1'
           name: Button
           validators: null
@@ -881,10 +887,10 @@ Children:
           default: None
           name: Command
           type: Command
-          validators: *id028
+          validators: *id031
           value: EjectBall
         When to Run: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id029
+          choices: *id032
           default: whileHeld
           name: When to Run
           validators: null
@@ -893,10 +899,10 @@ Children:
       Name: EjectBall_1
     Properties:
       Number: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id030
+        choices: *id033
         default: 1
         name: Number
-        validators: *id031
+        validators: *id034
         value: '1'
     Base: Joystick
     Name: DriverR
@@ -911,7 +917,7 @@ Children:
           validators: null
           value: []
         Button: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id027
+          choices: *id030
           default: '1'
           name: Button
           validators: null
@@ -920,10 +926,10 @@ Children:
           default: None
           name: Command
           type: Command
-          validators: *id028
+          validators: *id031
           value: SensoredBallPickup
         When to Run: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id029
+          choices: *id032
           default: whileHeld
           name: When to Run
           validators: null
@@ -940,7 +946,7 @@ Children:
           validators: null
           value: []
         Button: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id027
+          choices: *id030
           default: '1'
           name: Button
           validators: null
@@ -949,10 +955,10 @@ Children:
           default: None
           name: Command
           type: Command
-          validators: *id028
+          validators: *id031
           value: Defense
         When to Run: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id029
+          choices: *id032
           default: whileHeld
           name: When to Run
           validators: null
@@ -969,7 +975,7 @@ Children:
           validators: null
           value: []
         Button: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id027
+          choices: *id030
           default: '1'
           name: Button
           validators: null
@@ -978,10 +984,10 @@ Children:
           default: None
           name: Command
           type: Command
-          validators: *id028
+          validators: *id031
           value: LoadHatch
         When to Run: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id029
+          choices: *id032
           default: whileHeld
           name: When to Run
           validators: null
@@ -998,7 +1004,7 @@ Children:
           validators: null
           value: []
         Button: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id027
+          choices: *id030
           default: '1'
           name: Button
           validators: null
@@ -1007,10 +1013,10 @@ Children:
           default: None
           name: Command
           type: Command
-          validators: *id028
+          validators: *id031
           value: HatchDefense
         When to Run: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id029
+          choices: *id032
           default: whileHeld
           name: When to Run
           validators: null
@@ -1027,7 +1033,7 @@ Children:
           validators: null
           value: []
         Button: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id027
+          choices: *id030
           default: '1'
           name: Button
           validators: null
@@ -1036,10 +1042,10 @@ Children:
           default: None
           name: Command
           type: Command
-          validators: *id028
+          validators: *id031
           value: LoadHatch
         When to Run: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id029
+          choices: *id032
           default: whileHeld
           name: When to Run
           validators: null
@@ -1056,7 +1062,7 @@ Children:
           validators: null
           value: []
         Button: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id027
+          choices: *id030
           default: '1'
           name: Button
           validators: null
@@ -1065,10 +1071,10 @@ Children:
           default: None
           name: Command
           type: Command
-          validators: *id028
+          validators: *id031
           value: HatchDefense
         When to Run: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id029
+          choices: *id032
           default: whileHeld
           name: When to Run
           validators: null
@@ -1085,7 +1091,7 @@ Children:
           validators: null
           value: []
         Button: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id027
+          choices: *id030
           default: '1'
           name: Button
           validators: null
@@ -1094,10 +1100,10 @@ Children:
           default: None
           name: Command
           type: Command
-          validators: *id028
+          validators: *id031
           value: HandOut
         When to Run: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id029
+          choices: *id032
           default: whileHeld
           name: When to Run
           validators: null
@@ -1114,7 +1120,7 @@ Children:
           validators: null
           value: []
         Button: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id027
+          choices: *id030
           default: '1'
           name: Button
           validators: null
@@ -1123,10 +1129,10 @@ Children:
           default: None
           name: Command
           type: Command
-          validators: *id028
+          validators: *id031
           value: RaiseLift
         When to Run: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id029
+          choices: *id032
           default: whileHeld
           name: When to Run
           validators: null
@@ -1143,7 +1149,7 @@ Children:
           validators: null
           value: []
         Button: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id027
+          choices: *id030
           default: '1'
           name: Button
           validators: null
@@ -1152,10 +1158,10 @@ Children:
           default: None
           name: Command
           type: Command
-          validators: *id028
+          validators: *id031
           value: OpenClawReverseRoller
         When to Run: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id029
+          choices: *id032
           default: whileHeld
           name: When to Run
           validators: null
@@ -1172,7 +1178,7 @@ Children:
           validators: null
           value: []
         Button: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id027
+          choices: *id030
           default: '1'
           name: Button
           validators: null
@@ -1181,10 +1187,10 @@ Children:
           default: None
           name: Command
           type: Command
-          validators: *id028
+          validators: *id031
           value: LoadBall
         When to Run: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id029
+          choices: *id032
           default: whileHeld
           name: When to Run
           validators: null
@@ -1201,7 +1207,7 @@ Children:
           validators: null
           value: []
         Button: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id027
+          choices: *id030
           default: '1'
           name: Button
           validators: null
@@ -1210,10 +1216,10 @@ Children:
           default: None
           name: Command
           type: Command
-          validators: *id028
+          validators: *id031
           value: KillAll
         When to Run: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id029
+          choices: *id032
           default: whileHeld
           name: When to Run
           validators: null
@@ -1222,10 +1228,10 @@ Children:
       Name: KillAll_8
     Properties:
       Number: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id030
+        choices: *id033
         default: 1
         name: Number
-        validators: *id031
+        validators: *id034
         value: '2'
     Base: Joystick
     Name: gamePad
@@ -1538,7 +1544,7 @@ Children:
       Commands: !!robotbuilder.data.properties.ListProperty
         default: []
         name: Commands
-        validators: &id032 [List]
+        validators: &id035 [List]
         value: []
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: false}
@@ -1761,7 +1767,7 @@ Children:
       Commands: !!robotbuilder.data.properties.ListProperty
         default: []
         name: Commands
-        validators: *id032
+        validators: *id035
         value: []
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: false}
@@ -1786,7 +1792,7 @@ Children:
       Commands: !!robotbuilder.data.properties.ListProperty
         default: []
         name: Commands
-        validators: *id032
+        validators: *id035
         value: []
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: false}
@@ -1921,7 +1927,7 @@ Children:
       Commands: !!robotbuilder.data.properties.ListProperty
         default: []
         name: Commands
-        validators: *id032
+        validators: *id035
         value: []
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: false}
@@ -1990,7 +1996,7 @@ Children:
       Commands: !!robotbuilder.data.properties.ListProperty
         default: []
         name: Commands
-        validators: *id032
+        validators: *id035
         value: []
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: false}
@@ -2081,7 +2087,7 @@ Children:
       Commands: !!robotbuilder.data.properties.ListProperty
         default: []
         name: Commands
-        validators: *id032
+        validators: *id035
         value: []
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: false}
@@ -2106,7 +2112,7 @@ Children:
       Commands: !!robotbuilder.data.properties.ListProperty
         default: []
         name: Commands
-        validators: *id032
+        validators: *id035
         value: []
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: false}
@@ -2263,7 +2269,7 @@ Children:
       Commands: !!robotbuilder.data.properties.ListProperty
         default: []
         name: Commands
-        validators: *id032
+        validators: *id035
         value: []
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: true}
@@ -2288,7 +2294,7 @@ Children:
       Commands: !!robotbuilder.data.properties.ListProperty
         default: []
         name: Commands
-        validators: *id032
+        validators: *id035
         value: []
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: true}
@@ -2317,11 +2323,11 @@ Properties:
     name: Export Subsystems, validators: null, value: true}
   Simulation World File: !!robotbuilder.data.properties.StringProperty {default: /usr/share/frcsim/worlds/GearsBotDemo.world,
     name: Simulation World File, validators: null, value: /usr/share/frcsim/worlds/GearsBotDemo.world}
-  Wiring file location: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\eliol\',
+  Wiring file location: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\micro\',
     extension: null, folder: true, name: Wiring file location, validators: null, value: .\}
   Autonomous Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
     name: Autonomous Command, type: Command, validators: null, value: Autonomous Command}
-  Export Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\eliol\FRCProjects',
+  Export Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\micro\FRCProjects',
     extension: null, folder: true, name: Export Directory, validators: null, value: ..\}
 Base: Robot
 Name: BeachBot2019Java

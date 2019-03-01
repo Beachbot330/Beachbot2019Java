@@ -163,7 +163,6 @@ public class OI {
 
         pickupTab = Robot.pickup.shuffleboardTab;
         pickupTab.add("RollerOn", new RollerOn());
-        pickupTab.add("AllenTestCommand", new AllenCommand());
         pickupTab.add("ReversePickup", new ReversePickup());
         pickupTab.add("CloseClaw", new CloseClaw());
         pickupTab.add("OpenClaw", new OpenClaw());
@@ -191,6 +190,10 @@ public class OI {
         complexTab.add("EngageClimbLockout", new EngageClimbLockout());
         complexTab.add("DisableClimbLockout", new DisableClimbLockout());
         complexTab.add("Climb", new Climb());
+        complexTab.add("TestRed", new AllenCommand(255,0,0));
+        complexTab.add("TestGreen", new AllenCommand(0,255,0));
+        complexTab.add("TestBlue", new AllenCommand(0,0,255));
+        complexTab.add("LEDs Off", new AllenCommand(0,0,0));
 
         //Shuffleboard.selectTab("Chassis");
     }
