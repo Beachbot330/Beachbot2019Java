@@ -53,6 +53,12 @@ public class AutoStear extends BBCommand {
         else{
             Logger.getInstance().println("Aiming started with no target!", Severity.WARNING);
         }
+        if(Robot.chassis.getIsLowGear()){
+            Logger.getInstance().println("Robot in low gear", Severity.INFO);
+        }
+        else{
+            Logger.getInstance().println("Robot in high gear", Severity.INFO);
+        }
     }
 
     // Called repeatedly when this Command is scheduled to run
@@ -108,6 +114,6 @@ public class AutoStear extends BBCommand {
     // subsystems is scheduled to run
     @Override
     protected void interrupted() {
-        Robot.chassis.limelightPID.disable();
+        this.end();
     }
 }

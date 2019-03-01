@@ -446,6 +446,18 @@ public class Chassis extends Subsystem {
         if(Math.abs(rightTemp) > ChassisConst.DeadBand){
             right = -rightJoystick.getY();
         }
+    }
+    
+    public void tankDrive(Joystick leftJoystick, Joystick rightJoystick, double maxScaling) {
+        double leftTemp = -leftJoystick.getY();
+        double rightTemp = -rightJoystick.getY();
+        
+        if(Math.abs(leftTemp) > ChassisConst.DeadBand){
+            left = -leftJoystick.getY() * maxScaling;
+        }
+        if(Math.abs(rightTemp) > ChassisConst.DeadBand){
+            right = -rightJoystick.getY() * maxScaling;
+        }
 	}
         
     public void tankDrive(double left, double right) {

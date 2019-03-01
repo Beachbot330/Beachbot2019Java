@@ -30,7 +30,7 @@ public class Climb extends BBCommandGroup {
         addSequential(new DrivePogoAndDriveTrain());
         addSequential(new ConditionalPogoRetract());
         //addSequential(new DriveDistanceAtCurAngle(ChassisConst.PlatformDrive, 1.0, 3.0, false, ChassisConst.DriveLow, ChassisConst.GyroDriveLow)); //JR DISABLED 2/24/19 until time to tune drivetrain
-        addSequential(new TankDrive());
+        addSequential(new TankDrive(0.4));
         //double distance, double tolerance, double timeout, boolean stopAtEnd, DrivePIDGains driveGains, DrivePIDGains gyroGains
     } 
 }
