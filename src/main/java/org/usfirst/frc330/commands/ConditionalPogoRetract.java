@@ -54,6 +54,7 @@ public class ConditionalPogoRetract extends BBCommand {
         if (Robot.oi.driverR.getRawButton(3)){
             //Robot.lift.retractClimbPin();
             Robot.lift.setLiftPosition(LiftConst.PogoRetract, true);
+            Robot.lift.retractClimbPin();
             Logger.getInstance().println("Second retract button detected; retracting.", Severity.INFO);
             return true;
         }

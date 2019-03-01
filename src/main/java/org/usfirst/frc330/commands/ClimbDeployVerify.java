@@ -38,7 +38,7 @@ public class ClimbDeployVerify extends BBCommand {
     // Called repeatedly when this Command is scheduled to run
     @Override
     protected void execute() {
-        if(Robot.oi.driverR.getRawButton(3) && !twoButtonComplete) {
+        if(Robot.oi.gamePad.getRawAxis(3)>0.9 && !twoButtonComplete) {
             Scheduler.getInstance().add(new ClimbDeploy());
             twoButtonComplete = true;
             Logger.getInstance().println("Second deploy button detected; deploying.", Severity.INFO);

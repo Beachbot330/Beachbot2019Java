@@ -12,6 +12,8 @@
 package org.usfirst.frc330;
 import org.usfirst.frc330.commands.*;
 import org.usfirst.frc330.commands.commandgroups.*;
+import org.usfirst.frc330.constants.LiftConst;
+
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
 import edu.wpi.first.wpilibj.buttons.BBPOVButton;
@@ -72,7 +74,7 @@ public class OI {
     public JoystickButton handOut_4WH;
     public JoystickButton raiseLift_5;
     public JoystickButton openClawReverseRoller_6;
-    public JoystickButton loadBall_7;
+    public JoystickButton climbDeploy_7WH;
     public JoystickButton killAll_8;
     public Joystick gamePad;
 
@@ -80,6 +82,7 @@ public class OI {
 
     public BBPOVButton liftUpSensored;
     public BBPOVButton liftDownSensored;
+    public BBPOVButton cargoBallDeployHeight;
 
     public ShuffleboardTab liftTab;
     public ShuffleboardTab pickupTab;
@@ -94,8 +97,8 @@ public class OI {
         
         killAll_8 = new JoystickButton(gamePad, 8);
         killAll_8.whenPressed(new KillAll());
-        loadBall_7 = new JoystickButton(gamePad, 7);
-        loadBall_7.whenPressed(new LoadBall());
+        climbDeploy_7WH = new JoystickButton(gamePad, 7);
+        climbDeploy_7WH.whileHeld(new ClimbDeployVerify());
         openClawReverseRoller_6 = new JoystickButton(gamePad, 6);
         openClawReverseRoller_6.whileHeld(new OpenClawReverseRoller());
         raiseLift_5 = new JoystickButton(gamePad, 5);
@@ -146,10 +149,12 @@ public class OI {
 
         //D-Pad Buttons
         liftUpSensored = new BBPOVButton(gamePad, 0, 0);  //Up
+        cargoBallDeployHeight = new BBPOVButton(gamePad, 0, 90);  //Right
         liftDownSensored = new BBPOVButton(gamePad, 0, 180); //Down
         
         liftUpSensored.whenPressed(new RaiseLiftSensor());
         liftDownSensored.whenPressed(new LowerLiftSensor());
+        cargoBallDeployHeight.whenPressed(new SetLiftPosition(LiftConst.DeployHatchMid));
         
 
         //Add items to shuffleboard

@@ -1188,15 +1188,15 @@ Children:
           name: Command
           type: Command
           validators: *id031
-          value: LoadBall
+          value: ClimbDeployVerify
         When to Run: !!robotbuilder.data.properties.ChoicesProperty
           choices: *id032
           default: whileHeld
           name: When to Run
           validators: null
-          value: whenPressed
+          value: whileHeld
       Base: Joystick Button
-      Name: LoadBall_7
+      Name: ClimbDeploy_7WH
     - Children: []
       Properties:
         Joystick: !!robotbuilder.data.properties.ParentProperty {default: parent,
