@@ -985,7 +985,7 @@ Children:
           name: Command
           type: Command
           validators: *id031
-          value: LoadHatch
+          value: BallPickupLoadStation
         When to Run: !!robotbuilder.data.properties.ChoicesProperty
           choices: *id032
           default: whileHeld
@@ -993,7 +993,7 @@ Children:
           validators: null
           value: whileHeld
       Base: Joystick Button
-      Name: LoadHatch_2WH
+      Name: LoadBallHumanStation_2WH
     - Children: []
       Properties:
         Joystick: !!robotbuilder.data.properties.ParentProperty {default: parent,
@@ -1014,7 +1014,7 @@ Children:
           name: Command
           type: Command
           validators: *id031
-          value: HatchDefense
+          value: Defense
         When to Run: !!robotbuilder.data.properties.ChoicesProperty
           choices: *id032
           default: whileHeld
@@ -2300,6 +2300,31 @@ Children:
         name: Button on SmartDashboard, validators: null, value: true}
     Base: Command Group
     Name: HatchDefense
+  - Children: []
+    Properties:
+      Autonomous Selection: !!robotbuilder.data.properties.BooleanProperty {default: false,
+        name: Autonomous Selection, validators: null, value: false}
+      Parameters: !!robotbuilder.data.properties.ParametersProperty
+        default: []
+        name: Parameters
+        validators: null
+        value: []
+      Run When Disabled: !!robotbuilder.data.properties.BooleanProperty {default: false,
+        name: Run When Disabled, validators: null, value: false}
+      Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
+        default: &id036 []
+        name: Parameter presets
+        validators: null
+        value: *id036
+      Commands: !!robotbuilder.data.properties.ListProperty
+        default: &id037 []
+        name: Commands
+        validators: *id035
+        value: *id037
+      Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
+        name: Button on SmartDashboard, validators: null, value: true}
+    Base: Command Group
+    Name: BallPickupLoadStation
   Properties: {}
   Base: Commands
   Name: Commands
