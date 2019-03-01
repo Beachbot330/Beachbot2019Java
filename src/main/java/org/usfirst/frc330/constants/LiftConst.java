@@ -12,12 +12,12 @@ public final class LiftConst {
 	public static final double upperLimit	 	= 30.8;		//AP 2/28/19
 
 	public static final double DeployBallLow	= 3.20;		//ejo 2.2.19
-	public static final double DeployBallMid	= 17.3;		//ejo 2.2.19
-	public static final double DeployBallHi		= 30.8;	//AP 2/28/19
+	public static final double DeployBallMid	= 16.3;		//AP2/28/19
+	public static final double DeployBallHi		= 29.8;		//AP 2/28/19
 
 	public static final double DeployHatchLow	= 0.0;		//ejo 2.2.19
-	public static final double DeployHatchMid	= 14.01;		//AP 2/24/19
-	public static final double DeployHatchHi	= 27.87;		//AP 2/24/19
+	public static final double DeployHatchMid	= 15.01;		//AP 2/28/19
+	public static final double DeployHatchHi	= 28.87;		//AP 2/28/19
 
 	public static final double BallPickupGround	= 0.0;		// TBD 2/9/19 (TBD)
 	public static final double BallPickupPlayer = 4.0;		//ejo 2.26.10
