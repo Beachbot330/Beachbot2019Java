@@ -151,6 +151,8 @@ public class Robot extends TimedRobot {
         Robot.pickup.ballKickOff();
         Robot.pickup.clawOff();
         Robot.lift.retractClimbPin();
+
+        Robot.frills.setColorRGB(0,0,80); //ake LEDs blue
     }
 
     String autoName;
@@ -203,7 +205,8 @@ public class Robot extends TimedRobot {
         Scheduler.getInstance().run();
         chassis.pidDriveAuto();
     	CSVLogger.getInstance().writeData();
-		buzzer.update();
+        buzzer.update();
+        Robot.frills.updateLEDs();
     }
 
     @Override
@@ -228,6 +231,7 @@ public class Robot extends TimedRobot {
         chassis.pidDrive();
         CSVLogger.getInstance().writeData();
         buzzer.update();
+        Robot.frills.updateLEDs();
     }
 
     // -----------------------------------------------------------

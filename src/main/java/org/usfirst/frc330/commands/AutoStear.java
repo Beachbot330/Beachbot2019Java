@@ -16,6 +16,8 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 import org.usfirst.frc330.Robot;
 import org.usfirst.frc330.constants.ChassisConst;
+import org.usfirst.frc330.util.Logger;
+import org.usfirst.frc330.util.Logger.Severity;
 
 /**
  *
@@ -42,7 +44,15 @@ public class AutoStear extends BBCommand {
         Robot.chassis.limelightPID.enable();
     	Robot.chassis.gyroPID.disable();
     	Robot.chassis.leftDrivePID.disable();
-    	Robot.chassis.rightDrivePID.disable();
+        Robot.chassis.rightDrivePID.disable();
+        
+        if(NetworkTableInstance.getDefault().getTable("limelight").getEntry("tv").getDouble(0) > 0.5){
+            double angle = NetworkTableInstance.getDefault().getTable("limelight").getEntry("tx").getDouble(0);
+            Logger.getInstance().println("Aiming started with target at: " + angle, Severity.INFO);
+        }
+        else{
+            Logger.getInstance().println("Aiming started with no target!", Severity.WARNING);
+        }
     }
 
     // Called repeatedly when this Command is scheduled to run
@@ -84,6 +94,13 @@ public class AutoStear extends BBCommand {
     // Called once after isFinished returns true
     @Override
     protected void end() {
+        if(NetworkTableInstance.getDefault().getTable("limelight").getEntry("tv").getDouble(0) > 0.5){
+            double angle = NetworkTableInstance.getDefault().getTable("limelight").getEntry("tx").getDouble(0);
+            Logger.getInstance().println("Aiming ended with target at: " + angle, Severity.INFO);
+        }
+        else{
+            Logger.getInstance().println("Aiming ended with no target!", Severity.WARNING);
+        }
         Robot.chassis.limelightPID.disable();
     }
 
