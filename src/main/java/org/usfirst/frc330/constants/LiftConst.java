@@ -26,7 +26,7 @@ public final class LiftConst {
 	public static final double PogoDrive		= 0.0;		//JR 2/26/19
 	public static final double PogoRetract		= 2.0;		//JR 2/26/19
 
-	public static final double tolerance		= 0.5; 		//TODO: find 2019 value -AP
+	public static final double tolerance		= 0.8; 		//TODO: find 2019 value -AP
 
 	public static double[] ballPositions = new double[]{
         defense,
@@ -78,7 +78,7 @@ public final class LiftConst {
 	public static final int PogoAccelLimit                 	= 6000;   // AP 2018 value
 
 	// PID Constants
-	public static final double proportional      	= 0.8;   	// JR 2/26/19
+	public static final double proportional      	= 0.9;   	// JR 2/26/19
 	public static final double integral         	= 0.000; 	// AP 2018 value
 	public static final double derivative        	= 15.0;   	// AP 2018 value
 	public static final double feedforward          = 0.5;   	// AP 2018 value
