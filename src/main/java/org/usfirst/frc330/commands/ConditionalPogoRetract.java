@@ -13,6 +13,8 @@ package org.usfirst.frc330.commands;
 import edu.wpi.first.wpilibj.command.BBCommand;
 import org.usfirst.frc330.Robot;
 import org.usfirst.frc330.constants.LiftConst;
+import org.usfirst.frc330.util.Logger;
+import org.usfirst.frc330.util.Logger.Severity;
 
 /**
  *
@@ -52,6 +54,7 @@ public class ConditionalPogoRetract extends BBCommand {
         if (Robot.oi.driverR.getRawButton(3)){
             //Robot.lift.retractClimbPin();
             Robot.lift.setLiftPosition(LiftConst.PogoRetract, true);
+            Logger.getInstance().println("Second retract button detected; retracting.", Severity.INFO);
             return true;
         }
         else

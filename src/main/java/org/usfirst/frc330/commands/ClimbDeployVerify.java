@@ -15,6 +15,8 @@ import edu.wpi.first.wpilibj.command.Scheduler;
 
 import org.usfirst.frc330.Robot;
 import org.usfirst.frc330.commands.commandgroups.ClimbDeploy;
+import org.usfirst.frc330.util.Logger;
+import org.usfirst.frc330.util.Logger.Severity;
 
 /**
  *
@@ -39,6 +41,7 @@ public class ClimbDeployVerify extends BBCommand {
         if(Robot.oi.driverR.getRawButton(3) && !twoButtonComplete) {
             Scheduler.getInstance().add(new ClimbDeploy());
             twoButtonComplete = true;
+            Logger.getInstance().println("Second deploy button detected; deploying.", Severity.INFO);
     	}
     }
 
@@ -51,11 +54,17 @@ public class ClimbDeployVerify extends BBCommand {
     // Called once after isFinished returns true
     @Override
     protected void end() {
+        if(!twoButtonComplete){
+            Logger.getInstance().println("Command ended without decond deploy button being detected", Severity.WARNING);
+        }
     }
 
     // Called when another command which requires one or more of the same
     // subsystems is scheduled to run
     @Override
     protected void interrupted() {
+        if(!twoButtonComplete){
+            Logger.getInstance().println("Command ended without decond deploy button being detected", Severity.WARNING);
+        }
     }
 }

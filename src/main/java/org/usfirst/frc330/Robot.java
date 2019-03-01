@@ -192,7 +192,8 @@ public class Robot extends TimedRobot {
 	    if(Math.abs(Robot.chassis.getAngle()) > 0.2){
 	    	Robot.chassis.resetPosition();
 	    	Logger.getInstance().println("Gyro failed to reset, retrying", Severity.ERROR);
-	    }
+        }
+        Robot.frills.setColorRGB(0,0,0);
     }
 
     /**
@@ -211,6 +212,7 @@ public class Robot extends TimedRobot {
 
     @Override
     public void teleopInit() {
+        Robot.frills.setColorRGB(0,0,0);
         Logger.getInstance().println("Teleop Init", Severity.INFO);
         buzzer.enable(1.25);
         
