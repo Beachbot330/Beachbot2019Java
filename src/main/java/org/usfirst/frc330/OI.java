@@ -82,7 +82,8 @@ public class OI {
 
     public BBPOVButton liftUpSensored;
     public BBPOVButton liftDownSensored;
-    public BBPOVButton cargoBallDeployHeight;
+    public BBPOVButton cargoBallDeployHeight_right;
+    public BBPOVButton cargoBallDeployHeight_left;
 
     public ShuffleboardTab liftTab;
     public ShuffleboardTab pickupTab;
@@ -149,12 +150,14 @@ public class OI {
 
         //D-Pad Buttons
         liftUpSensored = new BBPOVButton(gamePad, 0, 0);  //Up
-        cargoBallDeployHeight = new BBPOVButton(gamePad, 0, 90);  //Right
+        cargoBallDeployHeight_right = new BBPOVButton(gamePad, 0, 90);  //Right
+        cargoBallDeployHeight_left = new BBPOVButton(gamePad, 0, 270);  //Left
         liftDownSensored = new BBPOVButton(gamePad, 0, 180); //Down
         
         liftUpSensored.whenPressed(new RaiseLiftSensor());
         liftDownSensored.whenPressed(new LowerLiftSensor());
-        cargoBallDeployHeight.whenPressed(new SetLiftPosition(LiftConst.DeployHatchMid));
+        cargoBallDeployHeight_right.whenPressed(new SetLiftPosition(LiftConst.DeployHatchMid));
+        cargoBallDeployHeight_left.whenPressed(new SetLiftPosition(LiftConst.DeployHatchMid));
         
 
         //Add items to shuffleboard
