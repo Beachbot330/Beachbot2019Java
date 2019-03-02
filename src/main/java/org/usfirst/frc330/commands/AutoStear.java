@@ -74,7 +74,7 @@ public class AutoStear extends BBCommand {
             }
 
             double angle = NetworkTableInstance.getDefault().getTable("limelight").getEntry("tx").getDouble(0);
-            if(Math.abs(angle)<3.0){
+            if(Math.abs(angle)<1.0){
                 initialLock = true;
             }
         }
