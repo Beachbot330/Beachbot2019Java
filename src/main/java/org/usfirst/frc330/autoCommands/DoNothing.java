@@ -10,7 +10,8 @@ public class DoNothing extends BBCommandGroup {
 
 
     public DoNothing() {
-    	
+        
+        addSequential(new ShiftLow());
        addSequential(new IsFinishedFalse());
        
     }
