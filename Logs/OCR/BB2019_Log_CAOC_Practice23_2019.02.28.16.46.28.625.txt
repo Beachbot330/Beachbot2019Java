@@ -1,0 +1,25 @@
+2017.02.19.22.48.40.640, INFO   , Logger filename: BB2019_Log__None0_2017.02.19.22.48.40.260.txt
+2017.02.19.22.48.40.651, INFO   , Program date: 1969.12.31.16.00.00.000
+2017.02.19.22.48.41.673, INFO   , Lift PIDF set to: 0.8, 0.0, 15.0, 0.5
+2017.02.19.22.48.41.968, INFO   , Hand PIDF set to: 10.0, 0.0, 40.0, 0.0
+2017.02.19.22.48.43.275, DEBUG  , DriverCam Get Video Mode: 160, 120, 30
+2017.02.19.22.48.43.297, INFO   , BeachbotLib Version:                2019.2.0
+2017.02.19.22.48.43.298, INFO   , WPILib Version:                     2019.3.1
+2017.02.19.22.48.43.477, INFO   , NavX Firmware Version:              3.1
+2017.02.19.22.48.43.513, INFO   , Talon Intake Firmware Version:      4.17
+2017.02.19.22.48.43.523, INFO   , Talon Hand Firmware Version:        4.17
+2017.02.19.22.48.43.531, INFO   , Talon Lift1 Firmware Version:       4.17
+2017.02.19.22.48.43.538, INFO   , Talon Lift2 Firmware Version:       4.17
+2017.02.19.22.48.43.545, INFO   , Talon Lift3 Firmware Version:       4.17
+2017.02.19.22.48.43.546, DEBUG  , Competition Robot Detected
+2017.02.19.22.48.43.609, INFO   , Disabled Init
+2017.02.19.22.48.43.619, INFO   , Battery Voltage: 12.429139404296874
+2017.02.19.22.48.43.622, INFO   , Lift disabled
+2017.02.19.22.48.43.624, INFO   , Hand disabled
+2017.02.19.22.48.43.627, INFO   , Turning Roller off
+2017.02.19.22.48.43.636, INFO   , Turning off Kicker
+2017.02.19.22.48.43.639, INFO   , Turning Claw off
+RoboRIO File Renamed: true BB2019_Log_Practice0__2019.02.28.16.46.28.625.txt
+USB File Renamed: true BB2019_Log_CAOC_Practice23_2019.02.28.16.46.28.625.txt
+RoboRIO File Renamed: true BB2019_LogCAOC_Practice23__2019.02.28.16.46.28.625.txt
+USB File Renamed: true BB2019_Log_CAOC_Practice23_2019.02.28.16.46.28.625.txt

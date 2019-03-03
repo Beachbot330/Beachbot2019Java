@@ -63,8 +63,8 @@ public final class LiftConst {
 	public static final double  PogoDriveDistance	= 25; //AP 2/9/19
 	
 	//Talon SRX Settings
-	public static final double VoltageRampRate				= 1.00;	// AP 2/24/19
-	public static final double MaxOutputPercent				= 0.7;	// AP Testing Value
+	public static final double VoltageRampRate				= 1.00;	// AP 2/24/19  Could go to 0?
+	public static final double MaxOutputPercent				= 1.0;	// Dial it to max! 3/2/19 AP
 	public static final int    CAN_Timeout					= 10; // AP 2018 value
 	public static final int    CAN_Timeout_No_Wait      	= 0;  // AP 2018 value
 	public static final int    CAN_Status_Frame_13_Period 	= 20; // AP 2018 value
@@ -90,8 +90,8 @@ public final class LiftConst {
 	public static final double PogoF        = 0.5;   	// AP 2018 value
 
 	// Motion Magic Constants
-	public static final int velocityLimit              = 1500;   // AP 2/26/19
-	public static final int accelLimit                 = 6000;   // AP 2018 value
+	public static final int velocityLimit              = 1500;   // AP 2/26/19 --- Raise
+	public static final int accelLimit                 = 2500;   // AP 2018 value  --- smaller? was 6000
 
 	// Other
 	public static final double calibrationSpeed			= -0.15; // AP 2018 value

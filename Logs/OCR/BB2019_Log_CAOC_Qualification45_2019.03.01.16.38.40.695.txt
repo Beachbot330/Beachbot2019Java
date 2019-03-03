@@ -1,0 +1,1769 @@
+2017.02.19.22.48.40.755, INFO   , Logger filename: BB2019_Log__None0_2017.02.19.22.48.40.364.txt
+2017.02.19.22.48.40.768, INFO   , Program date: 1969.12.31.16.00.00.000
+2017.02.19.22.48.41.516, INFO   , Lift PIDF set to: 0.9, 0.0, 15.0, 0.5
+2017.02.19.22.48.41.877, INFO   , Hand PIDF set to: 10.0, 0.0, 40.0, 0.0
+2017.02.19.22.48.42.973, DEBUG  , DriverCam Get Video Mode: 160, 120, 30
+2017.02.19.22.48.42.989, INFO   , BeachbotLib Version:                2019.2.0
+2017.02.19.22.48.42.990, INFO   , WPILib Version:                     2019.3.1
+2017.02.19.22.48.43.076, INFO   , NavX Firmware Version:              3.1
+2017.02.19.22.48.43.112, INFO   , Talon Intake Firmware Version:      4.17
+2017.02.19.22.48.43.121, INFO   , Talon Hand Firmware Version:        4.17
+2017.02.19.22.48.43.131, INFO   , Talon Lift1 Firmware Version:       4.17
+2017.02.19.22.48.43.137, INFO   , Talon Lift2 Firmware Version:       4.17
+2017.02.19.22.48.43.145, INFO   , Talon Lift3 Firmware Version:       4.17
+2017.02.19.22.48.43.149, DEBUG  , Competition Robot Detected
+2017.02.19.22.48.43.221, INFO   , Disabled Init
+2017.02.19.22.48.43.229, INFO   , Battery Voltage: 12.843782470703125
+2017.02.19.22.48.43.231, INFO   , Lift disabled
+2017.02.19.22.48.43.243, INFO   , Hand disabled
+2017.02.19.22.48.43.244, INFO   , Turning Roller off
+2017.02.19.22.48.43.255, INFO   , Turning off Kicker
+2017.02.19.22.48.43.257, INFO   , Turning Claw off
+RoboRIO File Renamed: true BB2019_LogCAOC_Qualification45__2019.03.01.16.38.40.695.txt
+USB File Renamed: true BB2019_Log_CAOC_Qualification45_2019.03.01.16.38.40.695.txt
+RoboRIO File Renamed: true BB2019_LogCAOC_Qualification45__2019.03.01.16.38.40.695.txt
+USB File Renamed: true BB2019_Log_CAOC_Qualification45_2019.03.01.16.38.40.695.txt
+2019.03.01.16.41.03.601, INFO   , Autonomous Init
+2019.03.01.16.41.03.606, INFO   , Running Auto: DoNothing
+2019.03.01.16.41.03.760, INFO   , Event: CAOC Match Type: Qualification Match Number: 45
+2019.03.01.16.41.03.766, COMMAND, org.usfirst.frc330.commands.TankDrive initialized
+2019.03.01.16.41.03.771, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.01.16.41.03.773, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.01.16.41.03.778, WARNING, Lift setpoint request above upper limit: 61.77890625
+2019.03.01.16.41.03.808, COMMAND, org.usfirst.frc330.autoCommands.DoNothing initialized
+2019.03.01.16.41.03.809, COMMAND, org.usfirst.frc330.commands.IsFinishedFalse initialized
+2019.03.01.16.41.06.551, INFO   , Target acquired
+2019.03.01.16.41.06.678, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.01.16.41.06.697, COMMAND, org.usfirst.frc330.commands.HandOut initialized
+2019.03.01.16.41.08.039, COMMAND, org.usfirst.frc330.commands.TankDrive interrupted
+2019.03.01.16.41.08.058, COMMAND, org.usfirst.frc330.commands.AutoStear initialized
+2019.03.01.16.41.08.064, INFO   , Aiming started with target at: 8.048263549804688
+2019.03.01.16.41.08.065, INFO   , Robot in high gear
+2019.03.01.16.41.08.782, INFO   , Aiming ended with target at: 11.481437683105469
+2019.03.01.16.41.08.783, COMMAND, org.usfirst.frc330.commands.AutoStear interrupted
+2019.03.01.16.41.08.798, COMMAND, org.usfirst.frc330.commands.TankDrive initialized
+2019.03.01.16.41.08.980, COMMAND, org.usfirst.frc330.commands.TankDrive interrupted
+2019.03.01.16.41.08.997, COMMAND, org.usfirst.frc330.commands.AutoStear initialized
+2019.03.01.16.41.08.998, INFO   , Aiming started with target at: 12.852256774902344
+2019.03.01.16.41.08.998, INFO   , Robot in high gear
+2019.03.01.16.41.09.378, INFO   , Aiming ended with target at: 14.303848266601562
+2019.03.01.16.41.09.378, COMMAND, org.usfirst.frc330.commands.AutoStear interrupted
+2019.03.01.16.41.09.397, COMMAND, org.usfirst.frc330.commands.TankDrive initialized
+2019.03.01.16.41.13.018, COMMAND, org.usfirst.frc330.commands.commandgroups.EjectBall initialized
+2019.03.01.16.41.13.018, COMMAND, org.usfirst.frc330.commands.BallKickExtend initialized
+2019.03.01.16.41.13.020, INFO   , Extending Kicker
+2019.03.01.16.41.13.021, COMMAND, org.usfirst.frc330.commands.BallKickExtend ended
+2019.03.01.16.41.13.021, COMMAND, org.usfirst.frc330.commands.OpenClaw initialized
+2019.03.01.16.41.13.023, INFO   , Opening Claw
+2019.03.01.16.41.13.024, COMMAND, org.usfirst.frc330.commands.OpenClaw ended
+2019.03.01.16.41.13.024, COMMAND, org.usfirst.frc330.commands.ReversePickup initialized
+2019.03.01.16.41.13.025, INFO   , Reversing Roller
+2019.03.01.16.41.13.026, COMMAND, org.usfirst.frc330.commands.ReversePickup ended
+2019.03.01.16.41.13.026, COMMAND, org.usfirst.frc330.commands.WaitCommand initialized
+2019.03.01.16.41.13.365, INFO   , Target lost
+2019.03.01.16.41.13.387, INFO   , Target acquired
+2019.03.01.16.41.13.406, INFO   , Target lost
+2019.03.01.16.41.13.426, INFO   , Target acquired
+2019.03.01.16.41.13.447, INFO   , Target lost
+2019.03.01.16.41.13.506, INFO   , Target acquired
+2019.03.01.16.41.13.534, INFO   , Target lost
+2019.03.01.16.41.13.566, INFO   , Target acquired
+2019.03.01.16.41.13.606, INFO   , Target lost
+2019.03.01.16.41.14.037, COMMAND, org.usfirst.frc330.commands.WaitCommand ended
+2019.03.01.16.41.14.038, COMMAND, org.usfirst.frc330.commands.WaitCommand initialized
+2019.03.01.16.41.14.082, INFO   , Target acquired
+2019.03.01.16.41.14.103, INFO   , Target lost
+2019.03.01.16.41.14.367, INFO   , Target acquired
+2019.03.01.16.41.14.392, INFO   , Target lost
+2019.03.01.16.41.14.426, INFO   , Target acquired
+2019.03.01.16.41.14.438, COMMAND, org.usfirst.frc330.commands.HandOut interrupted
+2019.03.01.16.41.14.457, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.01.16.41.14.519, INFO   , Turning Roller off
+2019.03.01.16.41.14.521, INFO   , Retracting Kicker
+2019.03.01.16.41.14.522, COMMAND, org.usfirst.frc330.commands.WaitCommand interrupted
+2019.03.01.16.41.14.522, COMMAND, org.usfirst.frc330.commands.commandgroups.EjectBall ended
+2019.03.01.16.41.14.522, COMMAND, org.usfirst.frc330.commands.commandgroups.EjectBall interrupted
+2019.03.01.16.41.14.523, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.01.16.41.14.524, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.01.16.41.14.537, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup initialized
+2019.03.01.16.41.14.538, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall initialized
+2019.03.01.16.41.14.572, INFO   , Has Ball: false
+2019.03.01.16.41.14.576, INFO   , Sensor: 8.042337776152758
+2019.03.01.16.41.14.577, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall ended
+2019.03.01.16.41.14.577, COMMAND, org.usfirst.frc330.commands.OpenClaw initialized
+2019.03.01.16.41.14.578, INFO   , Opening Claw
+2019.03.01.16.41.14.579, COMMAND, org.usfirst.frc330.commands.OpenClaw ended
+2019.03.01.16.41.14.579, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.41.14.641, INFO   , Turning Roller On to 1.0% speed
+2019.03.01.16.41.14.641, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.41.14.642, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.41.14.650, INFO   , Setting hand angle to: -49.5
+2019.03.01.16.41.14.651, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.41.14.655, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.41.14.658, INFO   , Lift Final Position: -0.00671500244140625
+2019.03.01.16.41.14.658, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.41.14.664, INFO   , Target lost
+2019.03.01.16.41.14.691, INFO   , Final wrist setpoint: -49.402734375
+2019.03.01.16.41.14.694, INFO   , Final hand angle: 24.51328125
+2019.03.01.16.41.14.695, COMMAND, org.usfirst.frc330.commands.SetHandAngle interrupted
+2019.03.01.16.41.14.695, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup ended
+2019.03.01.16.41.14.695, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup interrupted
+2019.03.01.16.41.14.710, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense initialized
+2019.03.01.16.41.14.711, COMMAND, org.usfirst.frc330.commands.BallKickRetract initialized
+2019.03.01.16.41.14.711, INFO   , Retracting Kicker
+2019.03.01.16.41.14.712, COMMAND, org.usfirst.frc330.commands.BallKickRetract ended
+2019.03.01.16.41.14.712, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.41.14.713, INFO   , Turning Roller On to 0.1% speed
+2019.03.01.16.41.14.713, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.41.14.713, COMMAND, org.usfirst.frc330.commands.CloseClaw initialized
+2019.03.01.16.41.14.716, INFO   , CLosing Claw
+2019.03.01.16.41.14.717, COMMAND, org.usfirst.frc330.commands.CloseClaw ended
+2019.03.01.16.41.14.718, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.41.14.720, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.41.14.720, INFO   , Lift Final Position: -0.00671500244140625
+2019.03.01.16.41.14.720, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.41.14.721, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.41.14.722, INFO   , Setting hand angle to: 57.0
+2019.03.01.16.41.14.772, INFO   , Target acquired
+2019.03.01.16.41.14.828, INFO   , Target lost
+2019.03.01.16.41.15.040, INFO   , Final wrist setpoint: 57.120703125
+2019.03.01.16.41.15.042, INFO   , Final hand angle: 55.275
+2019.03.01.16.41.15.042, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.03.01.16.41.15.042, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense ended
+2019.03.01.16.41.15.058, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.01.16.41.15.059, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.01.16.41.16.918, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.01.16.41.16.918, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.01.16.41.16.937, COMMAND, org.usfirst.frc330.commands.LoadHatch initialized
+2019.03.01.16.41.16.941, INFO   , Retracting Kicker
+2019.03.01.16.41.16.942, INFO   , Opening Claw
+2019.03.01.16.41.16.943, INFO   , Turning Roller off
+2019.03.01.16.41.17.283, INFO   , Target acquired
+2019.03.01.16.41.17.300, INFO   , Target lost
+2019.03.01.16.41.17.342, INFO   , Target acquired
+2019.03.01.16.41.17.385, INFO   , Target lost
+2019.03.01.16.41.17.426, INFO   , Target acquired
+2019.03.01.16.41.17.441, INFO   , Target lost
+2019.03.01.16.41.17.464, INFO   , Target acquired
+2019.03.01.16.41.17.581, INFO   , Target lost
+2019.03.01.16.41.17.605, INFO   , Target acquired
+2019.03.01.16.41.17.706, INFO   , Target lost
+2019.03.01.16.41.17.730, INFO   , Target acquired
+2019.03.01.16.41.18.084, INFO   , Target lost
+2019.03.01.16.41.18.106, INFO   , Target acquired
+2019.03.01.16.41.18.143, INFO   , Target lost
+2019.03.01.16.41.18.163, INFO   , Target acquired
+2019.03.01.16.41.18.642, INFO   , Disabled Init
+2019.03.01.16.41.18.643, INFO   , Battery Voltage: 12.202970458984375
+2019.03.01.16.41.18.643, COMMAND, org.usfirst.frc330.commands.IsFinishedFalse interrupted
+2019.03.01.16.41.18.643, COMMAND, org.usfirst.frc330.autoCommands.DoNothing ended
+2019.03.01.16.41.18.643, COMMAND, org.usfirst.frc330.commands.TankDrive ended
+2019.03.01.16.41.18.643, COMMAND, org.usfirst.frc330.commands.LoadHatch ended
+2019.03.01.16.41.18.644, INFO   , Lift disabled
+2019.03.01.16.41.18.646, INFO   , Hand disabled
+2019.03.01.16.41.18.646, INFO   , Turning Roller off
+2019.03.01.16.41.18.647, INFO   , Turning off Kicker
+2019.03.01.16.41.18.648, INFO   , Turning Claw off
+2019.03.01.16.41.19.242, INFO   , Teleop Init
+2019.03.01.16.41.19.243, COMMAND, org.usfirst.frc330.commands.LoadHatch initialized
+2019.03.01.16.41.19.244, INFO   , Retracting Kicker
+2019.03.01.16.41.19.246, INFO   , Opening Claw
+2019.03.01.16.41.19.246, INFO   , Turning Roller off
+2019.03.01.16.41.19.246, COMMAND, org.usfirst.frc330.commands.TankDrive initialized
+2019.03.01.16.41.19.347, INFO   , Target lost
+2019.03.01.16.41.19.365, INFO   , Target acquired
+2019.03.01.16.41.21.006, INFO   , Target lost
+2019.03.01.16.41.21.144, INFO   , Target acquired
+2019.03.01.16.41.21.268, INFO   , Target lost
+2019.03.01.16.41.21.307, INFO   , Target acquired
+2019.03.01.16.41.21.330, INFO   , Target lost
+2019.03.01.16.41.21.349, INFO   , Target acquired
+2019.03.01.16.41.21.946, INFO   , Target lost
+2019.03.01.16.41.22.005, INFO   , Target acquired
+2019.03.01.16.41.22.024, INFO   , Target lost
+2019.03.01.16.41.22.064, INFO   , Target acquired
+2019.03.01.16.41.22.087, INFO   , Target lost
+2019.03.01.16.41.22.106, INFO   , Target acquired
+2019.03.01.16.41.22.131, INFO   , Target lost
+2019.03.01.16.41.22.166, INFO   , Target acquired
+2019.03.01.16.41.22.205, INFO   , Target lost
+2019.03.01.16.41.22.225, INFO   , Target acquired
+2019.03.01.16.41.22.246, INFO   , Target lost
+2019.03.01.16.41.22.678, COMMAND, org.usfirst.frc330.commands.LoadHatch interrupted
+2019.03.01.16.41.22.697, COMMAND, org.usfirst.frc330.commands.commandgroups.HatchDefense initialized
+2019.03.01.16.41.22.698, COMMAND, org.usfirst.frc330.commands.RollerOff initialized
+2019.03.01.16.41.22.698, INFO   , Turning Roller off
+2019.03.01.16.41.22.700, COMMAND, org.usfirst.frc330.commands.RollerOff ended
+2019.03.01.16.41.22.700, COMMAND, org.usfirst.frc330.commands.CloseClaw initialized
+2019.03.01.16.41.22.702, INFO   , CLosing Claw
+2019.03.01.16.41.22.702, COMMAND, org.usfirst.frc330.commands.CloseClaw ended
+2019.03.01.16.41.22.702, COMMAND, org.usfirst.frc330.commands.WaitCommand initialized
+2019.03.01.16.41.23.217, COMMAND, org.usfirst.frc330.commands.WaitCommand ended
+2019.03.01.16.41.23.219, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.41.23.221, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.41.23.222, INFO   , Lift Final Position: -0.00671500244140625
+2019.03.01.16.41.23.222, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.41.23.223, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.41.23.223, INFO   , Setting hand angle to: 57.0
+2019.03.01.16.41.23.302, INFO   , Target acquired
+2019.03.01.16.41.23.699, INFO   , Final wrist setpoint: 57.120703125
+2019.03.01.16.41.23.700, INFO   , Final hand angle: 58.61484375
+2019.03.01.16.41.23.700, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.03.01.16.41.23.701, COMMAND, org.usfirst.frc330.commands.commandgroups.HatchDefense ended
+2019.03.01.16.41.23.717, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.01.16.41.23.717, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.01.16.41.24.543, INFO   , Target lost
+2019.03.01.16.41.24.566, INFO   , Target acquired
+2019.03.01.16.41.24.704, INFO   , Target lost
+2019.03.01.16.41.24.730, INFO   , Target acquired
+2019.03.01.16.41.25.104, INFO   , Target lost
+2019.03.01.16.41.26.266, INFO   , Target acquired
+2019.03.01.16.41.26.305, INFO   , Target lost
+2019.03.01.16.41.27.464, INFO   , Target acquired
+2019.03.01.16.41.27.587, INFO   , Target lost
+2019.03.01.16.41.27.606, INFO   , Target acquired
+2019.03.01.16.41.27.627, INFO   , Target lost
+2019.03.01.16.41.27.648, INFO   , Target acquired
+2019.03.01.16.41.27.787, INFO   , Target lost
+2019.03.01.16.41.27.965, INFO   , Target acquired
+2019.03.01.16.41.28.027, INFO   , Target lost
+2019.03.01.16.41.28.046, INFO   , Target acquired
+2019.03.01.16.41.28.066, INFO   , Target lost
+2019.03.01.16.41.29.845, INFO   , Target acquired
+2019.03.01.16.41.30.132, INFO   , Target lost
+2019.03.01.16.41.30.167, INFO   , Target acquired
+2019.03.01.16.41.30.206, INFO   , Target lost
+2019.03.01.16.41.30.246, INFO   , Target acquired
+2019.03.01.16.41.30.266, INFO   , Target lost
+2019.03.01.16.41.30.333, INFO   , Target acquired
+2019.03.01.16.41.31.007, INFO   , Target lost
+2019.03.01.16.41.31.267, INFO   , Target acquired
+2019.03.01.16.41.31.727, INFO   , Target lost
+2019.03.01.16.41.32.258, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.01.16.41.32.277, COMMAND, org.usfirst.frc330.commands.RaiseLiftSensor initialized
+2019.03.01.16.41.32.278, COMMAND, org.usfirst.frc330.commands.RaiseLiftSensor ended
+2019.03.01.16.41.32.297, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.01.16.41.33.131, INFO   , Target acquired
+2019.03.01.16.41.33.148, INFO   , Target lost
+2019.03.01.16.41.33.186, INFO   , Target acquired
+2019.03.01.16.41.33.204, INFO   , Target lost
+2019.03.01.16.41.33.284, INFO   , Target acquired
+2019.03.01.16.41.33.306, INFO   , Target lost
+2019.03.01.16.41.33.505, INFO   , Target acquired
+2019.03.01.16.41.33.697, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.01.16.41.33.717, COMMAND, org.usfirst.frc330.commands.RaiseLiftSensor initialized
+2019.03.01.16.41.33.718, COMMAND, org.usfirst.frc330.commands.RaiseLiftSensor ended
+2019.03.01.16.41.33.738, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.01.16.41.34.098, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.01.16.41.34.117, COMMAND, org.usfirst.frc330.commands.HandOut initialized
+2019.03.01.16.41.34.825, INFO   , Target lost
+2019.03.01.16.41.37.077, COMMAND, org.usfirst.frc330.commands.commandgroups.EjectBall initialized
+2019.03.01.16.41.37.077, COMMAND, org.usfirst.frc330.commands.BallKickExtend initialized
+2019.03.01.16.41.37.079, INFO   , Extending Kicker
+2019.03.01.16.41.37.079, COMMAND, org.usfirst.frc330.commands.BallKickExtend ended
+2019.03.01.16.41.37.080, COMMAND, org.usfirst.frc330.commands.OpenClaw initialized
+2019.03.01.16.41.37.083, INFO   , Opening Claw
+2019.03.01.16.41.37.083, COMMAND, org.usfirst.frc330.commands.OpenClaw ended
+2019.03.01.16.41.37.084, COMMAND, org.usfirst.frc330.commands.ReversePickup initialized
+2019.03.01.16.41.37.085, INFO   , Reversing Roller
+2019.03.01.16.41.37.085, COMMAND, org.usfirst.frc330.commands.ReversePickup ended
+2019.03.01.16.41.37.086, COMMAND, org.usfirst.frc330.commands.WaitCommand initialized
+2019.03.01.16.41.38.097, COMMAND, org.usfirst.frc330.commands.WaitCommand ended
+2019.03.01.16.41.38.097, COMMAND, org.usfirst.frc330.commands.WaitCommand initialized
+2019.03.01.16.41.38.377, COMMAND, org.usfirst.frc330.commands.HandOut interrupted
+2019.03.01.16.41.38.396, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.01.16.41.38.398, INFO   , Turning Roller off
+2019.03.01.16.41.38.400, INFO   , Retracting Kicker
+2019.03.01.16.41.38.400, COMMAND, org.usfirst.frc330.commands.WaitCommand interrupted
+2019.03.01.16.41.38.400, COMMAND, org.usfirst.frc330.commands.commandgroups.EjectBall ended
+2019.03.01.16.41.38.400, COMMAND, org.usfirst.frc330.commands.commandgroups.EjectBall interrupted
+2019.03.01.16.41.38.400, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.01.16.41.38.401, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.01.16.41.38.418, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup initialized
+2019.03.01.16.41.38.418, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall initialized
+2019.03.01.16.41.38.419, INFO   , Has Ball: false
+2019.03.01.16.41.38.419, INFO   , Sensor: 7.861480844840365
+2019.03.01.16.41.38.419, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall ended
+2019.03.01.16.41.38.419, COMMAND, org.usfirst.frc330.commands.OpenClaw initialized
+2019.03.01.16.41.38.421, INFO   , Opening Claw
+2019.03.01.16.41.38.421, COMMAND, org.usfirst.frc330.commands.OpenClaw ended
+2019.03.01.16.41.38.421, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.41.38.422, INFO   , Turning Roller On to 1.0% speed
+2019.03.01.16.41.38.423, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.41.38.423, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.41.38.424, INFO   , Setting hand angle to: -49.5
+2019.03.01.16.41.38.426, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.41.38.537, INFO   , Final wrist setpoint: -49.402734375
+2019.03.01.16.41.38.538, INFO   , Final hand angle: -1.8539062500000014
+2019.03.01.16.41.38.538, COMMAND, org.usfirst.frc330.commands.SetHandAngle interrupted
+2019.03.01.16.41.38.538, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.41.38.540, INFO   , Lift Final Position: 28.733495446777347
+2019.03.01.16.41.38.540, COMMAND, org.usfirst.frc330.commands.SetLiftPosition interrupted
+2019.03.01.16.41.38.540, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup ended
+2019.03.01.16.41.38.540, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup interrupted
+2019.03.01.16.41.38.557, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense initialized
+2019.03.01.16.41.38.558, COMMAND, org.usfirst.frc330.commands.BallKickRetract initialized
+2019.03.01.16.41.38.559, INFO   , Retracting Kicker
+2019.03.01.16.41.38.560, COMMAND, org.usfirst.frc330.commands.BallKickRetract ended
+2019.03.01.16.41.38.560, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.41.38.561, INFO   , Turning Roller On to 0.1% speed
+2019.03.01.16.41.38.562, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.41.38.562, COMMAND, org.usfirst.frc330.commands.CloseClaw initialized
+2019.03.01.16.41.38.564, INFO   , CLosing Claw
+2019.03.01.16.41.38.564, COMMAND, org.usfirst.frc330.commands.CloseClaw ended
+2019.03.01.16.41.38.564, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.41.38.566, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.41.38.566, INFO   , Setting hand angle to: 57.0
+2019.03.01.16.41.38.668, INFO   , Target acquired
+2019.03.01.16.41.39.068, INFO   , Target lost
+2019.03.01.16.41.39.141, INFO   , Final wrist setpoint: 57.120703125
+2019.03.01.16.41.39.142, INFO   , Final hand angle: 58.351171875
+2019.03.01.16.41.39.142, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.03.01.16.41.39.787, INFO   , Target acquired
+2019.03.01.16.41.39.806, INFO   , Target lost
+2019.03.01.16.41.39.887, INFO   , Target acquired
+2019.03.01.16.41.39.931, INFO   , Target lost
+2019.03.01.16.41.40.340, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.41.40.341, INFO   , Lift Final Position: 0.7453652709960938
+2019.03.01.16.41.40.342, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.41.40.342, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense ended
+2019.03.01.16.41.40.357, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.01.16.41.40.358, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.01.16.41.42.423, INFO   , Target acquired
+2019.03.01.16.41.42.447, INFO   , Target lost
+2019.03.01.16.41.42.917, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.01.16.41.42.918, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.01.16.41.42.932, INFO   , Target acquired
+2019.03.01.16.41.42.939, COMMAND, org.usfirst.frc330.commands.LoadHatch initialized
+2019.03.01.16.41.42.942, INFO   , Retracting Kicker
+2019.03.01.16.41.42.944, INFO   , Opening Claw
+2019.03.01.16.41.42.945, INFO   , Turning Roller off
+2019.03.01.16.41.42.953, INFO   , Target lost
+2019.03.01.16.41.42.968, INFO   , Target acquired
+2019.03.01.16.41.43.666, INFO   , Target lost
+2019.03.01.16.41.43.706, INFO   , Target acquired
+2019.03.01.16.41.44.761, INFO   , Target lost
+2019.03.01.16.41.44.781, INFO   , Target acquired
+2019.03.01.16.41.44.932, INFO   , Target lost
+2019.03.01.16.41.45.262, INFO   , Target acquired
+2019.03.01.16.41.45.303, INFO   , Target lost
+2019.03.01.16.41.45.332, INFO   , Target acquired
+2019.03.01.16.41.45.426, INFO   , Target lost
+2019.03.01.16.41.45.447, INFO   , Target acquired
+2019.03.01.16.41.45.464, INFO   , Target lost
+2019.03.01.16.41.45.506, INFO   , Target acquired
+2019.03.01.16.41.45.532, INFO   , Target lost
+2019.03.01.16.41.45.566, INFO   , Target acquired
+2019.03.01.16.41.45.607, INFO   , Target lost
+2019.03.01.16.41.45.626, INFO   , Target acquired
+2019.03.01.16.41.46.332, INFO   , Target lost
+2019.03.01.16.41.46.445, INFO   , Target acquired
+2019.03.01.16.41.46.466, INFO   , Target lost
+2019.03.01.16.41.46.847, INFO   , Target acquired
+2019.03.01.16.41.46.857, COMMAND, org.usfirst.frc330.commands.LoadHatch interrupted
+2019.03.01.16.41.46.868, INFO   , Target lost
+2019.03.01.16.41.46.877, COMMAND, org.usfirst.frc330.commands.commandgroups.HatchDefense initialized
+2019.03.01.16.41.46.877, COMMAND, org.usfirst.frc330.commands.RollerOff initialized
+2019.03.01.16.41.46.878, INFO   , Turning Roller off
+2019.03.01.16.41.46.878, COMMAND, org.usfirst.frc330.commands.RollerOff ended
+2019.03.01.16.41.46.878, COMMAND, org.usfirst.frc330.commands.CloseClaw initialized
+2019.03.01.16.41.46.880, INFO   , CLosing Claw
+2019.03.01.16.41.46.880, COMMAND, org.usfirst.frc330.commands.CloseClaw ended
+2019.03.01.16.41.46.880, COMMAND, org.usfirst.frc330.commands.WaitCommand initialized
+2019.03.01.16.41.46.888, INFO   , Target acquired
+2019.03.01.16.41.46.906, INFO   , Target lost
+2019.03.01.16.41.47.398, COMMAND, org.usfirst.frc330.commands.WaitCommand ended
+2019.03.01.16.41.47.399, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.41.47.401, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.41.47.402, INFO   , Lift Final Position: -0.0026860009765625
+2019.03.01.16.41.47.402, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.41.47.403, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.41.47.404, INFO   , Setting hand angle to: 57.0
+2019.03.01.16.41.47.509, INFO   , Target acquired
+2019.03.01.16.41.47.566, INFO   , Target lost
+2019.03.01.16.41.47.686, INFO   , Target acquired
+2019.03.01.16.41.47.734, INFO   , Target lost
+2019.03.01.16.41.47.766, INFO   , Target acquired
+2019.03.01.16.41.47.858, INFO   , Final wrist setpoint: 57.120703125
+2019.03.01.16.41.47.860, INFO   , Final hand angle: 58.702734375
+2019.03.01.16.41.47.860, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.03.01.16.41.47.860, COMMAND, org.usfirst.frc330.commands.commandgroups.HatchDefense ended
+2019.03.01.16.41.47.877, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.01.16.41.47.877, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.01.16.41.48.787, INFO   , Target lost
+2019.03.01.16.41.48.805, INFO   , Target acquired
+2019.03.01.16.41.48.867, INFO   , Target lost
+2019.03.01.16.41.48.887, INFO   , Target acquired
+2019.03.01.16.41.49.086, INFO   , Target lost
+2019.03.01.16.41.49.405, INFO   , Target acquired
+2019.03.01.16.41.49.507, INFO   , Target lost
+2019.03.01.16.41.52.006, INFO   , Target acquired
+2019.03.01.16.41.52.047, INFO   , Target lost
+2019.03.01.16.41.52.066, INFO   , Target acquired
+2019.03.01.16.41.53.026, INFO   , Target lost
+2019.03.01.16.41.53.046, INFO   , Target acquired
+2019.03.01.16.41.53.084, INFO   , Target lost
+2019.03.01.16.41.53.105, INFO   , Target acquired
+2019.03.01.16.41.53.131, INFO   , Target lost
+2019.03.01.16.41.53.165, INFO   , Target acquired
+2019.03.01.16.41.53.186, INFO   , Target lost
+2019.03.01.16.41.53.997, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.01.16.41.54.017, COMMAND, org.usfirst.frc330.commands.RaiseLiftSensor initialized
+2019.03.01.16.41.54.019, COMMAND, org.usfirst.frc330.commands.RaiseLiftSensor ended
+2019.03.01.16.41.54.037, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.01.16.41.54.907, INFO   , Target acquired
+2019.03.01.16.41.54.932, INFO   , Target lost
+2019.03.01.16.41.54.947, INFO   , Target acquired
+2019.03.01.16.41.54.987, INFO   , Target lost
+2019.03.01.16.41.55.330, INFO   , Target acquired
+2019.03.01.16.41.55.557, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.01.16.41.55.578, COMMAND, org.usfirst.frc330.commands.HandOut initialized
+2019.03.01.16.41.57.964, INFO   , Target lost
+2019.03.01.16.41.57.983, INFO   , Target acquired
+2019.03.01.16.41.58.166, INFO   , Target lost
+2019.03.01.16.41.58.188, INFO   , Target acquired
+2019.03.01.16.41.58.357, COMMAND, org.usfirst.frc330.commands.commandgroups.EjectBall initialized
+2019.03.01.16.41.58.358, COMMAND, org.usfirst.frc330.commands.BallKickExtend initialized
+2019.03.01.16.41.58.359, INFO   , Extending Kicker
+2019.03.01.16.41.58.360, COMMAND, org.usfirst.frc330.commands.BallKickExtend ended
+2019.03.01.16.41.58.360, COMMAND, org.usfirst.frc330.commands.OpenClaw initialized
+2019.03.01.16.41.58.362, INFO   , Opening Claw
+2019.03.01.16.41.58.362, COMMAND, org.usfirst.frc330.commands.OpenClaw ended
+2019.03.01.16.41.58.362, COMMAND, org.usfirst.frc330.commands.ReversePickup initialized
+2019.03.01.16.41.58.363, INFO   , Reversing Roller
+2019.03.01.16.41.58.364, COMMAND, org.usfirst.frc330.commands.ReversePickup ended
+2019.03.01.16.41.58.365, COMMAND, org.usfirst.frc330.commands.WaitCommand initialized
+2019.03.01.16.41.58.372, INFO   , Target lost
+2019.03.01.16.41.58.404, INFO   , Target acquired
+2019.03.01.16.41.58.425, INFO   , Target lost
+2019.03.01.16.41.58.487, INFO   , Target acquired
+2019.03.01.16.41.58.528, INFO   , Target lost
+2019.03.01.16.41.58.626, INFO   , Target acquired
+2019.03.01.16.41.58.646, INFO   , Target lost
+2019.03.01.16.41.58.667, INFO   , Target acquired
+2019.03.01.16.41.59.278, COMMAND, org.usfirst.frc330.commands.HandOut interrupted
+2019.03.01.16.41.59.298, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.01.16.41.59.378, COMMAND, org.usfirst.frc330.commands.WaitCommand ended
+2019.03.01.16.41.59.378, COMMAND, org.usfirst.frc330.commands.WaitCommand initialized
+2019.03.01.16.41.59.438, INFO   , Turning Roller off
+2019.03.01.16.41.59.440, INFO   , Retracting Kicker
+2019.03.01.16.41.59.440, COMMAND, org.usfirst.frc330.commands.WaitCommand interrupted
+2019.03.01.16.41.59.440, COMMAND, org.usfirst.frc330.commands.commandgroups.EjectBall ended
+2019.03.01.16.41.59.441, COMMAND, org.usfirst.frc330.commands.commandgroups.EjectBall interrupted
+2019.03.01.16.41.59.441, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.01.16.41.59.441, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.01.16.41.59.457, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup initialized
+2019.03.01.16.41.59.458, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall initialized
+2019.03.01.16.41.59.458, INFO   , Has Ball: false
+2019.03.01.16.41.59.458, INFO   , Sensor: 7.877596454376535
+2019.03.01.16.41.59.459, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall ended
+2019.03.01.16.41.59.459, COMMAND, org.usfirst.frc330.commands.OpenClaw initialized
+2019.03.01.16.41.59.461, INFO   , Opening Claw
+2019.03.01.16.41.59.461, COMMAND, org.usfirst.frc330.commands.OpenClaw ended
+2019.03.01.16.41.59.461, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.41.59.462, INFO   , Turning Roller On to 1.0% speed
+2019.03.01.16.41.59.463, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.41.59.463, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.41.59.464, INFO   , Setting hand angle to: -49.5
+2019.03.01.16.41.59.465, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.41.59.598, INFO   , Final wrist setpoint: -49.402734375
+2019.03.01.16.41.59.599, INFO   , Final hand angle: 9.044531249999999
+2019.03.01.16.41.59.599, COMMAND, org.usfirst.frc330.commands.SetHandAngle interrupted
+2019.03.01.16.41.59.600, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.41.59.602, INFO   , Lift Final Position: 14.68571033935547
+2019.03.01.16.41.59.602, COMMAND, org.usfirst.frc330.commands.SetLiftPosition interrupted
+2019.03.01.16.41.59.602, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup ended
+2019.03.01.16.41.59.602, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup interrupted
+2019.03.01.16.41.59.617, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense initialized
+2019.03.01.16.41.59.618, COMMAND, org.usfirst.frc330.commands.BallKickRetract initialized
+2019.03.01.16.41.59.619, INFO   , Retracting Kicker
+2019.03.01.16.41.59.619, COMMAND, org.usfirst.frc330.commands.BallKickRetract ended
+2019.03.01.16.41.59.620, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.41.59.621, INFO   , Turning Roller On to 0.1% speed
+2019.03.01.16.41.59.621, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.41.59.621, COMMAND, org.usfirst.frc330.commands.CloseClaw initialized
+2019.03.01.16.41.59.623, INFO   , CLosing Claw
+2019.03.01.16.41.59.623, COMMAND, org.usfirst.frc330.commands.CloseClaw ended
+2019.03.01.16.41.59.624, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.41.59.624, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.41.59.626, INFO   , Setting hand angle to: 57.0
+2019.03.01.16.41.59.731, INFO   , Target lost
+2019.03.01.16.42.00.099, INFO   , Final wrist setpoint: 57.120703125
+2019.03.01.16.42.00.100, INFO   , Final hand angle: 57.20859375
+2019.03.01.16.42.00.101, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.03.01.16.42.00.138, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.42.00.139, INFO   , Lift Final Position: 7.121931589355469
+2019.03.01.16.42.00.139, COMMAND, org.usfirst.frc330.commands.SetLiftPosition interrupted
+2019.03.01.16.42.00.140, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense ended
+2019.03.01.16.42.00.140, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense interrupted
+2019.03.01.16.42.00.157, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup initialized
+2019.03.01.16.42.00.158, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall initialized
+2019.03.01.16.42.00.159, INFO   , Has Ball: false
+2019.03.01.16.42.00.160, INFO   , Sensor: 8.541155539395024
+2019.03.01.16.42.00.160, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall ended
+2019.03.01.16.42.00.161, COMMAND, org.usfirst.frc330.commands.OpenClaw initialized
+2019.03.01.16.42.00.162, INFO   , Opening Claw
+2019.03.01.16.42.00.162, COMMAND, org.usfirst.frc330.commands.OpenClaw ended
+2019.03.01.16.42.00.162, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.42.00.164, INFO   , Turning Roller On to 1.0% speed
+2019.03.01.16.42.00.164, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.42.00.164, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.42.00.165, INFO   , Setting hand angle to: -49.5
+2019.03.01.16.42.00.166, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.42.00.540, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.42.00.540, INFO   , Lift Final Position: 0.5627172045898438
+2019.03.01.16.42.00.541, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.42.00.885, INFO   , Target acquired
+2019.03.01.16.42.00.935, INFO   , Target lost
+2019.03.01.16.42.00.998, INFO   , Final wrist setpoint: -49.402734375
+2019.03.01.16.42.01.000, INFO   , Final hand angle: -48.26015625
+2019.03.01.16.42.01.000, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.03.01.16.42.01.000, COMMAND, org.usfirst.frc330.commands.WaitCommand initialized
+2019.03.01.16.42.01.417, COMMAND, org.usfirst.frc330.commands.WaitCommand ended
+2019.03.01.16.42.01.418, COMMAND, org.usfirst.frc330.commands.SensorCloseClawBall initialized
+2019.03.01.16.42.01.529, INFO   , Target acquired
+2019.03.01.16.42.01.564, INFO   , Target lost
+2019.03.01.16.42.01.581, INFO   , Target acquired
+2019.03.01.16.42.01.604, INFO   , Target lost
+2019.03.01.16.42.02.206, INFO   , Target acquired
+2019.03.01.16.42.02.226, INFO   , Target lost
+2019.03.01.16.42.02.281, INFO   , Target acquired
+2019.03.01.16.42.02.300, INFO   , Target lost
+2019.03.01.16.42.02.345, INFO   , Target acquired
+2019.03.01.16.42.02.361, INFO   , Target lost
+2019.03.01.16.42.02.380, INFO   , Target acquired
+2019.03.01.16.42.02.485, INFO   , Target lost
+2019.03.01.16.42.03.858, INFO   , CLosing Claw
+2019.03.01.16.42.03.878, INFO   , Ball in range: true
+2019.03.01.16.42.03.887, INFO   , Sensor: 5.035920404458816
+2019.03.01.16.42.03.887, COMMAND, org.usfirst.frc330.commands.SensorCloseClawBall ended
+2019.03.01.16.42.03.888, COMMAND, org.usfirst.frc330.commands.RollerUntilBall initialized
+2019.03.01.16.42.03.888, INFO   , Turning Roller On
+2019.03.01.16.42.04.438, INFO   , Turning Roller off
+2019.03.01.16.42.04.443, INFO   , Sensor Distance: 2.5792508940511927
+2019.03.01.16.42.04.444, COMMAND, org.usfirst.frc330.commands.RollerUntilBall ended
+2019.03.01.16.42.04.444, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense initialized
+2019.03.01.16.42.04.444, COMMAND, org.usfirst.frc330.commands.BallKickRetract initialized
+2019.03.01.16.42.04.445, INFO   , Retracting Kicker
+2019.03.01.16.42.04.445, COMMAND, org.usfirst.frc330.commands.BallKickRetract ended
+2019.03.01.16.42.04.446, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.42.04.446, INFO   , Turning Roller On to 0.1% speed
+2019.03.01.16.42.04.447, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.42.04.447, COMMAND, org.usfirst.frc330.commands.CloseClaw initialized
+2019.03.01.16.42.04.448, INFO   , CLosing Claw
+2019.03.01.16.42.04.448, COMMAND, org.usfirst.frc330.commands.CloseClaw ended
+2019.03.01.16.42.04.448, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.42.04.449, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.42.04.450, INFO   , Lift Final Position: 0.00134300048828125
+2019.03.01.16.42.04.450, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.42.04.450, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.42.04.451, INFO   , Setting hand angle to: 57.0
+2019.03.01.16.42.04.837, INFO   , Final wrist setpoint: 57.120703125
+2019.03.01.16.42.04.839, INFO   , Final hand angle: -12.225000000000001
+2019.03.01.16.42.04.839, COMMAND, org.usfirst.frc330.commands.SetHandAngle interrupted
+2019.03.01.16.42.04.839, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense ended
+2019.03.01.16.42.04.839, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense interrupted
+2019.03.01.16.42.04.839, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup ended
+2019.03.01.16.42.04.840, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup interrupted
+2019.03.01.16.42.04.857, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense initialized
+2019.03.01.16.42.04.858, COMMAND, org.usfirst.frc330.commands.BallKickRetract initialized
+2019.03.01.16.42.04.859, INFO   , Retracting Kicker
+2019.03.01.16.42.04.860, COMMAND, org.usfirst.frc330.commands.BallKickRetract ended
+2019.03.01.16.42.04.860, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.42.04.861, INFO   , Turning Roller On to 0.1% speed
+2019.03.01.16.42.04.862, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.42.04.862, COMMAND, org.usfirst.frc330.commands.CloseClaw initialized
+2019.03.01.16.42.04.865, INFO   , CLosing Claw
+2019.03.01.16.42.04.865, COMMAND, org.usfirst.frc330.commands.CloseClaw ended
+2019.03.01.16.42.04.866, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.42.04.871, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.42.04.871, INFO   , Lift Final Position: -0.0026860009765625
+2019.03.01.16.42.04.871, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.42.04.871, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.42.04.872, INFO   , Setting hand angle to: 57.0
+2019.03.01.16.42.05.328, INFO   , Target acquired
+2019.03.01.16.42.05.366, INFO   , Target lost
+2019.03.01.16.42.05.437, INFO   , Final wrist setpoint: 57.120703125
+2019.03.01.16.42.05.438, INFO   , Final hand angle: 57.20859375
+2019.03.01.16.42.05.438, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.03.01.16.42.05.439, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense ended
+2019.03.01.16.42.05.458, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.01.16.42.05.459, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.01.16.42.05.504, INFO   , Target acquired
+2019.03.01.16.42.05.531, INFO   , Target lost
+2019.03.01.16.42.06.067, INFO   , Target acquired
+2019.03.01.16.42.06.445, INFO   , Target lost
+2019.03.01.16.42.07.065, INFO   , Target acquired
+2019.03.01.16.42.08.017, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.01.16.42.08.037, COMMAND, org.usfirst.frc330.commands.RaiseLiftSensor initialized
+2019.03.01.16.42.08.039, COMMAND, org.usfirst.frc330.commands.RaiseLiftSensor ended
+2019.03.01.16.42.08.057, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.01.16.42.08.188, INFO   , Target lost
+2019.03.01.16.42.08.782, INFO   , Target acquired
+2019.03.01.16.42.09.285, INFO   , Target lost
+2019.03.01.16.42.09.387, INFO   , Target acquired
+2019.03.01.16.42.09.485, INFO   , Target lost
+2019.03.01.16.42.09.502, INFO   , Target acquired
+2019.03.01.16.42.09.531, INFO   , Target lost
+2019.03.01.16.42.09.647, INFO   , Target acquired
+2019.03.01.16.42.09.706, INFO   , Target lost
+2019.03.01.16.42.09.732, INFO   , Target acquired
+2019.03.01.16.42.10.901, INFO   , Target lost
+2019.03.01.16.42.10.931, INFO   , Target acquired
+2019.03.01.16.42.10.943, INFO   , Target lost
+2019.03.01.16.42.11.021, INFO   , Target acquired
+2019.03.01.16.42.11.051, INFO   , Target lost
+2019.03.01.16.42.11.085, INFO   , Target acquired
+2019.03.01.16.42.11.104, INFO   , Target lost
+2019.03.01.16.42.11.131, INFO   , Target acquired
+2019.03.01.16.42.11.165, INFO   , Target lost
+2019.03.01.16.42.11.185, INFO   , Target acquired
+2019.03.01.16.42.11.485, INFO   , Target lost
+2019.03.01.16.42.11.530, INFO   , Target acquired
+2019.03.01.16.42.12.718, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.01.16.42.12.738, COMMAND, org.usfirst.frc330.commands.HandOut initialized
+2019.03.01.16.42.12.946, INFO   , Target lost
+2019.03.01.16.42.13.021, INFO   , Target acquired
+2019.03.01.16.42.13.046, INFO   , Target lost
+2019.03.01.16.42.13.542, INFO   , Target acquired
+2019.03.01.16.42.14.182, INFO   , Target lost
+2019.03.01.16.42.14.206, INFO   , Target acquired
+2019.03.01.16.42.14.226, INFO   , Target lost
+2019.03.01.16.42.14.247, INFO   , Target acquired
+2019.03.01.16.42.14.261, INFO   , Target lost
+2019.03.01.16.42.14.285, INFO   , Target acquired
+2019.03.01.16.42.14.419, COMMAND, org.usfirst.frc330.commands.commandgroups.EjectBall initialized
+2019.03.01.16.42.14.419, COMMAND, org.usfirst.frc330.commands.BallKickExtend initialized
+2019.03.01.16.42.14.421, INFO   , Extending Kicker
+2019.03.01.16.42.14.422, COMMAND, org.usfirst.frc330.commands.BallKickExtend ended
+2019.03.01.16.42.14.422, COMMAND, org.usfirst.frc330.commands.OpenClaw initialized
+2019.03.01.16.42.14.424, INFO   , Opening Claw
+2019.03.01.16.42.14.424, COMMAND, org.usfirst.frc330.commands.OpenClaw ended
+2019.03.01.16.42.14.424, COMMAND, org.usfirst.frc330.commands.ReversePickup initialized
+2019.03.01.16.42.14.425, INFO   , Reversing Roller
+2019.03.01.16.42.14.425, COMMAND, org.usfirst.frc330.commands.ReversePickup ended
+2019.03.01.16.42.14.426, COMMAND, org.usfirst.frc330.commands.WaitCommand initialized
+2019.03.01.16.42.14.621, INFO   , Target lost
+2019.03.01.16.42.15.024, INFO   , Target acquired
+2019.03.01.16.42.15.043, INFO   , Target lost
+2019.03.01.16.42.15.078, COMMAND, org.usfirst.frc330.commands.HandOut interrupted
+2019.03.01.16.42.15.085, INFO   , Target acquired
+2019.03.01.16.42.15.097, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.01.16.42.15.107, INFO   , Target lost
+2019.03.01.16.42.15.124, INFO   , Target acquired
+2019.03.01.16.42.15.187, INFO   , Target lost
+2019.03.01.16.42.15.198, INFO   , Turning Roller off
+2019.03.01.16.42.15.200, INFO   , Retracting Kicker
+2019.03.01.16.42.15.200, COMMAND, org.usfirst.frc330.commands.WaitCommand interrupted
+2019.03.01.16.42.15.201, COMMAND, org.usfirst.frc330.commands.commandgroups.EjectBall ended
+2019.03.01.16.42.15.201, COMMAND, org.usfirst.frc330.commands.commandgroups.EjectBall interrupted
+2019.03.01.16.42.15.201, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.01.16.42.15.201, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.01.16.42.15.217, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup initialized
+2019.03.01.16.42.15.218, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall initialized
+2019.03.01.16.42.15.218, INFO   , Has Ball: false
+2019.03.01.16.42.15.218, INFO   , Sensor: 7.861480844840365
+2019.03.01.16.42.15.218, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall ended
+2019.03.01.16.42.15.219, COMMAND, org.usfirst.frc330.commands.OpenClaw initialized
+2019.03.01.16.42.15.220, INFO   , Opening Claw
+2019.03.01.16.42.15.220, COMMAND, org.usfirst.frc330.commands.OpenClaw ended
+2019.03.01.16.42.15.220, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.42.15.221, INFO   , Turning Roller On to 1.0% speed
+2019.03.01.16.42.15.221, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.42.15.221, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.42.15.222, INFO   , Setting hand angle to: -49.5
+2019.03.01.16.42.15.223, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.42.15.286, INFO   , Target acquired
+2019.03.01.16.42.15.303, INFO   , Target lost
+2019.03.01.16.42.15.358, INFO   , Final wrist setpoint: -49.402734375
+2019.03.01.16.42.15.359, INFO   , Final hand angle: 45.167578125
+2019.03.01.16.42.15.359, COMMAND, org.usfirst.frc330.commands.SetHandAngle interrupted
+2019.03.01.16.42.15.360, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.42.15.361, INFO   , Lift Final Position: 2.8659630419921878
+2019.03.01.16.42.15.362, COMMAND, org.usfirst.frc330.commands.SetLiftPosition interrupted
+2019.03.01.16.42.15.362, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup ended
+2019.03.01.16.42.15.362, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup interrupted
+2019.03.01.16.42.15.379, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense initialized
+2019.03.01.16.42.15.379, COMMAND, org.usfirst.frc330.commands.BallKickRetract initialized
+2019.03.01.16.42.15.381, INFO   , Retracting Kicker
+2019.03.01.16.42.15.381, COMMAND, org.usfirst.frc330.commands.BallKickRetract ended
+2019.03.01.16.42.15.381, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.42.15.382, INFO   , Turning Roller On to 0.1% speed
+2019.03.01.16.42.15.382, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.42.15.382, COMMAND, org.usfirst.frc330.commands.CloseClaw initialized
+2019.03.01.16.42.15.384, INFO   , CLosing Claw
+2019.03.01.16.42.15.384, COMMAND, org.usfirst.frc330.commands.CloseClaw ended
+2019.03.01.16.42.15.384, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.42.15.386, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.42.15.387, INFO   , Setting hand angle to: 57.0
+2019.03.01.16.42.15.466, INFO   , Target acquired
+2019.03.01.16.42.15.559, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.42.15.560, INFO   , Lift Final Position: 0.49422417968750004
+2019.03.01.16.42.15.560, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.42.15.618, INFO   , Final wrist setpoint: 57.120703125
+2019.03.01.16.42.15.619, INFO   , Final hand angle: 58.790625
+2019.03.01.16.42.15.620, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.03.01.16.42.15.620, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense ended
+2019.03.01.16.42.15.639, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.01.16.42.15.639, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.01.16.42.16.467, INFO   , Target lost
+2019.03.01.16.42.16.865, INFO   , Target acquired
+2019.03.01.16.42.17.246, INFO   , Target lost
+2019.03.01.16.42.17.677, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.01.16.42.17.678, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.01.16.42.17.698, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup initialized
+2019.03.01.16.42.17.698, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall initialized
+2019.03.01.16.42.17.699, INFO   , Has Ball: false
+2019.03.01.16.42.17.699, INFO   , Sensor: 8.541155539395024
+2019.03.01.16.42.17.700, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall ended
+2019.03.01.16.42.17.701, COMMAND, org.usfirst.frc330.commands.OpenClaw initialized
+2019.03.01.16.42.17.702, INFO   , Opening Claw
+2019.03.01.16.42.17.702, COMMAND, org.usfirst.frc330.commands.OpenClaw ended
+2019.03.01.16.42.17.702, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.42.17.703, INFO   , Turning Roller On to 1.0% speed
+2019.03.01.16.42.17.703, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.42.17.704, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.42.17.704, INFO   , Setting hand angle to: -49.5
+2019.03.01.16.42.17.705, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.42.17.706, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.42.17.706, INFO   , Lift Final Position: -0.048348017578125
+2019.03.01.16.42.17.707, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.42.17.930, INFO   , Target acquired
+2019.03.01.16.42.17.987, INFO   , Target lost
+2019.03.01.16.42.18.248, INFO   , Target acquired
+2019.03.01.16.42.18.304, INFO   , Target lost
+2019.03.01.16.42.18.324, INFO   , Target acquired
+2019.03.01.16.42.18.367, INFO   , Target lost
+2019.03.01.16.42.18.406, INFO   , Target acquired
+2019.03.01.16.42.18.425, INFO   , Target lost
+2019.03.01.16.42.18.446, INFO   , Target acquired
+2019.03.01.16.42.18.465, INFO   , Target lost
+2019.03.01.16.42.18.487, INFO   , Target acquired
+2019.03.01.16.42.18.498, INFO   , Final wrist setpoint: -49.402734375
+2019.03.01.16.42.18.499, INFO   , Final hand angle: -47.820703125
+2019.03.01.16.42.18.499, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.03.01.16.42.18.499, COMMAND, org.usfirst.frc330.commands.WaitCommand initialized
+2019.03.01.16.42.18.566, INFO   , Target lost
+2019.03.01.16.42.18.605, INFO   , Target acquired
+2019.03.01.16.42.18.627, INFO   , Target lost
+2019.03.01.16.42.18.886, INFO   , Target acquired
+2019.03.01.16.42.18.918, COMMAND, org.usfirst.frc330.commands.WaitCommand ended
+2019.03.01.16.42.18.918, COMMAND, org.usfirst.frc330.commands.SensorCloseClawBall initialized
+2019.03.01.16.42.18.935, INFO   , Target lost
+2019.03.01.16.42.20.544, INFO   , Target acquired
+2019.03.01.16.42.20.586, INFO   , Target lost
+2019.03.01.16.42.20.647, INFO   , Target acquired
+2019.03.01.16.42.20.686, INFO   , Target lost
+2019.03.01.16.42.20.706, INFO   , Target acquired
+2019.03.01.16.42.20.746, INFO   , Target lost
+2019.03.01.16.42.20.767, INFO   , Target acquired
+2019.03.01.16.42.20.787, INFO   , Target lost
+2019.03.01.16.42.20.865, INFO   , Target acquired
+2019.03.01.16.42.20.886, INFO   , Target lost
+2019.03.01.16.42.20.946, INFO   , Target acquired
+2019.03.01.16.42.20.965, INFO   , Target lost
+2019.03.01.16.42.21.024, INFO   , Target acquired
+2019.03.01.16.42.21.045, INFO   , Target lost
+2019.03.01.16.42.21.066, INFO   , Target acquired
+2019.03.01.16.42.21.119, INFO   , CLosing Claw
+2019.03.01.16.42.21.120, INFO   , Ball in range: true
+2019.03.01.16.42.21.120, INFO   , Sensor: 5.592438990367878
+2019.03.01.16.42.21.120, COMMAND, org.usfirst.frc330.commands.SensorCloseClawBall ended
+2019.03.01.16.42.21.120, COMMAND, org.usfirst.frc330.commands.RollerUntilBall initialized
+2019.03.01.16.42.21.121, INFO   , Turning Roller On
+2019.03.01.16.42.21.168, INFO   , Target lost
+2019.03.01.16.42.21.226, INFO   , Target acquired
+2019.03.01.16.42.21.267, INFO   , Target lost
+2019.03.01.16.42.21.306, INFO   , Target acquired
+2019.03.01.16.42.21.327, INFO   , Target lost
+2019.03.01.16.42.21.448, INFO   , Target acquired
+2019.03.01.16.42.21.466, INFO   , Target lost
+2019.03.01.16.42.21.547, INFO   , Target acquired
+2019.03.01.16.42.21.561, INFO   , Target lost
+2019.03.01.16.42.21.581, INFO   , Target acquired
+2019.03.01.16.42.21.705, INFO   , Target lost
+2019.03.01.16.42.21.733, INFO   , Target acquired
+2019.03.01.16.42.21.766, INFO   , Target lost
+2019.03.01.16.42.21.786, INFO   , Target acquired
+2019.03.01.16.42.21.845, INFO   , Target lost
+2019.03.01.16.42.21.859, INFO   , Turning Roller off
+2019.03.01.16.42.21.859, INFO   , Sensor Distance: 2.977239799763768
+2019.03.01.16.42.21.859, COMMAND, org.usfirst.frc330.commands.RollerUntilBall ended
+2019.03.01.16.42.21.860, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense initialized
+2019.03.01.16.42.21.860, COMMAND, org.usfirst.frc330.commands.BallKickRetract initialized
+2019.03.01.16.42.21.862, INFO   , Retracting Kicker
+2019.03.01.16.42.21.863, COMMAND, org.usfirst.frc330.commands.BallKickRetract ended
+2019.03.01.16.42.21.863, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.42.21.864, INFO   , Turning Roller On to 0.1% speed
+2019.03.01.16.42.21.864, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.42.21.864, COMMAND, org.usfirst.frc330.commands.CloseClaw initialized
+2019.03.01.16.42.21.866, INFO   , CLosing Claw
+2019.03.01.16.42.21.866, COMMAND, org.usfirst.frc330.commands.CloseClaw ended
+2019.03.01.16.42.21.867, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.42.21.868, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.42.21.869, INFO   , Lift Final Position: -0.0456620166015625
+2019.03.01.16.42.21.869, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.42.21.869, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.42.21.870, INFO   , Setting hand angle to: 57.0
+2019.03.01.16.42.21.873, INFO   , Target acquired
+2019.03.01.16.42.22.007, INFO   , Target lost
+2019.03.01.16.42.22.023, INFO   , Target acquired
+2019.03.01.16.42.22.048, INFO   , Target lost
+2019.03.01.16.42.22.107, INFO   , Target acquired
+2019.03.01.16.42.22.161, INFO   , Target lost
+2019.03.01.16.42.22.187, INFO   , Target acquired
+2019.03.01.16.42.22.203, INFO   , Target lost
+2019.03.01.16.42.22.238, INFO   , Final wrist setpoint: 57.120703125
+2019.03.01.16.42.22.239, INFO   , Final hand angle: -16.0921875
+2019.03.01.16.42.22.239, COMMAND, org.usfirst.frc330.commands.SetHandAngle interrupted
+2019.03.01.16.42.22.240, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense ended
+2019.03.01.16.42.22.240, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense interrupted
+2019.03.01.16.42.22.240, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup ended
+2019.03.01.16.42.22.240, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup interrupted
+2019.03.01.16.42.22.257, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense initialized
+2019.03.01.16.42.22.257, COMMAND, org.usfirst.frc330.commands.BallKickRetract initialized
+2019.03.01.16.42.22.259, INFO   , Retracting Kicker
+2019.03.01.16.42.22.259, COMMAND, org.usfirst.frc330.commands.BallKickRetract ended
+2019.03.01.16.42.22.259, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.42.22.259, INFO   , Turning Roller On to 0.1% speed
+2019.03.01.16.42.22.259, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.42.22.260, COMMAND, org.usfirst.frc330.commands.CloseClaw initialized
+2019.03.01.16.42.22.260, INFO   , CLosing Claw
+2019.03.01.16.42.22.261, COMMAND, org.usfirst.frc330.commands.CloseClaw ended
+2019.03.01.16.42.22.261, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.42.22.263, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.42.22.263, INFO   , Lift Final Position: -0.047005017089843754
+2019.03.01.16.42.22.264, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.42.22.264, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.42.22.265, INFO   , Setting hand angle to: 57.0
+2019.03.01.16.42.22.303, INFO   , Target acquired
+2019.03.01.16.42.22.447, INFO   , Target lost
+2019.03.01.16.42.22.464, INFO   , Target acquired
+2019.03.01.16.42.22.488, INFO   , Target lost
+2019.03.01.16.42.22.682, INFO   , Target acquired
+2019.03.01.16.42.22.708, INFO   , Target lost
+2019.03.01.16.42.22.727, INFO   , Target acquired
+2019.03.01.16.42.22.747, INFO   , Target lost
+2019.03.01.16.42.22.788, INFO   , Target acquired
+2019.03.01.16.42.22.819, INFO   , Final wrist setpoint: 57.120703125
+2019.03.01.16.42.22.820, INFO   , Final hand angle: 58.61484375
+2019.03.01.16.42.22.820, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.03.01.16.42.22.821, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense ended
+2019.03.01.16.42.22.838, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.01.16.42.22.838, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.01.16.42.23.067, INFO   , Target lost
+2019.03.01.16.42.23.286, INFO   , Target acquired
+2019.03.01.16.42.23.329, INFO   , Target lost
+2019.03.01.16.42.23.565, INFO   , Target acquired
+2019.03.01.16.42.23.778, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.01.16.42.23.798, COMMAND, org.usfirst.frc330.commands.RaiseLiftSensor initialized
+2019.03.01.16.42.23.799, COMMAND, org.usfirst.frc330.commands.RaiseLiftSensor ended
+2019.03.01.16.42.23.818, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.01.16.42.24.218, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.01.16.42.24.238, COMMAND, org.usfirst.frc330.commands.HandOut initialized
+2019.03.01.16.42.24.706, INFO   , Target lost
+2019.03.01.16.42.24.788, INFO   , Target acquired
+2019.03.01.16.42.24.805, INFO   , Target lost
+2019.03.01.16.42.25.086, INFO   , Target acquired
+2019.03.01.16.42.25.107, INFO   , Target lost
+2019.03.01.16.42.25.266, INFO   , Target acquired
+2019.03.01.16.42.25.331, INFO   , Target lost
+2019.03.01.16.42.25.388, INFO   , Target acquired
+2019.03.01.16.42.26.438, COMMAND, org.usfirst.frc330.commands.commandgroups.EjectBall initialized
+2019.03.01.16.42.26.438, COMMAND, org.usfirst.frc330.commands.BallKickExtend initialized
+2019.03.01.16.42.26.439, INFO   , Extending Kicker
+2019.03.01.16.42.26.439, COMMAND, org.usfirst.frc330.commands.BallKickExtend ended
+2019.03.01.16.42.26.440, COMMAND, org.usfirst.frc330.commands.OpenClaw initialized
+2019.03.01.16.42.26.440, INFO   , Opening Claw
+2019.03.01.16.42.26.441, COMMAND, org.usfirst.frc330.commands.OpenClaw ended
+2019.03.01.16.42.26.441, COMMAND, org.usfirst.frc330.commands.ReversePickup initialized
+2019.03.01.16.42.26.441, INFO   , Reversing Roller
+2019.03.01.16.42.26.442, COMMAND, org.usfirst.frc330.commands.ReversePickup ended
+2019.03.01.16.42.26.442, COMMAND, org.usfirst.frc330.commands.WaitCommand initialized
+2019.03.01.16.42.26.627, INFO   , Target lost
+2019.03.01.16.42.26.665, INFO   , Target acquired
+2019.03.01.16.42.26.687, INFO   , Target lost
+2019.03.01.16.42.26.748, INFO   , Target acquired
+2019.03.01.16.42.26.927, INFO   , Target lost
+2019.03.01.16.42.26.946, INFO   , Target acquired
+2019.03.01.16.42.26.987, INFO   , Target lost
+2019.03.01.16.42.27.047, INFO   , Target acquired
+2019.03.01.16.42.27.106, INFO   , Target lost
+2019.03.01.16.42.27.457, COMMAND, org.usfirst.frc330.commands.WaitCommand ended
+2019.03.01.16.42.27.458, COMMAND, org.usfirst.frc330.commands.WaitCommand initialized
+2019.03.01.16.42.27.583, INFO   , Target acquired
+2019.03.01.16.42.27.601, INFO   , Target lost
+2019.03.01.16.42.27.628, INFO   , Target acquired
+2019.03.01.16.42.27.661, INFO   , Target lost
+2019.03.01.16.42.27.705, INFO   , Target acquired
+2019.03.01.16.42.27.732, INFO   , Target lost
+2019.03.01.16.42.27.806, INFO   , Target acquired
+2019.03.01.16.42.27.828, INFO   , Target lost
+2019.03.01.16.42.27.947, INFO   , Target acquired
+2019.03.01.16.42.27.963, INFO   , Target lost
+2019.03.01.16.42.27.982, INFO   , Target acquired
+2019.03.01.16.42.28.001, INFO   , Target lost
+2019.03.01.16.42.28.020, INFO   , Target acquired
+2019.03.01.16.42.28.106, INFO   , Target lost
+2019.03.01.16.42.28.133, INFO   , Target acquired
+2019.03.01.16.42.28.201, INFO   , Target lost
+2019.03.01.16.42.28.286, INFO   , Target acquired
+2019.03.01.16.42.28.307, INFO   , Target lost
+2019.03.01.16.42.28.401, INFO   , Target acquired
+2019.03.01.16.42.28.441, INFO   , Target lost
+2019.03.01.16.42.28.458, COMMAND, org.usfirst.frc330.commands.WaitCommand ended
+2019.03.01.16.42.28.458, COMMAND, org.usfirst.frc330.commands.RollerOff initialized
+2019.03.01.16.42.28.459, INFO   , Turning Roller off
+2019.03.01.16.42.28.459, COMMAND, org.usfirst.frc330.commands.RollerOff ended
+2019.03.01.16.42.28.460, COMMAND, org.usfirst.frc330.commands.commandgroups.EjectBall ended
+2019.03.01.16.42.28.747, INFO   , Target acquired
+2019.03.01.16.42.28.764, INFO   , Target lost
+2019.03.01.16.42.28.932, INFO   , Target acquired
+2019.03.01.16.42.28.948, INFO   , Target lost
+2019.03.01.16.42.29.061, INFO   , Target acquired
+2019.03.01.16.42.29.107, INFO   , Target lost
+2019.03.01.16.42.29.132, INFO   , Target acquired
+2019.03.01.16.42.29.167, INFO   , Target lost
+2019.03.01.16.42.29.248, INFO   , Target acquired
+2019.03.01.16.42.29.306, INFO   , Target lost
+2019.03.01.16.42.29.332, INFO   , Target acquired
+2019.03.01.16.42.29.386, INFO   , Target lost
+2019.03.01.16.42.29.406, INFO   , Target acquired
+2019.03.01.16.42.29.446, INFO   , Target lost
+2019.03.01.16.42.29.462, INFO   , Target acquired
+2019.03.01.16.42.29.487, INFO   , Target lost
+2019.03.01.16.42.29.561, INFO   , Target acquired
+2019.03.01.16.42.29.583, INFO   , Target lost
+2019.03.01.16.42.29.642, INFO   , Target acquired
+2019.03.01.16.42.29.685, INFO   , Target lost
+2019.03.01.16.42.29.838, COMMAND, org.usfirst.frc330.commands.HandOut interrupted
+2019.03.01.16.42.29.858, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.01.16.42.29.938, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.01.16.42.29.938, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.01.16.42.29.948, INFO   , Target acquired
+2019.03.01.16.42.29.958, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup initialized
+2019.03.01.16.42.29.959, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall initialized
+2019.03.01.16.42.29.959, INFO   , Has Ball: false
+2019.03.01.16.42.29.960, INFO   , Sensor: 7.942703024945932
+2019.03.01.16.42.29.961, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall ended
+2019.03.01.16.42.29.962, COMMAND, org.usfirst.frc330.commands.OpenClaw initialized
+2019.03.01.16.42.29.964, INFO   , Opening Claw
+2019.03.01.16.42.29.965, COMMAND, org.usfirst.frc330.commands.OpenClaw ended
+2019.03.01.16.42.29.965, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.42.29.966, INFO   , Turning Roller On to 1.0% speed
+2019.03.01.16.42.29.966, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.42.29.966, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.42.29.967, INFO   , Setting hand angle to: -49.5
+2019.03.01.16.42.29.967, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.42.30.025, INFO   , Target lost
+2019.03.01.16.42.30.058, INFO   , Final wrist setpoint: -49.402734375
+2019.03.01.16.42.30.060, INFO   , Final hand angle: 46.398046875
+2019.03.01.16.42.30.060, COMMAND, org.usfirst.frc330.commands.SetHandAngle interrupted
+2019.03.01.16.42.30.061, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.42.30.062, INFO   , Lift Final Position: 3.0580121118164065
+2019.03.01.16.42.30.062, COMMAND, org.usfirst.frc330.commands.SetLiftPosition interrupted
+2019.03.01.16.42.30.063, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup ended
+2019.03.01.16.42.30.064, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup interrupted
+2019.03.01.16.42.30.079, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense initialized
+2019.03.01.16.42.30.079, COMMAND, org.usfirst.frc330.commands.BallKickRetract initialized
+2019.03.01.16.42.30.081, INFO   , Retracting Kicker
+2019.03.01.16.42.30.082, COMMAND, org.usfirst.frc330.commands.BallKickRetract ended
+2019.03.01.16.42.30.082, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.42.30.083, INFO   , Turning Roller On to 0.1% speed
+2019.03.01.16.42.30.083, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.42.30.084, COMMAND, org.usfirst.frc330.commands.CloseClaw initialized
+2019.03.01.16.42.30.086, INFO   , CLosing Claw
+2019.03.01.16.42.30.086, COMMAND, org.usfirst.frc330.commands.CloseClaw ended
+2019.03.01.16.42.30.086, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.42.30.087, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.42.30.087, INFO   , Setting hand angle to: 57.0
+2019.03.01.16.42.30.092, INFO   , Target acquired
+2019.03.01.16.42.30.319, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.42.30.321, INFO   , Lift Final Position: 0.3948421435546875
+2019.03.01.16.42.30.321, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.42.30.419, INFO   , Final wrist setpoint: 57.120703125
+2019.03.01.16.42.30.420, INFO   , Final hand angle: 58.526953125
+2019.03.01.16.42.30.420, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.03.01.16.42.30.421, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense ended
+2019.03.01.16.42.30.438, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.01.16.42.30.438, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.01.16.42.30.467, INFO   , Target lost
+2019.03.01.16.42.30.838, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.01.16.42.30.838, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.01.16.42.30.858, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup initialized
+2019.03.01.16.42.30.859, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall initialized
+2019.03.01.16.42.30.859, INFO   , Has Ball: false
+2019.03.01.16.42.30.859, INFO   , Sensor: 8.714430394079052
+2019.03.01.16.42.30.860, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall ended
+2019.03.01.16.42.30.860, COMMAND, org.usfirst.frc330.commands.OpenClaw initialized
+2019.03.01.16.42.30.862, INFO   , Opening Claw
+2019.03.01.16.42.30.863, COMMAND, org.usfirst.frc330.commands.OpenClaw ended
+2019.03.01.16.42.30.863, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.42.30.864, INFO   , Turning Roller On to 1.0% speed
+2019.03.01.16.42.30.864, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.42.30.865, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.42.30.866, INFO   , Setting hand angle to: -49.5
+2019.03.01.16.42.30.868, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.42.30.868, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.42.30.869, INFO   , Lift Final Position: -0.00134300048828125
+2019.03.01.16.42.30.870, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.42.31.699, INFO   , Final wrist setpoint: -49.402734375
+2019.03.01.16.42.31.701, INFO   , Final hand angle: -48.348046875
+2019.03.01.16.42.31.702, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.03.01.16.42.31.702, COMMAND, org.usfirst.frc330.commands.WaitCommand initialized
+2019.03.01.16.42.32.118, COMMAND, org.usfirst.frc330.commands.WaitCommand ended
+2019.03.01.16.42.32.118, COMMAND, org.usfirst.frc330.commands.SensorCloseClawBall initialized
+2019.03.01.16.42.32.319, INFO   , CLosing Claw
+2019.03.01.16.42.32.320, INFO   , Ball in range: true
+2019.03.01.16.42.32.320, INFO   , Sensor: 3.520818390464474
+2019.03.01.16.42.32.320, COMMAND, org.usfirst.frc330.commands.SensorCloseClawBall ended
+2019.03.01.16.42.32.320, COMMAND, org.usfirst.frc330.commands.RollerUntilBall initialized
+2019.03.01.16.42.32.321, INFO   , Turning Roller On
+2019.03.01.16.42.32.539, INFO   , Turning Roller off
+2019.03.01.16.42.32.540, INFO   , Sensor Distance: 4.03264379916391
+2019.03.01.16.42.32.540, COMMAND, org.usfirst.frc330.commands.RollerUntilBall interrupted
+2019.03.01.16.42.32.540, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup ended
+2019.03.01.16.42.32.540, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup interrupted
+2019.03.01.16.42.32.558, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense initialized
+2019.03.01.16.42.32.559, COMMAND, org.usfirst.frc330.commands.BallKickRetract initialized
+2019.03.01.16.42.32.560, INFO   , Retracting Kicker
+2019.03.01.16.42.32.561, COMMAND, org.usfirst.frc330.commands.BallKickRetract ended
+2019.03.01.16.42.32.562, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.42.32.563, INFO   , Turning Roller On to 0.1% speed
+2019.03.01.16.42.32.563, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.42.32.564, COMMAND, org.usfirst.frc330.commands.CloseClaw initialized
+2019.03.01.16.42.32.564, INFO   , CLosing Claw
+2019.03.01.16.42.32.565, COMMAND, org.usfirst.frc330.commands.CloseClaw ended
+2019.03.01.16.42.32.565, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.42.32.566, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.42.32.566, INFO   , Lift Final Position: -0.0026860009765625
+2019.03.01.16.42.32.567, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.42.32.567, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.42.32.568, INFO   , Setting hand angle to: 57.0
+2019.03.01.16.42.33.139, INFO   , Final wrist setpoint: 57.120703125
+2019.03.01.16.42.33.140, INFO   , Final hand angle: 2.8042968749999986
+2019.03.01.16.42.33.141, COMMAND, org.usfirst.frc330.commands.SetHandAngle interrupted
+2019.03.01.16.42.33.141, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense ended
+2019.03.01.16.42.33.141, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense interrupted
+2019.03.01.16.42.33.158, COMMAND, org.usfirst.frc330.commands.RaiseLiftSensor initialized
+2019.03.01.16.42.33.159, COMMAND, org.usfirst.frc330.commands.RaiseLiftSensor ended
+2019.03.01.16.42.33.160, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.01.16.42.33.179, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.01.16.42.35.866, INFO   , Target acquired
+2019.03.01.16.42.36.058, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.01.16.42.36.079, COMMAND, org.usfirst.frc330.commands.RaiseLiftSensor initialized
+2019.03.01.16.42.36.080, COMMAND, org.usfirst.frc330.commands.RaiseLiftSensor ended
+2019.03.01.16.42.36.098, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.01.16.42.36.158, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.01.16.42.36.179, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.42.36.333, INFO   , Target lost
+2019.03.01.16.42.36.667, INFO   , Target acquired
+2019.03.01.16.42.36.686, INFO   , Target lost
+2019.03.01.16.42.36.734, INFO   , Target acquired
+2019.03.01.16.42.36.768, INFO   , Target lost
+2019.03.01.16.42.36.867, INFO   , Target acquired
+2019.03.01.16.42.36.887, INFO   , Target lost
+2019.03.01.16.42.37.040, INFO   , Lift Setpoint: 15.00937345703125
+2019.03.01.16.42.37.041, INFO   , Lift Final Position: 14.22371817138672
+2019.03.01.16.42.37.041, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.42.37.058, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.01.16.42.37.105, INFO   , Target acquired
+2019.03.01.16.42.37.165, INFO   , Target lost
+2019.03.01.16.42.37.187, INFO   , Target acquired
+2019.03.01.16.42.37.227, INFO   , Target lost
+2019.03.01.16.42.37.379, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.01.16.42.37.398, COMMAND, org.usfirst.frc330.commands.HandOut initialized
+2019.03.01.16.42.37.446, INFO   , Target acquired
+2019.03.01.16.42.37.486, INFO   , Target lost
+2019.03.01.16.42.37.944, INFO   , Target acquired
+2019.03.01.16.42.37.964, INFO   , Target lost
+2019.03.01.16.42.38.066, INFO   , Target acquired
+2019.03.01.16.42.38.102, INFO   , Target lost
+2019.03.01.16.42.38.419, COMMAND, org.usfirst.frc330.commands.HandOut interrupted
+2019.03.01.16.42.38.438, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.01.16.42.38.906, INFO   , Target acquired
+2019.03.01.16.42.39.065, INFO   , Target lost
+2019.03.01.16.42.39.106, INFO   , Target acquired
+2019.03.01.16.42.39.150, INFO   , Target lost
+2019.03.01.16.42.39.166, INFO   , Target acquired
+2019.03.01.16.42.39.206, INFO   , Target lost
+2019.03.01.16.42.39.298, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.01.16.42.39.318, COMMAND, org.usfirst.frc330.commands.RaiseLiftSensor initialized
+2019.03.01.16.42.39.319, COMMAND, org.usfirst.frc330.commands.RaiseLiftSensor ended
+2019.03.01.16.42.39.338, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.01.16.42.39.507, INFO   , Target acquired
+2019.03.01.16.42.39.878, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.01.16.42.39.898, COMMAND, org.usfirst.frc330.commands.HandOut initialized
+2019.03.01.16.42.40.778, COMMAND, org.usfirst.frc330.commands.commandgroups.EjectBall initialized
+2019.03.01.16.42.40.778, COMMAND, org.usfirst.frc330.commands.BallKickExtend initialized
+2019.03.01.16.42.40.780, INFO   , Extending Kicker
+2019.03.01.16.42.40.781, COMMAND, org.usfirst.frc330.commands.BallKickExtend ended
+2019.03.01.16.42.40.781, COMMAND, org.usfirst.frc330.commands.OpenClaw initialized
+2019.03.01.16.42.40.783, INFO   , Opening Claw
+2019.03.01.16.42.40.784, COMMAND, org.usfirst.frc330.commands.OpenClaw ended
+2019.03.01.16.42.40.785, COMMAND, org.usfirst.frc330.commands.ReversePickup initialized
+2019.03.01.16.42.40.787, INFO   , Reversing Roller
+2019.03.01.16.42.40.788, COMMAND, org.usfirst.frc330.commands.ReversePickup ended
+2019.03.01.16.42.40.788, COMMAND, org.usfirst.frc330.commands.WaitCommand initialized
+2019.03.01.16.42.41.300, COMMAND, org.usfirst.frc330.commands.HandOut interrupted
+2019.03.01.16.42.41.320, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.01.16.42.41.421, INFO   , Turning Roller off
+2019.03.01.16.42.41.422, INFO   , Retracting Kicker
+2019.03.01.16.42.41.422, COMMAND, org.usfirst.frc330.commands.WaitCommand interrupted
+2019.03.01.16.42.41.422, COMMAND, org.usfirst.frc330.commands.commandgroups.EjectBall ended
+2019.03.01.16.42.41.423, COMMAND, org.usfirst.frc330.commands.commandgroups.EjectBall interrupted
+2019.03.01.16.42.41.423, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.01.16.42.41.423, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.01.16.42.41.440, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup initialized
+2019.03.01.16.42.41.440, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall initialized
+2019.03.01.16.42.41.440, INFO   , Has Ball: false
+2019.03.01.16.42.41.441, INFO   , Sensor: 8.127231885170765
+2019.03.01.16.42.41.441, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall ended
+2019.03.01.16.42.41.442, COMMAND, org.usfirst.frc330.commands.OpenClaw initialized
+2019.03.01.16.42.41.443, INFO   , Opening Claw
+2019.03.01.16.42.41.443, COMMAND, org.usfirst.frc330.commands.OpenClaw ended
+2019.03.01.16.42.41.443, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.42.41.445, INFO   , Turning Roller On to 1.0% speed
+2019.03.01.16.42.41.445, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.42.41.446, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.42.41.446, INFO   , Setting hand angle to: -49.5
+2019.03.01.16.42.41.447, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.42.41.560, INFO   , Final wrist setpoint: -49.402734375
+2019.03.01.16.42.41.561, INFO   , Final hand angle: 48.24375
+2019.03.01.16.42.41.562, COMMAND, org.usfirst.frc330.commands.SetHandAngle interrupted
+2019.03.01.16.42.41.563, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.42.41.564, INFO   , Lift Final Position: 16.07302984375
+2019.03.01.16.42.41.564, COMMAND, org.usfirst.frc330.commands.SetLiftPosition interrupted
+2019.03.01.16.42.41.564, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup ended
+2019.03.01.16.42.41.565, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup interrupted
+2019.03.01.16.42.41.579, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense initialized
+2019.03.01.16.42.41.580, COMMAND, org.usfirst.frc330.commands.BallKickRetract initialized
+2019.03.01.16.42.41.583, INFO   , Retracting Kicker
+2019.03.01.16.42.41.584, COMMAND, org.usfirst.frc330.commands.BallKickRetract ended
+2019.03.01.16.42.41.584, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.42.41.586, INFO   , Turning Roller On to 0.1% speed
+2019.03.01.16.42.41.586, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.42.41.586, COMMAND, org.usfirst.frc330.commands.CloseClaw initialized
+2019.03.01.16.42.41.587, INFO   , CLosing Claw
+2019.03.01.16.42.41.588, COMMAND, org.usfirst.frc330.commands.CloseClaw ended
+2019.03.01.16.42.41.588, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.42.41.588, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.42.41.589, INFO   , Setting hand angle to: 57.0
+2019.03.01.16.42.41.667, INFO   , Target lost
+2019.03.01.16.42.41.780, INFO   , Final wrist setpoint: 57.120703125
+2019.03.01.16.42.41.783, INFO   , Final hand angle: 56.944921875
+2019.03.01.16.42.41.783, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.03.01.16.42.42.007, INFO   , Target acquired
+2019.03.01.16.42.42.026, INFO   , Target lost
+2019.03.01.16.42.42.107, INFO   , Target acquired
+2019.03.01.16.42.42.131, INFO   , Target lost
+2019.03.01.16.42.42.405, INFO   , Target acquired
+2019.03.01.16.42.42.488, INFO   , Target lost
+2019.03.01.16.42.42.598, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.42.42.599, INFO   , Lift Final Position: 0.5989782177734375
+2019.03.01.16.42.42.599, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.42.42.599, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense ended
+2019.03.01.16.42.42.619, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.01.16.42.42.619, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.01.16.42.42.878, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.01.16.42.42.897, COMMAND, org.usfirst.frc330.commands.HandOut initialized
+2019.03.01.16.42.43.759, COMMAND, org.usfirst.frc330.commands.HandOut interrupted
+2019.03.01.16.42.43.778, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.01.16.42.43.838, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.01.16.42.43.838, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.01.16.42.43.858, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup initialized
+2019.03.01.16.42.43.858, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall initialized
+2019.03.01.16.42.43.859, INFO   , Has Ball: false
+2019.03.01.16.42.43.859, INFO   , Sensor: 8.753863031097618
+2019.03.01.16.42.43.860, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall ended
+2019.03.01.16.42.43.860, COMMAND, org.usfirst.frc330.commands.OpenClaw initialized
+2019.03.01.16.42.43.862, INFO   , Opening Claw
+2019.03.01.16.42.43.862, COMMAND, org.usfirst.frc330.commands.OpenClaw ended
+2019.03.01.16.42.43.862, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.42.43.864, INFO   , Turning Roller On to 1.0% speed
+2019.03.01.16.42.43.864, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.42.43.864, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.42.43.865, INFO   , Setting hand angle to: -49.5
+2019.03.01.16.42.43.866, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.42.43.866, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.42.43.867, INFO   , Lift Final Position: 0.0026860009765625
+2019.03.01.16.42.43.867, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.42.44.339, INFO   , Final wrist setpoint: -49.402734375
+2019.03.01.16.42.44.340, INFO   , Final hand angle: -48.348046875
+2019.03.01.16.42.44.340, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.03.01.16.42.44.341, COMMAND, org.usfirst.frc330.commands.WaitCommand initialized
+2019.03.01.16.42.44.506, INFO   , Target acquired
+2019.03.01.16.42.44.534, INFO   , Target lost
+2019.03.01.16.42.44.549, INFO   , Target acquired
+2019.03.01.16.42.44.759, COMMAND, org.usfirst.frc330.commands.WaitCommand ended
+2019.03.01.16.42.44.759, COMMAND, org.usfirst.frc330.commands.SensorCloseClawBall initialized
+2019.03.01.16.42.45.539, INFO   , CLosing Claw
+2019.03.01.16.42.45.540, INFO   , Ball in range: true
+2019.03.01.16.42.45.540, INFO   , Sensor: 5.3838624507216455
+2019.03.01.16.42.45.541, COMMAND, org.usfirst.frc330.commands.SensorCloseClawBall ended
+2019.03.01.16.42.45.541, COMMAND, org.usfirst.frc330.commands.RollerUntilBall initialized
+2019.03.01.16.42.45.541, INFO   , Turning Roller On
+2019.03.01.16.42.45.798, INFO   , Turning Roller off
+2019.03.01.16.42.45.798, INFO   , Sensor Distance: 1.6546521783275527
+2019.03.01.16.42.45.800, COMMAND, org.usfirst.frc330.commands.RollerUntilBall ended
+2019.03.01.16.42.45.800, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense initialized
+2019.03.01.16.42.45.800, COMMAND, org.usfirst.frc330.commands.BallKickRetract initialized
+2019.03.01.16.42.45.802, INFO   , Retracting Kicker
+2019.03.01.16.42.45.802, COMMAND, org.usfirst.frc330.commands.BallKickRetract ended
+2019.03.01.16.42.45.802, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.42.45.803, INFO   , Turning Roller On to 0.1% speed
+2019.03.01.16.42.45.803, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.42.45.804, COMMAND, org.usfirst.frc330.commands.CloseClaw initialized
+2019.03.01.16.42.45.806, INFO   , CLosing Claw
+2019.03.01.16.42.45.806, COMMAND, org.usfirst.frc330.commands.CloseClaw ended
+2019.03.01.16.42.45.807, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.42.45.808, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.42.45.809, INFO   , Lift Final Position: 0.00134300048828125
+2019.03.01.16.42.45.809, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.42.45.810, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.42.45.811, INFO   , Setting hand angle to: 57.0
+2019.03.01.16.42.46.171, INFO   , Final wrist setpoint: 57.120703125
+2019.03.01.16.42.46.172, INFO   , Final hand angle: -17.4984375
+2019.03.01.16.42.46.172, COMMAND, org.usfirst.frc330.commands.SetHandAngle interrupted
+2019.03.01.16.42.46.173, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense ended
+2019.03.01.16.42.46.173, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense interrupted
+2019.03.01.16.42.46.173, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup ended
+2019.03.01.16.42.46.173, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup interrupted
+2019.03.01.16.42.46.191, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense initialized
+2019.03.01.16.42.46.191, COMMAND, org.usfirst.frc330.commands.BallKickRetract initialized
+2019.03.01.16.42.46.192, INFO   , Retracting Kicker
+2019.03.01.16.42.46.192, COMMAND, org.usfirst.frc330.commands.BallKickRetract ended
+2019.03.01.16.42.46.192, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.42.46.193, INFO   , Turning Roller On to 0.1% speed
+2019.03.01.16.42.46.193, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.42.46.193, COMMAND, org.usfirst.frc330.commands.CloseClaw initialized
+2019.03.01.16.42.46.195, INFO   , CLosing Claw
+2019.03.01.16.42.46.195, COMMAND, org.usfirst.frc330.commands.CloseClaw ended
+2019.03.01.16.42.46.195, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.42.46.196, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.42.46.197, INFO   , Lift Final Position: -0.00134300048828125
+2019.03.01.16.42.46.198, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.42.46.199, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.42.46.199, INFO   , Setting hand angle to: 57.0
+2019.03.01.16.42.46.686, INFO   , Target lost
+2019.03.01.16.42.46.728, INFO   , Target acquired
+2019.03.01.16.42.46.747, INFO   , Target lost
+2019.03.01.16.42.46.867, INFO   , Target acquired
+2019.03.01.16.42.46.879, INFO   , Final wrist setpoint: 57.120703125
+2019.03.01.16.42.46.880, INFO   , Final hand angle: 56.593359375
+2019.03.01.16.42.46.881, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.03.01.16.42.46.881, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense ended
+2019.03.01.16.42.46.887, INFO   , Target lost
+2019.03.01.16.42.46.898, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.01.16.42.46.898, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.01.16.42.46.906, INFO   , Target acquired
+2019.03.01.16.42.46.930, INFO   , Target lost
+2019.03.01.16.42.46.946, INFO   , Target acquired
+2019.03.01.16.42.46.986, INFO   , Target lost
+2019.03.01.16.42.47.225, INFO   , Target acquired
+2019.03.01.16.42.47.458, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.01.16.42.47.479, COMMAND, org.usfirst.frc330.commands.RaiseLiftSensor initialized
+2019.03.01.16.42.47.480, COMMAND, org.usfirst.frc330.commands.RaiseLiftSensor ended
+2019.03.01.16.42.47.498, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.01.16.42.48.545, INFO   , Target lost
+2019.03.01.16.42.49.308, INFO   , Target acquired
+2019.03.01.16.42.49.438, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.01.16.42.49.458, COMMAND, org.usfirst.frc330.commands.RaiseLiftSensor initialized
+2019.03.01.16.42.49.459, COMMAND, org.usfirst.frc330.commands.RaiseLiftSensor ended
+2019.03.01.16.42.49.478, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.01.16.42.49.728, INFO   , Target lost
+2019.03.01.16.42.50.046, INFO   , Target acquired
+2019.03.01.16.42.50.066, INFO   , Target lost
+2019.03.01.16.42.50.086, INFO   , Target acquired
+2019.03.01.16.42.50.146, INFO   , Target lost
+2019.03.01.16.42.50.166, INFO   , Target acquired
+2019.03.01.16.42.50.187, INFO   , Target lost
+2019.03.01.16.42.50.227, INFO   , Target acquired
+2019.03.01.16.42.50.264, INFO   , Target lost
+2019.03.01.16.42.50.338, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.01.16.42.50.358, COMMAND, org.usfirst.frc330.commands.HandOut initialized
+2019.03.01.16.42.50.487, INFO   , Target acquired
+2019.03.01.16.42.51.998, COMMAND, org.usfirst.frc330.commands.commandgroups.EjectBall initialized
+2019.03.01.16.42.51.999, COMMAND, org.usfirst.frc330.commands.BallKickExtend initialized
+2019.03.01.16.42.52.000, INFO   , Extending Kicker
+2019.03.01.16.42.52.001, COMMAND, org.usfirst.frc330.commands.BallKickExtend ended
+2019.03.01.16.42.52.001, COMMAND, org.usfirst.frc330.commands.OpenClaw initialized
+2019.03.01.16.42.52.003, INFO   , Opening Claw
+2019.03.01.16.42.52.003, COMMAND, org.usfirst.frc330.commands.OpenClaw ended
+2019.03.01.16.42.52.003, COMMAND, org.usfirst.frc330.commands.ReversePickup initialized
+2019.03.01.16.42.52.004, INFO   , Reversing Roller
+2019.03.01.16.42.52.004, COMMAND, org.usfirst.frc330.commands.ReversePickup ended
+2019.03.01.16.42.52.005, COMMAND, org.usfirst.frc330.commands.WaitCommand initialized
+2019.03.01.16.42.52.519, COMMAND, org.usfirst.frc330.commands.HandOut interrupted
+2019.03.01.16.42.52.538, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.01.16.42.52.781, INFO   , Turning Roller off
+2019.03.01.16.42.52.782, INFO   , Retracting Kicker
+2019.03.01.16.42.52.783, COMMAND, org.usfirst.frc330.commands.WaitCommand interrupted
+2019.03.01.16.42.52.783, COMMAND, org.usfirst.frc330.commands.commandgroups.EjectBall ended
+2019.03.01.16.42.52.783, COMMAND, org.usfirst.frc330.commands.commandgroups.EjectBall interrupted
+2019.03.01.16.42.52.783, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.01.16.42.52.784, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.01.16.42.52.799, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup initialized
+2019.03.01.16.42.52.800, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall initialized
+2019.03.01.16.42.52.801, INFO   , Has Ball: false
+2019.03.01.16.42.52.801, INFO   , Sensor: 7.942703024945932
+2019.03.01.16.42.52.802, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall ended
+2019.03.01.16.42.52.802, COMMAND, org.usfirst.frc330.commands.OpenClaw initialized
+2019.03.01.16.42.52.804, INFO   , Opening Claw
+2019.03.01.16.42.52.804, COMMAND, org.usfirst.frc330.commands.OpenClaw ended
+2019.03.01.16.42.52.805, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.42.52.807, INFO   , Turning Roller On to 1.0% speed
+2019.03.01.16.42.52.807, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.42.52.807, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.42.52.808, INFO   , Setting hand angle to: -49.5
+2019.03.01.16.42.52.810, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.42.52.919, INFO   , Final wrist setpoint: -49.402734375
+2019.03.01.16.42.52.921, INFO   , Final hand angle: 51.23203125
+2019.03.01.16.42.52.921, COMMAND, org.usfirst.frc330.commands.SetHandAngle interrupted
+2019.03.01.16.42.52.922, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.42.52.923, INFO   , Lift Final Position: 16.085116848144533
+2019.03.01.16.42.52.923, COMMAND, org.usfirst.frc330.commands.SetLiftPosition interrupted
+2019.03.01.16.42.52.924, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup ended
+2019.03.01.16.42.52.924, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup interrupted
+2019.03.01.16.42.52.940, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense initialized
+2019.03.01.16.42.52.941, COMMAND, org.usfirst.frc330.commands.BallKickRetract initialized
+2019.03.01.16.42.52.943, INFO   , Retracting Kicker
+2019.03.01.16.42.52.944, COMMAND, org.usfirst.frc330.commands.BallKickRetract ended
+2019.03.01.16.42.52.945, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.42.52.946, INFO   , Turning Roller On to 0.1% speed
+2019.03.01.16.42.52.946, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.42.52.947, COMMAND, org.usfirst.frc330.commands.CloseClaw initialized
+2019.03.01.16.42.52.949, INFO   , CLosing Claw
+2019.03.01.16.42.52.949, COMMAND, org.usfirst.frc330.commands.CloseClaw ended
+2019.03.01.16.42.52.950, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.42.52.951, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.42.52.952, INFO   , Setting hand angle to: 57.0
+2019.03.01.16.42.53.050, INFO   , Target lost
+2019.03.01.16.42.53.090, INFO   , Target acquired
+2019.03.01.16.42.53.108, INFO   , Target lost
+2019.03.01.16.42.53.120, INFO   , Final wrist setpoint: 57.120703125
+2019.03.01.16.42.53.122, INFO   , Final hand angle: 56.3296875
+2019.03.01.16.42.53.122, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.03.01.16.42.53.152, INFO   , Target acquired
+2019.03.01.16.42.53.167, INFO   , Target lost
+2019.03.01.16.42.53.208, INFO   , Target acquired
+2019.03.01.16.42.53.227, INFO   , Target lost
+2019.03.01.16.42.53.286, INFO   , Target acquired
+2019.03.01.16.42.53.307, INFO   , Target lost
+2019.03.01.16.42.53.348, INFO   , Target acquired
+2019.03.01.16.42.53.389, INFO   , Target lost
+2019.03.01.16.42.53.568, INFO   , Target acquired
+2019.03.01.16.42.53.605, INFO   , Target lost
+2019.03.01.16.42.53.732, INFO   , Target acquired
+2019.03.01.16.42.53.848, INFO   , Target lost
+2019.03.01.16.42.53.959, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.42.53.960, INFO   , Lift Final Position: 0.467364169921875
+2019.03.01.16.42.53.960, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.42.53.960, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense ended
+2019.03.01.16.42.53.979, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.01.16.42.53.979, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.01.16.42.54.058, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.01.16.42.54.058, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.01.16.42.54.078, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup initialized
+2019.03.01.16.42.54.079, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall initialized
+2019.03.01.16.42.54.079, INFO   , Has Ball: false
+2019.03.01.16.42.54.080, INFO   , Sensor: 8.447742907570834
+2019.03.01.16.42.54.080, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall ended
+2019.03.01.16.42.54.080, COMMAND, org.usfirst.frc330.commands.OpenClaw initialized
+2019.03.01.16.42.54.082, INFO   , Opening Claw
+2019.03.01.16.42.54.082, COMMAND, org.usfirst.frc330.commands.OpenClaw ended
+2019.03.01.16.42.54.082, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.42.54.083, INFO   , Turning Roller On to 1.0% speed
+2019.03.01.16.42.54.083, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.42.54.084, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.42.54.085, INFO   , Setting hand angle to: -49.5
+2019.03.01.16.42.54.086, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.42.54.088, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.42.54.088, INFO   , Lift Final Position: 0.01208700439453125
+2019.03.01.16.42.54.088, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.42.54.999, INFO   , Final wrist setpoint: -49.402734375
+2019.03.01.16.42.55.000, INFO   , Final hand angle: -48.699609375
+2019.03.01.16.42.55.000, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.03.01.16.42.55.000, COMMAND, org.usfirst.frc330.commands.WaitCommand initialized
+2019.03.01.16.42.55.418, COMMAND, org.usfirst.frc330.commands.WaitCommand ended
+2019.03.01.16.42.55.418, COMMAND, org.usfirst.frc330.commands.SensorCloseClawBall initialized
+2019.03.01.16.42.56.566, INFO   , Target acquired
+2019.03.01.16.42.56.606, INFO   , Target lost
+2019.03.01.16.42.56.627, INFO   , Target acquired
+2019.03.01.16.42.56.846, INFO   , Target lost
+2019.03.01.16.42.56.865, INFO   , Target acquired
+2019.03.01.16.42.56.906, INFO   , Target lost
+2019.03.01.16.42.57.006, INFO   , Target acquired
+2019.03.01.16.42.57.047, INFO   , Target lost
+2019.03.01.16.42.57.066, INFO   , Target acquired
+2019.03.01.16.42.57.107, INFO   , Target lost
+2019.03.01.16.42.58.501, INFO   , CLosing Claw
+2019.03.01.16.42.58.501, INFO   , Ball in range: true
+2019.03.01.16.42.58.501, INFO   , Sensor: 5.063243037952189
+2019.03.01.16.42.58.502, COMMAND, org.usfirst.frc330.commands.SensorCloseClawBall ended
+2019.03.01.16.42.58.502, COMMAND, org.usfirst.frc330.commands.RollerUntilBall initialized
+2019.03.01.16.42.58.502, INFO   , Turning Roller On
+2019.03.01.16.42.58.878, INFO   , Turning Roller off
+2019.03.01.16.42.58.879, INFO   , Sensor Distance: 2.79458472315
+2019.03.01.16.42.58.879, COMMAND, org.usfirst.frc330.commands.RollerUntilBall ended
+2019.03.01.16.42.58.879, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense initialized
+2019.03.01.16.42.58.880, COMMAND, org.usfirst.frc330.commands.BallKickRetract initialized
+2019.03.01.16.42.58.881, INFO   , Retracting Kicker
+2019.03.01.16.42.58.882, COMMAND, org.usfirst.frc330.commands.BallKickRetract ended
+2019.03.01.16.42.58.882, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.42.58.883, INFO   , Turning Roller On to 0.1% speed
+2019.03.01.16.42.58.883, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.42.58.884, COMMAND, org.usfirst.frc330.commands.CloseClaw initialized
+2019.03.01.16.42.58.885, INFO   , CLosing Claw
+2019.03.01.16.42.58.886, COMMAND, org.usfirst.frc330.commands.CloseClaw ended
+2019.03.01.16.42.58.886, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.42.58.888, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.42.58.888, INFO   , Lift Final Position: -0.0026860009765625
+2019.03.01.16.42.58.889, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.42.58.889, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.42.58.890, INFO   , Setting hand angle to: 57.0
+2019.03.01.16.42.59.099, INFO   , Final wrist setpoint: 57.120703125
+2019.03.01.16.42.59.100, INFO   , Final hand angle: -31.38515625
+2019.03.01.16.42.59.100, COMMAND, org.usfirst.frc330.commands.SetHandAngle interrupted
+2019.03.01.16.42.59.100, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense ended
+2019.03.01.16.42.59.100, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense interrupted
+2019.03.01.16.42.59.101, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup ended
+2019.03.01.16.42.59.101, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup interrupted
+2019.03.01.16.42.59.119, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense initialized
+2019.03.01.16.42.59.119, COMMAND, org.usfirst.frc330.commands.BallKickRetract initialized
+2019.03.01.16.42.59.121, INFO   , Retracting Kicker
+2019.03.01.16.42.59.121, COMMAND, org.usfirst.frc330.commands.BallKickRetract ended
+2019.03.01.16.42.59.121, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.42.59.122, INFO   , Turning Roller On to 0.1% speed
+2019.03.01.16.42.59.122, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.42.59.123, COMMAND, org.usfirst.frc330.commands.CloseClaw initialized
+2019.03.01.16.42.59.124, INFO   , CLosing Claw
+2019.03.01.16.42.59.124, COMMAND, org.usfirst.frc330.commands.CloseClaw ended
+2019.03.01.16.42.59.124, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.42.59.126, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.42.59.126, INFO   , Lift Final Position: -0.005372001953125
+2019.03.01.16.42.59.126, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.42.59.126, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.42.59.127, INFO   , Setting hand angle to: 57.0
+2019.03.01.16.42.59.819, INFO   , Final wrist setpoint: 57.120703125
+2019.03.01.16.42.59.820, INFO   , Final hand angle: 58.0875
+2019.03.01.16.42.59.821, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.03.01.16.42.59.821, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense ended
+2019.03.01.16.42.59.838, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.01.16.42.59.838, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.01.16.43.00.027, INFO   , Target acquired
+2019.03.01.16.43.00.085, INFO   , Target lost
+2019.03.01.16.43.00.106, INFO   , Target acquired
+2019.03.01.16.43.00.266, INFO   , Target lost
+2019.03.01.16.43.01.998, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.01.16.43.02.018, COMMAND, org.usfirst.frc330.commands.RaiseLiftSensor initialized
+2019.03.01.16.43.02.020, COMMAND, org.usfirst.frc330.commands.RaiseLiftSensor ended
+2019.03.01.16.43.02.038, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.01.16.43.02.728, INFO   , Target acquired
+2019.03.01.16.43.03.362, INFO   , Target lost
+2019.03.01.16.43.04.118, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.01.16.43.04.143, COMMAND, org.usfirst.frc330.commands.RaiseLiftSensor initialized
+2019.03.01.16.43.04.144, COMMAND, org.usfirst.frc330.commands.RaiseLiftSensor ended
+2019.03.01.16.43.04.158, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.01.16.43.04.789, INFO   , Target acquired
+2019.03.01.16.43.04.798, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.01.16.43.04.818, COMMAND, org.usfirst.frc330.commands.RaiseLiftSensor initialized
+2019.03.01.16.43.04.820, COMMAND, org.usfirst.frc330.commands.RaiseLiftSensor ended
+2019.03.01.16.43.04.827, INFO   , Target lost
+2019.03.01.16.43.04.838, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.01.16.43.04.867, INFO   , Target acquired
+2019.03.01.16.43.04.906, INFO   , Target lost
+2019.03.01.16.43.05.227, INFO   , Target acquired
+2019.03.01.16.43.05.779, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.01.16.43.05.798, COMMAND, org.usfirst.frc330.commands.HandOut initialized
+2019.03.01.16.43.06.167, INFO   , Target lost
+2019.03.01.16.43.06.304, INFO   , Target acquired
+2019.03.01.16.43.06.405, INFO   , Target lost
+2019.03.01.16.43.06.425, INFO   , Target acquired
+2019.03.01.16.43.06.447, INFO   , Target lost
+2019.03.01.16.43.06.466, INFO   , Target acquired
+2019.03.01.16.43.06.484, INFO   , Target lost
+2019.03.01.16.43.06.531, INFO   , Target acquired
+2019.03.01.16.43.06.546, INFO   , Target lost
+2019.03.01.16.43.06.565, INFO   , Target acquired
+2019.03.01.16.43.06.927, INFO   , Target lost
+2019.03.01.16.43.06.947, INFO   , Target acquired
+2019.03.01.16.43.06.987, INFO   , Target lost
+2019.03.01.16.43.07.008, INFO   , Target acquired
+2019.03.01.16.43.07.658, COMMAND, org.usfirst.frc330.commands.commandgroups.EjectBall initialized
+2019.03.01.16.43.07.658, COMMAND, org.usfirst.frc330.commands.BallKickExtend initialized
+2019.03.01.16.43.07.660, INFO   , Extending Kicker
+2019.03.01.16.43.07.661, COMMAND, org.usfirst.frc330.commands.BallKickExtend ended
+2019.03.01.16.43.07.661, COMMAND, org.usfirst.frc330.commands.OpenClaw initialized
+2019.03.01.16.43.07.663, INFO   , Opening Claw
+2019.03.01.16.43.07.663, COMMAND, org.usfirst.frc330.commands.OpenClaw ended
+2019.03.01.16.43.07.663, COMMAND, org.usfirst.frc330.commands.ReversePickup initialized
+2019.03.01.16.43.07.664, INFO   , Reversing Roller
+2019.03.01.16.43.07.665, COMMAND, org.usfirst.frc330.commands.ReversePickup ended
+2019.03.01.16.43.07.665, COMMAND, org.usfirst.frc330.commands.WaitCommand initialized
+2019.03.01.16.43.08.119, COMMAND, org.usfirst.frc330.commands.HandOut interrupted
+2019.03.01.16.43.08.142, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.01.16.43.08.220, INFO   , Turning Roller off
+2019.03.01.16.43.08.222, INFO   , Retracting Kicker
+2019.03.01.16.43.08.223, COMMAND, org.usfirst.frc330.commands.WaitCommand interrupted
+2019.03.01.16.43.08.223, COMMAND, org.usfirst.frc330.commands.commandgroups.EjectBall ended
+2019.03.01.16.43.08.223, COMMAND, org.usfirst.frc330.commands.commandgroups.EjectBall interrupted
+2019.03.01.16.43.08.224, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.01.16.43.08.224, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.01.16.43.08.238, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup initialized
+2019.03.01.16.43.08.240, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall initialized
+2019.03.01.16.43.08.240, INFO   , Has Ball: false
+2019.03.01.16.43.08.241, INFO   , Sensor: 7.992220045486729
+2019.03.01.16.43.08.241, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall ended
+2019.03.01.16.43.08.241, COMMAND, org.usfirst.frc330.commands.OpenClaw initialized
+2019.03.01.16.43.08.243, INFO   , Opening Claw
+2019.03.01.16.43.08.243, COMMAND, org.usfirst.frc330.commands.OpenClaw ended
+2019.03.01.16.43.08.243, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.43.08.244, INFO   , Turning Roller On to 1.0% speed
+2019.03.01.16.43.08.244, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.43.08.244, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.43.08.245, INFO   , Setting hand angle to: -49.5
+2019.03.01.16.43.08.247, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.43.08.309, INFO   , Target lost
+2019.03.01.16.43.08.358, INFO   , Final wrist setpoint: -49.402734375
+2019.03.01.16.43.08.361, INFO   , Final hand angle: 42.882421875
+2019.03.01.16.43.08.361, COMMAND, org.usfirst.frc330.commands.SetHandAngle interrupted
+2019.03.01.16.43.08.362, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.43.08.363, INFO   , Lift Final Position: 29.58495775634766
+2019.03.01.16.43.08.363, COMMAND, org.usfirst.frc330.commands.SetLiftPosition interrupted
+2019.03.01.16.43.08.363, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup ended
+2019.03.01.16.43.08.363, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup interrupted
+2019.03.01.16.43.08.380, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense initialized
+2019.03.01.16.43.08.380, COMMAND, org.usfirst.frc330.commands.BallKickRetract initialized
+2019.03.01.16.43.08.382, INFO   , Retracting Kicker
+2019.03.01.16.43.08.382, COMMAND, org.usfirst.frc330.commands.BallKickRetract ended
+2019.03.01.16.43.08.383, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.43.08.384, INFO   , Turning Roller On to 0.1% speed
+2019.03.01.16.43.08.384, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.43.08.384, COMMAND, org.usfirst.frc330.commands.CloseClaw initialized
+2019.03.01.16.43.08.386, INFO   , CLosing Claw
+2019.03.01.16.43.08.386, COMMAND, org.usfirst.frc330.commands.CloseClaw ended
+2019.03.01.16.43.08.386, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.43.08.387, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.43.08.387, INFO   , Setting hand angle to: 57.0
+2019.03.01.16.43.08.532, INFO   , Target acquired
+2019.03.01.16.43.08.660, INFO   , Final wrist setpoint: 57.120703125
+2019.03.01.16.43.08.661, INFO   , Final hand angle: 57.296484375
+2019.03.01.16.43.08.662, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.03.01.16.43.08.930, INFO   , Target lost
+2019.03.01.16.43.08.945, INFO   , Target acquired
+2019.03.01.16.43.09.006, INFO   , Target lost
+2019.03.01.16.43.09.120, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.43.09.120, INFO   , Lift Final Position: 19.523198098144533
+2019.03.01.16.43.09.121, COMMAND, org.usfirst.frc330.commands.SetLiftPosition interrupted
+2019.03.01.16.43.09.121, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense ended
+2019.03.01.16.43.09.121, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense interrupted
+2019.03.01.16.43.09.138, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup initialized
+2019.03.01.16.43.09.138, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall initialized
+2019.03.01.16.43.09.138, INFO   , Has Ball: false
+2019.03.01.16.43.09.139, INFO   , Sensor: 8.56007831010216
+2019.03.01.16.43.09.140, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall ended
+2019.03.01.16.43.09.141, COMMAND, org.usfirst.frc330.commands.OpenClaw initialized
+2019.03.01.16.43.09.143, INFO   , Opening Claw
+2019.03.01.16.43.09.143, COMMAND, org.usfirst.frc330.commands.OpenClaw ended
+2019.03.01.16.43.09.143, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.43.09.144, INFO   , Turning Roller On to 1.0% speed
+2019.03.01.16.43.09.144, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.43.09.144, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.43.09.146, INFO   , Setting hand angle to: -49.5
+2019.03.01.16.43.09.147, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.43.09.319, INFO   , Final wrist setpoint: -49.402734375
+2019.03.01.16.43.09.320, INFO   , Final hand angle: 46.925390625
+2019.03.01.16.43.09.320, COMMAND, org.usfirst.frc330.commands.SetHandAngle interrupted
+2019.03.01.16.43.09.321, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.43.09.321, INFO   , Lift Final Position: 15.913212785644532
+2019.03.01.16.43.09.322, COMMAND, org.usfirst.frc330.commands.SetLiftPosition interrupted
+2019.03.01.16.43.09.322, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup ended
+2019.03.01.16.43.09.322, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup interrupted
+2019.03.01.16.43.09.338, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense initialized
+2019.03.01.16.43.09.338, COMMAND, org.usfirst.frc330.commands.BallKickRetract initialized
+2019.03.01.16.43.09.341, INFO   , Retracting Kicker
+2019.03.01.16.43.09.341, COMMAND, org.usfirst.frc330.commands.BallKickRetract ended
+2019.03.01.16.43.09.341, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.43.09.343, INFO   , Turning Roller On to 0.1% speed
+2019.03.01.16.43.09.343, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.43.09.343, COMMAND, org.usfirst.frc330.commands.CloseClaw initialized
+2019.03.01.16.43.09.344, INFO   , CLosing Claw
+2019.03.01.16.43.09.345, COMMAND, org.usfirst.frc330.commands.CloseClaw ended
+2019.03.01.16.43.09.345, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.43.09.347, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.43.09.347, INFO   , Setting hand angle to: 57.0
+2019.03.01.16.43.09.540, INFO   , Final wrist setpoint: 57.120703125
+2019.03.01.16.43.09.541, INFO   , Final hand angle: 58.702734375
+2019.03.01.16.43.09.541, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.03.01.16.43.09.650, INFO   , Target acquired
+2019.03.01.16.43.09.706, INFO   , Target lost
+2019.03.01.16.43.09.765, INFO   , Target acquired
+2019.03.01.16.43.09.806, INFO   , Target lost
+2019.03.01.16.43.10.280, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.43.10.281, INFO   , Lift Final Position: 0.381412138671875
+2019.03.01.16.43.10.281, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.43.10.282, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense ended
+2019.03.01.16.43.10.298, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.01.16.43.10.299, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.01.16.43.11.418, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.01.16.43.11.418, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.01.16.43.11.438, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup initialized
+2019.03.01.16.43.11.438, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall initialized
+2019.03.01.16.43.11.438, INFO   , Has Ball: false
+2019.03.01.16.43.11.438, INFO   , Sensor: 8.56007831010216
+2019.03.01.16.43.11.439, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall ended
+2019.03.01.16.43.11.439, COMMAND, org.usfirst.frc330.commands.OpenClaw initialized
+2019.03.01.16.43.11.440, INFO   , Opening Claw
+2019.03.01.16.43.11.440, COMMAND, org.usfirst.frc330.commands.OpenClaw ended
+2019.03.01.16.43.11.440, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.43.11.441, INFO   , Turning Roller On to 1.0% speed
+2019.03.01.16.43.11.441, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.43.11.441, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.43.11.442, INFO   , Setting hand angle to: -49.5
+2019.03.01.16.43.11.443, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.43.11.444, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.43.11.444, INFO   , Lift Final Position: 0.04163301513671875
+2019.03.01.16.43.11.445, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.43.12.318, INFO   , Final wrist setpoint: -49.402734375
+2019.03.01.16.43.12.319, INFO   , Final hand angle: -48.172265625
+2019.03.01.16.43.12.319, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.03.01.16.43.12.320, COMMAND, org.usfirst.frc330.commands.WaitCommand initialized
+2019.03.01.16.43.12.443, INFO   , Target acquired
+2019.03.01.16.43.12.463, INFO   , Target lost
+2019.03.01.16.43.12.486, INFO   , Target acquired
+2019.03.01.16.43.12.533, INFO   , Target lost
+2019.03.01.16.43.12.549, INFO   , Target acquired
+2019.03.01.16.43.12.606, INFO   , Target lost
+2019.03.01.16.43.12.730, INFO   , Target acquired
+2019.03.01.16.43.12.738, COMMAND, org.usfirst.frc330.commands.WaitCommand ended
+2019.03.01.16.43.12.739, COMMAND, org.usfirst.frc330.commands.SensorCloseClawBall initialized
+2019.03.01.16.43.12.747, INFO   , Target lost
+2019.03.01.16.43.12.767, INFO   , Target acquired
+2019.03.01.16.43.12.785, INFO   , Target lost
+2019.03.01.16.43.12.824, INFO   , Target acquired
+2019.03.01.16.43.15.359, COMMAND, org.usfirst.frc330.commands.SensorCloseClawBall interrupted
+2019.03.01.16.43.15.359, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup ended
+2019.03.01.16.43.15.360, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup interrupted
+2019.03.01.16.43.15.379, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense initialized
+2019.03.01.16.43.15.379, COMMAND, org.usfirst.frc330.commands.BallKickRetract initialized
+2019.03.01.16.43.15.381, INFO   , Retracting Kicker
+2019.03.01.16.43.15.381, COMMAND, org.usfirst.frc330.commands.BallKickRetract ended
+2019.03.01.16.43.15.381, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.43.15.382, INFO   , Turning Roller On to 0.1% speed
+2019.03.01.16.43.15.383, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.43.15.383, COMMAND, org.usfirst.frc330.commands.CloseClaw initialized
+2019.03.01.16.43.15.384, INFO   , CLosing Claw
+2019.03.01.16.43.15.384, COMMAND, org.usfirst.frc330.commands.CloseClaw ended
+2019.03.01.16.43.15.385, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.43.15.387, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.43.15.387, INFO   , Lift Final Position: 0.0564060205078125
+2019.03.01.16.43.15.388, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.43.15.388, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.43.15.389, INFO   , Setting hand angle to: 57.0
+2019.03.01.16.43.15.404, INFO   , Final wrist setpoint: 57.120703125
+2019.03.01.16.43.15.406, INFO   , Final hand angle: -48.875390625
+2019.03.01.16.43.15.406, COMMAND, org.usfirst.frc330.commands.SetHandAngle interrupted
+2019.03.01.16.43.15.406, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense ended
+2019.03.01.16.43.15.406, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense interrupted
+2019.03.01.16.43.15.420, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup initialized
+2019.03.01.16.43.15.420, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall initialized
+2019.03.01.16.43.15.421, INFO   , Has Ball: false
+2019.03.01.16.43.15.423, INFO   , Sensor: 8.466266950182932
+2019.03.01.16.43.15.423, COMMAND, org.usfirst.frc330.commands.LoopIfWeHaveBall ended
+2019.03.01.16.43.15.424, COMMAND, org.usfirst.frc330.commands.OpenClaw initialized
+2019.03.01.16.43.15.425, INFO   , Opening Claw
+2019.03.01.16.43.15.425, COMMAND, org.usfirst.frc330.commands.OpenClaw ended
+2019.03.01.16.43.15.426, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.43.15.426, INFO   , Turning Roller On to 1.0% speed
+2019.03.01.16.43.15.426, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.43.15.427, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.43.15.427, INFO   , Setting hand angle to: -49.5
+2019.03.01.16.43.15.428, INFO   , Final wrist setpoint: -49.402734375
+2019.03.01.16.43.15.428, INFO   , Final hand angle: -48.7875
+2019.03.01.16.43.15.429, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.03.01.16.43.15.429, COMMAND, org.usfirst.frc330.commands.WaitCommand initialized
+2019.03.01.16.43.15.429, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.43.15.430, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.43.15.430, INFO   , Lift Final Position: 0.0564060205078125
+2019.03.01.16.43.15.431, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.43.15.559, COMMAND, org.usfirst.frc330.commands.WaitCommand interrupted
+2019.03.01.16.43.15.559, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup ended
+2019.03.01.16.43.15.559, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredBallPickup interrupted
+2019.03.01.16.43.15.579, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense initialized
+2019.03.01.16.43.15.579, COMMAND, org.usfirst.frc330.commands.BallKickRetract initialized
+2019.03.01.16.43.15.581, INFO   , Retracting Kicker
+2019.03.01.16.43.15.581, COMMAND, org.usfirst.frc330.commands.BallKickRetract ended
+2019.03.01.16.43.15.582, COMMAND, org.usfirst.frc330.commands.RollerOn initialized
+2019.03.01.16.43.15.583, INFO   , Turning Roller On to 0.1% speed
+2019.03.01.16.43.15.583, COMMAND, org.usfirst.frc330.commands.RollerOn ended
+2019.03.01.16.43.15.583, COMMAND, org.usfirst.frc330.commands.CloseClaw initialized
+2019.03.01.16.43.15.584, INFO   , CLosing Claw
+2019.03.01.16.43.15.585, COMMAND, org.usfirst.frc330.commands.CloseClaw ended
+2019.03.01.16.43.15.585, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.43.15.586, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.43.15.586, INFO   , Lift Final Position: 0.0564060205078125
+2019.03.01.16.43.15.587, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.43.15.587, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.43.15.587, INFO   , Setting hand angle to: 57.0
+2019.03.01.16.43.16.288, INFO   , Target lost
+2019.03.01.16.43.16.306, INFO   , Target acquired
+2019.03.01.16.43.16.545, INFO   , Final wrist setpoint: 57.120703125
+2019.03.01.16.43.16.546, INFO   , Final hand angle: 57.648046875
+2019.03.01.16.43.16.547, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.03.01.16.43.16.547, COMMAND, org.usfirst.frc330.commands.commandgroups.Defense ended
+2019.03.01.16.43.16.558, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.01.16.43.16.559, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.01.16.43.16.569, INFO   , Target lost
+2019.03.01.16.43.19.938, COMMAND, org.usfirst.frc330.commands.ClimbDeployVerify initialized
+2019.03.01.16.43.20.019, INFO   , Second deploy button detected; deploying.
+2019.03.01.16.43.20.020, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.01.16.43.20.020, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.01.16.43.20.038, COMMAND, org.usfirst.frc330.commands.commandgroups.ClimbDeploy initialized
+2019.03.01.16.43.20.038, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.43.20.039, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.01.16.43.20.039, INFO   , Setting hand angle to: 57.0
+2019.03.01.16.43.20.040, INFO   , Final wrist setpoint: 57.120703125
+2019.03.01.16.43.20.041, INFO   , Final hand angle: 55.978125
+2019.03.01.16.43.20.041, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.03.01.16.43.20.298, COMMAND, org.usfirst.frc330.commands.ClimbDeployVerify interrupted
+2019.03.01.16.43.20.924, INFO   , Target acquired
+2019.03.01.16.43.20.962, INFO   , Target lost
+2019.03.01.16.43.21.002, INFO   , Target acquired
+2019.03.01.16.43.21.028, INFO   , Target lost
+2019.03.01.16.43.21.779, INFO   , Lift Setpoint: 22.749085270996094
+2019.03.01.16.43.21.780, INFO   , Lift Final Position: 22.041324013671876
+2019.03.01.16.43.21.780, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.43.21.780, COMMAND, org.usfirst.frc330.commands.DeployClimbPins initialized
+2019.03.01.16.43.21.781, COMMAND, org.usfirst.frc330.commands.DeployClimbPins ended
+2019.03.01.16.43.21.781, COMMAND, org.usfirst.frc330.commands.EngageClimbLockout initialized
+2019.03.01.16.43.21.782, COMMAND, org.usfirst.frc330.commands.EngageClimbLockout ended
+2019.03.01.16.43.21.782, COMMAND, org.usfirst.frc330.commands.commandgroups.ClimbDeploy ended
+2019.03.01.16.43.21.798, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.01.16.43.21.799, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.01.16.43.23.318, COMMAND, org.usfirst.frc330.commands.TankDrive interrupted
+2019.03.01.16.43.23.319, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.01.16.43.23.339, COMMAND, org.usfirst.frc330.commands.commandgroups.Climb initialized
+2019.03.01.16.43.23.339, COMMAND, org.usfirst.frc330.commands.ShiftLow initialized
+2019.03.01.16.43.23.341, COMMAND, org.usfirst.frc330.commands.ShiftLow ended
+2019.03.01.16.43.23.341, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.01.16.43.24.367, INFO   , Target acquired
+2019.03.01.16.43.24.383, INFO   , Target lost
+2019.03.01.16.43.24.447, INFO   , Target acquired
+2019.03.01.16.43.24.467, INFO   , Target lost
+2019.03.01.16.43.25.258, INFO   , Lift Setpoint: 0.0
+2019.03.01.16.43.25.259, INFO   , Lift Final Position: 0.6634422412109375
+2019.03.01.16.43.25.259, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.01.16.43.25.259, COMMAND, org.usfirst.frc330.commands.DrivePogoAndDriveTrain initialized
+2019.03.01.16.43.27.820, COMMAND, org.usfirst.frc330.commands.DrivePogoAndDriveTrain ended
+2019.03.01.16.43.27.820, COMMAND, org.usfirst.frc330.commands.ConditionalPogoRetract initialized
+2019.03.01.16.43.27.823, INFO   , Second retract button detected; retracting.
+2019.03.01.16.43.27.823, COMMAND, org.usfirst.frc330.commands.ConditionalPogoRetract ended
+2019.03.01.16.43.27.823, COMMAND, org.usfirst.frc330.commands.TankDrive initialized
+2019.03.01.16.43.34.262, INFO   , Disabled Init
+2019.03.01.16.43.34.262, INFO   , Battery Voltage: 12.360032226562499
+2019.03.01.16.43.34.263, COMMAND, org.usfirst.frc330.commands.ManualHand ended
+2019.03.01.16.43.34.263, COMMAND, org.usfirst.frc330.commands.TankDrive interrupted
+2019.03.01.16.43.34.263, COMMAND, org.usfirst.frc330.commands.commandgroups.Climb ended
+2019.03.01.16.43.34.264, INFO   , Lift disabled
+2019.03.01.16.43.34.265, INFO   , Hand disabled

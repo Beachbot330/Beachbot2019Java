@@ -18,6 +18,7 @@ import org.usfirst.frc330.util.Logger.Severity;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.shuffleboard.Shuffleboard;
 import edu.wpi.first.wpilibj.shuffleboard.ShuffleboardTab;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.cscore.UsbCamera;
 import edu.wpi.first.cameraserver.*;
 import edu.wpi.first.networktables.NetworkTableInstance;
@@ -116,14 +117,18 @@ public class Frills extends Subsystem {
                 setColorRGB(0,0,100);
             }
             if(!target){
-                Logger.getInstance().println("Target acquired");
+                Logger.getInstance().println("Target acquired", Severity.INFO);
                 target = true;
             }
+            SmartDashboard.putBoolean("VisionTarget", true);
         }
-        else if(NetworkTableInstance.getDefault().getTable("limelight").getEntry("tv").getDouble(0) < 0.5 && target){ //just lost target
+        else if(NetworkTableInstance.getDefault().getTable("limelight").getEntry("tv").getDouble(0) < 0.5){ //No target
             setColorRGB(0,0,0);
-            target = false;
-            Logger.getInstance().println("Target lost");
+            SmartDashboard.putBoolean("VisionTarget", false);
+            if(target){ //Target just lost
+                target = false;
+                Logger.getInstance().println("Target lost", Severity.INFO);
+            } 
         }
 
     }

@@ -34,6 +34,7 @@ public class AutoStear extends BBCommand {
     public AutoStear() {
 
         requires(Robot.chassis);
+        SmartDashboard.putBoolean("Troy", false);
 
     }
 
@@ -59,6 +60,8 @@ public class AutoStear extends BBCommand {
         else{
             Logger.getInstance().println("Robot in high gear", Severity.INFO);
         }
+
+        SmartDashboard.putBoolean("Troy", true);
     }
 
     // Called repeatedly when this Command is scheduled to run
@@ -108,6 +111,7 @@ public class AutoStear extends BBCommand {
             Logger.getInstance().println("Aiming ended with no target!", Severity.WARNING);
         }
         Robot.chassis.limelightPID.disable();
+        SmartDashboard.putBoolean("Troy", false);
     }
 
     // Called when another command which requires one or more of the same
