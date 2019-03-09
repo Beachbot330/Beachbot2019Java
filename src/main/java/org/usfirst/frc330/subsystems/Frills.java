@@ -178,133 +178,133 @@ public class Frills extends Subsystem {
 
     public static final double brightnessDivisor = 100/brightnessPercent; // there should be no reason to modify this constant, only change the one above
 
-public void setColor(Color color){
-    redLED.disablePWM();
-    greenLED.disablePWM();
-    blueLED.disablePWM();
-    redLED.setPWMRate(500);
-    greenLED.setPWMRate(500);
-    blueLED.setPWMRate(500);
-    redLED.enablePWM(((color.getRed())/brightnessDivisor)/255.0);
-    greenLED.enablePWM(((color.getGreen())/brightnessDivisor)/255.0);
-    blueLED.enablePWM(((color.getBlue())/brightnessDivisor)/255.0);
-}
-
-public void redOn(){
-    redLED.set(true);
-}
-
-public void setColorRGB(int red, int green, int blue){
-    if (currentRed != red){
+    public void setColor(Color color){
         redLED.disablePWM();
-        redLED.setPWMRate(500);
-        redLED.enablePWM(red/brightnessDivisor);
-        currentRed = red;
-    }
-    if (currentGreen != green){
         greenLED.disablePWM();
-        greenLED.setPWMRate(500);
-        greenLED.enablePWM(green/brightnessDivisor);
-        currentGreen = green;
-    }
-    if (currentBlue != blue){
         blueLED.disablePWM();
+        redLED.setPWMRate(500);
+        greenLED.setPWMRate(500);
         blueLED.setPWMRate(500);
-        blueLED.enablePWM(blue/brightnessDivisor);
-        currentBlue = blue;
+        redLED.enablePWM(((color.getRed())/brightnessDivisor)/255.0);
+        greenLED.enablePWM(((color.getGreen())/brightnessDivisor)/255.0);
+        blueLED.enablePWM(((color.getBlue())/brightnessDivisor)/255.0);
     }
-}
-
-public void disableAllPWM() {
-    redLED.disablePWM();
-    greenLED.disablePWM();
-    blueLED.disablePWM();
-}
-
-class Color{
-    int r, g, b;
-    private Color(int r, int g, int b) {
-        this.r = r;
-        this.g = g;
-        this.b = b;
+    
+    public void redOn(){
+        redLED.set(true);
     }
-
-    public int getRed(){
-        return r;
-    }
-
-    public int getGreen(){
-        return g;
-    }
-
-    public int getBlue(){
-        return b;
-    }
-
-    public Color RED = new Color(255, 0, 0);
-    public Color GREEN = new Color(0, 255, 0);
-    public Color BLUE = new Color(0, 0, 255);
-    public Color YELLOW1 = new Color(115, 80, 0); //also 255, 255, 0
-    public Color YELLOW2 = new Color(255, 255, 0);
-    public Color PURPLE = new Color(127, 0, 255);
-    public Color WHITE = new Color(51, 51, 51);
-
-    public boolean getIsVisionTargetInSight() {
-        return false;
-    }
-
-    public boolean getIsHatchAttained() {
-        return false;
-    }
-
-    public boolean getIsMisaligned() {
-        return false;
-    }
-
-    public boolean getIsBallAttained() {
-        return false;
-    }
-
-    public boolean getIsInAssistMode(){
-        return false;
-    }
-
-    public void indicatorBarYellow() {
-        if(getIsVisionTargetInSight()) {
-            setColor(YELLOW2);
+    
+    public void setColorRGB(int red, int green, int blue){
+        if (currentRed != red){
+            redLED.disablePWM();
+            redLED.setPWMRate(500);
+            redLED.enablePWM((red/brightnessDivisor)/255.0);
+            currentRed = red;
+        }
+        if (currentGreen != green){
+            greenLED.disablePWM();
+            greenLED.setPWMRate(500);
+            greenLED.enablePWM((green/brightnessDivisor)/255.0);
+            currentGreen = green;
+        }
+        if (currentBlue != blue){
+            blueLED.disablePWM();
+            blueLED.setPWMRate(500);
+            blueLED.enablePWM((blue/brightnessDivisor)/255.0);
+            currentBlue = blue;
         }
     }
-
-    public void indicatorBarGreen() {
-        if(getIsHatchAttained()) {
-            setColor(GREEN);
+    
+    public void disableAllPWM() {
+        redLED.disablePWM();
+        greenLED.disablePWM();
+        blueLED.disablePWM();
+    }
+    
+    class Color{
+        int r, g, b;
+        private Color(int r, int g, int b) {
+            this.r = r;
+            this.g = g;
+            this.b = b;
+        }
+    
+        public int getRed(){
+            return r;
+        }
+    
+        public int getGreen(){
+            return g;
+        }
+    
+        public int getBlue(){
+            return b;
+        }
+    
+        public Color RED = new Color(255, 0, 0);
+        public Color GREEN = new Color(0, 255, 0);
+        public Color BLUE = new Color(0, 0, 255);
+        public Color YELLOW1 = new Color(115, 80, 0); //also 255, 255, 0
+        public Color YELLOW2 = new Color(255, 255, 0);
+        public Color PURPLE = new Color(127, 0, 255);
+        public Color WHITE = new Color(51, 51, 51);
+    
+        public boolean getIsVisionTargetInSight() {
+            return false;
+        }
+    
+        public boolean getIsHatchAttained() {
+            return false;
+        }
+    
+        public boolean getIsMisaligned() {
+            return false;
+        }
+    
+        public boolean getIsBallAttained() {
+            return false;
+        }
+    
+        public boolean getIsInAssistMode(){
+            return false;
+        }
+    
+        public void indicatorBarYellow() {
+            if(getIsVisionTargetInSight()) {
+                setColor(YELLOW2);
+            }
+        }
+    
+        public void indicatorBarGreen() {
+            if(getIsHatchAttained()) {
+                setColor(GREEN);
+            }
+        }
+    
+        public void indicatorBarRed() {
+            if(getIsMisaligned()) {
+                setColor(RED);
+            }
+        }
+    
+        public void indicatorBarBlue() {
+            if(getIsBallAttained()) {
+                setColor(BLUE);
+            }
+        }
+    
+        public void indicatorBarPurple() {
+            if(!getIsBallAttained() && getIsInAssistMode()) {
+                setColor(PURPLE);
+            }
+        }
+    
+        public void indicatorBarWhite(){
+            if(lockout) {
+                setColor(WHITE);
+            }
         }
     }
-
-    public void indicatorBarRed() {
-        if(getIsMisaligned()) {
-            setColor(RED);
-        }
-    }
-
-    public void indicatorBarBlue() {
-        if(getIsBallAttained()) {
-            setColor(BLUE);
-        }
-    }
-
-    public void indicatorBarPurple() {
-        if(!getIsBallAttained() && getIsInAssistMode()) {
-            setColor(PURPLE);
-        }
-    }
-
-    public void indicatorBarWhite(){
-        if(lockout) {
-            setColor(WHITE);
-        }
-    }
-}
 
 
 }
