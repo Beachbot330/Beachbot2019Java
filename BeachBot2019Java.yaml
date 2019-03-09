@@ -63,7 +63,7 @@ Children:
           default: kRate
           name: PID Source
           validators: null
-          value: kRate
+          value: kDisplacement
         Encoding Type: !!robotbuilder.data.properties.ChoicesProperty
           choices: &id004 [k4X, k2X, k1X]
           default: k4X
@@ -97,7 +97,7 @@ Children:
           default: kRate
           name: PID Source
           validators: null
-          value: kRate
+          value: kDisplacement
         Encoding Type: !!robotbuilder.data.properties.ChoicesProperty
           choices: *id004
           default: k4X
@@ -2287,15 +2287,15 @@ Children:
       Run When Disabled: !!robotbuilder.data.properties.BooleanProperty {default: false,
         name: Run When Disabled, validators: null, value: false}
       Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
-        default: &id036 []
+        default: []
         name: Parameter presets
         validators: null
-        value: *id036
+        value: []
       Commands: !!robotbuilder.data.properties.ListProperty
-        default: &id037 []
+        default: []
         name: Commands
         validators: *id035
-        value: *id037
+        value: []
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: true}
     Base: Command Group

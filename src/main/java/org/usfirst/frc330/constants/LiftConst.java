@@ -13,7 +13,8 @@ public final class LiftConst {
 
 	public static final double DeployBallLow	= 3.20;		//ejo 2.2.19
 	public static final double DeployBallMid	= 16.3;		//AP2/28/19
-	public static final double DeployBallHi		= 29.8;		//AP 2/28/19
+	public static final double DeployBallHi		= 30.2;		//AP 3/9/19
+	//public static final double DeployBallHi		= 29.8;		//AP 2/28/19 (OCR)
 
 	public static final double DeployHatchLow	= 0.0;		//ejo 2.2.19
 	public static final double DeployHatchMid	= 15.01;		//AP 2/28/19
@@ -55,7 +56,6 @@ public final class LiftConst {
 	public static final double  inchesPerRev		= 5.50093; //AP 02/02/2019
     public static final double  encoderGearRatio    = 1/1;     //ejo 2.2.19
     public static final double 	sprocketDiameter    = 1.751;    //ejo 2.2.19
-	public static final double  Fudgefactor         = 0;       //TODO - Find the 2019 value - ejo
 	//encoder is on the output shaft, so it should be gearRatio should be 1:1
 
 	//Pogo Distance Constants

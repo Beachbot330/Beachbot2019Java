@@ -150,12 +150,12 @@ public class Chassis extends Subsystem {
         driveEncoderRight = new Encoder(0, 1, false, EncodingType.k4X);
         addChild("DriveEncoderRight",driveEncoderRight);
         driveEncoderRight.setDistancePerPulse(1.0);
-        driveEncoderRight.setPIDSourceType(PIDSourceType.kRate);
+        driveEncoderRight.setPIDSourceType(PIDSourceType.kDisplacement);
         
         driveEncoderLeft = new Encoder(2, 3, false, EncodingType.k4X);
         addChild("DriveEncoderLeft",driveEncoderLeft);
         driveEncoderLeft.setDistancePerPulse(1.0);
-        driveEncoderLeft.setPIDSourceType(PIDSourceType.kRate);
+        driveEncoderLeft.setPIDSourceType(PIDSourceType.kDisplacement);
         
         rightDrive1 = new Spark(0);
         addChild("rightDrive1",rightDrive1);
