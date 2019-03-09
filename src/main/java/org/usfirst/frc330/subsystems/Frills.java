@@ -170,7 +170,13 @@ public class Frills extends Subsystem {
 
 	public void engageLockout() {
         this.lockout = true;
-	}
+    }
+    
+    public static final double brightnessPercent = 40.0;    //EJO 3.9.19
+    // ^ update this to modify the brightness level of the leds
+    //eg 20.0 = 20.0% brightness
+
+    public static final double brightnessDivisor = 100/brightnessPercent; // there should be no reason to modify this constant, only change the one above
 
 public void setColor(Color color){
     redLED.disablePWM();
@@ -179,9 +185,9 @@ public void setColor(Color color){
     redLED.setPWMRate(500);
     greenLED.setPWMRate(500);
     blueLED.setPWMRate(500);
-    redLED.enablePWM(((color.getRed())/5)/255.0);
-    greenLED.enablePWM(((color.getGreen())/5)/255.0);
-    blueLED.enablePWM(((color.getBlue())/5)/255.0);
+    redLED.enablePWM(((color.getRed())/brightnessDivisor)/255.0);
+    greenLED.enablePWM(((color.getGreen())/brightnessDivisor)/255.0);
+    blueLED.enablePWM(((color.getBlue())/brightnessDivisor)/255.0);
 }
 
 public void redOn(){
@@ -192,19 +198,19 @@ public void setColorRGB(int red, int green, int blue){
     if (currentRed != red){
         redLED.disablePWM();
         redLED.setPWMRate(500);
-        redLED.enablePWM(red);
+        redLED.enablePWM(red/brightnessDivisor);
         currentRed = red;
     }
     if (currentGreen != green){
         greenLED.disablePWM();
         greenLED.setPWMRate(500);
-        greenLED.enablePWM(green);
+        greenLED.enablePWM(green/brightnessDivisor);
         currentGreen = green;
     }
     if (currentBlue != blue){
         blueLED.disablePWM();
         blueLED.setPWMRate(500);
-        blueLED.enablePWM(blue);
+        blueLED.enablePWM(blue/brightnessDivisor);
         currentBlue = blue;
     }
 }
