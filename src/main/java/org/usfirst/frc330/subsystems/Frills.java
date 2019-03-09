@@ -221,11 +221,6 @@ public void disableAllPWM() {
     blueLED.disablePWM();
 }
 
-int Pred = 0;
-int Pgreen = 55;
-int Pblue = 174;
-int i = 0;
-
 class Color{
     int r, g, b;
     private Color(int r, int g, int b) {
