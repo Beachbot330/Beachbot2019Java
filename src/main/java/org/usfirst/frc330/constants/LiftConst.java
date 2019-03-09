@@ -9,7 +9,7 @@ public final class LiftConst {
 	//Positions
 	public static final double defense			= 0.0;		//ejo 2.2.19
 	public static final double lowerLimit 		= 0.0;		//ejo 2.2.19
-	public static final double upperLimit	 	= 30.8;		//AP 2/28/19
+	public static final double upperLimit	 	= 30.7;		//JR 3/09/19
 
 	public static final double DeployBallLow	= 3.20;		//ejo 2.2.19
 	public static final double DeployBallMid	= 16.3;		//AP2/28/19
