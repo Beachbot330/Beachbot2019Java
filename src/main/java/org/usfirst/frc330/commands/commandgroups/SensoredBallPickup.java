@@ -31,7 +31,7 @@ public class SensoredBallPickup extends BBCommandGroup {
         
         //Prep Pickup
         addParallel(new BallKickRetract());
-        addSequential(new OpenClaw());
+        addSequential(new CloseClaw());
         addSequential(new RollerOn());
 
         //lower lift and pickup to ball intake positon

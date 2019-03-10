@@ -79,7 +79,7 @@ public class RollerUntilBall extends BBCommand {
     // Called once after isFinished returns true
     @Override
     protected void end() {
-        Robot.pickup.rollerOff();
+        Robot.pickup.rollerOn(0.2);
     	Logger.getInstance().println("Sensor Distance: " + Robot.pickup.getSensorDistance(), Severity.INFO);
     }
 

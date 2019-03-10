@@ -11,14 +11,14 @@ public final class LiftConst {
 	public static final double lowerLimit 		= 0.0;		//ejo 2.2.19
 	public static final double upperLimit	 	= 30.7;		//JR 3/09/19
 
-	public static final double DeployBallLow	= 3.20;		//ejo 2.2.19
-	public static final double DeployBallMid	= 16.3;		//AP2/28/19
+	public static final double DeployBallLow	= 2.60;		//JR 3/10/19
+	public static final double DeployBallMid	= 16.3;		//AP 2/28/19
 	public static final double DeployBallHi		= 30.2;		//AP 3/9/19
 	//public static final double DeployBallHi		= 29.8;		//AP 2/28/19 (OCR)
 
 	public static final double DeployHatchLow	= 0.0;		//ejo 2.2.19
 	public static final double DeployHatchMid	= 15.01;		//AP 2/28/19
-	public static final double DeployHatchHi	= 28.87;		//AP 2/28/19
+	public static final double DeployHatchHi	= 27.5;		//AP 2/28/19
 
 	public static final double BallPickupGround	= 0.0;		// TBD 2/9/19 (TBD)
 	public static final double BallPickupPlayer = 13.85;		//AP 3/1/19
@@ -78,10 +78,12 @@ public final class LiftConst {
 	public static final int PogoAccelLimit                 	= 6000;   // AP 2018 value
 
 	// PID Constants
-	public static final double proportional      	= 0.9;   	// JR 2/26/19
+	public static final double proportional      	= 0.9; //0.9;   	// JR 2/26/19
 	public static final double integral         	= 0.000; 	// AP 2018 value
-	public static final double derivative        	= 15.0;   	// AP 2018 value
+	public static final double derivative        	= 0.15; //15.0;   	// AP 2018 value
 	public static final double feedforward          = 0.5;   	// AP 2018 value
+
+	public static final double climpP				= 0.9;		//JR 3/19/29
 
 	// Pogo PID Constants
 	public static final double PogoP      	= 0.3;   	// AP 2018 value
