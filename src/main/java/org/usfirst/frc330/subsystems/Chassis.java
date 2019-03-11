@@ -200,9 +200,9 @@ public class Chassis extends Subsystem {
 		/////////////////////////////////////////////////////////////
         // PID Setup
         /////////////////////////////////////////////////////////////  
-		gyroPID = new MultiPIDController(ChassisConst.GyroTurnLow, gyroSource,gyroOutput, 1,"Gyro");
-        leftDrivePID = new MultiPIDController(ChassisConst.DriveLow, driveEncoderLeft, leftDriveOutput, 1,"LeftDrive");
-        rightDrivePID = new MultiPIDController(ChassisConst.DriveLow, driveEncoderRight,rightDriveOutput, 1, "RightDrive");
+		gyroPID = new MultiPIDController(ChassisConst.GyroTurnLow, gyroSource,gyroOutput, 0.02,"Gyro");
+        leftDrivePID = new MultiPIDController(ChassisConst.DriveLow, driveEncoderLeft, leftDriveOutput, 0.02,"LeftDrive");
+        rightDrivePID = new MultiPIDController(ChassisConst.DriveLow, driveEncoderRight,rightDriveOutput, 0.02, "RightDrive");
         limelightPID = new MultiPIDController(ChassisConst.GyroTurnLow, limelightSource, limelightOutput, 0.02, "limelight");
         
         this.shuffleboardTab.add("gyroPID", gyroPID);
