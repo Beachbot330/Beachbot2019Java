@@ -69,6 +69,7 @@ public class Robot extends TimedRobot {
         // Add commands to Autonomous Sendable Chooser
 
         autoProgram.setDefaultOption("Do Nothing", new DoNothing());
+        autoProgram.addOption("SELF-DESTRUCT!", new AllenTest());
 
         SmartDashboard.putData("Auto mode", autoProgram);
 

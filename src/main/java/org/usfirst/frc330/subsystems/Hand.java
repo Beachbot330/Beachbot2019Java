@@ -128,6 +128,11 @@ public class Hand extends Subsystem {
                 public double get() { return getSetpoint(); }
             };
             CSVLogger.getInstance().add("HandSetpoint", temp);
+
+            temp = new CSVLoggable(this.shuffleboardTab) {
+                public double get() { return hand.getSelectedSensorVelocity(0); }
+            };
+            CSVLogger.getInstance().add("HandVelocity", temp);
     
             temp = new CSVLoggable(this.shuffleboardTab) {
                 public double get() {
