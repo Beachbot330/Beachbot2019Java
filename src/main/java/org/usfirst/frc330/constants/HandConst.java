@@ -46,6 +46,7 @@ public final class HandConst {
 	public static final double proportional      	= 10.0;   	// AP WAG
 	public static final double integral         	= 0.000; 	// AP WAG
 	public static final double derivative        	= 40.0;   	// AP WAG
-	public static final double feedforward          = 0.0;   	// AP WAG
+	//public static final double feedforward          = 3.93;   	// AP 3/10/19
+	public static final double feedforward          = 0;   	// AP 3/10/19
 
 }	
