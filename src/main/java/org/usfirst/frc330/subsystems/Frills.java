@@ -172,10 +172,7 @@ public class Frills extends Subsystem {
             }
             
         } else if(DriverStation.getInstance().isEnabled()) { //if robot is enabled
-            //the order of these methods does matter.
-            //i may redo this else if statement to individually check each 
-            //get() method and then set the approriate color, depending on
-            //whether or not this works
+            //TODO rework this to be a bunch of if-else statements checking the get() methods - ejo 3.12.19
             indicatorBarGreen();
             indicatorBarYellow();
             indicatorBarLimelight();
