@@ -172,10 +172,27 @@ public class Frills extends Subsystem {
             }
             
         } else if(DriverStation.getInstance().isEnabled()) { //if robot is enabled
-            //TODO rework this to be a bunch of if-else statements checking the get() methods - ejo 3.12.19
-            indicatorBarGreen();
-            indicatorBarYellow();
-            indicatorBarLimelight();
+            if(getIsHatchAttained()) { //if we have a hatch
+                setColor(GREEN);
+                Logger.getInstance().println("Hatch attained", Severity.INFO);
+            } else
+            if(getIsBallAttained()) { //if we have a ball
+                setColor(PURPLE);
+                Logger.getInstance().println("Ball attained", Severity.INFO);
+            } else
+            if(getIsVisionTargetInSight()) { // Target visible
+                if(Robot.oi.driverL.getRawButton(1)){ //auto aiming
+                    setColorRGB(100,0,0);
+                }
+                else{
+                    setColorRGB(0,0,100); 
+                }
+                if(!target){
+                    Logger.getInstance().println("Target acquired", Severity.INFO);
+                    target = true;
+                }
+                SmartDashboard.putBoolean("VisionTarget", true);
+            }
         }
 
     }
