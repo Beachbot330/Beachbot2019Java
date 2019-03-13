@@ -170,7 +170,8 @@ public class Robot extends TimedRobot {
     	else
     		autoName = "None Selected";
     	SmartDashboard.putString("Selected Auto", autoName );
-    	buzzer.update();
+        buzzer.update();
+        Robot.frills.updateLEDs();
     }
 
     @Override
