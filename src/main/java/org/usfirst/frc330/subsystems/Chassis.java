@@ -420,8 +420,8 @@ public class Chassis extends Subsystem {
         		gyroMin = 0;
         	
         	gyroValue = Math.signum(gyroOutput.getOutput()) * Math.min(Math.abs(gyroOutput.getOutput()+gyroMin) , 1.0);
-        	left = this.left+leftDriveOutput.getOutput() + gyroValue;
-            right = this.right+rightDriveOutput.getOutput() - gyroValue;
+        	left = this.left+leftDriveOutput.getOutput() + gyroValue + limelightOutput.getOutput();
+            right = this.right+rightDriveOutput.getOutput() - gyroValue - limelightOutput.getOutput();
             drive(left, right);
             this.left = 0;
             this.right = 0;
