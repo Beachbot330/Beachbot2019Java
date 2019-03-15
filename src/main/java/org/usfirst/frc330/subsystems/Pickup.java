@@ -12,6 +12,7 @@ package org.usfirst.frc330.subsystems;
 
 import org.usfirst.frc330.constants.GrabberConst;
 import edu.wpi.first.wpilibj.command.Subsystem;
+import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.shuffleboard.Shuffleboard;
 import edu.wpi.first.wpilibj.shuffleboard.ShuffleboardTab;
 import edu.wpi.first.wpilibj.DoubleSolenoid.Value;
@@ -79,6 +80,8 @@ public class Pickup extends Subsystem {
         //double process_noise, double sensor_noise, double estimated_error, double intial_value
 
         median = new MedianFilter(GrabberConst.medianSamples);
+        LiveWindow.disableTelemetry(claw);
+        LiveWindow.disableTelemetry(ballKicker);
     
     
         /////////////////////////////////////////////////////////////
