@@ -22,6 +22,7 @@ public class SetLiftPosition extends BBCommand {
 	
     double position, tolerance;
     boolean override;
+    int slotIdx = 0;
 	
     public SetLiftPosition(double position) {
         requires(Robot.lift);
@@ -44,16 +45,19 @@ public class SetLiftPosition extends BBCommand {
         this.override = false;
     }
 
-    public SetLiftPosition(double position, double tolerance, boolean override) {
+    public SetLiftPosition(double position, double tolerance, boolean override, int slotIdx) {
         requires(Robot.lift);
         this.position = position;
         this.tolerance = tolerance;
         this.override = override;
+        this.slotIdx = slotIdx;
     }
 
     // Called just before this Command runs the first time
     @Override
     protected void initialize() {
+        if (slotIdx != 0)
+            Robot.lift.setPIDIndex(slotIdx);
     	Robot.lift.setLiftPosition(position, override);
     	Robot.lift.setLiftAbsoluteTolerance(tolerance);
     }
@@ -72,6 +76,8 @@ public class SetLiftPosition extends BBCommand {
     // Called once after isFinished returns true
     @Override
     protected void end() {
+        if (slotIdx != 0)
+            Robot.lift.setPIDIndex(0);
     	Robot.lift.setLiftAbsoluteTolerance(LiftConst.tolerance);
     	Logger.getInstance().println("Lift Setpoint: " + Robot.lift.getSetpoint(), Logger.Severity.INFO);
     	Logger.getInstance().println("Lift Final Position: " + Robot.lift.getPosition(), Logger.Severity.INFO);

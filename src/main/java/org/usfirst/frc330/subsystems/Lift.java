@@ -85,14 +85,15 @@ public class Lift extends Subsystem {
         lift1.setInverted(true); // Set true if the motor direction does not match the sensor direction
 		lift1.setSensorPhase(true);
 		pogo.setInverted(false);
-		pogo.setInverted(false);
-        setPIDConstants(LiftConst.proportional, LiftConst.integral, LiftConst.derivative, LiftConst.feedforward, true);
+		setPIDConstants(LiftConst.proportional, LiftConst.integral, LiftConst.derivative, LiftConst.feedforward, true, 0);
+		setPIDConstants(LiftConst.climpP, LiftConst.integral, LiftConst.derivative, LiftConst.feedforward, true, 1);
+		setPIDIndex(0);
         setLiftAbsoluteTolerance(LiftConst.tolerance);
         
         // Limits are now set and enabled after calibration
         // lift1 is considered the main controller, 2 and 3 follow 
-        lift1.configForwardSoftLimitEnable(false, 0); //False until after calibration
-        lift1.configReverseSoftLimitEnable(false, 0);
+        lift1.configForwardSoftLimitEnable(false, LiftConst.CAN_Timeout); //False until after calibration
+        lift1.configReverseSoftLimitEnable(false, LiftConst.CAN_Timeout);
         lift1.setNeutralMode(NeutralMode.Brake);
         lift1.configOpenloopRamp(LiftConst.VoltageRampRate, LiftConst.CAN_Timeout);
         lift1.configPeakOutputForward(LiftConst.MaxOutputPercent, LiftConst.CAN_Timeout);
@@ -120,16 +121,16 @@ public class Lift extends Subsystem {
         lift3.setNeutralMode(NeutralMode.Brake);
 		lift3.setInverted(true);
 		
-		pogo.configForwardSoftLimitEnable(false, 0); //False until after calibration
-        pogo.configReverseSoftLimitEnable(false, 0);
+		pogo.configForwardSoftLimitEnable(false, LiftConst.CAN_Timeout); //False until after calibration
+        pogo.configReverseSoftLimitEnable(false, LiftConst.CAN_Timeout);
         pogo.setNeutralMode(NeutralMode.Coast);
         pogo.configOpenloopRamp(LiftConst.PogoVoltageRampRate, LiftConst.CAN_Timeout);
         pogo.configPeakOutputForward(LiftConst.PogoMaxOutputPercent, LiftConst.CAN_Timeout);
         pogo.configPeakOutputReverse(-LiftConst.PogoMaxOutputPercent, LiftConst.CAN_Timeout);
         pogo.configNominalOutputForward(0, LiftConst.CAN_Timeout);	
         pogo.configNominalOutputReverse(0, LiftConst.CAN_Timeout);
-        pogo.configForwardLimitSwitchSource(RemoteLimitSwitchSource.Deactivated, LimitSwitchNormal.Disabled, 0, 0);
-        pogo.configReverseLimitSwitchSource(RemoteLimitSwitchSource.Deactivated, LimitSwitchNormal.Disabled, 0, 0);
+        pogo.configForwardLimitSwitchSource(RemoteLimitSwitchSource.Deactivated, LimitSwitchNormal.Disabled, 0, LiftConst.CAN_Timeout);
+        pogo.configReverseLimitSwitchSource(RemoteLimitSwitchSource.Deactivated, LimitSwitchNormal.Disabled, 0, LiftConst.CAN_Timeout);
         pogo.configMotionCruiseVelocity(LiftConst.PogoVelocityLimit, LiftConst.CAN_Timeout);
 		pogo.configMotionAcceleration(LiftConst.PogoAccelLimit, LiftConst.CAN_Timeout);
 		
@@ -310,25 +311,33 @@ public class Lift extends Subsystem {
 	public void setLiftAbsoluteTolerance(double absvalue) {
     	tolerance = absvalue;
 	}
+
+	//assume using main PID loop (index 0)
+	public void setPIDConstants (double P, double I, double D, double F, boolean timeout)
+	{
+		setPIDConstants(P, I, D, F, timeout, 0);
+	}
+
+	public void setPIDIndex(int slotIdx) {
+		lift1.selectProfileSlot(slotIdx, 0);
+	}
     
-    public void setPIDConstants (double P, double I, double D, double F, boolean timeout)
+    public void setPIDConstants (double P, double I, double D, double F, boolean timeout, int slotIdx)
 	{
     	if(timeout) {
-    		//assume using main PID loop (index 0)
-    		lift1.config_kP(0, P, LiftConst.CAN_Timeout);
-    		lift1.config_kI(0, I, LiftConst.CAN_Timeout);
-    		lift1.config_kD(0, D, LiftConst.CAN_Timeout);
-    		lift1.config_kF(0, F, LiftConst.CAN_Timeout);
+    		lift1.config_kP(slotIdx, P, LiftConst.CAN_Timeout);
+    		lift1.config_kI(slotIdx, I, LiftConst.CAN_Timeout);
+    		lift1.config_kD(slotIdx, D, LiftConst.CAN_Timeout);
+    		lift1.config_kF(slotIdx, F, LiftConst.CAN_Timeout);
     	}
     	else {
-	    	//assume using main PID loop (index 0)
-			lift1.config_kP(0, P, LiftConst.CAN_Timeout_No_Wait);
-			lift1.config_kI(0, I, LiftConst.CAN_Timeout_No_Wait);
-			lift1.config_kD(0, D, LiftConst.CAN_Timeout_No_Wait);
-			lift1.config_kF(0, F, LiftConst.CAN_Timeout_No_Wait);
+			lift1.config_kP(slotIdx, P, LiftConst.CAN_Timeout_No_Wait);
+			lift1.config_kI(slotIdx, I, LiftConst.CAN_Timeout_No_Wait);
+			lift1.config_kD(slotIdx, D, LiftConst.CAN_Timeout_No_Wait);
+			lift1.config_kF(slotIdx, F, LiftConst.CAN_Timeout_No_Wait);
     	}
 	
-        Logger.getInstance().println("Lift PIDF set to: " + P + ", " + I + ", " + D + ", " + F, Severity.INFO);
+        Logger.getInstance().println("Lift PIDF set to: " + P + ", " + I + ", " + D + ", " + F + ", Idx: " + slotIdx, Severity.INFO);
 	}
     
     //------------------------------------------------------------------------------

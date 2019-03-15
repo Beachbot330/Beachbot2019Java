@@ -25,7 +25,7 @@ public class Climb extends BBCommandGroup {
 
     public Climb() {
         addSequential(new ShiftLow());
-        addSequential(new SetLiftPosition(LiftConst.PogoDrive, LiftConst.tolerance, true));
+        addSequential(new SetLiftPosition(LiftConst.PogoDrive, LiftConst.tolerance, true, 1));
         //addSequential(new DrivePogo(LiftConst.PogoDriveDistance));  //JR DISABLED 2/24/19 until time to tune pogo
         addSequential(new DrivePogoAndDriveTrain());
         addSequential(new ConditionalPogoRetract());

@@ -78,9 +78,9 @@ public final class LiftConst {
 	public static final int PogoAccelLimit                 	= 6000;   // AP 2018 value
 
 	// PID Constants
-	public static final double proportional      	= 0.9; //0.9;   	// JR 2/26/19
+	public static final double proportional      	= 0.6; //0.9;   	// JR 2/26/19
 	public static final double integral         	= 0.000; 	// AP 2018 value
-	public static final double derivative        	= 0.15; //15.0;   	// AP 2018 value
+	public static final double derivative        	= 0.0; //15.0;   	// AP 2018 value
 	public static final double feedforward          = 0.5;   	// AP 2018 value
 
 	public static final double climpP				= 0.9;		//JR 3/19/29
