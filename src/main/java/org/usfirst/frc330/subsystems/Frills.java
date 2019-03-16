@@ -176,10 +176,10 @@ public class Frills extends Subsystem {
             //limelight takes priority
             if(getIsVisionTargetInSight()) { // Target visible
                 if(Robot.oi.driverL.getRawButton(1)){ //auto aiming
-                    setColorRGB(100,0,0);
+                    setColor(RED);
                 }
                 else{
-                    setColorRGB(0,0,100); 
+                    setColor(BLUE);
                 }
                 if(!target){
                     Logger.getInstance().println("Target acquired", Severity.INFO);
@@ -187,6 +187,10 @@ public class Frills extends Subsystem {
                 }
                 SmartDashboard.putBoolean("VisionTarget", true);
             } else if(getIsVisionTargetNotInSight()) {//we don't have a target 
+                setColorRGB(0, 0, 0); 
+                //first things first, turn off LEDs 
+                //they will be turned back on if any of the below conditions are met.
+
                 //again, limelight takes priority 
                 SmartDashboard.putBoolean("VisionTarget", false);
                 if(target){ //if we HAD a target, we don't currently, so we need to update the boolean
