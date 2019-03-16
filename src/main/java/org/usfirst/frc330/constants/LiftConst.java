@@ -98,6 +98,7 @@ public final class LiftConst {
 	// Other
 	public static final double calibrationSpeed			= -0.15; // AP 2018 value
 	public static final double GamepadDeadZone			= 0.1; //AP 2/17/19
+	public static final double liftMaxMovement			= 2.0; //JR 3/15/19
 
 	public static final double pogoMaxSpeed				= 0.93;	//Ft/sec /JR 2/24/19
 
