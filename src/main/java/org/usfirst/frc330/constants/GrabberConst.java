@@ -20,8 +20,8 @@ public final class GrabberConst {
 
 	public static final double ballAcquiredMinDistance					= 2.0;				//(inches) EJO 2.18.19
 	public static final double ballAcquiredMaxDistance					= 3.0;				//(inches) EJO 2.18.19
-	public static final double hatchAcquiredMinDistance					= 5.0;				//(inches) AP 2/24/19
-	public static final double hatchAcquiredMaxDistance					= 9.0;				//(inches) AP 2/24/19
+	public static final double hatchAcquiredMinDistance					= 7.0;				//(inches) AP 2/24/19
+	public static final double hatchAcquiredMaxDistance					= 17.0;				//(inches) AP 2/24/19
 
 	public static final double distanceFromRollersToSensors				= 0.0;				//TODO update value -ejo 2.16.19
 
