@@ -217,7 +217,7 @@ public class Lift extends Subsystem {
 			lift1.set(ControlMode.PercentOutput, 0);
 			lift1.configForwardSoftLimitEnable(false, LiftConst.CAN_Timeout); //False until after calibration
         lift1.configReverseSoftLimitEnable(false, LiftConst.CAN_Timeout);
-			Scheduler.getInstance().add(new CalibrateLift());
+			//Scheduler.getInstance().add(new CalibrateLift());
 			Logger.getInstance().println("Lift Position Jumped: " + Math.abs(liftPosition - prevLiftPosition) + " Recalibrating!", Severity.ERROR);
 		}
 		
