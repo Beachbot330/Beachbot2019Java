@@ -206,25 +206,22 @@ public class Lift extends Subsystem {
         setDefaultCommand(new ManualLift());
     }
 
-	StickyFaults faults, prevFaults;
+
 	double prevLiftPosition, liftPosition;
     @Override
     public void periodic() {
-		lift1.getStickyFaults(faults);
 		liftPosition = getPosition();
-		if ((faults.HardwareESDReset && !prevFaults.HardwareESDReset) || (faults.ResetDuringEn && !prevFaults.ResetDuringEn) || (faults.UnderVoltage && !prevFaults.UnderVoltage))
-		{
-			Logger.getInstance().println("Lift Talon Reset. Recalibrating! Hardware ESD: " + faults.HardwareESDReset + " ResetDuringEn: " + faults.ResetDuringEn + " UnderVoltage: " + faults.UnderVoltage, Severity.ERROR);
-			calibrated = false;
-		}
-		else if (Math.abs(liftPosition - prevLiftPosition) > LiftConst.liftMaxMovement)
+		if (Math.abs(liftPosition - prevLiftPosition) > LiftConst.liftMaxMovement)
 		{
 			calibrated = false;
+			lift1.set(ControlMode.PercentOutput, 0);
+			lift1.configForwardSoftLimitEnable(false, LiftConst.CAN_Timeout); //False until after calibration
+        lift1.configReverseSoftLimitEnable(false, LiftConst.CAN_Timeout);
+			Scheduler.getInstance().add(new CalibrateLift());
 			Logger.getInstance().println("Lift Position Jumped: " + Math.abs(liftPosition - prevLiftPosition) + " Recalibrating!", Severity.ERROR);
 		}
 		
 		prevLiftPosition = liftPosition;
-		prevFaults = faults;
 
 		if(!calibrated) { //If the lift is not calibrated, calibrate when it sees the limit switch
     		if(!magLimitLift.get()) {
