@@ -158,7 +158,8 @@ public class Frills extends Subsystem {
     //eg 20.0 = 20.0% brightness
     public static final double brightnessDivisor = 100/brightnessPercent; // there should be no reason to modify this constant, only change the one above
     
-    public static final double disabledLEDswapInterval = 0.6; //(seconds) EJO 3.11.19
+    public static final double disabledLEDswapInterval = 1.1; //(seconds) EJO 3.15.19
+    // ^ the interval (in seconds) to swap the led colors while the robot is disabled
 
     boolean target;
     double lastSwapped;
@@ -172,6 +173,7 @@ public class Frills extends Subsystem {
             }
             
         } else if(DriverStation.getInstance().isEnabled()) { //if robot is enabled
+            //limelight takes priority
             if(getIsVisionTargetInSight()) { // Target visible
                 if(Robot.oi.driverL.getRawButton(1)){ //auto aiming
                     setColorRGB(100,0,0);
@@ -184,15 +186,24 @@ public class Frills extends Subsystem {
                     target = true;
                 }
                 SmartDashboard.putBoolean("VisionTarget", true);
-            } else
-            if(getIsHatchAttained()) { //if we have a hatch
-                setColor(GREEN);
-                Logger.getInstance().println("Hatch attained", Severity.INFO);
-            } else
-            if(getIsBallAttained()) { //if we have a ball
-                setColor(PURPLE);
-                Logger.getInstance().println("Ball attained", Severity.INFO);
-            } 
+            } else if(getIsVisionTargetNotInSight()) {//we don't have a target 
+                //again, limelight takes priority 
+                SmartDashboard.putBoolean("VisionTarget", false);
+                if(target){ //if we HAD a target, we don't currently, so we need to update the boolean
+                    target = false;
+                    Logger.getInstance().println("Target lost", Severity.INFO);
+                } 
+
+                //now that limelight is out of the way, we can move on to other LED checks
+                if(getIsHatchAttained()) { //if we have a hatch
+                    setColor(GREEN);
+                    Logger.getInstance().println("Hatch attained", Severity.INFO);
+                } else
+                if(getIsBallAttained()) { //if we have a ball
+                    setColor(PURPLE);
+                    Logger.getInstance().println("Ball attained", Severity.INFO);
+                } 
+            }
             
         }
 
@@ -254,11 +265,15 @@ public class Frills extends Subsystem {
         } else if(lastcolor == YELLOW) {
             setColor(BLUE);
             lastcolor = BLUE;
-        }
+        } else lastcolor = BLUE;
     }
 
     public boolean getIsVisionTargetInSight() {
         return (NetworkTableInstance.getDefault().getTable("limelight").getEntry("tv").getDouble(0) > 0.5); // Target visible
+    }
+
+    public boolean getIsVisionTargetNotInSight() {
+        return (NetworkTableInstance.getDefault().getTable("limelight").getEntry("tv").getDouble(0) < 0.5); //No target
     }
 
     public void indicatorBarLimelight() {
