@@ -31,6 +31,11 @@ public class TurnLimelight extends BBCommand {
 
     }
 
+    public TurnLimelight(double timeout){
+        super();
+        this.setTimeout(timeout);
+    }
+
     // Called just before this Command runs the first time
     @Override
     protected void initialize() {
@@ -75,15 +80,20 @@ public class TurnLimelight extends BBCommand {
     // Make this return true when this Command no longer needs to run execute()
     @Override
     protected boolean isFinished() {
-        if(NetworkTableInstance.getDefault().getTable("limelight").getEntry("tv").getDouble(0) > 0.5){
-            if(Math.abs(NetworkTableInstance.getDefault().getTable("limelight").getEntry("tx").getDouble(0))<1.0){
-                return true;
+        if(this.isTimedOut()){
+            return true;
+        }
+        else{
+            if(NetworkTableInstance.getDefault().getTable("limelight").getEntry("tv").getDouble(0) > 0.5){
+                if(Math.abs(NetworkTableInstance.getDefault().getTable("limelight").getEntry("tx").getDouble(0))<1.0){
+                    return true;
+                }
+                else
+                    return false;
             }
             else
                 return false;
         }
-        else
-            return false;
     }
 
     // Called once after isFinished returns true
