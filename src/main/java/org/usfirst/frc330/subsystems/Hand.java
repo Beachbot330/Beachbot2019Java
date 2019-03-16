@@ -229,15 +229,15 @@ public class Hand extends Subsystem {
         if(!lockout){
             if(calibrated) {
 				if(setpoint > HandConst.upperHardStop) {
-					hand.set(ControlMode.Position, angleToTicks(HandConst.upperHardStop));
+					hand.set(ControlMode.MotionMagic, angleToTicks(HandConst.upperHardStop));
 					Logger.getInstance().println("Hand setpoint request above upper limit: " + setpoint, Logger.Severity.WARNING);
 				}
 				else if(setpoint < HandConst.lowerHardStop) {
-					hand.set(ControlMode.Position, angleToTicks(HandConst.lowerHardStop));
+					hand.set(ControlMode.MotionMagic, angleToTicks(HandConst.lowerHardStop));
 					Logger.getInstance().println("Hand setpoint request below lower limit: " + setpoint, Logger.Severity.WARNING);
 				}
 				else {
-					hand.set(ControlMode.Position, angleToTicks(setpoint));
+					hand.set(ControlMode.MotionMagic, angleToTicks(setpoint));
 				}
 			}
         }

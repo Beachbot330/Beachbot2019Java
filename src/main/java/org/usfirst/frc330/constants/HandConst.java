@@ -30,12 +30,12 @@ public final class HandConst {
 	public static final int    CAN_Timeout_No_Wait      	= 0;  // AP 2018 value
 
 	public static final double VoltageRampRate				= 0.0;	// JR disable voltage ramp 2/19/19
-	public static final double MaxOutputPercent				= 0.7;	// AP 2/28/19
+	public static final double MaxOutputPercent				= 1.0;	// JR 3/16/19
 
 	
 	// Motion Magic Constants
-	public static final int velocityLimit              = 2000;   // AP 2018 value
-	public static final int accelLimit                 = 6000;   // AP 2018 value
+	public static final int velocityLimit              = 250;   // JR 3/16/19
+	public static final int accelLimit                 = 1000;   // JR 3/16/19
 
 	public static final double GamepadDeadZone			= 0.1; //AP 2/17/19
 	
@@ -45,8 +45,7 @@ public final class HandConst {
 	// PID Constants
 	public static final double proportional      	= 10.0;   	// AP WAG
 	public static final double integral         	= 0.000; 	// AP WAG
-	public static final double derivative        	= 40.0;   	// AP WAG
-	//public static final double feedforward          = 3.93;   	// AP 3/10/19
-	public static final double feedforward          = 0;   	// AP 3/10/19
+	public static final double derivative        	= 0.000;   	// JR 3/15/19
+	public static final double feedforward          = 5.0;   	// JR 3/16/19
 
 }	
