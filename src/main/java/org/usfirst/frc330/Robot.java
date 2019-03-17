@@ -70,6 +70,8 @@ public class Robot extends TimedRobot {
 
         autoProgram.setDefaultOption("Do Nothing", new DoNothing());
         autoProgram.addOption("SELF-DESTRUCT!", new AllenTest());
+        autoProgram.addOption("Hab2RocketHatches", new Hab2TwoHatch());
+        autoProgram.addOption("CargoHatch", new CargoHatch());
 
         SmartDashboard.putData("Auto mode", autoProgram);
 
