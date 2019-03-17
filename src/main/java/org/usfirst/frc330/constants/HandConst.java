@@ -24,7 +24,9 @@ public final class HandConst {
 	public static final double ballPickupHumanPlayer	= 0.0;	//AP 3/1/19
 	public static final double lowerHardStop	= -49.5;		//AP 2/25/19  -53.2 is actual hard stop
 
-	public static final double encoderGearRatio = 1.0;	  // JR Practice Robot 2/18/19
+	public static final double calibrationTolerance = 10;	// JR 3/17/19
+
+	public static final double encoderGearRatio = 1.0;	  // JR 2/18/19
 
 	public static final int    CAN_Timeout					= 10; // AP 2018 value
 	public static final int    CAN_Timeout_No_Wait      	= 0;  // AP 2018 value

@@ -87,6 +87,11 @@ public class Hand extends Subsystem {
         hand.setInverted(false); // Set true if the motor direction does not match the sensor direction
         hand.setSensorPhase(true);
 
+        double initalHandAngle = getHandAngle();
+
+        if (initalHandAngle > (HandConst.upperHardStop + HandConst.calibrationTolerance) || initalHandAngle < (HandConst.lowerHardStop - HandConst.calibrationTolerance))
+            calibrated = false;
+
         if (!calibrated) {
             hand.configForwardSoftLimitEnable(false, HandConst.CAN_Timeout); //False until after calibration
             hand.configReverseSoftLimitEnable(false, HandConst.CAN_Timeout);
@@ -143,6 +148,16 @@ public class Hand extends Subsystem {
                         return 0.0;}
             };
             CSVLogger.getInstance().add("HandCalibrated", temp);
+
+            temp = new CSVLoggable(this.shuffleboardTab) {
+                public double get() {
+                    if( limitSwitch.get()) {
+                        return 1.0;
+                    }
+                    else
+                        return 0.0;}
+            };
+            CSVLogger.getInstance().add("HandLimitSwitch", temp);
     }
 
     /////////////////////////////////////////////////////////////
