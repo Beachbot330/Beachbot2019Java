@@ -15,6 +15,7 @@ import edu.wpi.first.wpilibj.command.BBCommand;
 import java.util.Arrays;
 
 import org.usfirst.frc330.Robot;
+import org.usfirst.frc330.constants.HandConst;
 import org.usfirst.frc330.constants.LiftConst;
 import org.usfirst.frc330.util.Logger;
 import org.usfirst.frc330.util.Logger.Severity;
@@ -29,6 +30,7 @@ public class LowerLiftSensor extends BBCommand {
     public LowerLiftSensor() {
 
         requires(Robot.lift);
+        //requires(Robot.hand);
         Arrays.sort(LiftConst.ballPositions);
         Arrays.sort(LiftConst.hatchPositions);
         Arrays.sort(LiftConst.allPositions);
@@ -38,6 +40,7 @@ public class LowerLiftSensor extends BBCommand {
     // Called just before this Command runs the first time
     @Override
     protected void initialize() {
+        Robot.hand.setAngle(HandConst.defense);
         currentSetpoint = Robot.lift.getSetpoint();
         double[] sortedArray;
         if(Robot.pickup.getHasBall()){
