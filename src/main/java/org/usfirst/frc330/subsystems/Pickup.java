@@ -125,6 +125,11 @@ public class Pickup extends Subsystem {
             }
         };
         CSVLogger.getInstance().add("HasHatch", temp);
+
+        temp = new CSVLoggable(this.shuffleboardTab) {
+            public double get() { return intake.getOutputCurrent(); }
+        };
+        CSVLogger.getInstance().add("PickupCurrent", temp);
     }
 
     /////////////////////////////////////////////////////////////
