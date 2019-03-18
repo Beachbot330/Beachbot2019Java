@@ -171,7 +171,7 @@ public class Frills extends Subsystem {
     public static final double gradientLoopDuration = 0.5;  //(seconds) EJO 3.17.19
     //^ the time (in seconds) to complete half of a gradient loop (from color A to color B)
 
-    boolean target;
+    boolean target, hatch, ball;
     double lastSwapped;
     int counts = 0;
 
@@ -280,13 +280,24 @@ public class Frills extends Subsystem {
 
                 //now that limelight is out of the way, we can move on to other LED checks
                 if(getIsHatchAttained()) { //if we have a hatch
-                    setColor(GREEN);
-                    Logger.getInstance().println("Hatch attained", Severity.INFO);
+                    if(!hatch) {    //if the hatch boolean is false
+                        setColor(GREEN);
+                        Logger.getInstance().println("Hatch attained", Severity.INFO);
+                        hatch = true;   //change the boolean to true
+                    }
                 } else
                 if(getIsBallAttained()) { //if we have a ball
-                    setColor(PURPLE);
-                    Logger.getInstance().println("Ball attained", Severity.INFO);
-                } 
+                    if(!ball) { //if the ball boolean is false
+                        setColor(PURPLE);
+                        Logger.getInstance().println("Ball attained", Severity.INFO);
+                        ball = true;   //change the boolean to true
+                    }
+                }    
+                
+                //final checks (if we don't have an object but the boolean is true, set the boolean false)
+                if(!getIsBallAttained() && ball) ball = false;
+                if(!getIsHatchAttained() && hatch) hatch = false;
+                
             }
             
         }
