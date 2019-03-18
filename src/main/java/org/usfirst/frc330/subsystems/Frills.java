@@ -152,6 +152,13 @@ public class Frills extends Subsystem {
     //-----------------------------------------------------------------------
     // LED code
     //-----------------------------------------------------------------------
+    public final Color RED = new Color(255, 0, 0);
+    public final Color GREEN = new Color(0, 255, 0);
+    public final Color BLUE = new Color(0, 0, 255);
+    public final Color YELLOW = new Color(255, 255, 0);
+    public final Color YELLOW2 = new Color(115, 80, 0); 
+    public final Color PURPLE = new Color(127, 0, 255);
+    public final Color WHITE = new Color(51, 51, 51);
     
     public static final double brightnessPercent = 50.26;    //EJO 3.10.19
     // ^ update this to modify the brightness level of the leds
@@ -161,16 +168,89 @@ public class Frills extends Subsystem {
     public static final double disabledLEDswapInterval = 1.1; //(seconds) EJO 3.15.19
     // ^ the interval (in seconds) to swap the led colors while the robot is disabled
 
+    public static final double gradientLoopDuration = 0.5;  //(seconds) EJO 3.17.19
+    //^ the time (in seconds) to complete half of a gradient loop (from color A to color B)
+
     boolean target;
     double lastSwapped;
+    int counts = 0;
+
+    private enum switchColorList {
+        YELLOW,
+        BLUE,
+        WHITE
+    };
+    private Color newcolor;
+    private int maxCycles = 100;
+    private int currentCycles;
+    private double rgbFactor;
+    private switchColorList currentcolor = switchColorList.YELLOW;
+    private switchColorList previouscolor = switchColorList.WHITE;
 
     public void updateLEDs(){
         if(DriverStation.getInstance().isDisabled()) { //if robot is disabled
-            if(Timer.getFPGATimestamp() > (lastSwapped + disabledLEDswapInterval)) {
-                //if the current  time is greater than the time the LEDs were last swapped plus the interval
-                alternateBlueAndYellow(); //alternate the LEDs
-                lastSwapped = Timer.getFPGATimestamp(); //update the lastSwapped double
+            //if(Timer.getFPGATimestamp() > (lastSwapped + disabledLEDswapInterval)) {
+            //    //if the current  time is greater than the time the LEDs were last swapped plus the interval
+            //    alternateBlueAndYellow(); //alternate the LEDs
+            //    lastSwapped = Timer.getFPGATimestamp(); //update the lastSwapped double
+            //}
+        //if(Timer.getFPGATimestamp() > (lastSwapped + gradientLoopDuration/yellowBlueGradientArray.length)) {
+        //    //if the current  time is greater than the time the LEDs were last updated plus the delay between each LED swap
+        //    //it's important to understand that the gradientLoopDuration/yellowBlueGradientArray.length is 
+        //    //the amount of cycles the LEDs are being updated each second
+        //
+        //    yellowBlueGradient(); //update the LED color
+        //    lastSwapped = Timer.getFPGATimestamp(); //update the lastSwapped double
+        //}
+        switch(currentcolor){
+            
+            case YELLOW:     //yellow
+            {
+                currentCycles = 45;
+                rgbFactor = 255.0/currentCycles;
+
+                if(counts++ <= currentCycles) {
+                    newcolor = new Color(255, 255, (int)Math.round(counts*rgbFactor));
+                    setColor(newcolor);
+                } else {
+                    counts = 0;
+                    currentcolor = switchColorList.WHITE;
+                    previouscolor = switchColorList.YELLOW;
+                }
+                break;
             }
+
+            case BLUE:     // blue
+            {
+                currentCycles = 45;
+                rgbFactor = 255.0/currentCycles;
+
+                if(counts++ <= currentCycles) {
+                    newcolor = new Color(255 - (int)Math.round(counts*rgbFactor), 255 - (int)Math.round(counts*rgbFactor), 255);
+                    setColor(newcolor);
+                } else {
+                    counts = 0;
+                    currentcolor = switchColorList.WHITE;
+                    previouscolor = switchColorList.BLUE;
+                }
+                break;
+            }
+
+            default:  //WHITE
+                currentCycles = 10;
+                rgbFactor = 255.0/currentCycles;
+
+                if(counts++ <= currentCycles) {
+                    newcolor = new Color(255, 255, 255);
+                    setColor(newcolor);   
+                } else {
+                    counts = 0;
+                    if(previouscolor == switchColorList.YELLOW) currentcolor = switchColorList.BLUE;
+                    else if(previouscolor == switchColorList.BLUE) currentcolor = switchColorList.YELLOW;
+                }
+                break;
+        }
+            
             
         } else if(DriverStation.getInstance().isEnabled()) { //if robot is enabled
             //limelight takes priority
@@ -213,25 +293,25 @@ public class Frills extends Subsystem {
 
     }
 
-
-    public final Color RED = new Color(255, 0, 0);
-    public final Color GREEN = new Color(0, 255, 0);
-    public final Color BLUE = new Color(0, 0, 255);
-    public final Color YELLOW = new Color(255, 255, 0);
-    public final Color YELLOW2 = new Color(115, 80, 0); 
-    public final Color PURPLE = new Color(127, 0, 255);
-    public final Color WHITE = new Color(51, 51, 51);
-
     public void setColor(Color color){
-        redLED.disablePWM();
-        greenLED.disablePWM();
-        blueLED.disablePWM();
-        redLED.setPWMRate(500);
-        greenLED.setPWMRate(500);
-        blueLED.setPWMRate(500);
-        redLED.enablePWM(((color.getRed())/brightnessDivisor)/255.0);
-        greenLED.enablePWM(((color.getGreen())/brightnessDivisor)/255.0);
-        blueLED.enablePWM(((color.getBlue())/brightnessDivisor)/255.0);
+        if(currentRed != color.getRed()) {
+            redLED.disablePWM();
+            redLED.setPWMRate(500);
+            redLED.enablePWM(((color.getRed())/brightnessDivisor)/255.0);
+            currentRed = color.getRed();
+        }
+        if(currentGreen == color.getGreen()) {
+            greenLED.disablePWM();
+            greenLED.setPWMRate(500);
+            greenLED.enablePWM(((color.getGreen())/brightnessDivisor)/255.0);
+            currentGreen = color.getGreen();
+        }
+        if(currentBlue == color.getBlue()) {
+            blueLED.disablePWM();
+            blueLED.setPWMRate(500);
+            blueLED.enablePWM(((color.getBlue())/brightnessDivisor)/255.0);
+            currentBlue = color.getBlue();
+        }
     }
 
     public void setColorRGB(int red, int green, int blue){
@@ -270,6 +350,262 @@ public class Frills extends Subsystem {
             setColor(BLUE);
             lastcolor = BLUE;
         } else lastcolor = BLUE;
+    }
+
+    public Color[] yellowBlueGradientArray = new Color[] { 
+        new Color(255, 255, 0),
+        new Color(252, 252, 2),
+        new Color(249, 249, 5),
+        new Color(247, 247, 7),
+        new Color(244, 244, 10),
+        new Color(242, 242, 12),
+        new Color(239, 239, 15),
+        new Color(236, 236, 18),
+        new Color(234, 234, 20),
+        new Color(231, 231, 23),
+        new Color(229, 229, 25),
+        new Color(226, 226, 28),
+        new Color(224, 224, 30),
+        new Color(221, 221, 33),
+        new Color(218, 218, 36),
+        new Color(216, 216, 38),
+        new Color(213, 213, 41),
+        new Color(211, 211, 43),
+        new Color(208, 208, 46),
+        new Color(206, 206, 48),
+        new Color(203, 203, 51),
+        new Color(200, 200, 54),
+        new Color(198, 198, 56),
+        new Color(195, 195, 59),
+        new Color(193, 193, 61),
+        new Color(190, 190, 64),
+        new Color(188, 188, 66),
+        new Color(185, 185, 69),
+        new Color(182, 182, 72),
+        new Color(180, 180, 74),
+        new Color(177, 177, 77),
+        new Color(175, 175, 79),
+        new Color(172, 172, 82),
+        new Color(170, 170, 85),
+        new Color(167, 167, 87),
+        new Color(164, 164, 90),
+        new Color(162, 162, 92),
+        new Color(159, 159, 95),
+        new Color(157, 157, 97),
+        new Color(154, 154, 100),
+        new Color(151, 151, 103),
+        new Color(149, 149, 105),
+        new Color(146, 146, 108),
+        new Color(144, 144, 110),
+        new Color(141, 141, 113),
+        new Color(139, 139, 115),
+        new Color(136, 136, 118),
+        new Color(133, 133, 121),
+        new Color(131, 131, 123),
+        new Color(128, 128, 126),
+        new Color(126, 126, 128),
+        new Color(123, 123, 131),
+        new Color(121, 121, 133),
+        new Color(118, 118, 136),
+        new Color(115, 115, 139),
+        new Color(113, 113, 141),
+        new Color(110, 110, 144),
+        new Color(108, 108, 146),
+        new Color(105, 105, 149),
+        new Color(103, 103, 151),
+        new Color(100, 100, 154),
+        new Color(97, 97, 157),
+        new Color(95, 95, 159),
+        new Color(92, 92, 162),
+        new Color(90, 90, 164),
+        new Color(87, 87, 167),
+        new Color(84, 84, 170),
+        new Color(82, 82, 172),
+        new Color(79, 79, 175),
+        new Color(77, 77, 177),
+        new Color(74, 74, 180),
+        new Color(72, 72, 182),
+        new Color(69, 69, 185),
+        new Color(66, 66, 188),
+        new Color(64, 64, 190),
+        new Color(61, 61, 193),
+        new Color(59, 59, 195),
+        new Color(56, 56, 198),
+        new Color(54, 54, 200),
+        new Color(51, 51, 203),
+        new Color(48, 48, 206),
+        new Color(46, 46, 208),
+        new Color(43, 43, 211),
+        new Color(41, 41, 213),
+        new Color(38, 38, 216),
+        new Color(36, 36, 218),
+        new Color(33, 33, 221),
+        new Color(30, 30, 224),
+        new Color(28, 28, 226),
+        new Color(25, 25, 229),
+        new Color(23, 23, 231),
+        new Color(20, 20, 234),
+        new Color(18, 18, 236),
+        new Color(15, 15, 239),
+        new Color(12, 12, 242),
+        new Color(10, 10, 244),
+        new Color(7,7, 247),
+        new Color(5,5, 249),
+        new Color(2,2, 252),
+        new Color(0,0, 255)
+    };
+    
+    public Color[] yellowBlueGradientArray2 = new Color[] { 
+        new Color(255, 255, 0),new Color(255, 255, 0),new Color(255, 255, 0),
+        new Color(252, 252, 2),
+        new Color(249, 249, 5),
+        new Color(247, 247, 7),
+        new Color(244, 244, 10),
+        new Color(242, 242, 12),
+        new Color(239, 239, 15),
+        new Color(236, 236, 18),
+        new Color(234, 234, 20),
+        new Color(231, 231, 23),
+        new Color(229, 229, 25),
+        new Color(226, 226, 28),
+        new Color(224, 224, 30),
+        new Color(221, 221, 33),
+        new Color(218, 218, 36),
+        new Color(216, 216, 38),
+        new Color(213, 213, 41),
+        new Color(211, 211, 43),
+        new Color(208, 208, 46),
+        new Color(206, 206, 48),
+        new Color(203, 203, 51),
+        new Color(200, 200, 54),
+        new Color(198, 198, 56),
+        new Color(195, 195, 59),
+        new Color(193, 193, 61),
+        new Color(190, 190, 64),
+        new Color(188, 188, 66),
+        new Color(185, 185, 69),
+        new Color(182, 182, 72),
+        new Color(180, 180, 74),
+        new Color(177, 177, 77),
+        new Color(175, 175, 79),
+        new Color(172, 172, 82),
+        new Color(170, 170, 85),
+        new Color(167, 167, 87),
+        new Color(164, 164, 90),
+        new Color(162, 162, 92),
+        new Color(159, 159, 95),
+        new Color(157, 157, 97),
+        new Color(154, 154, 100),
+        new Color(151, 151, 103),
+        new Color(149, 149, 105),
+        new Color(146, 146, 108),
+        new Color(144, 144, 110),
+        new Color(141, 141, 113),
+        new Color(139, 139, 115),
+        new Color(136, 136, 118),
+        new Color(133, 133, 121),
+        new Color(131, 131, 123),
+        new Color(128, 128, 126),
+        new Color(126, 126, 128),
+        new Color(123, 123, 131),
+        new Color(121, 121, 133),
+        new Color(118, 118, 136),
+        new Color(115, 115, 139),
+        new Color(113, 113, 141),
+        new Color(110, 110, 144),
+        new Color(108, 108, 146),
+        new Color(105, 105, 149),
+        new Color(103, 103, 151),
+        new Color(100, 100, 154),
+        new Color(97, 97, 157),
+        new Color(95, 95, 159),
+        new Color(92, 92, 162),
+        new Color(90, 90, 164),
+        new Color(87, 87, 167),
+        new Color(84, 84, 170),
+        new Color(82, 82, 172),
+        new Color(79, 79, 175),
+        new Color(77, 77, 177),
+        new Color(74, 74, 180),
+        new Color(72, 72, 182),
+        new Color(69, 69, 185),
+        new Color(66, 66, 188),
+        new Color(64, 64, 190),
+        new Color(61, 61, 193),
+        new Color(59, 59, 195),
+        new Color(56, 56, 198),
+        new Color(54, 54, 200),
+        new Color(51, 51, 203),
+        new Color(48, 48, 206),
+        new Color(46, 46, 208),
+        new Color(43, 43, 211),
+        new Color(41, 41, 213),
+        new Color(38, 38, 216),
+        new Color(36, 36, 218),
+        new Color(33, 33, 221),
+        new Color(30, 30, 224),
+        new Color(28, 28, 226),
+        new Color(25, 25, 229),
+        new Color(23, 23, 231),
+        new Color(20, 20, 234),
+        new Color(18, 18, 236),
+        new Color(15, 15, 239),
+        new Color(12, 12, 242),
+        new Color(10, 10, 244),
+        new Color(7,7, 247),
+        new Color(5,5, 249),
+        new Color(2,2, 252),
+        new Color(0,0, 255)
+    };
+    
+    private int gradientArrayIndex = 0;
+    private boolean reverseGradientArrayIndex;
+    public void yellowBlueGradient() {
+        //I was going to use a for() loop, but setting up a delay
+        //is too difficult for that type of loop. instead, i'm going 
+        //to define an int outside of my method and update that each 
+        //time i loop thru, using that variable to as the array index
+
+        //we will cycle thru the array in the updateLED method that is called
+        //periodically. the delay is already taken care of in that method; no need
+        //to worry about it here.
+
+        //so, the purpose of the method:
+        //smoothly change the LEDs from yellow to blue and then back to yellow, and repeat that
+
+
+        if(gradientArrayIndex == yellowBlueGradientArray.length - 1) reverseGradientArrayIndex = true;
+        if(gradientArrayIndex == 0) reverseGradientArrayIndex = false;
+
+        //ok, so these two checks are at the top for this reason:
+        //if the array index has reached the length of the array, then it is time to start
+        //decrementing the array index so that we can reverse the color change...
+        //and if the array index has reached -1, we need to start incrementing the array
+        //index so that we can again "change direction"
+
+        if(reverseGradientArrayIndex) gradientArrayIndex--;
+        else gradientArrayIndex++;
+
+        //pretty simple check above, no need to explain. the reason this comes first
+        //is because we start at -1 and we end when our array index is == to the array
+        //length. we can't have a -1 index so we need to increment that to make it 0...
+        //likewise, we can't have an index == to the length of an array, so we need
+        //to decrement that to make it equal to array.length -1 (the highest possible index of an array)
+
+        
+
+        //alright, now that we've gone thru all the necessary checks,
+        //we can actually start updating the LED colors.
+
+        setColor(yellowBlueGradientArray[gradientArrayIndex]);
+        
+        //so what we do there is again fairly simple. we take the index of 
+        //the array and pass that value into the setColor method.
+        //the value that we're passing into the setColor method is obviously
+        //a Color variable... you can check the contents of the array to verify this.
+
+        //and that should be it.
+        
     }
 
     public boolean getIsVisionTargetInSight() {
