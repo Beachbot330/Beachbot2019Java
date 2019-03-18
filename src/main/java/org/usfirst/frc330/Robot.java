@@ -151,7 +151,6 @@ public class Robot extends TimedRobot {
         
         Robot.chassis.stopDrive();
         
-        Robot.pickup.ballKickOff();
         Robot.pickup.clawOff();
         Robot.lift.retractClimbPin();
 

@@ -21,10 +21,6 @@ public class RollerOn extends BBCommand {
 
     double throttle;
 
-    public RollerOn(){
-        this(GrabberConst.DefaultRollerSpeed);
-    }
-
     public RollerOn(double throttle) {
         this.throttle = throttle;
         requires(Robot.pickup);

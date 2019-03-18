@@ -30,9 +30,8 @@ public class SensoredBallPickup extends BBCommandGroup {
         //if the pickup has no ball in it, execute the following code:
         
         //Prep Pickup
-        addParallel(new BallKickRetract());
-        addSequential(new CloseClaw());
-        addSequential(new RollerOn());
+        addSequential(new OpenClaw());
+        addSequential(new RollerOnBall());
 
         //lower lift and pickup to ball intake positon
         addParallel(new SetLiftPosition(LiftConst.BallPickupGround));
@@ -40,7 +39,7 @@ public class SensoredBallPickup extends BBCommandGroup {
 
         //close claw once we have ball
         addSequential(new WaitCommand(0.4)); //this can be changed if needed
-        addSequential(new SensorCloseClawBall());
+        //addSequential(new SensorCloseClawBall());
 
         //now that the ball is in the claw, we turn on the rollers until it is secure
         addSequential(new RollerUntilBall());
