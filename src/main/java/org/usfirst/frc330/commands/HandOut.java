@@ -81,6 +81,7 @@ public class HandOut extends BBCommand {
     @Override
     protected void end() {
         Robot.hand.setAngle(HandConst.defense);
+        Robot.pickup.rollerOnSlow();
     }
 
     // Called when another command which requires one or more of the same

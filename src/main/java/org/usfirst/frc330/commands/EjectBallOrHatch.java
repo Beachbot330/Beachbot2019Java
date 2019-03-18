@@ -31,6 +31,6 @@ public class EjectBallOrHatch extends BBConditionalCommand {
 
     @Override
     protected boolean condition(){
-        return Robot.pickup.isClawOpen();
+        return Robot.pickup.getHasBall();
     }
 }

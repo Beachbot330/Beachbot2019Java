@@ -39,7 +39,7 @@ public class SensoredBallPickup extends BBCommandGroup {
 
         //close claw once we have ball
         addSequential(new WaitCommand(0.4)); //this can be changed if needed
-        //addSequential(new SensorCloseClawBall());
+        addSequential(new SensorCloseClawBall());
 
         //now that the ball is in the claw, we turn on the rollers until it is secure
         addSequential(new RollerUntilBall());

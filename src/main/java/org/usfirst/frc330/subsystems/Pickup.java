@@ -288,7 +288,7 @@ public class Pickup extends Subsystem {
 
     public void rollerOn(double speed) {
         if(!lockout){
-            intake.set(-speed);
+            intake.set(speed);
             Logger.getInstance().println("Turning Roller On to " +speed +"% speed", Logger.Severity.INFO);
         }
     }

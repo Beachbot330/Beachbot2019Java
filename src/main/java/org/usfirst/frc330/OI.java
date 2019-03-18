@@ -121,7 +121,7 @@ public class OI {
         driverR = new Joystick(1);
         
         ejectBall_1 = new JoystickButton(driverR, 1);
-        ejectBall_1.whenPressed(new EjectBall());
+        ejectBall_1.whenPressed(new EjectBallOrHatch());
         climb_5 = new JoystickButton(driverR, 5);
         climb_5.whenPressed(new Climb());
         ejectBall_4R = new JoystickButton(driverR, 4);

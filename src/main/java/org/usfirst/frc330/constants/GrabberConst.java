@@ -6,12 +6,12 @@ public final class GrabberConst {
 	
 	private GrabberConst(){}
 	
-	public static final double BallRollerInSpeed		= -1.0;	// JR 3/17/19
-	public static final double BallRollerOutSpeed		= 1.0; // JR 3/17/19
-	public static final double HatchRollerInSpeed		= 1.0;  // JR 3/17/19
-	public static final double HatchRollerOutSpeed		= -1.0; // JR 3/17/19
+	public static final double BallRollerInSpeed		= 1.0;	// JR 3/17/19
+	public static final double BallRollerOutSpeed		= -1.0; // JR 3/17/19
+	public static final double HatchRollerInSpeed		= -1.0;  // JR 3/17/19
+	public static final double HatchRollerOutSpeed		= 0.5; // JR 3/17/19
 	public static final double MaxRollerSpeed			= 1.0;	// ejo 2.12.19
-	public static final double RollerSlowSpeed			= -0.2; // JR 3/17/19
+	public static final double RollerSlowSpeed			= 0.2; // JR 3/17/19
 
 	public static final int getHatchInRangeMinRepititions		= 5;	//WAG -ejo 2.18.19
 	public static final int getBallInRangeMinRepititions		= 5;	//WAG -ejo 2.18.19
@@ -43,5 +43,5 @@ public final class GrabberConst {
 	public static final int    medianSamples							= 5;
 
 	public static final double currentLimit								= 40;
-	public static final int	   currentLimitSamples						= 20;
+	public static final int	   currentLimitSamples						= 150;
 }	

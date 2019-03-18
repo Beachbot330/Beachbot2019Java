@@ -60,7 +60,7 @@ public class SensorCloseClawBall extends BBCommand {
     // Called once after isFinished returns true
     @Override
     protected void end() {
-        Robot.pickup.closeClaw();
+        //Robot.pickup.closeClaw();
         Logger.getInstance().println("Ball in range: " + Robot.pickup.getBallInRange(), Severity.INFO);
     	Logger.getInstance().println("Sensor: " + Robot.pickup.getSensorDistance(), Severity.INFO);
     }
