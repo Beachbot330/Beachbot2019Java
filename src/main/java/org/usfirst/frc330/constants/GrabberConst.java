@@ -41,4 +41,7 @@ public final class GrabberConst {
 	public static final double kalmanEstimatedError						= 100;				//(inches) //JDR 2/24/18
 
 	public static final int    medianSamples							= 5;
+
+	public static final double currentLimit								= 40;
+	public static final int	   currentLimitSamples						= 20;
 }	
