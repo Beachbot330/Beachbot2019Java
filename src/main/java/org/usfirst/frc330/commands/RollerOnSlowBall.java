@@ -12,23 +12,26 @@
 package org.usfirst.frc330.commands;
 import edu.wpi.first.wpilibj.command.BBCommand;
 import org.usfirst.frc330.Robot;
+import org.usfirst.frc330.util.Logger;
+import org.usfirst.frc330.util.Logger.Severity;
 
 /**
  *
  */
-public class RollerOn extends BBCommand {
+public class RollerOnSlowBall extends BBCommand {
 
-    double throttle;
-
-    public RollerOn(double throttle) {
-        this.throttle = throttle;
+    public RollerOnSlowBall() {
         requires(Robot.pickup);
     }
 
     // Called just before this Command runs the first time
     @Override
     protected void initialize() {
-        Robot.pickup.rollerOn(throttle);
+        if (Robot.pickup.getHasBall())
+            Robot.pickup.rollerOnSlow();
+        else {
+            Logger.getInstance().println("Not turning on roller slow because don't have ball", Severity.WARNING);
+        }
     }
 
     // Called repeatedly when this Command is scheduled to run

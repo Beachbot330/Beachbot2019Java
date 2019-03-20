@@ -22,7 +22,7 @@ import org.usfirst.frc330.constants.*;
 public class Defense extends BBCommandGroup {
 
     public Defense() {
-        addSequential(new RollerOn(GrabberConst.RollerSlowSpeed));
+        addSequential(new RollerOnSlowBall());
         addSequential(new CloseClaw());
         addParallel(new SetLiftPosition(LiftConst.defense));
     	addParallel(new SetHandAngle(HandConst.defense));
