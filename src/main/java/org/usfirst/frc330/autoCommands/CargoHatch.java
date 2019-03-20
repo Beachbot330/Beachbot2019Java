@@ -2,8 +2,7 @@ package org.usfirst.frc330.autoCommands;
 
 
 import org.usfirst.frc330.commands.*;
-import org.usfirst.frc330.commands.commandgroups.Defense;
-import org.usfirst.frc330.commands.commandgroups.EjectBall;
+import org.usfirst.frc330.commands.commandgroups.*;
 import org.usfirst.frc330.commands.drivecommands.*;
 import org.usfirst.frc330.constants.ChassisConst;
 import org.usfirst.frc330.constants.HandConst;
@@ -29,14 +28,14 @@ public class CargoHatch extends BBCommandGroup {
     public CargoHatch() {
     	
     	addSequential(new ShiftLow());
-        addParallel(new Defense());
+        addParallel(new HatchDefense());
 
         // double distance, double tolerance, double timeout, boolean stopAtEnd, PIDGains driveGains, PIDGains gyroGains
         addSequential(new DriveDistanceAtCurAngle(wp1.getY(), 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
         //addSequential(new TurnGyroWaypoint(wp2, false, 3.0, 3.0, ChassisConst.GyroTurnLow));
         //addSequential(new DriveWaypoint(wp2, false, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
         addSequential(new TurnGyroAbs(-90, 3.0, 1.5, ChassisConst.GyroTurnLow));
-        addSequential(new TurnLimelight(2.0));
+        addSequential(new TurnLimelight(2.0, 2.0));
 
         addSequential(new SetHandAngle(HandConst.hatchPlacementLow));
         addParallel(new SetLiftPosition(LiftConst.DeployHatchLow));

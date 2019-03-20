@@ -35,7 +35,7 @@ public class AllenTest extends BBCommandGroup {
         addSequential(new DriveDistanceAtCurAngle(wp1.getY(), 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
         addSequential(new TurnGyroWaypoint(wp2, false, 3.0, 3.0, ChassisConst.GyroTurnLow));
         addSequential(new DriveWaypoint(wp2, false, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
-        addSequential(new TurnLimelight(2.0));
+        addSequential(new TurnLimelight(2.0, 2.0));
 
         addSequential(new SetHandAngle(HandConst.hatchPlacementLow));
         addParallel(new SetLiftPosition(LiftConst.DeployHatchLow));
@@ -54,7 +54,7 @@ public class AllenTest extends BBCommandGroup {
         addSequential(new DriveWaypoint(wp3, false, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
 
         addSequential(new OpenClaw());
-        addSequential(new TurnLimelight(2.0));
+        addSequential(new TurnLimelight(2.0, 2.0));
         addSequential(new DriveLimelight(0.3, 1.0));
         addSequential(new DriveLimelight(0.2, 1.0));
 
@@ -64,7 +64,7 @@ public class AllenTest extends BBCommandGroup {
 
         addSequential(new TurnGyroWaypoint(wp4, false, 3.0, 3.0, ChassisConst.GyroTurnLow));
 
-        addSequential(new TurnLimelight(2.0));
+        addSequential(new TurnLimelight(2.0, 2.0));
         addParallel(new DriveLimelight(0.2, 3.0));
         addParallel(new SetHandAngle(HandConst.hatchPlacementMid));
         addSequential(new SetLiftPosition(LiftConst.DeployHatchMid));

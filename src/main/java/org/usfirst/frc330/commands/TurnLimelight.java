@@ -23,6 +23,7 @@ import org.usfirst.frc330.util.Logger.Severity;
  *
  */
 public class TurnLimelight extends BBCommand {
+    double tolerance = 2.0;
 
     public TurnLimelight() {
 
@@ -31,9 +32,10 @@ public class TurnLimelight extends BBCommand {
 
     }
 
-    public TurnLimelight(double timeout){
+    public TurnLimelight(double tolerance, double timeout){
         super();
         this.setTimeout(timeout);
+        this.tolerance = tolerance;
     }
 
     // Called just before this Command runs the first time
@@ -85,7 +87,7 @@ public class TurnLimelight extends BBCommand {
         }
         else{
             if(NetworkTableInstance.getDefault().getTable("limelight").getEntry("tv").getDouble(0) > 0.5){
-                if(Math.abs(NetworkTableInstance.getDefault().getTable("limelight").getEntry("tx").getDouble(0))<1.0){
+                if(Math.abs(NetworkTableInstance.getDefault().getTable("limelight").getEntry("tx").getDouble(0))<tolerance){
                     return true;
                 }
                 else
