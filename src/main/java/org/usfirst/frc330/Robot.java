@@ -69,7 +69,7 @@ public class Robot extends TimedRobot {
         // Add commands to Autonomous Sendable Chooser
 
         autoProgram.setDefaultOption("Do Nothing", new DoNothing());
-        autoProgram.addOption("SELF-DESTRUCT!", new AllenTest());
+        autoProgram.addOption("Hab1Hatch", new Hab1Hatch());
         autoProgram.addOption("Hab2RocketHatches", new Hab2TwoHatch());
         autoProgram.addOption("CargoHatch", new CargoHatch());
 
