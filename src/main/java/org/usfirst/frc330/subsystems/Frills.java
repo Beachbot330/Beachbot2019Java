@@ -311,13 +311,13 @@ public class Frills extends Subsystem {
             redLED.enablePWM(((color.getRed())/brightnessDivisor)/255.0);
             currentRed = color.getRed();
         }
-        if(currentGreen == color.getGreen()) {
+        if(currentGreen != color.getGreen()) {
             greenLED.disablePWM();
             greenLED.setPWMRate(500);
             greenLED.enablePWM(((color.getGreen())/brightnessDivisor)/255.0);
             currentGreen = color.getGreen();
         }
-        if(currentBlue == color.getBlue()) {
+        if(currentBlue != color.getBlue()) {
             blueLED.disablePWM();
             blueLED.setPWMRate(500);
             blueLED.enablePWM(((color.getBlue())/brightnessDivisor)/255.0);
