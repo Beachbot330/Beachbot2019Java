@@ -15,18 +15,18 @@ import edu.wpi.first.wpilibj.command.BBCommandGroup;
 /**
  *
  */
-public class Hab2TwoHatch extends BBCommandGroup {
+public class Hab1Hatch extends BBCommandGroup {
     //PID Gains
     //PIDGains RampDrive = new PIDGains(0.10, 0, 0.00, 0, 0.3, ChassisConst.defaultMaxOutputStep, ChassisConst.defaultMinStartOutput, "DriveLow");    //AP 3/12/19
 
-    Waypoint wp1 = new Waypoint(0, 60+30, 0);  //Off the platform
-    Waypoint wp2 = new Waypoint(62, 96+30, 0);
-    Waypoint wp3 = new Waypoint(78, 00+30, 0);
-    Waypoint wp4 = new Waypoint(78, 105+30, 0);
+    Waypoint wp1 = new Waypoint(0, 60, 0);
+    Waypoint wp2 = new Waypoint(62, 96, 0);
+    Waypoint wp3 = new Waypoint(78, 00, 0);
+    Waypoint wp4 = new Waypoint(78, 105, 0);
 
 
 
-    public Hab2TwoHatch() {
+    public Hab1Hatch() {
     	
     	addSequential(new ShiftLow());
         addParallel(new Defense());

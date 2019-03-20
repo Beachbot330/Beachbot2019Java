@@ -73,7 +73,7 @@ public class OI {
     public JoystickButton defense_3WR;
     public JoystickButton handOut_4WH;
     public JoystickButton raiseLift_5;
-    public JoystickButton openClawReverseRoller_6;
+    public JoystickButton ejectBallOrHatch_6;
     public JoystickButton climbDeploy_7WH;
     public JoystickButton killAll_8;
     public Joystick gamePad;
@@ -100,8 +100,8 @@ public class OI {
         killAll_8.whenPressed(new KillAll());
         climbDeploy_7WH = new JoystickButton(gamePad, 7);
         climbDeploy_7WH.whileHeld(new ClimbDeployVerify());
-        openClawReverseRoller_6 = new JoystickButton(gamePad, 6);
-        openClawReverseRoller_6.whileHeld(new OpenClawReverseRoller());
+        ejectBallOrHatch_6 = new JoystickButton(gamePad, 6);
+        ejectBallOrHatch_6.whileHeld(new EjectBallOrHatch());
         raiseLift_5 = new JoystickButton(gamePad, 5);
         raiseLift_5.whenPressed(new RaiseLift());
         handOut_4WH = new JoystickButton(gamePad, 4);
@@ -121,7 +121,7 @@ public class OI {
         driverR = new Joystick(1);
         
         ejectBall_1 = new JoystickButton(driverR, 1);
-        ejectBall_1.whenPressed(new EjectBall());
+        ejectBall_1.whenPressed(new EjectBallOrHatch());
         climb_5 = new JoystickButton(driverR, 5);
         climb_5.whenPressed(new Climb());
         ejectBall_4R = new JoystickButton(driverR, 4);
@@ -170,15 +170,16 @@ public class OI {
         liftTab.add("PogoAndDrivetrain", new DrivePogoAndDriveTrain());
 
         pickupTab = Robot.pickup.shuffleboardTab;
-        pickupTab.add("RollerOn", new RollerOn());
-        pickupTab.add("ReversePickup", new ReversePickup());
+        pickupTab.add("RollerOnBall", new RollerOnBall());
+        pickupTab.add("RollerOnHatch", new RollerOnHatch());
+        pickupTab.add("ReversePickupBall", new ReversePickupBall());
+        pickupTab.add("ReversePickupHatch", new ReversePickupHatch());
         pickupTab.add("CloseClaw", new CloseClaw());
         pickupTab.add("OpenClaw", new OpenClaw());
         pickupTab.add("RollerOff", new RollerOff());
-        pickupTab.add("OpenClawReverseRoller", new OpenClawReverseRoller());
         pickupTab.add("EjectBall", new EjectBall());
-        pickupTab.add("BallKickExtend", new BallKickExtend());
-        pickupTab.add("BallKickRetract", new BallKickRetract());
+        pickupTab.add("EjectHatch", new EjectHatch());
+        pickupTab.add("EjectBallOrHatch", new EjectBallOrHatch());
 
         chassisTab = Robot.chassis.shuffleboardTab;
         chassisTab.add("ShiftHigh", new ShiftHigh());

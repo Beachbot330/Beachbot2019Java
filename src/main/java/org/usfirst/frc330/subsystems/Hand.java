@@ -89,8 +89,11 @@ public class Hand extends Subsystem {
 
         double initalHandAngle = getHandAngle();
 
-        if (initalHandAngle > (HandConst.upperHardStop + HandConst.calibrationTolerance) || initalHandAngle < (HandConst.lowerHardStop - HandConst.calibrationTolerance))
+        if (initalHandAngle > (HandConst.upperHardStop + HandConst.calibrationTolerance) || initalHandAngle < (HandConst.lowerHardStop - HandConst.calibrationTolerance)) {
             calibrated = false;
+            Logger.getInstance().println("Hand Not Calibrated at Startup. Hand Angle: " + initalHandAngle, Severity.ERROR);
+        }
+            
 
         if (!calibrated) {
             hand.configForwardSoftLimitEnable(false, HandConst.CAN_Timeout); //False until after calibration

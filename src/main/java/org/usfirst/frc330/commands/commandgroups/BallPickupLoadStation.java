@@ -29,9 +29,8 @@ public class BallPickupLoadStation extends BBCommandGroup {
         //if the pickup has no ball in it, execute the following code:
         
         //Prep Pickup
-        addSequential(new BallKickRetract());
         addSequential(new OpenClaw());
-        addSequential(new RollerOn());
+        addSequential(new RollerOnBall());
 
         //lower lift and pickup to ball intake positon
         addParallel(new SetLiftPosition(LiftConst.BallPickupPlayer));

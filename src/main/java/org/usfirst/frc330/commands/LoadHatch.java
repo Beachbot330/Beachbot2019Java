@@ -36,9 +36,8 @@ public class LoadHatch extends BBCommand {
     protected void initialize() {
         Robot.lift.setLiftPosition(LiftConst.HatchPickup);
         Robot.hand.setAngle(HandConst.hatchPickup);
-        Robot.pickup.ballKickRetract();
-        Robot.pickup.openClaw();
-        Robot.pickup.rollerOff();
+        Robot.pickup.closeClaw();
+        Robot.pickup.rollerOnHatch();
     }
 
     // Called repeatedly when this Command is scheduled to run
@@ -56,13 +55,13 @@ public class LoadHatch extends BBCommand {
     // Called once after isFinished returns true
     @Override
     protected void end() {
-        //Robot.pickup.closeClaw();
-        //Robot.hand.setAngle(HandConst.postHatchPickup);
+        Robot.pickup.rollerOff();
     }
 
     // Called when another command which requires one or more of the same
     // subsystems is scheduled to run
     @Override
     protected void interrupted() {
+        end();
     }
 }
