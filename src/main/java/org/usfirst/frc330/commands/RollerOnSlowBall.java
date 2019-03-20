@@ -12,6 +12,8 @@
 package org.usfirst.frc330.commands;
 import edu.wpi.first.wpilibj.command.BBCommand;
 import org.usfirst.frc330.Robot;
+import org.usfirst.frc330.util.Logger;
+import org.usfirst.frc330.util.Logger.Severity;
 
 /**
  *
@@ -26,7 +28,10 @@ public class RollerOnSlowBall extends BBCommand {
     @Override
     protected void initialize() {
         if (Robot.pickup.getHasBall())
-            Robot.pickup.rollerOnSlow();;
+            Robot.pickup.rollerOnSlow();
+        else {
+            Logger.getInstance().println("Not turning on roller slow because don't have ball", Severity.WARNING);
+        }
     }
 
     // Called repeatedly when this Command is scheduled to run
