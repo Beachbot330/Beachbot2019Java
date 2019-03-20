@@ -31,6 +31,7 @@ import org.usfirst.frc330.util.Logger;
 import org.usfirst.frc330.util.Logger.Severity;
 
 import edu.wpi.first.wpilibj.Preferences;
+import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.shuffleboard.Shuffleboard;
 import edu.wpi.first.wpilibj.shuffleboard.ShuffleboardTab;
@@ -83,9 +84,11 @@ public class Hand extends Subsystem {
         // CAN Talon Setup
         /////////////////////////////////////////////////////////////
         
-        hand.configSelectedFeedbackSensor(FeedbackDevice.CTRE_MagEncoder_Absolute, 0, HandConst.CAN_Timeout);
+        hand.configSelectedFeedbackSensor(FeedbackDevice.CTRE_MagEncoder_Absolute, 0, HandConst.CAN_Timeout * 3);
         hand.setInverted(false); // Set true if the motor direction does not match the sensor direction
         hand.setSensorPhase(true);
+
+        Timer.delay(0.04);
 
         double initalHandAngle = getHandAngle();
 
