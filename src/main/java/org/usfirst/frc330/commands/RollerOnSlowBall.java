@@ -16,19 +16,17 @@ import org.usfirst.frc330.Robot;
 /**
  *
  */
-public class RollerOn extends BBCommand {
+public class RollerOnSlowBall extends BBCommand {
 
-    double throttle;
-
-    public RollerOn(double throttle) {
-        this.throttle = throttle;
+    public RollerOnSlowBall() {
         requires(Robot.pickup);
     }
 
     // Called just before this Command runs the first time
     @Override
     protected void initialize() {
-        Robot.pickup.rollerOn(throttle);
+        if (Robot.pickup.getHasBall())
+            Robot.pickup.rollerOnSlow();;
     }
 
     // Called repeatedly when this Command is scheduled to run
