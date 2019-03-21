@@ -11,6 +11,8 @@
 
 package org.usfirst.frc330.commands;
 import edu.wpi.first.wpilibj.command.BBCommand;
+import edu.wpi.first.wpilibj.command.Scheduler;
+
 import org.usfirst.frc330.Robot;
 import org.usfirst.frc330.constants.HandConst;
 import org.usfirst.frc330.constants.LiftConst;
@@ -81,7 +83,7 @@ public class HandOut extends BBCommand {
     @Override
     protected void end() {
         Robot.hand.setAngle(HandConst.defense);
-        Robot.pickup.rollerOnSlow();
+        Scheduler.getInstance().add(new RollerOnSlowBall());
     }
 
     // Called when another command which requires one or more of the same
