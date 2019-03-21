@@ -55,7 +55,7 @@ public class LoadHatch extends BBCommand {
     // Called once after isFinished returns true
     @Override
     protected void end() {
-        Robot.pickup.rollerOff();
+        //Robot.pickup.rollerOff();
     }
 
     // Called when another command which requires one or more of the same

@@ -11,6 +11,7 @@
 
 package org.usfirst.frc330.commands.commandgroups;
 
+import edu.wpi.first.wpilibj.command.BBCommand;
 import edu.wpi.first.wpilibj.command.BBCommandGroup;
 
 import org.usfirst.frc330.commands.*;
@@ -23,11 +24,14 @@ public class HatchDefense extends BBCommandGroup {
 
     public HatchDefense() {
 
-        addSequential(new RollerOff());
-        addSequential(new CloseClaw());
-        addSequential(new WaitCommand(0.5));
-        addParallel(new SetLiftPosition(LiftConst.defense));
-    	addParallel(new SetHandAngle(HandConst.defense));
+        //addSequential(new RollerOff());
+        //addSequential(new CloseClaw());
+        //addSequential(new WaitCommand(0.5));
+        BBCommand parallelCommand = new SetLiftPosition(LiftConst.defense);
+        addParallel(parallelCommand);
+        addSequential(new SetHandAngle(HandConst.defense));
+        addSequential(new CheckDone(parallelCommand));
+        addSequential(new RollerOnSlowBall());
  
     } 
 }

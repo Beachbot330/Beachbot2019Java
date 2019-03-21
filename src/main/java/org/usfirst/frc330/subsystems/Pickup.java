@@ -293,10 +293,16 @@ public class Pickup extends Subsystem {
         }
     }
 
-    public void rollerOnSlow() {
+    public void rollerOnSlow(boolean ball) {
         if(!lockout){
-            intake.set(GrabberConst.RollerSlowSpeed);
-            Logger.getInstance().println("Turning Roller On: Slow", Logger.Severity.INFO);
+            if(ball){
+                intake.set(GrabberConst.RollerSlowSpeed);
+                Logger.getInstance().println("Turning Roller On: Slow (Ball)", Logger.Severity.INFO);
+            }
+            else{
+                intake.set(-GrabberConst.RollerSlowSpeed);
+                Logger.getInstance().println("Turning Roller On: Slow (Hatch)", Logger.Severity.INFO);
+            }
         }
     }
     
