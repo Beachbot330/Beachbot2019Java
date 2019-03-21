@@ -53,10 +53,11 @@ public class Hab2TwoHatch extends BBCommandGroup {
         addSequential(new TurnGyroWaypoint(wp3, false, 3.0, 3.0, ChassisConst.GyroTurnLow));
         addSequential(new DriveWaypoint(wp3, false, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
 
+        //Pickup second hatch
         addSequential(new TurnLimelight(3.0, 2.0));
-        addSequential(new DriveLimelight(0.55, 0.4));
+        addSequential(new DriveLimelight(0.55, 0.45));
         addParallel(new SensoredHatchPickup());
-        addParallel(new DriveLimelight(0.2, 0.3));
+        addParallel(new DriveLimelight(0.2, 0.40));
 
         //addParallel(new SensoredHatchPickup());
         addSequential(new WaitCommand(0.3));
