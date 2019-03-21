@@ -46,13 +46,14 @@ public class RaiseLiftSensor extends BBCommand {
         if(Robot.pickup.getHasBall()){
             sortedArray = LiftConst.ballPositions;
         }
-        else if(Robot.pickup.getHasHatch()){
+        //else if(Robot.pickup.getHasHatch()){
+        else {
             sortedArray = LiftConst.hatchPositions;
         }
-        else{
-            sortedArray = LiftConst.allPositions;
-            Logger.getInstance().println("Set Lift Postion Using Sensor: Unknown Object!", true, Severity.WARNING);
-        }
+        // else{
+        //     sortedArray = LiftConst.allPositions;
+        //     Logger.getInstance().println("Set Lift Postion Using Sensor: Unknown Object!", true, Severity.WARNING);
+        // }
 
         for(int i=0; i<sortedArray.length; i++){
             if(sortedArray[i] > currentSetpoint && Math.abs(currentSetpoint - sortedArray[i]) > 0.01 ){
