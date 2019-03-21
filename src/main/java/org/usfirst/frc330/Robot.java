@@ -154,7 +154,7 @@ public class Robot extends TimedRobot {
         Robot.pickup.clawOff();
         Robot.lift.retractClimbPin();
 
-        Robot.frills.setColorRGB(0,0,80); //ake LEDs blue
+        Robot.frills.disableLimelightLEDs();
     }
 
     String autoName;
@@ -179,6 +179,7 @@ public class Robot extends TimedRobot {
     public void autonomousInit() {
         buzzer.enable(1.25);
         Logger.getInstance().println("Autonomous Init", true, Severity.INFO);
+        Robot.frills.enableLimelightLEDs();
     	
         Robot.chassis.resetPosition();
         
@@ -218,6 +219,7 @@ public class Robot extends TimedRobot {
         Robot.frills.setColorRGB(0,0,0);
         Logger.getInstance().println("Teleop Init", Severity.INFO);
         buzzer.enable(1.25);
+        Robot.frills.enableLimelightLEDs();
         
         // This makes sure that the autonomous stops running when
         // teleop starts running. If you want the autonomous to

@@ -135,6 +135,18 @@ public class Frills extends Subsystem {
     public void driverCameraDark(){
     	driverCam.setExposureManual(1);
     }
+
+    public void disableLimelightLEDs(){
+        NetworkTableInstance.getDefault().getTable("limelight").getEntry("pipeline").setNumber(1);
+        Logger.getInstance().println("Limelight lights disabled", Severity.INFO);
+        Logger.getInstance().println("New pipeline: " + NetworkTableInstance.getDefault().getTable("limelight").getEntry("getpipe").getDouble(-99), Severity.INFO);
+    }
+
+    public void enableLimelightLEDs(){
+        NetworkTableInstance.getDefault().getTable("limelight").getEntry("pipeline").setNumber(0);
+        Logger.getInstance().println("Limelight lights enabled", Severity.INFO);
+        Logger.getInstance().println("New pipeline: " + NetworkTableInstance.getDefault().getTable("limelight").getEntry("getpipe").getDouble(-99), Severity.INFO);
+    }
     //  </Camera Functions> -----------------------------------------------
 
 	public boolean getIsPracticeRobot() {	

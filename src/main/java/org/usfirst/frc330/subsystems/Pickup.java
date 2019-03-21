@@ -62,11 +62,11 @@ public class Pickup extends Subsystem {
         addChild("Claw",claw);
         
         
-        iRSensor = new SharpIR(SharpType.GP2Y0A41SK0F, 2);
+        iRSensor = new SharpIR(SharpType.GP2Y0A41SK0F, 0);
         addChild(iRSensor);
         
         
-        iRSensor2 = new SharpIR(SharpType.GP2Y0A51SK0F, 3);
+        iRSensor2 = new SharpIR(SharpType.GP2Y0A51SK0F, 2);
         addChild(iRSensor2);
         
         

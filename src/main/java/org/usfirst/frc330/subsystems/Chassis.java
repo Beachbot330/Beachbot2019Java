@@ -190,7 +190,7 @@ public class Chassis extends Subsystem {
         addChild("leftDrive",leftDrive);
         
         
-        pressureSensor = new AnalogInput(0);
+        pressureSensor = new AnalogInput(3);
         addChild("pressureSensor",pressureSensor);
         
         
