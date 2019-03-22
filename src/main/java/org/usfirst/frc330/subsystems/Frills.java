@@ -300,15 +300,15 @@ public class Frills extends Subsystem {
 
                 //now that limelight is out of the way, we can move on to other LED checks
                 if(getIsHatchAttained()) { //if we have a hatch
+                    setColor(GREEN);
                     if(!hatch) {    //if the hatch boolean is false
-                        setColor(GREEN);
                         Logger.getInstance().println("Hatch attained", Severity.INFO);
                         hatch = true;   //change the boolean to true
                     }
                 } else
                 if(getIsBallAttained()) { //if we have a ball
+                    setColor(PURPLE);
                     if(!ball) { //if the ball boolean is false
-                        setColor(PURPLE);
                         Logger.getInstance().println("Ball attained", Severity.INFO);
                         ball = true;   //change the boolean to true
                     }
@@ -340,7 +340,7 @@ public class Frills extends Subsystem {
         if(currentBlue != color.getBlue()) {
             blueLED.disablePWM();
             blueLED.setPWMRate(500);
-            blueLED.enablePWM(((color.getBlue())/brightnessDivisor)/255.0);
+            blueLED.enablePWM(((color.getBlue())/(brightnessDivisor/2))/255.0);
             currentBlue = color.getBlue();
         }
     }
@@ -361,7 +361,7 @@ public class Frills extends Subsystem {
         if (currentBlue != blue){
             blueLED.disablePWM();
             blueLED.setPWMRate(500);
-            blueLED.enablePWM((blue/brightnessDivisor)/255.0);
+            blueLED.enablePWM((blue/(brightnessDivisor/2))/255.0);
             currentBlue = blue;
         }
     }
