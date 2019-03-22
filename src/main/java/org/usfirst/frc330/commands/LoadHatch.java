@@ -14,6 +14,7 @@ import edu.wpi.first.wpilibj.command.BBCommand;
 import org.usfirst.frc330.Robot;
 import org.usfirst.frc330.constants.HandConst;
 import org.usfirst.frc330.constants.LiftConst;
+import org.usfirst.frc330.subsystems.Pickup.GamePiece;
 
 /**
  *
@@ -38,6 +39,7 @@ public class LoadHatch extends BBCommand {
         Robot.hand.setAngle(HandConst.hatchPickup);
         Robot.pickup.closeClaw();
         Robot.pickup.rollerOnHatch();
+        Robot.pickup.setLastPickup(GamePiece.HATCH);
     }
 
     // Called repeatedly when this Command is scheduled to run

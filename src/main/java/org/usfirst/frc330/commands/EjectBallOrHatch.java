@@ -14,6 +14,7 @@ package org.usfirst.frc330.commands;
 import edu.wpi.first.wpilibj.command.BBConditionalCommand;
 import org.usfirst.frc330.Robot;
 import org.usfirst.frc330.commands.commandgroups.EjectBall;
+import org.usfirst.frc330.subsystems.Pickup.GamePiece;
 
 /**
  *
@@ -31,6 +32,11 @@ public class EjectBallOrHatch extends BBConditionalCommand {
 
     @Override
     protected boolean condition(){
-        return Robot.pickup.getHasBall();
+        if(Robot.pickup.getLastPickup() == GamePiece.BALL){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 }

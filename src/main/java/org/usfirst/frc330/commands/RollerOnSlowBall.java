@@ -27,12 +27,7 @@ public class RollerOnSlowBall extends BBCommand {
     // Called just before this Command runs the first time
     @Override
     protected void initialize() {
-        if (Robot.pickup.getHasBall())
-            Robot.pickup.rollerOnSlow(true);
-        else {
-            Robot.pickup.rollerOnSlow(false);
-            Logger.getInstance().println("Not turning on roller slow because don't have ball", Severity.WARNING);
-        }
+        Robot.pickup.rollerOnSlow(true);
     }
 
     // Called repeatedly when this Command is scheduled to run

@@ -14,6 +14,7 @@ import edu.wpi.first.wpilibj.command.BBCommand;
 import org.usfirst.frc330.Robot;
 import org.usfirst.frc330.constants.HandConst;
 import org.usfirst.frc330.constants.LiftConst;
+import org.usfirst.frc330.subsystems.Pickup.GamePiece;
 import org.usfirst.frc330.util.Logger;
 import org.usfirst.frc330.util.Logger.Severity;
 
@@ -43,7 +44,7 @@ public class RaiseLiftSensor extends BBCommand {
         Robot.hand.setAngle(HandConst.defense);
         currentSetpoint = Robot.lift.getSetpoint();
         double[] sortedArray;
-        if(Robot.pickup.getHasBall()){
+        if(Robot.pickup.getLastPickup() == GamePiece.BALL){
             sortedArray = LiftConst.ballPositions;
         }
         //else if(Robot.pickup.getHasHatch()){

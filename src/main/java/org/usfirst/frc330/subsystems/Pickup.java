@@ -35,6 +35,10 @@ import org.usfirst.frc330.wpilibj.SharpIR;
  */
 public class Pickup extends Subsystem {
 
+    public enum GamePiece {BALL, HATCH};
+
+    GamePiece lastPickup = GamePiece.HATCH;
+
     public ShuffleboardTab shuffleboardTab = Shuffleboard.getTab("Pickup");
     boolean lockout = false;
 
@@ -208,8 +212,18 @@ public class Pickup extends Subsystem {
     public double getIntakeFirmwareVersion() {
 		int firmwareVersion = intake.getFirmwareVersion();
 		return ((firmwareVersion & 0xFF00) >> 8) + (firmwareVersion & 0xFF) / 100.0;
-	}
+    }
+    
+    public GamePiece getLastPickup(){
+        return lastPickup;
+    }
 
+    /////////////////////////////////////////////////////////////
+	// Set Methods
+	/////////////////////////////////////////////////////////////
+    public void setLastPickup(GamePiece lastPickup){
+        this.lastPickup = lastPickup;
+    }
 
     /////////////////////////////////////////////////////////////
 	// Control Methods

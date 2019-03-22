@@ -13,6 +13,7 @@ package org.usfirst.frc330.commands;
 import edu.wpi.first.wpilibj.command.BBCommand;
 import org.usfirst.frc330.Robot;
 import org.usfirst.frc330.constants.*;
+import org.usfirst.frc330.subsystems.Pickup.GamePiece;
 import org.usfirst.frc330.util.Logger;
 import org.usfirst.frc330.util.Logger.Severity;
 
@@ -62,7 +63,8 @@ public class SensorCloseClawBall extends BBCommand {
     protected void end() {
         //Robot.pickup.closeClaw();
         Logger.getInstance().println("Ball in range: " + Robot.pickup.getBallInRange(), Severity.INFO);
-    	Logger.getInstance().println("Sensor: " + Robot.pickup.getSensorDistance(), Severity.INFO);
+        Logger.getInstance().println("Sensor: " + Robot.pickup.getSensorDistance(), Severity.INFO);
+        Robot.pickup.setLastPickup(GamePiece.BALL);
     }
 
     // Called when another command which requires one or more of the same

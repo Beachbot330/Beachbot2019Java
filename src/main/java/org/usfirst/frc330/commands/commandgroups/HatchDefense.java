@@ -24,14 +24,11 @@ public class HatchDefense extends BBCommandGroup {
 
     public HatchDefense() {
 
-        //addSequential(new RollerOff());
-        //addSequential(new CloseClaw());
-        //addSequential(new WaitCommand(0.5));
         BBCommand parallelCommand = new SetLiftPosition(LiftConst.defense);
         addParallel(parallelCommand);
         addSequential(new SetHandAngle(HandConst.defense));
         addSequential(new CheckDone(parallelCommand));
-        addSequential(new RollerOnSlowBall());
+        addSequential(new RollerOnSlowHatch());
  
     } 
 }

@@ -11,57 +11,23 @@
 
 package org.usfirst.frc330.commands;
 import edu.wpi.first.wpilibj.command.BBCommand;
-
-import java.util.Arrays;
-
 import org.usfirst.frc330.Robot;
-import org.usfirst.frc330.constants.HandConst;
-import org.usfirst.frc330.constants.LiftConst;
-import org.usfirst.frc330.subsystems.Pickup.GamePiece;
 import org.usfirst.frc330.util.Logger;
 import org.usfirst.frc330.util.Logger.Severity;
 
 /**
  *
  */
-public class LowerLiftSensor extends BBCommand {
+public class RollerOnSlowHatch extends BBCommand {
 
-    double currentSetpoint;
-   
-    public LowerLiftSensor() {
-
-        requires(Robot.lift);
-        //requires(Robot.hand);
-        Arrays.sort(LiftConst.ballPositions);
-        Arrays.sort(LiftConst.hatchPositions);
-        Arrays.sort(LiftConst.allPositions);
-
+    public RollerOnSlowHatch() {
+        requires(Robot.pickup);
     }
 
     // Called just before this Command runs the first time
     @Override
     protected void initialize() {
-        Robot.hand.setAngle(HandConst.defense);
-        currentSetpoint = Robot.lift.getSetpoint();
-        double[] sortedArray;
-        if(Robot.pickup.getLastPickup() == GamePiece.BALL){
-            sortedArray = LiftConst.ballPositions;
-        }
-        //else if(Robot.pickup.getHasHatch()){
-        else{
-            sortedArray = LiftConst.hatchPositions;
-        }
-        // else{
-        //     sortedArray = LiftConst.allPositions;
-        //     Logger.getInstance().println("Set Lift Postion Using Sensor: Unknown Object!", true, Severity.WARNING);
-        // }
-
-        for(int i=sortedArray.length-1; i>=0; i--){
-            if(sortedArray[i] < currentSetpoint && Math.abs(currentSetpoint - sortedArray[i]) > 0.01 ){
-                Robot.lift.setLiftPosition(sortedArray[i]);
-                break;
-            }
-        }
+        Robot.pickup.rollerOnSlow(false);
     }
 
     // Called repeatedly when this Command is scheduled to run
