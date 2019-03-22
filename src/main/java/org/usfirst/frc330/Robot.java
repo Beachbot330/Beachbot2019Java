@@ -11,6 +11,7 @@
 
 package org.usfirst.frc330;
 
+import edu.wpi.first.networktables.NetworkTableInstance;
 import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.RobotController;
 import edu.wpi.first.wpilibj.TimedRobot;
@@ -166,13 +167,16 @@ public class Robot extends TimedRobot {
     	CSVLogger.getInstance().writeData();
     	Logger.getInstance().updateDate();
     	CSVLogger.getInstance().updateDate();
-    	if (autoProgram.getSelected().getName() != null)
-    		autoName = autoProgram.getSelected().getName();
-    	else
-    		autoName = "None Selected";
-    	SmartDashboard.putString("Selected Auto", autoName );
+    	// if (autoProgram.getSelected().getName() != null)
+    	// 	autoName = autoProgram.getSelected().getName();
+    	// else
+    	// 	autoName = "None Selected";
+    	// SmartDashboard.putString("Selected Auto", autoName );
         buzzer.update();
         Robot.frills.updateLEDs();
+        if(NetworkTableInstance.getDefault().getTable("limelight").getEntry("getpipe").getDouble(-99) < 0.5){
+            Robot.frills.disableLimelightLEDs(); 
+        }
     }
 
     @Override
