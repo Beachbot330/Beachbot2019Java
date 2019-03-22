@@ -328,7 +328,7 @@ public class Frills extends Subsystem {
         if(currentBlue != color.getBlue()) {
             blueLED.disablePWM();
             blueLED.setPWMRate(500);
-            blueLED.enablePWM(((color.getBlue())/brightnessDivisor)/255.0);
+            blueLED.enablePWM(((color.getBlue())/(brightnessDivisor/2))/255.0);
             currentBlue = color.getBlue();
         }
     }
@@ -349,7 +349,7 @@ public class Frills extends Subsystem {
         if (currentBlue != blue){
             blueLED.disablePWM();
             blueLED.setPWMRate(500);
-            blueLED.enablePWM((blue/brightnessDivisor)/255.0);
+            blueLED.enablePWM((blue/(brightnessDivisor/2))/255.0);
             currentBlue = blue;
         }
     }
