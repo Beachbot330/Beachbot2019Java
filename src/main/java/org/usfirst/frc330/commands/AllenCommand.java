@@ -20,17 +20,14 @@ import org.usfirst.frc330.util.Logger.Severity;
  *
  */
 public class AllenCommand extends BBCommand {
-    int r,g,b;
     
     public AllenCommand(int r, int g, int b) {
-        this.r = r;
-        this.g = g;
-        this.b = b;
+        requires(Robot.lift);
     	this.setRunWhenDisabled(true);
     }
 
     protected void initialize() {
-        //Robot.frills.redOn();
+        Robot.lift.pogoDrive(1.0);
     }
 
 
@@ -38,7 +35,7 @@ public class AllenCommand extends BBCommand {
     }
 
     protected boolean isFinished() {
-        return true;
+        return false;
     }
 
     protected void end() {

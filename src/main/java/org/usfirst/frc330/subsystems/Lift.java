@@ -413,7 +413,12 @@ public class Lift extends Subsystem {
     	else if (lift1.getControlMode() != ControlMode.Position && lift1.getControlMode() != ControlMode.MotionMagic) {
 			position = getPosition();
 			setLiftPosition(position);
-    	}  	
+		}  	
+		
+		gamepadCommand = -Robot.oi.gamePad.getRawAxis(2);
+		if (Math.abs(gamepadCommand) > LiftConst.GamepadDeadZone) {
+    		this.setThrottle(gamepadCommand/Math.abs(gamepadCommand)*Math.pow(gamepadCommand, 2)); //scaled to 0.4 max
+    	}
 	}
 
 	public void deployClimbPin() {
