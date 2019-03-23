@@ -20,7 +20,7 @@ public class CargoHatch extends BBCommandGroup {
     //PIDGains RampDrive = new PIDGains(0.10, 0, 0.00, 0, 0.3, ChassisConst.defaultMaxOutputStep, ChassisConst.defaultMinStartOutput, "DriveLow");    //AP 3/12/19
 
     Waypoint wp0 = new Waypoint(0, 120, 0);
-    Waypoint wp1 = new Waypoint(10, 200+22, 0);
+    Waypoint wp1 = new Waypoint(10, 200+22-3, 0); // Near cargo ship
     Waypoint wp2 = new Waypoint(62, 96+30, 0); //Near rocket
     Waypoint wp3 = new Waypoint(78, 00+10, 0); //Near human player
     Waypoint wp4 = new Waypoint(78, 105+25, 0);

@@ -11,6 +11,7 @@
 
 package org.usfirst.frc330;
 
+import edu.wpi.first.networktables.NetworkTableInstance;
 import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.RobotController;
 import edu.wpi.first.wpilibj.TimedRobot;
@@ -154,7 +155,7 @@ public class Robot extends TimedRobot {
         Robot.pickup.clawOff();
         Robot.lift.retractClimbPin();
 
-        Robot.frills.setColorRGB(0,0,80); //ake LEDs blue
+        Robot.frills.disableLimelightLEDs();
     }
 
     String autoName;
@@ -166,19 +167,23 @@ public class Robot extends TimedRobot {
     	CSVLogger.getInstance().writeData();
     	Logger.getInstance().updateDate();
     	CSVLogger.getInstance().updateDate();
-    	if (autoProgram.getSelected().getName() != null)
-    		autoName = autoProgram.getSelected().getName();
-    	else
-    		autoName = "None Selected";
-    	SmartDashboard.putString("Selected Auto", autoName );
+    	// if (autoProgram.getSelected().getName() != null)
+    	// 	autoName = autoProgram.getSelected().getName();
+    	// else
+    	// 	autoName = "None Selected";
+    	// SmartDashboard.putString("Selected Auto", autoName );
         buzzer.update();
         Robot.frills.updateLEDs();
+        if(NetworkTableInstance.getDefault().getTable("limelight").getEntry("getpipe").getDouble(-99) < 0.5){
+            Robot.frills.disableLimelightLEDs(); 
+        }
     }
 
     @Override
     public void autonomousInit() {
         buzzer.enable(1.25);
         Logger.getInstance().println("Autonomous Init", true, Severity.INFO);
+        Robot.frills.enableLimelightLEDs();
     	
         Robot.chassis.resetPosition();
         
@@ -218,6 +223,7 @@ public class Robot extends TimedRobot {
         Robot.frills.setColorRGB(0,0,0);
         Logger.getInstance().println("Teleop Init", Severity.INFO);
         buzzer.enable(1.25);
+        Robot.frills.enableLimelightLEDs();
         
         // This makes sure that the autonomous stops running when
         // teleop starts running. If you want the autonomous to

@@ -62,11 +62,11 @@ public class Pickup extends Subsystem {
         addChild("Claw",claw);
         
         
-        iRSensor = new SharpIR(SharpType.GP2Y0A41SK0F, 2);
+        iRSensor = new SharpIR(SharpType.GP2Y0A41SK0F, 0);
         addChild(iRSensor);
         
         
-        iRSensor2 = new SharpIR(SharpType.GP2Y0A51SK0F, 3);
+        iRSensor2 = new SharpIR(SharpType.GP2Y0A51SK0F, 2);
         addChild(iRSensor2);
         
         
@@ -293,10 +293,16 @@ public class Pickup extends Subsystem {
         }
     }
 
-    public void rollerOnSlow() {
+    public void rollerOnSlow(boolean ball) {
         if(!lockout){
-            intake.set(GrabberConst.RollerSlowSpeed);
-            Logger.getInstance().println("Turning Roller On: Slow", Logger.Severity.INFO);
+            if(ball){
+                intake.set(GrabberConst.RollerSlowSpeed);
+                Logger.getInstance().println("Turning Roller On: Slow (Ball)", Logger.Severity.INFO);
+            }
+            else{
+                intake.set(-GrabberConst.RollerSlowSpeed);
+                Logger.getInstance().println("Turning Roller On: Slow (Hatch)", Logger.Severity.INFO);
+            }
         }
     }
     

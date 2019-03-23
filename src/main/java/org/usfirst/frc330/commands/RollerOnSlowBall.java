@@ -28,8 +28,9 @@ public class RollerOnSlowBall extends BBCommand {
     @Override
     protected void initialize() {
         if (Robot.pickup.getHasBall())
-            Robot.pickup.rollerOnSlow();
+            Robot.pickup.rollerOnSlow(true);
         else {
+            Robot.pickup.rollerOnSlow(false);
             Logger.getInstance().println("Not turning on roller slow because don't have ball", Severity.WARNING);
         }
     }
