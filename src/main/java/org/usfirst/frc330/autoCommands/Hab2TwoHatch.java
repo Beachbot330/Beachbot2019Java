@@ -50,7 +50,7 @@ public class Hab2TwoHatch extends BBCommandGroup {
         // Deploy First Hatch
         addParallel(new SetHandAngle(HandConst.hatchPlacementLow));
         addParallel(new SetLiftPosition(LiftConst.DeployHatchLow));
-        addSequential(new DriveLimelight(0.60, 0.45));
+        addSequential(new DriveLimelight(0.60, 0.55));
         addSequential(new DriveLimelight(0.2, 0.4));
         addParallel(new EjectHatch());
         addSequential(new WaitCommand(0.2));
@@ -64,7 +64,7 @@ public class Hab2TwoHatch extends BBCommandGroup {
 
         //Pickup second hatch
         addSequential(new TurnLimelight(3.0, 2.0));
-        addSequential(new DriveLimelight(0.55, 0.45));
+        addSequential(new DriveLimelight(0.55, 0.55));
         addParallel(new SensoredHatchPickup());
         addParallel(new DriveLimelight(0.2, 0.40));
 
@@ -80,7 +80,7 @@ public class Hab2TwoHatch extends BBCommandGroup {
         BBCommand parallelCommand = new SetLiftPosition(LiftConst.DeployHatchMid);
         addParallel(parallelCommand);
         addSequential(new WaitCommand(0.5)); //Give the lift some time, so we don't bonk our head AP 3/21/19
-        addSequential(new DriveLimelight(0.40, 1.0));
+        addSequential(new DriveLimelight(0.40, 1.3));
         
         addSequential(new CheckDone(parallelCommand));
 

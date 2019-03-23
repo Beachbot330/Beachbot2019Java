@@ -39,6 +39,7 @@ public class SensorCloseClawBall extends BBCommand {
     @Override
     protected void initialize() {
         consecutiveGetBallInRanges = 0;
+        Robot.pickup.setLastPickup(GamePiece.BALL);
     }
 
     // Called repeatedly when this Command is scheduled to run
@@ -64,7 +65,6 @@ public class SensorCloseClawBall extends BBCommand {
         //Robot.pickup.closeClaw();
         Logger.getInstance().println("Ball in range: " + Robot.pickup.getBallInRange(), Severity.INFO);
         Logger.getInstance().println("Sensor: " + Robot.pickup.getSensorDistance(), Severity.INFO);
-        Robot.pickup.setLastPickup(GamePiece.BALL);
     }
 
     // Called when another command which requires one or more of the same

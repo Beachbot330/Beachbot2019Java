@@ -222,6 +222,12 @@ public class Pickup extends Subsystem {
 	// Set Methods
 	/////////////////////////////////////////////////////////////
     public void setLastPickup(GamePiece lastPickup){
+        if(lastPickup == GamePiece.BALL){
+            Logger.getInstance().println("GamePiece: Ball", Severity.INFO);
+        }
+        else if(lastPickup == GamePiece.HATCH){
+            Logger.getInstance().println("GamePiece: Hatch", Severity.INFO);
+        }
         this.lastPickup = lastPickup;
     }
 

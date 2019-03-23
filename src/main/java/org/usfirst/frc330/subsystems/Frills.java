@@ -302,14 +302,14 @@ public class Frills extends Subsystem {
                 if(getIsHatchAttained()) { //if we have a hatch
                     setColor(GREEN);
                     if(!hatch) {    //if the hatch boolean is false
-                        Logger.getInstance().println("Hatch attained", Severity.INFO);
+                        Logger.getInstance().println("LEDs: Hatch attained", Severity.INFO);
                         hatch = true;   //change the boolean to true
                     }
                 } else
                 if(getIsBallAttained()) { //if we have a ball
                     setColor(PURPLE);
                     if(!ball) { //if the ball boolean is false
-                        Logger.getInstance().println("Ball attained", Severity.INFO);
+                        Logger.getInstance().println("LEDs: Ball attained", Severity.INFO);
                         ball = true;   //change the boolean to true
                     }
                 }    
