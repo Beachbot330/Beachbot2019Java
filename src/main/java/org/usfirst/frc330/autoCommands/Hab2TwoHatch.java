@@ -25,17 +25,26 @@ public class Hab2TwoHatch extends BBCommandGroup {
     Waypoint wp3 = new Waypoint(78, 00+10, 0); //Near human player
     Waypoint wp4 = new Waypoint(78, 105+30, 0);
 
+    boolean invert = false;
 
+    public Hab2TwoHatch(boolean leftSide, boolean redTeam) {
+        
+        if(!redTeam){
+            this.wp1 = wp1;
+            this.wp2 = wp2;
+            this.wp3 = wp3;
+            this.wp4 = wp4;
+        }
+        
+        invert = leftSide;
 
-    public Hab2TwoHatch() {
-    	
     	addSequential(new ShiftLow());
         addParallel(new HatchDefense());
 
         // Drive off of Hab2
         addSequential(new DriveDistanceAtCurAngle(wp1.getY(), 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
-        addSequential(new TurnGyroWaypoint(wp2, false, 3.0, 3.0, ChassisConst.GyroTurnLow));
-        addSequential(new DriveWaypoint(wp2, false, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
+        addSequential(new TurnGyroWaypoint(wp2, invert, 3.0, 3.0, ChassisConst.GyroTurnLow));
+        addSequential(new DriveWaypoint(wp2, invert, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
         addSequential(new TurnLimelight(3.0, 2.0));
 
         // Deploy First Hatch
@@ -45,13 +54,13 @@ public class Hab2TwoHatch extends BBCommandGroup {
         addSequential(new DriveLimelight(0.2, 0.4));
         addParallel(new EjectHatch());
         addSequential(new WaitCommand(0.2));
-        addSequential(new DriveWaypointBackward(wp2, false, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
+        addSequential(new DriveWaypointBackward(wp2, invert, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
         addSequential(new WaitCommand(0.1));
         addSequential(new RollerOff());
 
         // Drive towards human station
-        addSequential(new TurnGyroWaypoint(wp3, false, 3.0, 3.0, ChassisConst.GyroTurnLow));
-        addSequential(new DriveWaypoint(wp3, false, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
+        addSequential(new TurnGyroWaypoint(wp3, invert, 3.0, 3.0, ChassisConst.GyroTurnLow));
+        addSequential(new DriveWaypoint(wp3, invert, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
 
         //Pickup second hatch
         addSequential(new TurnLimelight(3.0, 2.0));
@@ -61,10 +70,10 @@ public class Hab2TwoHatch extends BBCommandGroup {
 
         //addParallel(new SensoredHatchPickup());
         addSequential(new WaitCommand(0.3));
-        addSequential(new DriveWaypointBackward(wp2, false, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
+        addSequential(new DriveWaypointBackward(wp2, invert, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
         addSequential(new RollerOff());
 
-        addSequential(new TurnGyroWaypoint(wp4, false, 3.0, 3.0, ChassisConst.GyroTurnLow));
+        addSequential(new TurnGyroWaypoint(wp4, invert, 3.0, 3.0, ChassisConst.GyroTurnLow));
 
         addSequential(new TurnLimelight(3.0, 2.0));
         addParallel(new SetHandAngle(HandConst.hatchPlacementMid));
@@ -77,7 +86,7 @@ public class Hab2TwoHatch extends BBCommandGroup {
 
         addSequential(new WaitCommand(0.2));
         addParallel(new EjectHatch());
-        addSequential(new DriveWaypointBackward(wp2, false, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
+        addSequential(new DriveWaypointBackward(wp2, invert, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
 
         addSequential(new WaitCommand(0.3));
         addSequential(new RollerOff());

@@ -71,8 +71,18 @@ public class Robot extends TimedRobot {
 
         autoProgram.setDefaultOption("Do Nothing", new DoNothing());
         autoProgram.addOption("Hab1Hatch", new Hab1Hatch());
-        autoProgram.addOption("Hab2RocketHatches", new Hab2TwoHatch());
-        autoProgram.addOption("CargoHatch", new CargoHatch());
+
+        //Hab 2 Rocket Autos
+        autoProgram.addOption("RightBlue_Hab2RocketHatches", new Hab2TwoHatch(false, false));
+        autoProgram.addOption("LeftBlue_Hab2RocketHatches", new Hab2TwoHatch(true, false));
+        autoProgram.addOption("RightRed_Hab2RocketHatches", new Hab2TwoHatch(false, false));
+        autoProgram.addOption("LeftRed_Hab2RocketHatches", new Hab2TwoHatch(true, false));
+
+        // Hab 2 Cargo Ship Autos
+        autoProgram.addOption("RightBlue_CargoHatch", new CargoHatch(false, false));
+        autoProgram.addOption("RightRed_CargoHatch", new CargoHatch(false, true));
+        autoProgram.addOption("LeftBlue_CargoHatch", new CargoHatch(true, false));
+        autoProgram.addOption("LeftRed_CargoHatch", new CargoHatch(true, true));
 
         SmartDashboard.putData("Auto mode", autoProgram);
 

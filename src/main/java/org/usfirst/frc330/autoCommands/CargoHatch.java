@@ -25,60 +25,77 @@ public class CargoHatch extends BBCommandGroup {
     Waypoint wp3 = new Waypoint(78, 00+10, 0); //Near human player
     Waypoint wp4 = new Waypoint(78, 105+25, 0);
 
+    boolean invert = false;
 
 
-    public CargoHatch() {
-    	
+
+    public CargoHatch(boolean leftSide, boolean redTeam) {
+
+        if(!redTeam){
+            this.wp1 = wp1; //Off Platform
+            this.wp2 = new Waypoint(wp2.getX(), wp2.getY() - 12, 0); //Near Rocket
+            this.wp3 = wp3;
+            this.wp4 = wp4;
+        }
+        
+        invert = leftSide;
+        
+        //Prepare for auto
     	addSequential(new ShiftLow());
         addParallel(new HatchDefense());
 
-        // double distance, double tolerance, double timeout, boolean stopAtEnd, PIDGains driveGains, PIDGains gyroGains
-        //addSequential(new DriveDistanceAtCurAngle(wp1.getY(), 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
-        addSequential(new DriveWaypoint(wp0, false, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
-        addSequential(new DriveWaypoint(wp1, false, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
-        //addSequential(new TurnGyroWaypoint(wp2, false, 3.0, 3.0, ChassisConst.GyroTurnLow));
-        //addSequential(new DriveWaypoint(wp2, false, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
-        addSequential(new TurnGyroAbs(-90, 3.0, 1.5, ChassisConst.GyroTurnLow));
+        // Drive off platform to caargo ship
+        addSequential(new DriveWaypoint(wp0, invert, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
+        addSequential(new DriveWaypoint(wp1, invert, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
+        // Turn towards cargo ship
+        if(!invert){
+            addSequential(new TurnGyroAbs(-90, 3.0, 1.5, ChassisConst.GyroTurnLow));
+        }
+        else{
+            addSequential(new TurnGyroAbs(90, 3.0, 1.5, ChassisConst.GyroTurnLow));
+        }
         addSequential(new TurnLimelight(2.0, 2.0));
 
+        // Place first hatch
         addSequential(new SetHandAngle(HandConst.hatchPlacementLow));
         addParallel(new SetLiftPosition(LiftConst.DeployHatchLow));
-        //addSequential(new DriveLimelight(0.3, 1.0));
         addSequential(new DriveLimelight(0.2, 0.7));
-
         addSequential(new WaitCommand(0.3));
-
         addParallel(new EjectHatch());
         addSequential(new WaitCommand(0.1));
-        addSequential(new DriveWaypointBackward(wp1, false, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
 
-        addSequential(new WaitCommand(0.5));
+        // Backup
+        addSequential(new DriveWaypointBackward(wp1, invert, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
+        addSequential(new WaitCommand(0.5)); //TODO: Should we remove this?
 
-        addSequential(new TurnGyroWaypoint(wp3, false, 3.0, 3.0, ChassisConst.GyroTurnLow));
-        addSequential(new DriveWaypoint(wp3, false, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
+        // Drive towards human player station
+        addSequential(new TurnGyroWaypoint(wp3, invert, 3.0, 3.0, ChassisConst.GyroTurnLow));
+        addSequential(new DriveWaypoint(wp3, invert, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
 
+        // Pickup second hatch
         addSequential(new TurnLimelight(3.0, 2.0));
         addSequential(new DriveLimelight(0.55, 0.5));
         addParallel(new DriveLimelight(0.2, 0.5));
-
         addParallel(new SensoredHatchPickup());
         addSequential(new WaitCommand(0.3));
-        addSequential(new DriveWaypointBackward(wp2, false, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
+
+        // Backup and head towards rocket
+        addSequential(new DriveWaypointBackward(wp2, invert, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
         addSequential(new RollerOff());
+        addSequential(new TurnGyroWaypoint(wp4, invert, 3.0, 3.0, ChassisConst.GyroTurnLow));
 
-        addSequential(new TurnGyroWaypoint(wp4, false, 3.0, 3.0, ChassisConst.GyroTurnLow));
-
+        //Place Second hatch
         addSequential(new TurnLimelight(3.0, 2.0));
         addParallel(new SetHandAngle(HandConst.hatchPlacementMid));
         BBCommand parallelCommand = new SetLiftPosition(LiftConst.DeployHatchMid);
         addParallel(parallelCommand);
         addSequential(new DriveLimelight(0.40, 1.5));
-        
         addSequential(new CheckDone(parallelCommand));
-
         addSequential(new WaitCommand(0.2));
         addParallel(new EjectHatch());
-        addSequential(new DriveWaypointBackward(wp2, false, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
+
+        //Backup
+        addSequential(new DriveWaypointBackward(wp2, invert, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
 
         addSequential(new WaitCommand(0.3));
         addSequential(new RollerOff());
