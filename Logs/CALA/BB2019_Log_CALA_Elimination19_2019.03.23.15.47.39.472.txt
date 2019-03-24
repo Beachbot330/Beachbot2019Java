@@ -1,0 +1,1896 @@
+2017.02.19.22.48.40.590, INFO   , Logger filename: BB2019_Log__None0_2017.02.19.22.48.40.321.txt
+2017.02.19.22.48.40.599, INFO   , Program date: 1969.12.31.16.00.00.000
+2017.02.19.22.48.41.627, INFO   , Lift PIDF set to: 0.6, 0.0, 0.0, 0.5, Idx: 0
+2017.02.19.22.48.41.639, INFO   , Lift PIDF set to: 0.9, 0.0, 0.0, 0.5, Idx: 1
+2017.02.19.22.48.42.587, INFO   , Hand PIDF set to: 10.0, 0.0, 0.0, 5.0
+2017.02.19.22.48.43.670, DEBUG  , DriverCam Get Video Mode: 160, 120, 30
+2017.02.19.22.48.43.697, INFO   , BeachbotLib Version:                2019.2.0
+2017.02.19.22.48.43.698, INFO   , WPILib Version:                     2019.4.1
+2017.02.19.22.48.43.762, INFO   , NavX Firmware Version:              3.1
+2017.02.19.22.48.43.775, INFO   , Talon Intake Firmware Version:      4.17
+2017.02.19.22.48.43.779, INFO   , Talon Hand Firmware Version:        4.17
+2017.02.19.22.48.43.783, INFO   , Talon Lift1 Firmware Version:       4.17
+2017.02.19.22.48.43.789, INFO   , Talon Lift2 Firmware Version:       4.17
+2017.02.19.22.48.43.794, INFO   , Talon Lift3 Firmware Version:       4.17
+2017.02.19.22.48.43.795, DEBUG  , Competition Robot Detected
+2017.02.19.22.48.43.910, INFO   , Disabled Init
+2017.02.19.22.48.43.925, INFO   , Battery Voltage: 12.894042236328124
+2017.02.19.22.48.43.927, INFO   , Lift disabled
+2017.02.19.22.48.43.928, INFO   , Hand disabled
+2017.02.19.22.48.43.929, INFO   , Turning Roller off
+2017.02.19.22.48.43.935, INFO   , Turning Claw off
+2017.02.19.22.48.43.940, INFO   , Limelight lights disabled
+2017.02.19.22.48.43.945, INFO   , New pipeline: -99.0
+2017.02.19.22.48.44.035, INFO   , Limelight lights disabled
+2017.02.19.22.48.44.038, INFO   , New pipeline: -99.0
+2017.02.19.22.48.44.251, INFO   , Limelight lights disabled
+2017.02.19.22.48.44.253, INFO   , New pipeline: -99.0
+2017.02.19.22.48.44.278, INFO   , Limelight lights disabled
+2017.02.19.22.48.44.279, INFO   , New pipeline: -99.0
+2017.02.19.22.48.44.304, INFO   , Limelight lights disabled
+2017.02.19.22.48.44.306, INFO   , New pipeline: -99.0
+2017.02.19.22.48.44.332, INFO   , Limelight lights disabled
+2017.02.19.22.48.44.333, INFO   , New pipeline: -99.0
+2017.02.19.22.48.44.358, INFO   , Limelight lights disabled
+2017.02.19.22.48.44.359, INFO   , New pipeline: -99.0
+2017.02.19.22.48.44.392, INFO   , Limelight lights disabled
+2017.02.19.22.48.44.393, INFO   , New pipeline: -99.0
+2017.02.19.22.48.44.417, INFO   , Limelight lights disabled
+2017.02.19.22.48.44.418, INFO   , New pipeline: -99.0
+2017.02.19.22.48.44.452, INFO   , Limelight lights disabled
+2017.02.19.22.48.44.453, INFO   , New pipeline: -99.0
+2017.02.19.22.48.44.479, INFO   , Limelight lights disabled
+2017.02.19.22.48.44.480, INFO   , New pipeline: -99.0
+2017.02.19.22.48.44.505, INFO   , Limelight lights disabled
+2017.02.19.22.48.44.506, INFO   , New pipeline: -99.0
+2017.02.19.22.48.44.530, INFO   , Limelight lights disabled
+2017.02.19.22.48.44.531, INFO   , New pipeline: -99.0
+2017.02.19.22.48.44.568, INFO   , Limelight lights disabled
+2017.02.19.22.48.44.569, INFO   , New pipeline: -99.0
+2017.02.19.22.48.44.620, INFO   , Limelight lights disabled
+2017.02.19.22.48.44.623, INFO   , New pipeline: -99.0
+2017.02.19.22.48.44.656, INFO   , Limelight lights disabled
+2017.02.19.22.48.44.657, INFO   , New pipeline: -99.0
+2017.02.19.22.48.44.705, INFO   , Limelight lights disabled
+2017.02.19.22.48.44.706, INFO   , New pipeline: -99.0
+2017.02.19.22.48.44.732, INFO   , Limelight lights disabled
+2017.02.19.22.48.44.734, INFO   , New pipeline: -99.0
+2017.02.19.22.48.44.758, INFO   , Limelight lights disabled
+2017.02.19.22.48.44.759, INFO   , New pipeline: -99.0
+2017.02.19.22.48.44.781, INFO   , Limelight lights disabled
+2017.02.19.22.48.44.782, INFO   , New pipeline: -99.0
+2017.02.19.22.48.44.811, INFO   , Limelight lights disabled
+2017.02.19.22.48.44.812, INFO   , New pipeline: -99.0
+2017.02.19.22.48.44.841, INFO   , Limelight lights disabled
+2017.02.19.22.48.44.842, INFO   , New pipeline: -99.0
+2017.02.19.22.48.44.866, INFO   , Limelight lights disabled
+2017.02.19.22.48.44.867, INFO   , New pipeline: -99.0
+2017.02.19.22.48.44.908, INFO   , Limelight lights disabled
+2017.02.19.22.48.44.909, INFO   , New pipeline: -99.0
+2017.02.19.22.48.44.937, INFO   , Limelight lights disabled
+2017.02.19.22.48.44.938, INFO   , New pipeline: -99.0
+2017.02.19.22.48.44.968, INFO   , Limelight lights disabled
+2017.02.19.22.48.44.969, INFO   , New pipeline: -99.0
+2017.02.19.22.48.44.989, INFO   , Limelight lights disabled
+2017.02.19.22.48.44.990, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.010, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.011, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.044, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.045, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.069, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.069, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.095, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.096, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.115, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.116, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.138, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.140, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.182, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.186, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.245, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.247, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.298, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.300, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.349, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.350, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.388, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.390, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.422, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.424, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.457, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.458, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.491, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.492, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.522, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.523, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.539, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.539, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.552, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.553, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.566, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.567, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.595, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.596, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.624, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.625, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.652, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.661, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.684, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.685, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.703, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.704, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.739, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.740, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.760, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.762, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.794, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.795, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.813, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.814, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.840, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.841, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.869, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.871, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.902, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.904, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.929, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.931, INFO   , New pipeline: -99.0
+2017.02.19.22.48.45.978, INFO   , Limelight lights disabled
+2017.02.19.22.48.45.980, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.007, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.009, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.036, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.037, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.054, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.055, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.090, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.092, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.135, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.138, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.231, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.234, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.257, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.258, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.285, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.286, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.302, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.304, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.323, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.326, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.345, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.346, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.368, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.370, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.391, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.392, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.410, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.412, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.437, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.439, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.488, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.489, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.515, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.516, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.532, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.533, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.556, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.557, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.571, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.572, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.594, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.595, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.621, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.622, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.652, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.653, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.678, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.679, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.700, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.701, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.734, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.736, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.764, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.765, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.785, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.786, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.818, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.819, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.855, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.856, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.869, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.870, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.882, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.883, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.894, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.894, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.906, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.907, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.918, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.919, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.936, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.937, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.948, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.949, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.965, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.966, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.981, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.981, INFO   , New pipeline: -99.0
+2017.02.19.22.48.46.992, INFO   , Limelight lights disabled
+2017.02.19.22.48.46.993, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.005, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.005, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.018, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.018, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.029, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.030, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.040, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.041, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.057, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.058, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.082, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.083, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.098, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.098, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.112, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.113, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.124, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.125, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.138, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.139, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.159, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.160, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.178, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.178, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.190, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.190, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.201, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.202, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.213, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.214, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.226, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.226, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.237, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.238, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.252, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.252, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.265, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.266, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.287, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.289, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.315, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.317, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.347, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.350, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.371, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.372, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.384, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.385, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.399, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.400, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.415, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.416, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.427, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.428, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.440, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.440, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.451, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.451, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.462, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.463, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.474, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.475, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.486, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.487, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.497, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.498, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.509, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.509, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.525, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.526, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.539, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.540, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.564, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.565, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.586, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.586, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.597, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.598, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.613, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.614, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.631, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.632, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.643, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.643, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.654, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.655, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.665, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.665, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.676, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.677, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.688, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.689, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.700, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.700, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.711, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.712, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.723, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.724, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.737, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.738, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.750, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.750, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.762, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.763, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.774, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.775, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.786, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.787, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.798, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.799, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.809, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.810, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.821, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.822, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.832, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.833, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.846, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.847, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.862, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.864, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.879, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.880, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.891, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.892, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.903, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.904, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.914, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.914, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.929, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.929, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.940, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.940, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.957, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.958, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.978, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.978, INFO   , New pipeline: -99.0
+2017.02.19.22.48.47.989, INFO   , Limelight lights disabled
+2017.02.19.22.48.47.989, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.002, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.003, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.013, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.014, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.027, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.027, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.038, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.038, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.049, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.050, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.060, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.060, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.077, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.078, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.100, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.101, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.112, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.112, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.123, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.124, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.137, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.138, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.152, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.154, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.166, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.167, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.177, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.177, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.188, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.189, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.199, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.199, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.210, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.210, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.220, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.221, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.232, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.232, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.243, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.243, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.256, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.257, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.268, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.269, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.279, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.280, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.290, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.291, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.301, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.301, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.315, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.316, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.327, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.328, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.339, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.339, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.350, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.351, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.362, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.363, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.373, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.374, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.385, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.385, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.396, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.397, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.407, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.408, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.418, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.418, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.429, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.430, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.439, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.440, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.450, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.450, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.461, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.461, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.472, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.473, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.487, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.488, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.500, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.501, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.514, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.515, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.527, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.528, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.538, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.539, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.549, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.550, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.560, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.560, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.572, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.572, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.583, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.584, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.595, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.596, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.606, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.607, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.618, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.618, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.631, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.632, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.643, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.644, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.655, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.656, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.669, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.670, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.680, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.680, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.691, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.692, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.702, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.703, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.714, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.714, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.724, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.724, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.736, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.736, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.747, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.748, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.758, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.758, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.768, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.769, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.778, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.779, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.789, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.789, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.799, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.799, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.809, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.810, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.820, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.821, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.832, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.832, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.846, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.847, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.860, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.862, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.878, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.879, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.891, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.892, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.903, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.903, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.915, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.915, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.926, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.926, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.935, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.936, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.946, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.946, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.956, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.956, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.967, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.968, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.982, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.983, INFO   , New pipeline: -99.0
+2017.02.19.22.48.48.999, INFO   , Limelight lights disabled
+2017.02.19.22.48.48.999, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.016, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.016, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.026, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.027, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.039, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.040, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.049, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.050, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.076, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.078, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.100, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.102, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.124, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.125, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.135, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.135, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.147, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.147, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.156, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.157, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.166, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.167, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.179, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.180, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.191, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.191, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.200, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.201, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.212, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.213, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.222, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.222, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.233, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.233, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.245, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.246, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.257, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.258, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.267, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.267, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.277, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.278, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.288, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.288, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.298, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.298, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.308, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.309, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.328, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.328, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.348, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.349, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.367, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.368, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.388, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.388, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.408, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.409, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.427, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.427, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.447, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.448, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.468, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.469, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.490, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.491, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.507, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.508, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.528, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.528, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.547, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.548, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.566, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.567, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.587, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.588, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.610, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.610, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.627, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.628, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.648, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.649, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.670, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.670, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.687, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.687, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.708, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.709, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.728, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.728, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.747, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.748, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.768, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.769, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.787, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.787, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.809, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.809, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.827, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.828, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.847, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.848, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.869, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.869, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.887, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.888, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.907, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.908, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.927, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.928, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.947, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.948, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.967, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.968, INFO   , New pipeline: -99.0
+2017.02.19.22.48.49.992, INFO   , Limelight lights disabled
+2017.02.19.22.48.49.992, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.008, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.009, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.027, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.028, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.047, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.048, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.067, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.068, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.087, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.088, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.107, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.108, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.128, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.129, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.148, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.149, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.167, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.168, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.189, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.190, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.208, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.209, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.227, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.228, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.247, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.248, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.267, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.267, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.287, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.287, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.308, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.308, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.327, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.327, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.347, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.348, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.368, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.368, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.387, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.388, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.412, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.412, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.427, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.428, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.447, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.447, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.467, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.468, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.488, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.489, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.507, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.508, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.528, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.529, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.548, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.549, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.569, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.570, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.588, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.588, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.621, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.623, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.651, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.652, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.663, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.664, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.674, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.674, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.686, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.686, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.707, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.710, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.733, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.734, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.747, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.748, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.767, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.768, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.788, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.788, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.816, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.818, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.830, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.831, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.847, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.847, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.867, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.867, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.887, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.888, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.912, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.914, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.938, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.939, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.957, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.957, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.967, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.968, INFO   , New pipeline: -99.0
+2017.02.19.22.48.50.992, INFO   , Limelight lights disabled
+2017.02.19.22.48.50.993, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.007, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.008, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.027, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.028, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.047, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.048, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.067, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.068, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.088, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.089, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.107, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.108, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.128, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.129, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.147, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.148, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.167, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.167, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.187, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.188, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.208, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.209, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.233, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.234, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.246, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.247, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.267, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.267, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.289, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.289, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.308, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.309, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.335, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.336, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.351, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.352, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.366, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.366, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.388, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.388, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.409, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.409, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.427, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.428, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.448, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.448, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.467, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.468, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.488, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.488, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.508, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.509, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.527, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.528, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.548, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.549, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.567, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.568, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.587, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.588, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.609, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.609, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.630, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.630, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.647, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.648, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.666, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.667, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.687, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.688, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.707, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.708, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.727, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.727, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.747, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.748, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.767, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.768, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.787, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.788, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.808, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.809, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.826, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.826, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.847, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.848, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.868, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.870, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.887, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.888, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.907, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.908, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.928, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.928, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.947, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.948, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.967, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.967, INFO   , New pipeline: -99.0
+2017.02.19.22.48.51.995, INFO   , Limelight lights disabled
+2017.02.19.22.48.51.995, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.007, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.008, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.027, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.028, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.048, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.049, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.067, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.068, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.088, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.088, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.107, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.108, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.127, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.128, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.147, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.147, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.167, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.168, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.189, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.189, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.208, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.209, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.227, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.227, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.247, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.247, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.267, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.268, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.288, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.288, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.307, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.307, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.327, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.328, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.348, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.348, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.367, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.367, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.390, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.390, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.409, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.410, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.430, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.431, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.447, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.448, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.467, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.468, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.487, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.488, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.508, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.508, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.528, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.529, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.547, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.548, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.567, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.568, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.587, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.588, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.608, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.608, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.626, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.627, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.647, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.647, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.667, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.667, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.687, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.687, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.707, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.707, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.727, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.728, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.747, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.748, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.767, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.768, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.787, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.787, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.808, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.809, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.827, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.828, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.850, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.851, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.867, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.868, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.888, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.888, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.908, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.909, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.927, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.928, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.947, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.948, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.973, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.974, INFO   , New pipeline: -99.0
+2017.02.19.22.48.52.995, INFO   , Limelight lights disabled
+2017.02.19.22.48.52.995, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.007, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.008, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.028, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.029, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.056, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.057, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.068, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.068, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.087, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.087, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.107, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.108, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.128, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.128, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.147, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.148, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.167, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.168, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.187, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.188, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.208, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.209, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.227, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.228, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.247, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.247, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.267, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.268, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.287, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.288, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.307, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.307, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.327, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.327, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.347, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.348, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.367, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.367, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.387, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.387, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.408, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.409, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.426, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.427, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.447, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.447, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.468, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.468, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.488, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.489, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.507, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.508, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.527, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.528, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.550, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.550, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.566, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.567, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.588, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.589, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.608, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.609, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.633, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.634, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.660, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.663, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.687, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.688, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.698, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.698, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.712, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.712, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.726, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.726, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.747, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.748, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.770, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.771, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.786, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.786, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.810, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.811, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.833, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.833, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.847, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.848, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.867, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.867, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.887, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.888, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.907, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.908, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.928, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.928, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.948, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.948, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.968, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.968, INFO   , New pipeline: -99.0
+2017.02.19.22.48.53.987, INFO   , Limelight lights disabled
+2017.02.19.22.48.53.987, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.013, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.014, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.026, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.027, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.047, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.047, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.066, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.066, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.087, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.087, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.107, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.107, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.127, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.128, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.147, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.147, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.167, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.168, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.187, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.187, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.209, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.209, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.226, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.226, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.246, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.247, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.266, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.267, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.287, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.287, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.307, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.307, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.327, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.328, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.348, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.348, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.366, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.367, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.387, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.388, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.409, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.409, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.429, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.430, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.447, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.447, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.466, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.467, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.487, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.487, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.506, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.513, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.529, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.529, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.546, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.546, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.567, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.567, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.588, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.588, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.608, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.608, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.627, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.627, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.647, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.648, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.667, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.667, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.689, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.689, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.706, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.706, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.727, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.727, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.746, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.747, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.768, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.768, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.787, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.787, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.809, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.809, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.827, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.827, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.847, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.848, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.867, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.867, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.886, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.887, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.906, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.907, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.926, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.927, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.947, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.947, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.967, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.967, INFO   , New pipeline: -99.0
+2017.02.19.22.48.54.987, INFO   , Limelight lights disabled
+2017.02.19.22.48.54.987, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.012, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.013, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.026, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.026, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.047, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.047, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.067, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.067, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.087, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.087, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.106, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.107, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.127, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.128, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.147, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.148, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.167, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.167, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.187, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.187, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.209, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.209, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.227, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.227, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.249, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.250, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.266, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.267, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.287, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.287, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.306, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.307, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.327, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.327, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.347, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.347, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.367, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.367, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.387, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.387, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.408, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.409, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.427, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.427, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.447, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.447, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.467, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.467, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.487, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.487, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.507, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.508, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.527, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.527, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.547, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.547, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.567, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.568, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.587, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.587, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.609, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.609, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.626, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.626, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.647, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.647, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.667, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.667, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.687, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.687, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.707, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.707, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.727, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.728, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.746, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.746, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.767, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.767, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.787, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.787, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.807, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.808, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.826, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.827, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.847, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.847, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.868, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.868, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.887, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.887, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.910, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.911, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.927, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.927, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.947, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.948, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.966, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.967, INFO   , New pipeline: -99.0
+2017.02.19.22.48.55.987, INFO   , Limelight lights disabled
+2017.02.19.22.48.55.987, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.008, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.009, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.031, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.031, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.046, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.047, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.068, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.068, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.087, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.088, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.107, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.107, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.126, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.127, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.147, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.147, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.166, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.167, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.187, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.187, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.209, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.209, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.226, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.226, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.246, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.247, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.267, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.267, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.286, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.287, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.307, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.307, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.327, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.328, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.347, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.347, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.368, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.368, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.387, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.388, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.409, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.409, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.427, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.428, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.447, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.448, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.468, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.469, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.487, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.487, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.507, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.508, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.527, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.527, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.547, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.548, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.573, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.574, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.592, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.593, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.614, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.615, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.632, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.633, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.646, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.647, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.679, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.679, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.703, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.704, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.727, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.728, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.744, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.745, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.766, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.767, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.787, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.787, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.821, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.822, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.837, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.838, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.864, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.865, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.880, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.881, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.895, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.896, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.912, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.912, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.923, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.923, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.937, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.937, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.957, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.958, INFO   , New pipeline: -99.0
+2017.02.19.22.48.56.978, INFO   , Limelight lights disabled
+2017.02.19.22.48.56.979, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.004, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.005, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.032, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.033, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.060, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.060, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.085, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.085, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.106, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.106, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.126, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.127, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.151, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.151, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.172, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.172, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.188, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.189, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.207, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.208, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.226, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.226, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.244, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.245, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.265, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.265, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.273, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.274, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.282, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.282, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.291, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.291, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.306, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.307, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.327, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.328, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.347, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.347, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.366, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.367, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.388, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.388, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.408, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.408, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.427, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.427, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.449, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.449, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.470, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.470, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.487, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.487, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.507, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.507, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.527, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.527, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.547, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.548, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.567, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.568, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.586, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.587, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.608, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.609, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.628, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.628, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.648, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.648, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.667, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.668, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.688, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.688, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.707, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.707, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.727, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.727, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.747, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.747, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.767, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.767, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.787, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.787, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.809, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.809, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.827, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.827, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.847, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.848, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.867, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.868, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.887, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.887, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.906, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.907, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.927, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.927, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.948, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.948, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.969, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.969, INFO   , New pipeline: -99.0
+2017.02.19.22.48.57.996, INFO   , Limelight lights disabled
+2017.02.19.22.48.57.997, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.022, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.023, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.039, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.039, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.055, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.055, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.075, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.076, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.097, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.098, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.109, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.109, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.138, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.139, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.171, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.173, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.194, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.194, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.204, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.204, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.216, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.217, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.230, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.231, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.253, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.253, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.274, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.275, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.286, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.288, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.307, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.307, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.331, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.331, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.351, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.352, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.377, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.381, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.411, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.411, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.426, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.427, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.443, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.445, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.464, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.465, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.494, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.495, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.515, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.516, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.539, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.540, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.559, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.560, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.575, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.575, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.601, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.603, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.632, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.633, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.651, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.652, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.675, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.676, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.697, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.697, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.723, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.723, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.733, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.734, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.764, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.765, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.793, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.794, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.819, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.820, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.847, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.848, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.858, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.858, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.878, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.879, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.932, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.933, INFO   , New pipeline: -99.0
+2017.02.19.22.48.58.975, INFO   , Limelight lights disabled
+2017.02.19.22.48.58.976, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.002, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.004, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.026, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.027, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.073, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.074, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.109, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.109, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.126, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.126, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.151, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.152, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.175, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.175, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.222, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.223, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.252, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.252, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.272, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.272, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.285, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.286, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.302, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.304, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.326, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.326, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.348, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.349, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.377, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.377, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.397, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.398, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.412, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.413, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.433, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.434, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.457, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.457, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.473, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.474, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.494, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.494, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.504, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.505, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.516, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.517, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.538, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.538, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.551, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.551, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.567, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.567, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.577, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.578, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.593, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.594, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.605, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.606, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.625, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.626, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.640, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.640, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.661, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.662, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.691, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.691, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.700, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.701, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.714, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.714, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.733, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.735, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.751, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.752, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.774, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.775, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.792, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.793, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.815, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.816, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.837, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.838, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.850, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.851, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.877, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.877, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.895, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.896, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.916, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.916, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.924, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.924, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.932, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.933, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.949, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.949, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.957, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.957, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.966, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.966, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.977, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.977, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.986, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.987, INFO   , New pipeline: -99.0
+2017.02.19.22.48.59.994, INFO   , Limelight lights disabled
+2017.02.19.22.48.59.995, INFO   , New pipeline: -99.0
+2017.02.19.22.49.00.004, INFO   , Limelight lights disabled
+2017.02.19.22.49.00.004, INFO   , New pipeline: -99.0
+2017.02.19.22.49.00.018, INFO   , Limelight lights disabled
+2017.02.19.22.49.00.019, INFO   , New pipeline: -99.0
+2017.02.19.22.49.00.037, INFO   , Limelight lights disabled
+2017.02.19.22.49.00.038, INFO   , New pipeline: -99.0
+2017.02.19.22.49.00.054, INFO   , Limelight lights disabled
+2017.02.19.22.49.00.055, INFO   , New pipeline: -99.0
+2017.02.19.22.49.00.073, INFO   , Limelight lights disabled
+2017.02.19.22.49.00.074, INFO   , New pipeline: -99.0
+2017.02.19.22.49.00.091, INFO   , Limelight lights disabled
+2017.02.19.22.49.00.092, INFO   , New pipeline: -99.0
+2017.02.19.22.49.00.119, INFO   , Limelight lights disabled
+2017.02.19.22.49.00.119, INFO   , New pipeline: -99.0
+2017.02.19.22.49.00.138, INFO   , Limelight lights disabled
+2017.02.19.22.49.00.139, INFO   , New pipeline: -99.0
+2017.02.19.22.49.00.160, INFO   , Limelight lights disabled
+2017.02.19.22.49.00.161, INFO   , New pipeline: -99.0
+2017.02.19.22.49.00.174, INFO   , Limelight lights disabled
+2017.02.19.22.49.00.175, INFO   , New pipeline: -99.0
+2017.02.19.22.49.00.192, INFO   , Limelight lights disabled
+2017.02.19.22.49.00.194, INFO   , New pipeline: -99.0
+2017.02.19.22.49.00.214, INFO   , Limelight lights disabled
+2017.02.19.22.49.00.215, INFO   , New pipeline: -99.0
+2017.02.19.22.49.00.239, INFO   , Limelight lights disabled
+2017.02.19.22.49.00.240, INFO   , New pipeline: -99.0
+2017.02.19.22.49.00.270, INFO   , Limelight lights disabled
+2017.02.19.22.49.00.272, INFO   , New pipeline: -99.0
+2017.02.19.22.49.00.294, INFO   , Limelight lights disabled
+2017.02.19.22.49.00.295, INFO   , New pipeline: -99.0
+2017.02.19.22.49.00.311, INFO   , Limelight lights disabled
+2017.02.19.22.49.00.311, INFO   , New pipeline: -99.0
+2017.02.19.22.49.00.327, INFO   , Limelight lights disabled
+2017.02.19.22.49.00.327, INFO   , New pipeline: -99.0
+2017.02.19.22.49.00.346, INFO   , Limelight lights disabled
+2017.02.19.22.49.00.347, INFO   , New pipeline: -99.0
+2017.02.19.22.49.00.366, INFO   , Limelight lights disabled
+2017.02.19.22.49.00.367, INFO   , New pipeline: -99.0
+2017.02.19.22.49.00.384, INFO   , Limelight lights disabled
+2017.02.19.22.49.00.385, INFO   , New pipeline: -99.0
+2017.02.19.22.49.00.403, INFO   , Limelight lights disabled
+2017.02.19.22.49.00.403, INFO   , New pipeline: -99.0
+2017.02.19.22.49.00.436, INFO   , Limelight lights disabled
+2017.02.19.22.49.00.437, INFO   , New pipeline: -99.0
+2017.02.19.22.49.00.481, INFO   , Limelight lights disabled
+2017.02.19.22.49.00.484, INFO   , New pipeline: -99.0
+2017.02.19.22.49.00.499, INFO   , Limelight lights disabled
+2017.02.19.22.49.00.500, INFO   , New pipeline: -99.0
+2017.02.19.22.49.00.514, INFO   , Limelight lights disabled
+2017.02.19.22.49.00.518, INFO   , New pipeline: -99.0
+2017.02.19.22.49.00.547, INFO   , Limelight lights disabled
+2017.02.19.22.49.00.547, INFO   , New pipeline: -99.0
+RoboRIO File Renamed: true BB2019_Log_None0__2019.03.23.15.47.39.470.txt
+USB File Renamed: true BB2019_Log__None11_2019.03.23.15.47.39.470.txt
+2019.03.23.15.48.03.166, INFO   , LEDs: Hatch attained
+2019.03.23.15.48.03.167, INFO   , Limelight lights disabled
+2019.03.23.15.48.03.167, INFO   , New pipeline: -99.0
+2019.03.23.15.48.03.203, INFO   , Teleop Init
+2019.03.23.15.48.03.204, INFO   , Limelight lights enabled
+2019.03.23.15.48.03.210, INFO   , New pipeline: -99.0
+2019.03.23.15.48.03.215, COMMAND, org.usfirst.frc330.commands.TankDrive initialized
+2019.03.23.15.48.03.223, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.23.15.48.03.224, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.23.15.48.03.400, INFO   , Target acquired
+2019.03.23.15.48.07.407, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.23.15.48.07.426, COMMAND, org.usfirst.frc330.commands.HandOut initialized
+2019.03.23.15.48.07.747, COMMAND, org.usfirst.frc330.commands.HandOut interrupted
+2019.03.23.15.48.07.766, COMMAND, org.usfirst.frc330.commands.RollerOnSlowHatch initialized
+2019.03.23.15.48.07.767, INFO   , Turning Roller On: Slow (Hatch)
+2019.03.23.15.48.07.769, COMMAND, org.usfirst.frc330.commands.RollerOnSlowHatch ended
+2019.03.23.15.48.07.769, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.23.15.48.07.866, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.23.15.48.07.886, COMMAND, org.usfirst.frc330.commands.HandOut initialized
+2019.03.23.15.48.08.946, COMMAND, org.usfirst.frc330.commands.HandOut interrupted
+2019.03.23.15.48.08.966, COMMAND, org.usfirst.frc330.commands.RollerOnSlowHatch initialized
+2019.03.23.15.48.08.966, INFO   , Turning Roller On: Slow (Hatch)
+2019.03.23.15.48.08.966, COMMAND, org.usfirst.frc330.commands.RollerOnSlowHatch ended
+2019.03.23.15.48.08.966, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.23.15.48.09.106, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.23.15.48.09.127, COMMAND, org.usfirst.frc330.commands.HandOut initialized
+2019.03.23.15.48.11.327, COMMAND, org.usfirst.frc330.commands.HandOut interrupted
+2019.03.23.15.48.11.346, COMMAND, org.usfirst.frc330.commands.RollerOnSlowHatch initialized
+2019.03.23.15.48.11.346, INFO   , Turning Roller On: Slow (Hatch)
+2019.03.23.15.48.11.346, COMMAND, org.usfirst.frc330.commands.RollerOnSlowHatch ended
+2019.03.23.15.48.11.347, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.23.15.48.13.888, COMMAND, org.usfirst.frc330.commands.TankDrive interrupted
+2019.03.23.15.48.13.888, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.23.15.48.13.889, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.23.15.48.13.906, COMMAND, org.usfirst.frc330.commands.KillAll initialized
+2019.03.23.15.48.13.906, WARNING, Kill All!
+2019.03.23.15.48.13.908, WARNING, ClimbLockout Disabled by Kill All
+2019.03.23.15.48.13.911, COMMAND, org.usfirst.frc330.commands.KillAll ended
+2019.03.23.15.48.13.912, INFO   , Lift disabled
+2019.03.23.15.48.13.912, INFO   , Hand disabled
+2019.03.23.15.48.13.913, INFO   , Turning Roller off
+2019.03.23.15.48.13.948, COMMAND, org.usfirst.frc330.commands.TankDrive initialized
+2019.03.23.15.48.13.948, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.23.15.48.13.950, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.23.15.48.14.066, COMMAND, org.usfirst.frc330.commands.TankDrive interrupted
+2019.03.23.15.48.14.067, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.23.15.48.14.067, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.23.15.48.14.086, COMMAND, org.usfirst.frc330.commands.KillAll initialized
+2019.03.23.15.48.14.086, WARNING, Kill All!
+2019.03.23.15.48.14.088, WARNING, ClimbLockout Disabled by Kill All
+2019.03.23.15.48.14.090, COMMAND, org.usfirst.frc330.commands.KillAll ended
+2019.03.23.15.48.14.091, INFO   , Lift disabled
+2019.03.23.15.48.14.092, INFO   , Hand disabled
+2019.03.23.15.48.14.092, INFO   , Turning Roller off
+2019.03.23.15.48.14.112, COMMAND, org.usfirst.frc330.commands.TankDrive initialized
+2019.03.23.15.48.14.113, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.23.15.48.14.113, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.23.15.48.14.246, COMMAND, org.usfirst.frc330.commands.TankDrive interrupted
+2019.03.23.15.48.14.247, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.23.15.48.14.247, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.23.15.48.14.266, COMMAND, org.usfirst.frc330.commands.KillAll initialized
+2019.03.23.15.48.14.266, WARNING, Kill All!
+2019.03.23.15.48.14.268, WARNING, ClimbLockout Disabled by Kill All
+2019.03.23.15.48.14.273, COMMAND, org.usfirst.frc330.commands.KillAll ended
+2019.03.23.15.48.14.276, INFO   , Lift disabled
+2019.03.23.15.48.14.277, INFO   , Hand disabled
+2019.03.23.15.48.14.277, INFO   , Turning Roller off
+2019.03.23.15.48.14.304, COMMAND, org.usfirst.frc330.commands.TankDrive initialized
+2019.03.23.15.48.14.304, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.23.15.48.14.305, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.23.15.48.14.426, COMMAND, org.usfirst.frc330.commands.TankDrive interrupted
+2019.03.23.15.48.14.426, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.23.15.48.14.426, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.23.15.48.14.445, COMMAND, org.usfirst.frc330.commands.KillAll initialized
+2019.03.23.15.48.14.446, WARNING, Kill All!
+2019.03.23.15.48.14.447, WARNING, ClimbLockout Disabled by Kill All
+2019.03.23.15.48.14.452, COMMAND, org.usfirst.frc330.commands.KillAll ended
+2019.03.23.15.48.14.457, INFO   , Lift disabled
+2019.03.23.15.48.14.461, INFO   , Hand disabled
+2019.03.23.15.48.14.461, INFO   , Turning Roller off
+2019.03.23.15.48.14.492, COMMAND, org.usfirst.frc330.commands.TankDrive initialized
+2019.03.23.15.48.14.492, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.23.15.48.14.493, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.23.15.48.14.606, COMMAND, org.usfirst.frc330.commands.TankDrive interrupted
+2019.03.23.15.48.14.606, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.23.15.48.14.607, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.23.15.48.14.626, COMMAND, org.usfirst.frc330.commands.KillAll initialized
+2019.03.23.15.48.14.626, WARNING, Kill All!
+2019.03.23.15.48.14.629, WARNING, ClimbLockout Disabled by Kill All
+2019.03.23.15.48.14.630, COMMAND, org.usfirst.frc330.commands.KillAll ended
+2019.03.23.15.48.14.632, INFO   , Lift disabled
+2019.03.23.15.48.14.632, INFO   , Hand disabled
+2019.03.23.15.48.14.632, INFO   , Turning Roller off
+2019.03.23.15.48.14.653, COMMAND, org.usfirst.frc330.commands.TankDrive initialized
+2019.03.23.15.48.14.654, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.23.15.48.14.654, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.23.15.48.15.166, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.23.15.48.15.187, COMMAND, org.usfirst.frc330.commands.HandOut initialized
+2019.03.23.15.48.16.247, COMMAND, org.usfirst.frc330.commands.HandOut interrupted
+2019.03.23.15.48.16.266, COMMAND, org.usfirst.frc330.commands.RollerOnSlowHatch initialized
+2019.03.23.15.48.16.266, INFO   , Turning Roller On: Slow (Hatch)
+2019.03.23.15.48.16.267, COMMAND, org.usfirst.frc330.commands.RollerOnSlowHatch ended
+2019.03.23.15.48.16.267, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.23.15.48.16.966, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.23.15.48.16.986, COMMAND, org.usfirst.frc330.commands.HandOut initialized
+2019.03.23.15.48.18.007, COMMAND, org.usfirst.frc330.commands.HandOut interrupted
+2019.03.23.15.48.18.026, COMMAND, org.usfirst.frc330.commands.RollerOnSlowHatch initialized
+2019.03.23.15.48.18.026, INFO   , Turning Roller On: Slow (Hatch)
+2019.03.23.15.48.18.027, COMMAND, org.usfirst.frc330.commands.RollerOnSlowHatch ended
+2019.03.23.15.48.18.027, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.23.15.48.18.586, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.23.15.48.18.606, COMMAND, org.usfirst.frc330.commands.HandOut initialized
+2019.03.23.15.48.19.526, COMMAND, org.usfirst.frc330.commands.HandOut interrupted
+2019.03.23.15.48.19.546, COMMAND, org.usfirst.frc330.commands.RollerOnSlowHatch initialized
+2019.03.23.15.48.19.546, INFO   , Turning Roller On: Slow (Hatch)
+2019.03.23.15.48.19.547, COMMAND, org.usfirst.frc330.commands.RollerOnSlowHatch ended
+2019.03.23.15.48.19.547, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.23.15.48.22.107, COMMAND, org.usfirst.frc330.commands.TankDrive interrupted
+2019.03.23.15.48.22.126, COMMAND, org.usfirst.frc330.commands.AutoStear initialized
+2019.03.23.15.48.22.130, INFO   , Aiming started with target at: 14.612106323242188
+2019.03.23.15.48.22.131, INFO   , Robot in high gear
+2019.03.23.15.48.22.269, INFO   , Aiming ended with target at: 14.708213806152344
+2019.03.23.15.48.22.269, COMMAND, org.usfirst.frc330.commands.AutoStear interrupted
+2019.03.23.15.48.22.286, COMMAND, org.usfirst.frc330.commands.TankDrive initialized
+2019.03.23.15.48.24.518, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.23.15.48.24.537, COMMAND, org.usfirst.frc330.commands.HandOut initialized
+2019.03.23.15.48.25.247, COMMAND, org.usfirst.frc330.commands.HandOut interrupted
+2019.03.23.15.48.25.266, COMMAND, org.usfirst.frc330.commands.RollerOnSlowHatch initialized
+2019.03.23.15.48.25.267, INFO   , Turning Roller On: Slow (Hatch)
+2019.03.23.15.48.25.268, COMMAND, org.usfirst.frc330.commands.RollerOnSlowHatch ended
+2019.03.23.15.48.25.268, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.23.15.48.33.206, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.23.15.48.33.226, COMMAND, org.usfirst.frc330.commands.HandOut initialized
+2019.03.23.15.48.34.087, COMMAND, org.usfirst.frc330.commands.HandOut interrupted
+2019.03.23.15.48.34.106, COMMAND, org.usfirst.frc330.commands.RollerOnSlowHatch initialized
+2019.03.23.15.48.34.106, INFO   , Turning Roller On: Slow (Hatch)
+2019.03.23.15.48.34.106, COMMAND, org.usfirst.frc330.commands.RollerOnSlowHatch ended
+2019.03.23.15.48.34.107, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.23.15.48.42.166, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.23.15.48.42.187, COMMAND, org.usfirst.frc330.commands.HandOut initialized
+2019.03.23.15.48.42.532, INFO   , Target lost
+2019.03.23.15.48.42.570, INFO   , Target acquired
+2019.03.23.15.48.42.611, INFO   , Target lost
+2019.03.23.15.48.42.631, INFO   , Target acquired
+2019.03.23.15.48.42.988, COMMAND, org.usfirst.frc330.commands.HandOut interrupted
+2019.03.23.15.48.43.006, COMMAND, org.usfirst.frc330.commands.RollerOnSlowHatch initialized
+2019.03.23.15.48.43.007, INFO   , Turning Roller On: Slow (Hatch)
+2019.03.23.15.48.43.007, COMMAND, org.usfirst.frc330.commands.RollerOnSlowHatch ended
+2019.03.23.15.48.43.007, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.23.15.48.50.747, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.23.15.48.50.767, COMMAND, org.usfirst.frc330.commands.HandOut initialized
+2019.03.23.15.48.51.666, COMMAND, org.usfirst.frc330.commands.HandOut interrupted
+2019.03.23.15.48.51.686, COMMAND, org.usfirst.frc330.commands.RollerOnSlowHatch initialized
+2019.03.23.15.48.51.687, INFO   , Turning Roller On: Slow (Hatch)
+2019.03.23.15.48.51.688, COMMAND, org.usfirst.frc330.commands.RollerOnSlowHatch ended
+2019.03.23.15.48.51.688, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.23.15.48.53.866, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.03.23.15.48.53.867, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.03.23.15.48.53.887, COMMAND, org.usfirst.frc330.commands.LoadHatch initialized
+2019.03.23.15.48.53.889, INFO   , CLosing Claw
+2019.03.23.15.48.53.890, INFO   , Turning Roller On: Hatch
+2019.03.23.15.48.53.890, INFO   , GamePiece: Hatch
+2019.03.23.15.48.54.688, COMMAND, org.usfirst.frc330.commands.LoadHatch interrupted
+2019.03.23.15.48.54.707, COMMAND, org.usfirst.frc330.commands.commandgroups.HatchDefense initialized
+2019.03.23.15.48.54.708, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.03.23.15.48.54.713, INFO   , Setting hand angle to: 57.0
+2019.03.23.15.48.54.714, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.03.23.15.48.54.719, INFO   , Lift Setpoint: 0.0
+2019.03.23.15.48.54.721, INFO   , Lift Final Position: 0.0
+2019.03.23.15.48.54.721, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.03.23.15.48.55.150, INFO   , Final hand setpoint: 57.120703125
+2019.03.23.15.48.55.153, INFO   , Final hand angle: 56.85703125
+2019.03.23.15.48.55.153, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.03.23.15.48.55.153, COMMAND, org.usfirst.frc330.commands.CheckDone initialized
+2019.03.23.15.48.55.154, COMMAND, org.usfirst.frc330.commands.CheckDone ended
+2019.03.23.15.48.55.154, COMMAND, org.usfirst.frc330.commands.RollerOnSlowHatch initialized
+2019.03.23.15.48.55.156, INFO   , Turning Roller On: Slow (Hatch)
+2019.03.23.15.48.55.157, COMMAND, org.usfirst.frc330.commands.RollerOnSlowHatch ended
+2019.03.23.15.48.55.158, COMMAND, org.usfirst.frc330.commands.commandgroups.HatchDefense ended
+2019.03.23.15.48.55.169, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.03.23.15.48.55.169, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.03.23.15.49.17.491, INFO   , Target lost
+2019.03.23.15.49.17.512, INFO   , Target acquired
+2019.03.23.15.49.17.650, INFO   , Target lost
+2019.03.23.15.49.17.670, INFO   , Target acquired
+2019.03.23.15.49.17.870, INFO   , Target lost
+2019.03.23.15.49.17.893, INFO   , Target acquired
+2019.03.23.15.49.18.470, INFO   , Target lost
+2019.03.23.15.49.18.492, INFO   , Target acquired
+2019.03.23.15.49.19.032, INFO   , Target lost
+2019.03.23.15.49.19.050, INFO   , Target acquired
+2019.03.23.15.49.19.150, INFO   , Target lost
+2019.03.23.15.49.19.171, INFO   , Target acquired
+2019.03.23.15.49.19.225, INFO   , Target lost
+2019.03.23.15.49.19.249, INFO   , Target acquired
+2019.03.23.15.49.19.291, INFO   , Target lost
+2019.03.23.15.49.42.570, INFO   , Disabled Init
+2019.03.23.15.49.42.570, INFO   , Battery Voltage: 12.768392822265625
+2019.03.23.15.49.42.570, COMMAND, org.usfirst.frc330.commands.TankDrive ended
+2019.03.23.15.49.42.571, COMMAND, org.usfirst.frc330.commands.ManualLift ended
+2019.03.23.15.49.42.571, COMMAND, org.usfirst.frc330.commands.ManualHand ended
+2019.03.23.15.49.42.571, INFO   , Lift disabled
+2019.03.23.15.49.42.572, INFO   , Hand disabled
+2019.03.23.15.49.42.572, INFO   , Turning Roller off
+2019.03.23.15.49.42.573, INFO   , Turning Claw off
+2019.03.23.15.49.42.575, INFO   , Limelight lights disabled
+2019.03.23.15.49.42.575, INFO   , New pipeline: 0.0
+RoboRIO File Renamed: true BB2019_LogCALA_Elimination19__2019.03.23.15.47.39.472.txt
+USB File Renamed: true BB2019_Log_CALA_Elimination19_2019.03.23.15.47.39.472.txt
