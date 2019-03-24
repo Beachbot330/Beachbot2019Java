@@ -20,7 +20,7 @@ public class CargoHatch extends BBCommandGroup {
     //PIDGains RampDrive = new PIDGains(0.10, 0, 0.00, 0, 0.3, ChassisConst.defaultMaxOutputStep, ChassisConst.defaultMinStartOutput, "DriveLow");    //AP 3/12/19
 
     Waypoint wp0 = new Waypoint(0, 120, 0);
-    Waypoint wp1 = new Waypoint(10, 200+22-3, 0); // Near cargo ship
+    Waypoint wp1 = new Waypoint(10, 200+22-3-4, 0); // Near cargo ship
     Waypoint wp2 = new Waypoint(62, 96+30, 0); //Near rocket
     Waypoint wp3 = new Waypoint(78, 00+10, 0); //Near human player
     Waypoint wp4 = new Waypoint(78, 105+25, 0);
@@ -31,8 +31,8 @@ public class CargoHatch extends BBCommandGroup {
 
     public CargoHatch(boolean leftSide, boolean redTeam) {
 
-        if(!redTeam){
-            this.wp1 = wp1; //Off Platform
+        if(!redTeam){ // THis is probably backwards!
+            this.wp1 = new Waypoint(wp1.getX(), wp1.getY() - 3, 0); // Near cargo ship
             this.wp2 = new Waypoint(wp2.getX(), wp2.getY() - 12, 0); //Near Rocket
             this.wp3 = wp3;
             this.wp4 = wp4;
@@ -59,7 +59,8 @@ public class CargoHatch extends BBCommandGroup {
         // Place first hatch
         addSequential(new SetHandAngle(HandConst.hatchPlacementLow));
         addParallel(new SetLiftPosition(LiftConst.DeployHatchLow));
-        addSequential(new DriveLimelight(0.2, 0.7));
+        addSequential(new DriveLimelight(0.4, 0.4));
+        addSequential(new DriveLimelight(0.25, 0.7));
         addSequential(new WaitCommand(0.3));
         addParallel(new EjectHatch());
         addSequential(new WaitCommand(0.1));
