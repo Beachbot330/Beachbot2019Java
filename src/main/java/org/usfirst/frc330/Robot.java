@@ -84,6 +84,9 @@ public class Robot extends TimedRobot {
         autoProgram.addOption("LeftBlue_CargoHatch", new CargoHatch(true, false));
         autoProgram.addOption("LeftRed_CargoHatch", new CargoHatch(true, true));
 
+        autoProgram.addOption("PoorChoice", new AllenTest());
+        autoProgram.addOption("ReallyPoorChoice", new CargoHatchHighGear(true, false));
+
         SmartDashboard.putData("Auto mode", autoProgram);
 
         // Setup Cameras --------------------------------------------------------

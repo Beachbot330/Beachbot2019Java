@@ -31,7 +31,7 @@ public class CargoHatch extends BBCommandGroup {
 
     public CargoHatch(boolean leftSide, boolean redTeam) {
 
-        if(!redTeam){ // THis is probably backwards!
+        if(!redTeam){ // This is probably backwards!
             this.wp1 = new Waypoint(wp1.getX(), wp1.getY() - 3, 0); // Near cargo ship
             this.wp2 = new Waypoint(wp2.getX(), wp2.getY() - 12, 0); //Near Rocket
             this.wp3 = wp3;
