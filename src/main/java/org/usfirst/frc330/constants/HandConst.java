@@ -18,6 +18,7 @@ public final class HandConst {
 	public static final double ballPlacementLow 	= 32.74; 		//AP 2/24/19
 	public static final double ballPlacementMid 	= 32.74; 		//AP 2/24/19
 	public static final double ballPlacementHigh 	= 32.74; 	//AP 2/24/19
+	public static final double ballPlacementCargo   = 41.0;		//JR 4/6/19
 	public static final double hatchPickup	 			= -2.0; 		//AP 2/9/19
 	public static final double postHatchPickup			= 0.0; 		//AP 2/9/19
 	public static final double ballPickupGround 		= -38.0;	//JR 3/17/19

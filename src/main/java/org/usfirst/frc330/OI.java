@@ -154,8 +154,8 @@ public class OI {
         
         liftUp.whenPressed(new RaiseLift());
         lowerLift.whenPressed(new LowerLift());
-        cargoBallDeployHeight_right.whenPressed(new SetLiftPosition(LiftConst.DeployHatchMid));
-        cargoBallDeployHeight_left.whenPressed(new SetLiftPosition(LiftConst.DeployHatchMid));
+        cargoBallDeployHeight_right.whenPressed(new SetLiftPosition(LiftConst.DeployBallCargo));
+        cargoBallDeployHeight_left.whenPressed(new SetLiftPosition(LiftConst.DeployBallCargo));
         
 
         //Add items to shuffleboard
