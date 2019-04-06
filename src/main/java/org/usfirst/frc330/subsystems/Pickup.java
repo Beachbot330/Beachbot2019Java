@@ -218,6 +218,10 @@ public class Pickup extends Subsystem {
         return lastPickup;
     }
 
+    public double getPickupCurrent(){
+        return intake.getOutputCurrent();
+    }
+
     /////////////////////////////////////////////////////////////
 	// Set Methods
 	/////////////////////////////////////////////////////////////
