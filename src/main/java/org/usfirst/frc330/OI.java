@@ -100,7 +100,7 @@ public class OI {
         climbDeploy_7WH = new JoystickButton(gamePad, 7);
         climbDeploy_7WH.whileHeld(new ClimbDeployVerify());
         raiseLiftSensor_6 = new JoystickButton(gamePad, 6);
-        raiseLiftSensor_6.whileHeld(new RaiseLiftSensor());
+        raiseLiftSensor_6.whenPressed(new RaiseLiftSensor());
         lowerLiftSensor_5 = new JoystickButton(gamePad, 5);
         lowerLiftSensor_5.whenPressed(new LowerLiftSensor());
         handOut_4WH = new JoystickButton(gamePad, 4);
