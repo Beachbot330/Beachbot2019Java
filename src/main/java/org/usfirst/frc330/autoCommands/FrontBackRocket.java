@@ -111,5 +111,19 @@ public class FrontBackRocket extends BBCommandGroup {
         addSequential(new WaitCommand(6.0));
         addSequential(new DriveWaypoint(wp5, invert, 4.0, 4.0, true, ChassisConst.DriveLowSlow, ChassisConst.GyroDriveLow));
 
+        /*
+        // Deploy Second Hatch
+        addSequential(new TurnLimelight(3.0, 2.0));
+        addSequential(new DriveLimelight(0.40, 0.55));
+        addSequential(new DriveLimelight(0.2, 0.4));
+        addParallel(new EjectHatch());
+        addSequential(new WaitCommand(2.0));
+
+        //Pull back from second hatch
+        addSequential(new DriveWaypointBackward(wp4, invert, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
+        //addSequential(new DriveDistance(-4, ChassisConst.DriveLowSlow));
+        addSequential(new WaitCommand(0.1));
+        addSequential(new RollerOff());
+        */
     }
 }
