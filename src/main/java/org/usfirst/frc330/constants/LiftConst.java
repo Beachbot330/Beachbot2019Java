@@ -80,9 +80,10 @@ public final class LiftConst {
 
 	// PID Constants
 	public static final double proportional      	= 0.6; //0.9;   	// JR 2/26/19
-	public static final double integral         	= 0.000; 	// AP 2018 value
-	public static final double derivative        	= 0.0; //15.0;   	// AP 2018 value
-	public static final double feedforward          = 0.5;   	// AP 2018 value
+	public static final double integral         	= 0.0; 	// AP 2018 value
+	public static final double derivative        	= 0.0;   	// Motion Magic 
+	public static final double feedforward          = 0.5;   	// JR 4/7/19 new lift gear ratio
+	public static final double downFFPercent		= 0.15;		//JR 4/7/19 new lift gear ratio. How much to substract from speed when going down
 
 	public static final double climpP				= 0.9;		//JR 3/19/29
 
@@ -93,8 +94,8 @@ public final class LiftConst {
 	public static final double PogoF        = 0.5;   	// AP 2018 value
 
 	// Motion Magic Constants
-	public static final int velocityLimit              = 1500;   // AP 2/26/19 --- Raise
-	public static final int accelLimit                 = 2500;   // AP 2018 value  --- smaller? was 6000
+	public static final int velocityLimit              = 1600;   // JR 4/7/19 new lift gear ratio
+	public static final int accelLimit                 = 5000;   // JR 4/7/19 speed up lift
 
 	// Other
 	public static final double calibrationSpeed			= -0.15; // AP 2018 value

@@ -102,7 +102,7 @@ public class Lift extends Subsystem {
         lift1.configOpenloopRamp(LiftConst.VoltageRampRate, LiftConst.CAN_Timeout);
         lift1.configPeakOutputForward(LiftConst.MaxOutputPercent, LiftConst.CAN_Timeout);
         lift1.configPeakOutputReverse(-LiftConst.MaxOutputPercent, LiftConst.CAN_Timeout);
-        lift1.configNominalOutputForward(0, LiftConst.CAN_Timeout);	
+        lift1.configNominalOutputForward(0.1, LiftConst.CAN_Timeout);	
         lift1.configNominalOutputReverse(0, LiftConst.CAN_Timeout);
         lift1.configForwardLimitSwitchSource(RemoteLimitSwitchSource.Deactivated, LimitSwitchNormal.Disabled, 0, 0);
         lift1.configReverseLimitSwitchSource(RemoteLimitSwitchSource.Deactivated, LimitSwitchNormal.Disabled, 0, 0);
@@ -161,6 +161,11 @@ public class Lift extends Subsystem {
 		};
 		CSVLogger.getInstance().add("LiftVelocity", temp);
 		
+		temp = new CSVLoggable(this.shuffleboardTab) {
+			public double get() { return lift1.getActiveTrajectoryVelocity();}
+		};
+		CSVLogger.getInstance().add("LiftVelocityCmd", temp);
+
 		temp = new CSVLoggable(this.shuffleboardTab) {
 			public double get() { return getOutput(); }
 		};
@@ -234,7 +239,7 @@ public class Lift extends Subsystem {
 				lift1.configReverseSoftLimitEnable(true, LiftConst.CAN_Timeout_No_Wait);
 				prevLiftPosition = 0;
     		}
-    	}
+		}
     }
 
 
@@ -437,15 +442,19 @@ public class Lift extends Subsystem {
 		if(!lockout || override){
 			if(calibrated) {
 				if(setpoint > LiftConst.upperLimit) {
-					lift1.set(ControlMode.MotionMagic, inchesToTicks(LiftConst.upperLimit));
+					lift1.set(ControlMode.MotionMagic, inchesToTicks(LiftConst.upperLimit), DemandType.ArbitraryFeedForward, 0);
 					Logger.getInstance().println("Lift setpoint request above upper limit: " + setpoint, Logger.Severity.WARNING);
 				}
 				else if(setpoint < LiftConst.lowerLimit) {
-					lift1.set(ControlMode.MotionMagic, inchesToTicks(LiftConst.lowerLimit));
+					lift1.set(ControlMode.MotionMagic, inchesToTicks(LiftConst.lowerLimit), DemandType.ArbitraryFeedForward, -LiftConst.downFFPercent);
 					Logger.getInstance().println("Lift setpoint request below lower limit: " + setpoint, Logger.Severity.WARNING);
 				}
 				else {
-					lift1.set(ControlMode.MotionMagic, inchesToTicks(setpoint));
+					//only use arbitrary feed forward when going down.
+					if (getPosition() > setpoint)
+						lift1.set(ControlMode.MotionMagic, inchesToTicks(setpoint), DemandType.ArbitraryFeedForward, 0);
+					else
+						lift1.set(ControlMode.MotionMagic, inchesToTicks(setpoint), DemandType.ArbitraryFeedForward, -LiftConst.downFFPercent);
 				}
 			}
 			else {
