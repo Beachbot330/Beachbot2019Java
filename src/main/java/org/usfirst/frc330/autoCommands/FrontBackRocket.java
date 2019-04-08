@@ -22,7 +22,7 @@ public class FrontBackRocket extends BBCommandGroup {
 
     Waypoint wp1 = new Waypoint(0, 21, 0);      //Hab 1
     Waypoint wp2 = new Waypoint(82, 136, 0);  //Near rocket
-    Waypoint wp3 = new Waypoint(78, 00+5, 0);  //Near human player
+    Waypoint wp3 = new Waypoint(81, 00+5, 0);  //Near human player
     Waypoint wp4 = new Waypoint(50, 255, 0);    //Far side of rocket
     Waypoint wp5 = new Waypoint(75, 216, 0);  //Far rocket
 
@@ -54,7 +54,7 @@ public class FrontBackRocket extends BBCommandGroup {
         addParallel(new SetHandAngle(HandConst.hatchPlacementLow));
         addSequential(new SetLiftPosition(LiftConst.DeployHatchLow));
         addSequential(new CheckDone(parallelCommand));
-        addSequential(new WaitCommand(3.0));
+        addSequential(new WaitCommand(1.0));
 
         // Deploy First Hatch
         addSequential(new ShiftLow());
@@ -69,7 +69,7 @@ public class FrontBackRocket extends BBCommandGroup {
         //addSequential(new DriveDistance(-4, ChassisConst.DriveLowSlow));
         addSequential(new WaitCommand(0.1));
         addSequential(new RollerOff());
-        addSequential(new WaitCommand(3.0));
+        addSequential(new WaitCommand(1.0));
 
         // Drive towards human station
         addSequential(new TurnGyroWaypoint(wp3, invert, 3.0, 3.0, ChassisConst.GyroTurnLow));
@@ -80,7 +80,7 @@ public class FrontBackRocket extends BBCommandGroup {
         addParallel(new SetHandAngle(HandConst.hatchPlacementLow));
         addSequential(new SetLiftPosition(LiftConst.DeployHatchLow));
         addSequential(new CheckDone(parallelCommand));
-        addSequential(new WaitCommand(3.0));
+        addSequential(new WaitCommand(1.0));
 
         //Pickup second hatch
         addSequential(new ShiftLow());
@@ -108,10 +108,10 @@ public class FrontBackRocket extends BBCommandGroup {
         //Turn towards rocket
         addSequential(new ShiftLow());
         addSequential(new TurnGyroWaypoint(wp5, invert, 3.0, 3.0, ChassisConst.GyroTurnLow));
-        addSequential(new WaitCommand(6.0));
+        addSequential(new WaitCommand(3.0));
         addSequential(new DriveWaypoint(wp5, invert, 4.0, 4.0, true, ChassisConst.DriveLowSlow, ChassisConst.GyroDriveLow));
 
-        /*
+        
         // Deploy Second Hatch
         addSequential(new TurnLimelight(3.0, 2.0));
         addSequential(new DriveLimelight(0.40, 0.55));
@@ -124,6 +124,6 @@ public class FrontBackRocket extends BBCommandGroup {
         //addSequential(new DriveDistance(-4, ChassisConst.DriveLowSlow));
         addSequential(new WaitCommand(0.1));
         addSequential(new RollerOff());
-        */
+        
     }
 }
