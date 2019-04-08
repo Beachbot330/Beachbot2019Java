@@ -22,8 +22,8 @@ public class FrontBackRocket extends BBCommandGroup {
 
     Waypoint wp1 = new Waypoint(0, 21, 0);      //Hab 1
     Waypoint wp2 = new Waypoint(82, 136, 0);  //Near rocket
-    Waypoint wp3 = new Waypoint(81, 00+5, 0);  //Near human player
-    Waypoint wp4 = new Waypoint(50, 255, 0);    //Far side of rocket
+    Waypoint wp3 = new Waypoint(88, 00+5, 0);  //Near human player
+    Waypoint wp4 = new Waypoint(60, 255, 0);    //Far side of rocket
     Waypoint wp5 = new Waypoint(75, 216, 0);  //Far rocket
 
     boolean invert = false;
@@ -94,7 +94,7 @@ public class FrontBackRocket extends BBCommandGroup {
 
         //Drive to far side of rocket
         addSequential(new TurnGyroWaypointBackward(wp4, invert, 3.0, 3.0, ChassisConst.GyroTurnLow));
-        addSequential(new WaitCommand(2.0));
+        addSequential(new WaitCommand(1.0));
         parallelCommand = new DriveWaypointBackward(wp4, invert, 3.0, 3.0, true, ChassisConst.DriveHigh, ChassisConst.GyroDriveHigh);
         addParallel(parallelCommand);
         addSequential(new WaitCommand(0.2));
@@ -103,7 +103,7 @@ public class FrontBackRocket extends BBCommandGroup {
         addParallel(new SetHandAngle(HandConst.hatchPlacementLow));
         addSequential(new SetLiftPosition(LiftConst.DeployHatchLow));
         addSequential(new CheckDone(parallelCommand));
-        addSequential(new WaitCommand(2.0));
+        addSequential(new WaitCommand(1.0));
 
         //Turn towards rocket
         addSequential(new ShiftLow());
