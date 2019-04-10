@@ -20,11 +20,12 @@ public class FrontBackRocket extends BBCommandGroup {
     //PID Gains
     //PIDGains RampDrive = new PIDGains(0.10, 0, 0.00, 0, 0.3, ChassisConst.defaultMaxOutputStep, ChassisConst.defaultMinStartOutput, "DriveLow");    //AP 3/12/19
 
-    Waypoint wp1 = new Waypoint(0, 21, 0);      //Hab 1
+    Waypoint wp1 = new Waypoint(0, 19, 0);      //Hab 1
     Waypoint wp2 = new Waypoint(82, 136, 0);  //Near rocket
     Waypoint wp3 = new Waypoint(88, 00+5, 0);  //Near human player
-    Waypoint wp4 = new Waypoint(60, 255, 0);    //Far side of rocket
-    Waypoint wp5 = new Waypoint(75, 216, 0);  //Far rocket
+    Waypoint wp4 = new Waypoint(60, 250, 0);    //Far side of rocket
+    Waypoint wp5 = new Waypoint(83, 216, 0);  //Far rocket
+    Waypoint wp6 = new Waypoint(75, 235, 0);    //Line up with middle cargo ship
 
     boolean invert = false;
 
@@ -43,18 +44,18 @@ public class FrontBackRocket extends BBCommandGroup {
         addParallel(new HatchDefense());
 
         // Drive off of Hab2 to Hab1
-        addSequential(new DriveDistanceAtCurAngle(wp1.getY(), 3.0, 3.0, true, ChassisConst.DriveLowSlow, ChassisConst.GyroDriveLow));
+        addSequential(new DriveDistanceAtCurAngle(wp1.getY(), 2.0, 3.0, true, ChassisConst.DriveLowSlow, ChassisConst.GyroDriveLow));
         addSequential(new WaitCommand(0.5));
 
         // Drive to rocket
         addSequential(new TurnGyroWaypoint(wp2, invert, 3.0, 3.0, ChassisConst.GyroTurnLow));
         BBCommand parallelCommand = new DriveWaypoint(wp2, invert, 3.0, 3.0, true, ChassisConst.DriveHigh, ChassisConst.GyroDriveHigh);
         addParallel(parallelCommand);
-        addSequential(new WaitCommand(0.2));
+        addSequential(new WaitCommand(0.3));
         addParallel(new SetHandAngle(HandConst.hatchPlacementLow));
         addSequential(new SetLiftPosition(LiftConst.DeployHatchLow));
         addSequential(new CheckDone(parallelCommand));
-        addSequential(new WaitCommand(1.0));
+        addSequential(new WaitCommand(0.5));
 
         // Deploy First Hatch
         addSequential(new ShiftLow());
@@ -69,7 +70,7 @@ public class FrontBackRocket extends BBCommandGroup {
         //addSequential(new DriveDistance(-4, ChassisConst.DriveLowSlow));
         addSequential(new WaitCommand(0.1));
         addSequential(new RollerOff());
-        addSequential(new WaitCommand(1.0));
+        addSequential(new WaitCommand(0.5));
 
         // Drive towards human station
         addSequential(new TurnGyroWaypoint(wp3, invert, 3.0, 3.0, ChassisConst.GyroTurnLow));
@@ -80,7 +81,7 @@ public class FrontBackRocket extends BBCommandGroup {
         addParallel(new SetHandAngle(HandConst.hatchPlacementLow));
         addSequential(new SetLiftPosition(LiftConst.DeployHatchLow));
         addSequential(new CheckDone(parallelCommand));
-        addSequential(new WaitCommand(1.0));
+        addSequential(new WaitCommand(0.5));
 
         //Pickup second hatch
         addSequential(new ShiftLow());
@@ -90,7 +91,7 @@ public class FrontBackRocket extends BBCommandGroup {
         addSequential(new WaitCommand(0.3));
         addSequential(new DriveWaypointBackward(wp3, invert, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
         addParallel(new HatchDefense());
-        addSequential(new WaitCommand(2.0));
+        addSequential(new WaitCommand(1.0));
 
         //Drive to far side of rocket
         addSequential(new TurnGyroWaypointBackward(wp4, invert, 3.0, 3.0, ChassisConst.GyroTurnLow));
@@ -120,7 +121,7 @@ public class FrontBackRocket extends BBCommandGroup {
         addSequential(new WaitCommand(2.0));
 
         //Pull back from second hatch
-        addSequential(new DriveWaypointBackward(wp4, invert, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
+        addSequential(new DriveWaypointBackward(wp6, invert, 3.0, 3.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
         //addSequential(new DriveDistance(-4, ChassisConst.DriveLowSlow));
         addSequential(new WaitCommand(0.1));
         addSequential(new RollerOff());

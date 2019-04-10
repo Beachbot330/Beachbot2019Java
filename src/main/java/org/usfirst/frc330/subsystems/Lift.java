@@ -162,7 +162,14 @@ public class Lift extends Subsystem {
 		CSVLogger.getInstance().add("LiftVelocity", temp);
 		
 		temp = new CSVLoggable(this.shuffleboardTab) {
-			public double get() { return lift1.getActiveTrajectoryVelocity();}
+			public double get() { 
+				if (lift1.getControlMode() == ControlMode.MotionMagic){
+					return lift1.getActiveTrajectoryVelocity();
+				}
+				else{
+					return 999;
+				}
+			}
 		};
 		CSVLogger.getInstance().add("LiftVelocityCmd", temp);
 
