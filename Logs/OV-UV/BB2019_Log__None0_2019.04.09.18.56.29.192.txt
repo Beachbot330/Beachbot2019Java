@@ -1,0 +1,399 @@
+2019.04.09.18.56.29.668, INFO   , Logger filename: BB2019_Log__None0_2019.04.09.18.56.29.192.txt
+2019.04.09.18.56.29.690, INFO   , Program date: 1969.12.31.16.00.00.000
+2019.04.09.18.56.31.042, INFO   , Lift PIDF set to: 0.6, 0.0, 0.0, 0.5, Idx: 0
+2019.04.09.18.56.31.052, INFO   , Lift PIDF set to: 0.9, 0.0, 0.0, 0.5, Idx: 1
+2019.04.09.18.56.32.303, INFO   , Hand PIDF set to: 10.0, 0.0, 0.0, 5.0
+2019.04.09.18.56.33.526, DEBUG  , DriverCam Get Video Mode: 160, 120, 30
+2019.04.09.18.56.33.551, INFO   , BeachbotLib Version:                2019.2.0
+2019.04.09.18.56.33.553, INFO   , WPILib Version:                     2019.4.1
+2019.04.09.18.56.33.660, INFO   , NavX Firmware Version:              3.1
+2019.04.09.18.56.33.670, INFO   , Talon Intake Firmware Version:      4.22
+2019.04.09.18.56.33.674, INFO   , Talon Hand Firmware Version:        4.22
+2019.04.09.18.56.33.679, INFO   , Talon Lift1 Firmware Version:       4.22
+2019.04.09.18.56.33.684, INFO   , Talon Lift2 Firmware Version:       4.22
+2019.04.09.18.56.33.687, INFO   , Talon Lift3 Firmware Version:       4.22
+2019.04.09.18.56.33.688, DEBUG  , Practice Robot Detected
+2019.04.09.18.56.33.788, INFO   , Disabled Init
+2019.04.09.18.56.33.794, INFO   , Battery Voltage: 12.787240234375
+2019.04.09.18.56.33.797, INFO   , Lift disabled
+2019.04.09.18.56.33.799, INFO   , Hand disabled
+2019.04.09.18.56.33.805, INFO   , Turning Roller off
+2019.04.09.18.56.33.825, INFO   , Turning Claw off
+2019.04.09.18.56.33.834, INFO   , Limelight lights disabled
+2019.04.09.18.56.33.845, INFO   , New pipeline: 1.0
+2019.04.09.18.56.44.909, COMMAND, org.usfirst.frc330.commands.TankDrive initialized
+2019.04.09.18.56.44.913, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.04.09.18.56.44.914, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.04.09.18.56.44.932, INFO   , LEDs: Hatch attained
+2019.04.09.18.56.44.941, INFO   , Autonomous Init
+2019.04.09.18.56.44.943, INFO   , Limelight lights enabled
+2019.04.09.18.56.44.948, INFO   , New pipeline: 1.0
+2019.04.09.18.56.44.954, INFO   , Running Auto: FrontBackRocket
+2019.04.09.18.56.45.164, INFO   , Event:  Match Type: None Match Number: 0
+2019.04.09.18.56.45.175, COMMAND, org.usfirst.frc330.commands.TankDrive interrupted
+2019.04.09.18.56.45.185, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.04.09.18.56.45.186, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.04.09.18.56.45.258, COMMAND, org.usfirst.frc330.autoCommands.FrontBackRocket initialized
+2019.04.09.18.56.45.264, COMMAND, org.usfirst.frc330.commands.ShiftLow initialized
+2019.04.09.18.56.45.266, COMMAND, org.usfirst.frc330.commands.ShiftLow ended
+2019.04.09.18.56.45.268, COMMAND, org.usfirst.frc330.commands.drivecommands.DriveDistanceAtCurAngle initialized
+2019.04.09.18.56.45.272, INFO   , Changing LeftDrive Gains to DriveLow. P=0.1 MaxOutput=0.5 MaxOutputStep=0.04
+2019.04.09.18.56.45.273, INFO   , Changing RightDrive Gains to DriveLow. P=0.1 MaxOutput=0.5 MaxOutputStep=0.04
+2019.04.09.18.56.45.281, INFO   , Changing Gyro Gains to GyroDriveLow. P=0.01 MaxOutput=1.0 MaxOutputStep=1.0
+2019.04.09.18.56.45.282, COMMAND, org.usfirst.frc330.commands.commandgroups.HatchDefense initialized
+2019.04.09.18.56.45.283, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.04.09.18.56.45.304, INFO   , Setting hand angle to: 57.0
+2019.04.09.18.56.45.306, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.04.09.18.56.45.319, INFO   , Lift Setpoint: 0.0
+2019.04.09.18.56.45.326, INFO   , Lift Final Position: 0.0
+2019.04.09.18.56.45.327, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.04.09.18.56.45.360, INFO   , Target acquired
+2019.04.09.18.56.45.408, INFO   , Final hand setpoint: 57.120703125
+2019.04.09.18.56.45.412, INFO   , Final hand angle: 58.790625
+2019.04.09.18.56.45.413, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.04.09.18.56.45.414, COMMAND, org.usfirst.frc330.commands.CheckDone initialized
+2019.04.09.18.56.45.415, COMMAND, org.usfirst.frc330.commands.CheckDone ended
+2019.04.09.18.56.45.416, COMMAND, org.usfirst.frc330.commands.RollerOnSlowHatch initialized
+2019.04.09.18.56.45.418, INFO   , Turning Roller On: Slow (Hatch)
+2019.04.09.18.56.45.418, COMMAND, org.usfirst.frc330.commands.RollerOnSlowHatch ended
+2019.04.09.18.56.45.419, COMMAND, org.usfirst.frc330.commands.commandgroups.HatchDefense ended
+2019.04.09.18.56.45.436, INFO   , Target lost
+2019.04.09.18.56.45.455, INFO   , Target acquired
+2019.04.09.18.56.45.698, INFO   , Target lost
+2019.04.09.18.56.45.730, INFO   , Target acquired
+2019.04.09.18.56.45.819, INFO   , Target lost
+2019.04.09.18.56.45.881, INFO   , Target acquired
+2019.04.09.18.56.45.915, INFO   , Target lost
+2019.04.09.18.56.45.935, INFO   , DriveDistance Left Setpoint: 21.0 Left: 17.967516968504516 Right Setpoint: 21.0 Right: 18.297322837899927
+2019.04.09.18.56.45.935, COMMAND, org.usfirst.frc330.commands.drivecommands.DriveDistanceAtCurAngle ended
+2019.04.09.18.56.45.947, INFO   , Target acquired
+2019.04.09.18.56.45.970, INFO   , Target lost
+2019.04.09.18.56.46.018, INFO   , Target acquired
+2019.04.09.18.56.46.036, INFO   , Target lost
+2019.04.09.18.56.46.054, INFO   , Target acquired
+2019.04.09.18.56.46.089, INFO   , Target lost
+2019.04.09.18.56.46.125, INFO   , Target acquired
+2019.04.09.18.56.46.144, INFO   , Target lost
+2019.04.09.18.56.46.164, INFO   , Target acquired
+2019.04.09.18.56.46.185, INFO   , Target lost
+2019.04.09.18.56.46.258, INFO   , Target acquired
+2019.04.09.18.56.46.366, INFO   , Target lost
+2019.04.09.18.56.46.392, INFO   , Target acquired
+2019.04.09.18.56.46.431, INFO   , Target lost
+2019.04.09.18.56.46.447, COMMAND, org.usfirst.frc330.commands.drivecommands.TurnGyroWaypoint initialized
+2019.04.09.18.56.46.457, INFO   , Robot angle: 0.13399986922740936
+2019.04.09.18.56.46.460, INFO   , Calc angle: 35.55668704066884
+2019.04.09.18.56.46.464, INFO   , angle: 35.55668704066884
+2019.04.09.18.56.46.465, INFO   , Changing Gyro Gains to GyroTurnLow. P=0.02 MaxOutput=0.5 MaxOutputStep=1.0
+2019.04.09.18.56.46.469, INFO   , TurnGyroAbs Setpoint: 35.55668704066884
+2019.04.09.18.56.46.472, INFO   , Max output: 0.5
+2019.04.09.18.56.46.487, INFO   , Target acquired
+2019.04.09.18.56.46.644, INFO   , Target lost
+2019.04.09.18.56.46.663, INFO   , Target acquired
+2019.04.09.18.56.46.778, INFO   , Target lost
+2019.04.09.18.56.46.950, INFO   , TurnGyroAbs Final Angle: 34.27399826049805  Setpoint: 35.55668704066884
+2019.04.09.18.56.46.951, COMMAND, org.usfirst.frc330.commands.drivecommands.TurnGyroWaypoint ended
+2019.04.09.18.56.46.953, COMMAND, org.usfirst.frc330.commands.drivecommands.DriveWaypoint initialized
+2019.04.09.18.56.47.168, INFO   , DriveWaypoint x: 82.0 y: 136.0 curX: 0.015750719545861883 curY: 21.713504507544048 curAngle: 37.86399841308594
+2019.04.09.18.56.47.181, INFO   , DriveWaypoint distance: 140.6514137221052 angle: 35.654040925077915
+2019.04.09.18.56.47.182, INFO   , Changing LeftDrive Gains to DriveHigh. P=0.04 MaxOutput=0.9 MaxOutputStep=0.04
+2019.04.09.18.56.47.185, INFO   , Changing RightDrive Gains to DriveHigh. P=0.04 MaxOutput=0.9 MaxOutputStep=0.04
+2019.04.09.18.56.47.186, INFO   , Changing Gyro Gains to GyroDriveHigh. P=0.004 MaxOutput=1.0 MaxOutputStep=1.0
+2019.04.09.18.56.47.209, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.04.09.18.56.47.210, INFO   , Lift Setpoint: 0.0
+2019.04.09.18.56.47.211, INFO   , Lift Final Position: -0.0026860009765625
+2019.04.09.18.56.47.211, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.04.09.18.56.47.212, COMMAND, org.usfirst.frc330.commands.CheckDone initialized
+2019.04.09.18.56.47.212, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.04.09.18.56.47.214, INFO   , Setting hand angle to: 0.0
+2019.04.09.18.56.47.223, INFO   , Target acquired
+2019.04.09.18.56.47.760, INFO   , Final hand setpoint: 0.07968749999999858
+2019.04.09.18.56.47.762, INFO   , Final hand angle: 0.8707031249999986
+2019.04.09.18.56.47.763, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.04.09.18.56.49.371, INFO   , Target lost
+2019.04.09.18.56.49.542, INFO   , DriveWaypoint Final Location   X: 65.61156769437832  Y: 141.48155084701605
+2019.04.09.18.56.49.547, INFO   , DriveWaypoint Final DriveTrain Distances   Left: 167.57052728783955  Right: 149.2317869686667
+2019.04.09.18.56.49.548, INFO   , DriveDistance Left Setpoint: 170.35848566029853 Left: 167.6073428267488 Right Setpoint: 154.24861942592352 Right: 149.26860250757596
+2019.04.09.18.56.49.548, COMMAND, org.usfirst.frc330.commands.drivecommands.DriveWaypoint ended
+2019.04.09.18.56.49.570, COMMAND, org.usfirst.frc330.commands.CheckDone ended
+2019.04.09.18.56.50.073, COMMAND, org.usfirst.frc330.commands.ShiftLow initialized
+2019.04.09.18.56.50.074, COMMAND, org.usfirst.frc330.commands.ShiftLow ended
+2019.04.09.18.56.50.075, COMMAND, org.usfirst.frc330.commands.TurnLimelight initialized
+2019.04.09.18.56.50.076, WARNING, Aiming started with no target!
+2019.04.09.18.56.50.079, INFO   , Robot in low gear
+2019.04.09.18.56.51.979, INFO   , Target acquired
+2019.04.09.18.56.52.011, INFO   , Target lost
+2019.04.09.18.56.52.053, INFO   , Target acquired
+2019.04.09.18.56.52.083, WARNING, Aiming ended with no target!
+2019.04.09.18.56.52.092, WARNING, org.usfirst.frc330.commands.TurnLimelight timed out
+2019.04.09.18.56.52.099, COMMAND, org.usfirst.frc330.commands.DriveLimelight initialized
+2019.04.09.18.56.52.109, WARNING, Aiming started with no target!
+2019.04.09.18.56.52.115, INFO   , Robot in low gear
+2019.04.09.18.56.52.623, INFO   , Target lost
+2019.04.09.18.56.52.648, INFO   , Target acquired
+2019.04.09.18.56.52.659, INFO   , Aiming ended with target at: 7.434989929199219
+2019.04.09.18.56.52.660, WARNING, org.usfirst.frc330.commands.DriveLimelight timed out
+2019.04.09.18.56.52.665, COMMAND, org.usfirst.frc330.commands.DriveLimelight initialized
+2019.04.09.18.56.52.666, WARNING, Aiming started with no target!
+2019.04.09.18.56.52.678, INFO   , Robot in low gear
+2019.04.09.18.56.52.699, INFO   , Target lost
+2019.04.09.18.56.52.734, INFO   , Target acquired
+2019.04.09.18.56.52.754, INFO   , Target lost
+2019.04.09.18.56.52.924, INFO   , Target acquired
+2019.04.09.18.56.52.975, INFO   , Target lost
+2019.04.09.18.56.53.080, WARNING, Aiming ended with no target!
+2019.04.09.18.56.53.087, WARNING, org.usfirst.frc330.commands.DriveLimelight timed out
+2019.04.09.18.56.53.107, COMMAND, org.usfirst.frc330.commands.EjectHatch initialized
+2019.04.09.18.56.53.109, INFO   , Reversing Roller: Hatch
+2019.04.09.18.56.53.111, COMMAND, org.usfirst.frc330.commands.EjectHatch ended
+2019.04.09.18.56.53.314, COMMAND, org.usfirst.frc330.commands.drivecommands.DriveWaypointBackward initialized
+2019.04.09.18.56.53.315, INFO   , DriveWaypoint x: 82.0 y: 136.0 curX: 82.3350786936113 curY: 158.4856044834635 curAngle: 57.4640007019043
+2019.04.09.18.56.53.316, INFO   , DriveWaypoint distance: 22.488101002922996 angle: 180.85375396626762
+2019.04.09.18.56.53.320, INFO   , Backward Angle: 0.8537539662676181
+2019.04.09.18.56.53.320, INFO   , Changing LeftDrive Gains to DriveLow. P=0.1 MaxOutput=0.9 MaxOutputStep=0.04
+2019.04.09.18.56.53.321, INFO   , Changing RightDrive Gains to DriveLow. P=0.1 MaxOutput=0.9 MaxOutputStep=0.04
+2019.04.09.18.56.53.322, INFO   , Changing Gyro Gains to GyroDriveLow. P=0.01 MaxOutput=1.0 MaxOutputStep=1.0
+2019.04.09.18.56.53.433, INFO   , Target acquired
+2019.04.09.18.56.53.450, INFO   , Target lost
+2019.04.09.18.56.53.473, INFO   , Target acquired
+2019.04.09.18.56.53.488, INFO   , Target lost
+2019.04.09.18.56.53.507, INFO   , Target acquired
+2019.04.09.18.56.53.530, INFO   , Target lost
+2019.04.09.18.56.53.650, INFO   , Target acquired
+2019.04.09.18.56.53.718, INFO   , DriveWaypoint Final Location   X: 74.39812522786774  Y: 152.2349223352687
+2019.04.09.18.56.53.719, INFO   , DriveWaypoint Final DriveTrain Distances   Left: 181.52208255365946  Right: 163.26310923545668
+2019.04.09.18.56.53.720, INFO   , DriveDistance Left Setpoint: 179.46353768379743 Left: 181.4438495334773 Right Setpoint: 140.716716962594 Right: 163.24776942757782
+2019.04.09.18.56.53.721, COMMAND, org.usfirst.frc330.commands.drivecommands.DriveWaypointBackward ended
+2019.04.09.18.56.53.839, COMMAND, org.usfirst.frc330.commands.RollerOff initialized
+2019.04.09.18.56.53.841, INFO   , Turning Roller off
+2019.04.09.18.56.53.842, COMMAND, org.usfirst.frc330.commands.RollerOff ended
+2019.04.09.18.56.54.362, COMMAND, org.usfirst.frc330.commands.drivecommands.TurnGyroWaypoint initialized
+2019.04.09.18.56.54.364, INFO   , Robot angle: 30.763999938964844
+2019.04.09.18.56.54.365, INFO   , Calc angle: 173.81530861538056
+2019.04.09.18.56.54.366, INFO   , angle: 173.81530861538056
+2019.04.09.18.56.54.367, INFO   , Changing Gyro Gains to GyroTurnLow. P=0.02 MaxOutput=0.5 MaxOutputStep=1.0
+2019.04.09.18.56.54.368, INFO   , TurnGyroAbs Setpoint: 173.81530861538056
+2019.04.09.18.56.54.368, INFO   , Max output: 0.5
+2019.04.09.18.56.54.872, INFO   , Target lost
+2019.04.09.18.56.54.913, INFO   , LEDs: Hatch attained
+2019.04.09.18.56.55.146, INFO   , Target acquired
+2019.04.09.18.56.55.166, INFO   , Target lost
+2019.04.09.18.56.55.601, INFO   , TurnGyroAbs Final Angle: 170.8939971923828  Setpoint: 173.81530861538056
+2019.04.09.18.56.55.602, COMMAND, org.usfirst.frc330.commands.drivecommands.TurnGyroWaypoint ended
+2019.04.09.18.56.55.602, COMMAND, org.usfirst.frc330.commands.drivecommands.DriveWaypoint initialized
+2019.04.09.18.56.55.603, INFO   , DriveWaypoint x: 88.0 y: 5.0 curX: 72.38751303675805 curY: 149.79091342336235 curAngle: 170.8939971923828
+2019.04.09.18.56.55.603, INFO   , DriveWaypoint distance: 145.6302110111395 angle: 173.8456998035507
+2019.04.09.18.56.55.604, INFO   , Changing LeftDrive Gains to DriveHigh. P=0.04 MaxOutput=0.9 MaxOutputStep=0.04
+2019.04.09.18.56.55.604, INFO   , Changing RightDrive Gains to DriveHigh. P=0.04 MaxOutput=0.9 MaxOutputStep=0.04
+2019.04.09.18.56.55.605, INFO   , Changing Gyro Gains to GyroDriveHigh. P=0.004 MaxOutput=1.0 MaxOutputStep=1.0
+2019.04.09.18.56.55.807, COMMAND, org.usfirst.frc330.commands.ShiftHigh initialized
+2019.04.09.18.56.55.808, COMMAND, org.usfirst.frc330.commands.ShiftHigh ended
+2019.04.09.18.56.55.809, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.04.09.18.56.55.810, INFO   , Lift Setpoint: 0.0
+2019.04.09.18.56.55.810, INFO   , Lift Final Position: -0.0026860009765625
+2019.04.09.18.56.55.811, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.04.09.18.56.55.811, COMMAND, org.usfirst.frc330.commands.CheckDone initialized
+2019.04.09.18.56.55.812, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.04.09.18.56.55.812, INFO   , Setting hand angle to: 0.0
+2019.04.09.18.56.55.813, INFO   , Final hand setpoint: 0.07968749999999858
+2019.04.09.18.56.55.813, INFO   , Final hand angle: 0.6070312499999986
+2019.04.09.18.56.55.814, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.04.09.18.56.56.229, INFO   , Target acquired
+2019.04.09.18.56.56.254, INFO   , Target lost
+2019.04.09.18.56.56.300, INFO   , Target acquired
+2019.04.09.18.56.56.970, INFO   , Target lost
+2019.04.09.18.56.57.011, INFO   , Target acquired
+2019.04.09.18.56.57.474, INFO   , Target lost
+2019.04.09.18.56.57.489, INFO   , Target acquired
+2019.04.09.18.56.57.516, INFO   , DriveWaypoint Final Location   X: 101.82904929471401  Y: 11.059489500646718
+2019.04.09.18.56.57.517, INFO   , DriveWaypoint Final DriveTrain Distances   Left: 356.2655040056523  Right: 266.41104537446296
+2019.04.09.18.56.57.518, INFO   , DriveDistance Left Setpoint: 359.1020454148811 Left: 356.27010594801595 Right Setpoint: 270.853664668608 Right: 266.41104537446296
+2019.04.09.18.56.57.518, COMMAND, org.usfirst.frc330.commands.drivecommands.DriveWaypoint ended
+2019.04.09.18.56.57.535, COMMAND, org.usfirst.frc330.commands.CheckDone ended
+2019.04.09.18.56.58.042, COMMAND, org.usfirst.frc330.commands.ShiftLow initialized
+2019.04.09.18.56.58.045, COMMAND, org.usfirst.frc330.commands.ShiftLow ended
+2019.04.09.18.56.58.046, COMMAND, org.usfirst.frc330.commands.TurnLimelight initialized
+2019.04.09.18.56.58.050, INFO   , Aiming started with target at: 24.502708435058594
+2019.04.09.18.56.58.051, INFO   , Robot in low gear
+2019.04.09.18.56.58.570, INFO   , Aiming ended with target at: 1.9031448364257812
+2019.04.09.18.56.58.571, COMMAND, org.usfirst.frc330.commands.TurnLimelight ended
+2019.04.09.18.56.58.571, COMMAND, org.usfirst.frc330.commands.DriveLimelightCurrentSense initialized
+2019.04.09.18.56.58.578, INFO   , Aiming started with target at: -0.3965606689453125
+2019.04.09.18.56.58.579, INFO   , Robot in low gear
+2019.04.09.18.56.58.580, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredHatchPickup initialized
+2019.04.09.18.56.58.580, COMMAND, org.usfirst.frc330.commands.LoadHatch initialized
+2019.04.09.18.56.58.583, INFO   , CLosing Claw
+2019.04.09.18.56.58.585, INFO   , Turning Roller On: Hatch
+2019.04.09.18.56.58.586, INFO   , GamePiece: Hatch
+2019.04.09.18.57.00.085, INFO   , Aiming ended with target at: -0.37424468994140625
+2019.04.09.18.57.00.087, WARNING, org.usfirst.frc330.commands.DriveLimelightCurrentSense timed out
+2019.04.09.18.57.00.152, INFO   , Target lost
+2019.04.09.18.57.00.153, INFO   , LEDs: Hatch attained
+2019.04.09.18.57.00.267, INFO   , Target acquired
+2019.04.09.18.57.00.296, INFO   , Target lost
+2019.04.09.18.57.00.369, INFO   , Target acquired
+2019.04.09.18.57.00.394, COMMAND, org.usfirst.frc330.commands.drivecommands.DriveWaypointBackward initialized
+2019.04.09.18.57.00.395, INFO   , DriveWaypoint x: 88.0 y: 5.0 curX: 97.45872804961012 curY: -29.35962743683769 curAngle: 185.1439971923828
+2019.04.09.18.57.00.395, INFO   , DriveWaypoint distance: 35.63778239333602 angle: 344.60850972105334
+2019.04.09.18.57.00.395, INFO   , Backward Angle: 164.60850972105334
+2019.04.09.18.57.00.396, INFO   , Changing LeftDrive Gains to DriveLow. P=0.1 MaxOutput=0.9 MaxOutputStep=0.04
+2019.04.09.18.57.00.397, INFO   , Changing RightDrive Gains to DriveLow. P=0.1 MaxOutput=0.9 MaxOutputStep=0.04
+2019.04.09.18.57.00.397, INFO   , Changing Gyro Gains to GyroDriveLow. P=0.01 MaxOutput=1.0 MaxOutputStep=1.0
+2019.04.09.18.57.01.005, INFO   , DriveWaypoint Final Location   X: 98.85950444020631  Y: -4.1665137921722595
+2019.04.09.18.57.01.006, INFO   , DriveWaypoint Final DriveTrain Distances   Left: 372.1391371986929  Right: 281.10197938004376
+2019.04.09.18.57.01.007, INFO   , DriveDistance Left Setpoint: 369.6752233241718 Left: 372.07777796717744 Right Setpoint: 263.18474304836263 Right: 281.04829005246773
+2019.04.09.18.57.01.008, COMMAND, org.usfirst.frc330.commands.drivecommands.DriveWaypointBackward ended
+2019.04.09.18.57.01.008, COMMAND, org.usfirst.frc330.commands.LoadHatch interrupted
+2019.04.09.18.57.01.009, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredHatchPickup ended
+2019.04.09.18.57.01.009, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredHatchPickup interrupted
+2019.04.09.18.57.01.011, COMMAND, org.usfirst.frc330.commands.commandgroups.HatchDefense initialized
+2019.04.09.18.57.01.011, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.04.09.18.57.01.012, INFO   , Setting hand angle to: 57.0
+2019.04.09.18.57.01.013, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.04.09.18.57.01.015, INFO   , Lift Setpoint: 0.0
+2019.04.09.18.57.01.016, INFO   , Lift Final Position: 0.0
+2019.04.09.18.57.01.019, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.04.09.18.57.01.433, INFO   , Final hand setpoint: 57.120703125
+2019.04.09.18.57.01.434, INFO   , Final hand angle: 54.74765625
+2019.04.09.18.57.01.434, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.04.09.18.57.01.435, COMMAND, org.usfirst.frc330.commands.CheckDone initialized
+2019.04.09.18.57.01.435, COMMAND, org.usfirst.frc330.commands.CheckDone ended
+2019.04.09.18.57.01.435, COMMAND, org.usfirst.frc330.commands.RollerOnSlowHatch initialized
+2019.04.09.18.57.01.437, INFO   , Turning Roller On: Slow (Hatch)
+2019.04.09.18.57.01.438, COMMAND, org.usfirst.frc330.commands.RollerOnSlowHatch ended
+2019.04.09.18.57.01.438, COMMAND, org.usfirst.frc330.commands.commandgroups.HatchDefense ended
+2019.04.09.18.57.02.015, COMMAND, org.usfirst.frc330.commands.drivecommands.TurnGyroWaypointBackward initialized
+2019.04.09.18.57.02.016, INFO   , Robot angle: 176.08399963378906
+2019.04.09.18.57.02.017, INFO   , Calc angle: -8.914569290157063
+2019.04.09.18.57.02.017, INFO   , angle: 351.0854307098429
+2019.04.09.18.57.02.024, INFO   , Backward Angle: 171.0854307098429
+2019.04.09.18.57.02.024, INFO   , Changing Gyro Gains to GyroTurnLow. P=0.02 MaxOutput=0.5 MaxOutputStep=1.0
+2019.04.09.18.57.02.025, INFO   , TurnGyroAbs Setpoint: 171.0854307098429
+2019.04.09.18.57.02.025, INFO   , Max output: 0.5
+2019.04.09.18.57.02.275, INFO   , TurnGyroAbs Final Angle: 173.88400268554688  Setpoint: 171.0854307098429
+2019.04.09.18.57.02.276, COMMAND, org.usfirst.frc330.commands.drivecommands.TurnGyroWaypointBackward ended
+2019.04.09.18.57.03.280, COMMAND, org.usfirst.frc330.commands.drivecommands.DriveWaypointBackward initialized
+2019.04.09.18.57.03.281, INFO   , DriveWaypoint x: 60.0 y: 250.0 curX: 98.70345400408424 curY: 3.1909735607675014 curAngle: 173.2239990234375
+2019.04.09.18.57.03.282, INFO   , DriveWaypoint distance: 249.82524468861834 angle: 351.0877210900387
+2019.04.09.18.57.03.283, INFO   , Backward Angle: 171.0877210900387
+2019.04.09.18.57.03.283, INFO   , Changing LeftDrive Gains to DriveHigh. P=0.04 MaxOutput=0.9 MaxOutputStep=0.04
+2019.04.09.18.57.03.284, INFO   , Changing RightDrive Gains to DriveHigh. P=0.04 MaxOutput=0.9 MaxOutputStep=0.04
+2019.04.09.18.57.03.285, INFO   , Changing Gyro Gains to GyroDriveHigh. P=0.004 MaxOutput=1.0 MaxOutputStep=1.0
+2019.04.09.18.57.03.484, COMMAND, org.usfirst.frc330.commands.ShiftHigh initialized
+2019.04.09.18.57.03.487, COMMAND, org.usfirst.frc330.commands.ShiftHigh ended
+2019.04.09.18.57.03.800, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.04.09.18.57.03.802, INFO   , Lift Setpoint: 0.0
+2019.04.09.18.57.03.803, INFO   , Lift Final Position: 0.0
+2019.04.09.18.57.03.804, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.04.09.18.57.03.804, COMMAND, org.usfirst.frc330.commands.CheckDone initialized
+2019.04.09.18.57.03.806, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.04.09.18.57.03.807, INFO   , Setting hand angle to: 0.0
+2019.04.09.18.57.04.296, INFO   , Final hand setpoint: 0.07968749999999858
+2019.04.09.18.57.04.296, INFO   , Final hand angle: 1.3101562499999986
+2019.04.09.18.57.04.296, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.04.09.18.57.04.588, INFO   , Target lost
+2019.04.09.18.57.04.613, INFO   , Target acquired
+2019.04.09.18.57.04.678, INFO   , Target lost
+2019.04.09.18.57.04.714, INFO   , Target acquired
+2019.04.09.18.57.04.733, INFO   , Target lost
+2019.04.09.18.57.05.524, INFO   , DriveWaypoint Final Location   X: 48.024346297358015  Y: 244.3458184591398
+2019.04.09.18.57.05.524, INFO   , DriveWaypoint Final DriveTrain Distances   Left: 116.36011266506532  Right: 29.478508800798366
+2019.04.09.18.57.05.525, INFO   , DriveDistance Left Setpoint: 113.40146413245895 Left: 116.34784081876222 Right Setpoint: 25.90780193382568 Right: 29.46623695449528
+2019.04.09.18.57.05.526, COMMAND, org.usfirst.frc330.commands.drivecommands.DriveWaypointBackward ended
+2019.04.09.18.57.05.543, COMMAND, org.usfirst.frc330.commands.CheckDone ended
+2019.04.09.18.57.06.562, COMMAND, org.usfirst.frc330.commands.ShiftLow initialized
+2019.04.09.18.57.06.564, COMMAND, org.usfirst.frc330.commands.ShiftLow ended
+2019.04.09.18.57.06.564, COMMAND, org.usfirst.frc330.commands.drivecommands.TurnGyroWaypoint initialized
+2019.04.09.18.57.06.566, INFO   , Robot angle: 170.9739990234375
+2019.04.09.18.57.06.566, INFO   , Calc angle: 134.05249811391562
+2019.04.09.18.57.06.566, INFO   , angle: 134.05249811391562
+2019.04.09.18.57.06.566, INFO   , Changing Gyro Gains to GyroTurnLow. P=0.02 MaxOutput=0.5 MaxOutputStep=1.0
+2019.04.09.18.57.06.567, INFO   , TurnGyroAbs Setpoint: 134.05249811391562
+2019.04.09.18.57.06.567, INFO   , Max output: 0.5
+2019.04.09.18.57.06.763, INFO   , Target acquired
+2019.04.09.18.57.06.881, INFO   , TurnGyroAbs Final Angle: 136.06399536132812  Setpoint: 134.05249811391562
+2019.04.09.18.57.06.882, COMMAND, org.usfirst.frc330.commands.drivecommands.TurnGyroWaypoint ended
+2019.04.09.18.57.09.884, COMMAND, org.usfirst.frc330.commands.drivecommands.DriveWaypoint initialized
+2019.04.09.18.57.09.885, INFO   , DriveWaypoint x: 83.0 y: 216.0 curX: 46.98647530467364 curY: 250.7541877220968 curAngle: 132.15399169921875
+2019.04.09.18.57.09.885, INFO   , DriveWaypoint distance: 50.04825196951063 angle: 133.9805085397394
+2019.04.09.18.57.09.886, INFO   , Changing LeftDrive Gains to DriveLow. P=0.1 MaxOutput=0.5 MaxOutputStep=0.04
+2019.04.09.18.57.09.886, INFO   , Changing RightDrive Gains to DriveLow. P=0.1 MaxOutput=0.5 MaxOutputStep=0.04
+2019.04.09.18.57.09.887, INFO   , Changing Gyro Gains to GyroDriveLow. P=0.01 MaxOutput=1.0 MaxOutputStep=1.0
+2019.04.09.18.57.11.052, INFO   , DriveWaypoint Final Location   X: 80.54370213057477  Y: 218.8161437205736
+2019.04.09.18.57.11.054, INFO   , DriveWaypoint Final DriveTrain Distances   Left: 149.01089373521117  Right: 76.9828258400409
+2019.04.09.18.57.11.054, INFO   , DriveDistance Left Setpoint: 152.3110811939069 Left: 149.03850538939312 Right Setpoint: 80.74934345825386 Right: 77.00736953264708
+2019.04.09.18.57.11.054, COMMAND, org.usfirst.frc330.commands.drivecommands.DriveWaypoint ended
+2019.04.09.18.57.11.054, COMMAND, org.usfirst.frc330.commands.TurnLimelight initialized
+2019.04.09.18.57.11.055, INFO   , Aiming started with target at: -4.248779296875
+2019.04.09.18.57.11.055, INFO   , Robot in low gear
+2019.04.09.18.57.11.370, INFO   , Target lost
+2019.04.09.18.57.11.408, INFO   , Target acquired
+2019.04.09.18.57.11.432, INFO   , Target lost
+2019.04.09.18.57.11.451, INFO   , Target acquired
+2019.04.09.18.57.11.472, INFO   , Target lost
+2019.04.09.18.57.11.528, INFO   , Target acquired
+2019.04.09.18.57.11.546, INFO   , Target lost
+2019.04.09.18.57.11.567, INFO   , Target acquired
+2019.04.09.18.57.11.669, INFO   , Target lost
+2019.04.09.18.57.11.711, INFO   , Target acquired
+2019.04.09.18.57.11.748, INFO   , Target lost
+2019.04.09.18.57.11.765, INFO   , Aiming ended with target at: -2.7002944946289062
+2019.04.09.18.57.11.765, COMMAND, org.usfirst.frc330.commands.TurnLimelight ended
+2019.04.09.18.57.11.767, COMMAND, org.usfirst.frc330.commands.DriveLimelight initialized
+2019.04.09.18.57.11.770, INFO   , Aiming started with target at: -2.7002944946289062
+2019.04.09.18.57.11.770, INFO   , Robot in low gear
+2019.04.09.18.57.11.781, INFO   , Target acquired
+2019.04.09.18.57.11.796, INFO   , Target lost
+2019.04.09.18.57.11.811, INFO   , Target acquired
+2019.04.09.18.57.11.847, INFO   , Target lost
+2019.04.09.18.57.12.333, WARNING, Aiming ended with no target!
+2019.04.09.18.57.12.339, WARNING, org.usfirst.frc330.commands.DriveLimelight timed out
+2019.04.09.18.57.12.346, COMMAND, org.usfirst.frc330.commands.DriveLimelight initialized
+2019.04.09.18.57.12.346, WARNING, Aiming started with no target!
+2019.04.09.18.57.12.354, INFO   , Robot in low gear
+2019.04.09.18.57.12.762, WARNING, Aiming ended with no target!
+2019.04.09.18.57.12.765, WARNING, org.usfirst.frc330.commands.DriveLimelight timed out
+2019.04.09.18.57.12.771, COMMAND, org.usfirst.frc330.commands.EjectHatch initialized
+2019.04.09.18.57.12.780, INFO   , Reversing Roller: Hatch
+2019.04.09.18.57.12.780, COMMAND, org.usfirst.frc330.commands.EjectHatch ended
+2019.04.09.18.57.14.782, COMMAND, org.usfirst.frc330.commands.drivecommands.DriveWaypointBackward initialized
+2019.04.09.18.57.14.783, INFO   , DriveWaypoint x: 75.0 y: 235.0 curX: 94.24975278910046 curY: 205.57389095905498 curAngle: 136.12399291992188
+2019.04.09.18.57.14.784, INFO   , DriveWaypoint distance: 35.163174995029486 angle: -33.191610177733914
+2019.04.09.18.57.14.784, INFO   , Backward Angle: 146.8083898222661
+2019.04.09.18.57.14.784, INFO   , Changing LeftDrive Gains to DriveLow. P=0.1 MaxOutput=0.9 MaxOutputStep=0.04
+2019.04.09.18.57.14.785, INFO   , Changing RightDrive Gains to DriveLow. P=0.1 MaxOutput=0.9 MaxOutputStep=0.04
+2019.04.09.18.57.14.785, INFO   , Changing Gyro Gains to GyroDriveLow. P=0.01 MaxOutput=1.0 MaxOutputStep=1.0
+2019.04.09.18.57.15.069, INFO   , Target acquired
+2019.04.09.18.57.15.087, INFO   , Target lost
+2019.04.09.18.57.15.087, INFO   , LEDs: Hatch attained
+2019.04.09.18.57.15.132, INFO   , Target acquired
+2019.04.09.18.57.15.147, INFO   , Target lost
+2019.04.09.18.57.15.168, INFO   , Target acquired
+2019.04.09.18.57.15.443, INFO   , DriveWaypoint Final Location   X: 76.28959505397444  Y: 229.78905580287773
+2019.04.09.18.57.15.443, INFO   , DriveWaypoint Final DriveTrain Distances   Left: 136.92159114588443  Right: 66.2035428435685
+2019.04.09.18.57.15.444, INFO   , DriveDistance Left Setpoint: 129.66459464407055 Left: 136.89704745327828 Right Setpoint: 63.75250815020032 Right: 66.18360109332599
+2019.04.09.18.57.15.444, COMMAND, org.usfirst.frc330.commands.drivecommands.DriveWaypointBackward ended
+2019.04.09.18.57.15.562, COMMAND, org.usfirst.frc330.commands.RollerOff initialized
+2019.04.09.18.57.15.563, INFO   , Turning Roller off
+2019.04.09.18.57.15.563, COMMAND, org.usfirst.frc330.commands.RollerOff ended
+2019.04.09.18.57.15.563, COMMAND, org.usfirst.frc330.autoCommands.FrontBackRocket ended
+2019.04.09.18.57.15.582, COMMAND, org.usfirst.frc330.commands.TankDrive initialized
+2019.04.09.18.57.15.582, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.04.09.18.57.15.583, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.04.09.18.57.18.143, COMMAND, org.usfirst.frc330.commands.TankDrive interrupted
+2019.04.09.18.57.18.143, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.04.09.18.57.18.144, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.04.09.18.57.18.166, INFO   , Disabled Init
+2019.04.09.18.57.18.166, INFO   , Battery Voltage: 12.366314697265624
+2019.04.09.18.57.18.167, INFO   , Lift disabled
+2019.04.09.18.57.18.167, INFO   , Hand disabled
+2019.04.09.18.57.18.167, INFO   , Turning Roller off
+2019.04.09.18.57.18.168, INFO   , Turning Claw off
+2019.04.09.18.57.18.169, INFO   , Limelight lights disabled
+2019.04.09.18.57.18.170, INFO   , New pipeline: 0.0
+2019.04.09.18.57.18.175, INFO   , Limelight lights disabled
+2019.04.09.18.57.18.175, INFO   , New pipeline: 0.0
+2019.04.09.18.57.18.191, INFO   , Limelight lights disabled
+2019.04.09.18.57.18.191, INFO   , New pipeline: 0.0
+2019.04.09.18.57.18.209, INFO   , Limelight lights disabled
+2019.04.09.18.57.18.210, INFO   , New pipeline: 0.0

@@ -1,0 +1,920 @@
+2019.02.24.18.40.20.813, INFO   , Logger filename: BB2019_Log__None0_2019.02.24.18.40.20.633.txt
+2019.02.24.18.40.20.822, INFO   , Program date: 1969.12.31.16.00.00.000
+2019.02.24.18.40.21.354, INFO   , Lift PIDF set to: 0.6, 0.0, 0.0, 0.5, Idx: 0
+2019.02.24.18.40.21.362, INFO   , Lift PIDF set to: 0.9, 0.0, 0.0, 0.5, Idx: 1
+2019.02.24.18.40.21.909, INFO   , Hand PIDF set to: 10.0, 0.0, 0.0, 5.0
+2019.02.24.18.40.22.635, DEBUG  , DriverCam Get Video Mode: 160, 120, 30
+2019.02.24.18.40.22.645, INFO   , BeachbotLib Version:                2019.2.0
+2019.02.24.18.40.22.646, INFO   , WPILib Version:                     2019.4.1
+2019.02.24.18.40.22.685, INFO   , NavX Firmware Version:              3.1
+2019.02.24.18.40.22.696, INFO   , Talon Intake Firmware Version:      4.22
+2019.02.24.18.40.22.700, INFO   , Talon Hand Firmware Version:        4.22
+2019.02.24.18.40.22.703, INFO   , Talon Lift1 Firmware Version:       4.22
+2019.02.24.18.40.22.706, INFO   , Talon Lift2 Firmware Version:       4.22
+2019.02.24.18.40.22.710, INFO   , Talon Lift3 Firmware Version:       4.22
+2019.02.24.18.40.22.711, DEBUG  , Practice Robot Detected
+2019.02.24.18.40.22.763, INFO   , Disabled Init
+2019.02.24.18.40.22.769, INFO   , Battery Voltage: 13.069951416015625
+2019.02.24.18.40.22.770, INFO   , Lift disabled
+2019.02.24.18.40.22.771, INFO   , Hand disabled
+2019.02.24.18.40.22.773, INFO   , Turning Roller off
+2019.02.24.18.40.22.778, INFO   , Turning Claw off
+2019.02.24.18.40.22.780, INFO   , Limelight lights disabled
+2019.02.24.18.40.22.784, INFO   , New pipeline: -99.0
+2019.02.24.18.40.22.845, INFO   , Limelight lights disabled
+2019.02.24.18.40.22.847, INFO   , New pipeline: -99.0
+2019.02.24.18.40.22.966, INFO   , Limelight lights disabled
+2019.02.24.18.40.22.967, INFO   , New pipeline: -99.0
+2019.02.24.18.40.22.988, INFO   , Limelight lights disabled
+2019.02.24.18.40.22.989, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.008, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.009, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.029, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.030, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.051, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.052, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.072, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.072, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.095, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.096, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.119, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.120, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.142, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.143, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.162, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.163, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.183, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.184, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.203, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.204, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.225, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.226, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.265, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.267, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.309, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.310, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.329, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.330, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.348, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.349, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.367, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.368, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.386, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.387, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.406, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.407, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.427, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.428, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.450, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.452, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.469, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.470, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.494, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.498, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.537, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.539, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.583, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.585, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.637, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.640, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.685, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.685, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.724, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.726, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.760, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.763, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.797, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.798, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.821, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.827, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.878, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.879, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.914, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.916, INFO   , New pipeline: -99.0
+2019.02.24.18.40.23.965, INFO   , Limelight lights disabled
+2019.02.24.18.40.23.970, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.024, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.030, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.060, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.061, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.098, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.100, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.150, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.154, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.184, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.186, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.222, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.223, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.255, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.260, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.279, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.280, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.308, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.309, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.344, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.347, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.367, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.367, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.391, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.392, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.409, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.411, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.431, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.432, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.447, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.448, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.468, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.469, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.508, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.509, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.534, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.535, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.560, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.561, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.577, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.580, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.624, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.627, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.656, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.657, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.685, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.688, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.704, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.705, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.716, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.717, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.735, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.736, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.756, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.757, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.780, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.782, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.811, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.830, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.858, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.860, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.872, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.872, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.884, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.885, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.898, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.899, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.915, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.916, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.932, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.933, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.948, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.949, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.962, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.962, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.979, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.980, INFO   , New pipeline: -99.0
+2019.02.24.18.40.24.999, INFO   , Limelight lights disabled
+2019.02.24.18.40.24.999, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.012, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.012, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.024, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.025, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.037, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.038, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.051, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.051, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.064, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.065, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.077, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.078, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.091, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.092, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.104, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.105, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.119, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.119, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.139, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.140, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.155, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.156, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.169, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.170, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.181, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.182, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.194, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.195, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.208, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.209, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.222, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.222, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.234, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.235, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.246, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.247, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.264, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.264, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.276, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.276, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.288, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.288, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.301, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.301, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.312, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.312, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.325, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.325, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.338, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.339, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.355, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.356, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.369, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.370, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.382, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.383, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.395, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.395, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.414, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.415, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.430, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.431, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.442, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.443, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.465, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.467, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.494, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.495, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.507, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.508, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.519, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.520, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.531, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.531, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.543, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.544, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.556, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.557, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.573, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.574, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.586, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.586, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.603, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.604, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.631, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.633, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.664, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.666, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.683, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.684, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.695, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.696, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.709, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.710, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.725, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.726, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.740, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.740, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.751, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.752, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.766, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.767, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.777, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.778, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.791, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.791, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.803, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.803, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.820, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.821, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.831, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.832, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.844, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.844, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.855, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.855, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.867, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.867, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.878, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.878, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.891, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.891, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.908, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.909, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.929, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.929, INFO   , New pipeline: -99.0
+2019.02.24.18.40.25.977, INFO   , Limelight lights disabled
+2019.02.24.18.40.25.981, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.014, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.014, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.042, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.043, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.057, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.058, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.084, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.085, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.109, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.110, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.152, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.154, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.177, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.177, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.202, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.203, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.218, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.219, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.238, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.240, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.275, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.275, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.292, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.294, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.310, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.311, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.329, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.331, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.355, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.357, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.388, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.390, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.418, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.419, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.448, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.449, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.474, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.474, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.508, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.509, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.535, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.538, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.567, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.569, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.600, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.602, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.626, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.627, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.647, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.647, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.663, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.665, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.676, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.677, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.688, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.689, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.717, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.720, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.743, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.744, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.756, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.757, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.768, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.769, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.780, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.780, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.791, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.792, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.806, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.807, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.818, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.819, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.830, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.830, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.845, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.845, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.856, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.857, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.870, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.870, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.883, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.883, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.894, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.895, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.905, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.905, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.917, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.918, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.928, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.929, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.941, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.942, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.952, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.953, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.965, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.966, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.977, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.977, INFO   , New pipeline: -99.0
+2019.02.24.18.40.26.993, INFO   , Limelight lights disabled
+2019.02.24.18.40.26.994, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.006, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.006, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.018, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.019, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.029, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.029, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.047, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.047, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.058, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.059, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.070, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.071, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.082, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.083, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.094, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.095, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.105, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.105, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.117, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.117, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.130, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.130, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.146, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.148, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.158, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.159, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.171, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.171, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.186, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.187, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.198, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.198, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.210, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.211, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.225, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.226, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.236, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.236, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.250, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.251, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.262, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.263, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.274, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.274, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.285, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.285, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.296, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.298, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.308, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.309, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.323, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.324, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.334, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.335, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.348, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.349, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.380, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.380, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.434, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.436, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.465, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.467, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.498, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.499, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.523, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.524, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.555, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.557, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.590, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.591, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.609, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.610, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.636, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.638, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.659, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.661, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.680, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.681, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.707, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.708, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.739, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.740, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.760, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.765, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.788, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.789, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.824, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.825, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.869, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.871, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.911, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.912, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.936, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.939, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.963, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.964, INFO   , New pipeline: -99.0
+2019.02.24.18.40.27.985, INFO   , Limelight lights disabled
+2019.02.24.18.40.27.986, INFO   , New pipeline: -99.0
+2019.02.24.18.40.28.004, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.005, INFO   , New pipeline: -99.0
+2019.02.24.18.40.28.023, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.024, INFO   , New pipeline: -99.0
+2019.02.24.18.40.28.054, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.056, INFO   , New pipeline: -99.0
+2019.02.24.18.40.28.080, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.081, INFO   , New pipeline: -99.0
+2019.02.24.18.40.28.095, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.097, INFO   , New pipeline: -99.0
+2019.02.24.18.40.28.120, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.121, INFO   , New pipeline: -99.0
+2019.02.24.18.40.28.139, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.141, INFO   , New pipeline: -99.0
+2019.02.24.18.40.28.168, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.168, INFO   , New pipeline: -99.0
+2019.02.24.18.40.28.187, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.188, INFO   , New pipeline: -99.0
+2019.02.24.18.40.28.210, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.211, INFO   , New pipeline: -99.0
+2019.02.24.18.40.28.227, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.229, INFO   , New pipeline: -99.0
+2019.02.24.18.40.28.272, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.275, INFO   , New pipeline: -99.0
+2019.02.24.18.40.28.306, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.307, INFO   , New pipeline: -99.0
+2019.02.24.18.40.28.324, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.325, INFO   , New pipeline: -99.0
+2019.02.24.18.40.28.344, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.344, INFO   , New pipeline: -99.0
+2019.02.24.18.40.28.360, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.360, INFO   , New pipeline: -99.0
+2019.02.24.18.40.28.372, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.373, INFO   , New pipeline: -99.0
+2019.02.24.18.40.28.386, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.387, INFO   , New pipeline: -99.0
+2019.02.24.18.40.28.402, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.403, INFO   , New pipeline: -99.0
+2019.02.24.18.40.28.416, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.417, INFO   , New pipeline: -99.0
+2019.02.24.18.40.28.432, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.434, INFO   , New pipeline: -99.0
+2019.02.24.18.40.28.453, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.454, INFO   , New pipeline: -99.0
+2019.02.24.18.40.28.466, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.467, INFO   , New pipeline: -99.0
+2019.02.24.18.40.28.483, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.484, INFO   , New pipeline: -99.0
+2019.02.24.18.40.28.499, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.500, INFO   , New pipeline: -99.0
+2019.02.24.18.40.28.522, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.524, INFO   , New pipeline: -99.0
+2019.02.24.18.40.28.587, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.588, INFO   , New pipeline: -99.0
+2019.02.24.18.40.28.627, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.627, INFO   , New pipeline: -99.0
+2019.02.24.18.40.28.644, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.645, INFO   , New pipeline: -99.0
+2019.02.24.18.40.28.673, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.674, INFO   , New pipeline: 0.0
+2019.02.24.18.40.28.687, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.687, INFO   , New pipeline: 0.0
+2019.02.24.18.40.28.715, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.716, INFO   , New pipeline: 0.0
+2019.02.24.18.40.28.732, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.732, INFO   , New pipeline: 0.0
+2019.02.24.18.40.28.742, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.743, INFO   , New pipeline: 0.0
+2019.02.24.18.40.28.755, INFO   , Limelight lights disabled
+2019.02.24.18.40.28.756, INFO   , New pipeline: 0.0
+RoboRIO File Renamed: true BB2019_Log_Qualification3324__2019.02.24.18.40.17.104.txt
+USB File Renamed: true BB2019_Log__Qualification3324_2019.02.24.18.40.17.104.txt
+RoboRIO File Renamed: true BB2019_Log_Qualification3324__2019.04.09.19.16.32.749.txt
+USB File Renamed: true BB2019_Log__Qualification3324_2019.04.09.19.16.32.749.txt
+RoboRIO File Renamed: true BB2019_Log_None0__2019.04.09.19.16.32.750.txt
+USB File Renamed: true BB2019_Log__None0_2019.04.09.19.16.32.750.txt
+2019.04.09.19.18.44.727, INFO   , Autonomous Init
+2019.04.09.19.18.44.730, INFO   , Limelight lights enabled
+2019.04.09.19.18.44.736, INFO   , New pipeline: 1.0
+2019.04.09.19.18.44.740, INFO   , Running Auto: FrontBackRocket
+2019.04.09.19.18.44.911, INFO   , Event:  Match Type: None Match Number: 0
+2019.04.09.19.18.44.916, COMMAND, org.usfirst.frc330.commands.TankDrive initialized
+2019.04.09.19.18.44.924, COMMAND, org.usfirst.frc330.commands.ManualLift initialized
+2019.04.09.19.18.44.927, COMMAND, org.usfirst.frc330.commands.ManualHand initialized
+2019.04.09.19.18.44.929, COMMAND, org.usfirst.frc330.commands.TankDrive interrupted
+2019.04.09.19.18.44.929, COMMAND, org.usfirst.frc330.commands.ManualLift interrupted
+2019.04.09.19.18.44.929, COMMAND, org.usfirst.frc330.commands.ManualHand interrupted
+2019.04.09.19.18.44.939, INFO   , Target acquired
+2019.04.09.19.18.44.950, COMMAND, org.usfirst.frc330.autoCommands.FrontBackRocket initialized
+2019.04.09.19.18.44.951, COMMAND, org.usfirst.frc330.commands.ShiftLow initialized
+2019.04.09.19.18.44.953, COMMAND, org.usfirst.frc330.commands.ShiftLow ended
+2019.04.09.19.18.44.953, COMMAND, org.usfirst.frc330.commands.drivecommands.DriveDistanceAtCurAngle initialized
+2019.04.09.19.18.44.955, INFO   , Changing LeftDrive Gains to DriveLow. P=0.1 MaxOutput=0.5 MaxOutputStep=0.04
+2019.04.09.19.18.44.955, INFO   , Changing RightDrive Gains to DriveLow. P=0.1 MaxOutput=0.5 MaxOutputStep=0.04
+2019.04.09.19.18.44.961, INFO   , Changing Gyro Gains to GyroDriveLow. P=0.01 MaxOutput=1.0 MaxOutputStep=1.0
+2019.04.09.19.18.44.962, COMMAND, org.usfirst.frc330.commands.commandgroups.HatchDefense initialized
+2019.04.09.19.18.44.962, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.04.09.19.18.44.980, INFO   , Setting hand angle to: 57.0
+2019.04.09.19.18.44.982, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.04.09.19.18.44.989, INFO   , Lift Setpoint: 0.0
+2019.04.09.19.18.44.993, INFO   , Lift Final Position: 0.0
+2019.04.09.19.18.44.993, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.04.09.19.18.45.089, INFO   , Final hand setpoint: 57.120703125
+2019.04.09.19.18.45.096, INFO   , Final hand angle: 59.49375
+2019.04.09.19.18.45.096, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.04.09.19.18.45.097, COMMAND, org.usfirst.frc330.commands.CheckDone initialized
+2019.04.09.19.18.45.097, COMMAND, org.usfirst.frc330.commands.CheckDone ended
+2019.04.09.19.18.45.097, COMMAND, org.usfirst.frc330.commands.RollerOnSlowHatch initialized
+2019.04.09.19.18.45.098, INFO   , Turning Roller On: Slow (Hatch)
+2019.04.09.19.18.45.098, COMMAND, org.usfirst.frc330.commands.RollerOnSlowHatch ended
+2019.04.09.19.18.45.098, COMMAND, org.usfirst.frc330.commands.commandgroups.HatchDefense ended
+2019.04.09.19.18.45.145, INFO   , Target lost
+2019.04.09.19.18.45.145, INFO   , LEDs: Hatch attained
+2019.04.09.19.18.45.165, INFO   , Target acquired
+2019.04.09.19.18.45.542, INFO   , DriveDistance Left Setpoint: 19.0 Left: 17.372332422804885 Right Setpoint: 19.0 Right: 17.23274017110729
+2019.04.09.19.18.45.542, COMMAND, org.usfirst.frc330.commands.drivecommands.DriveDistanceAtCurAngle ended
+2019.04.09.19.18.45.610, INFO   , Target lost
+2019.04.09.19.18.45.622, INFO   , Target acquired
+2019.04.09.19.18.45.648, INFO   , Target lost
+2019.04.09.19.18.45.689, INFO   , Target acquired
+2019.04.09.19.18.45.828, INFO   , Target lost
+2019.04.09.19.18.45.848, INFO   , Target acquired
+2019.04.09.19.18.45.909, INFO   , Target lost
+2019.04.09.19.18.45.928, INFO   , Target acquired
+2019.04.09.19.18.46.044, COMMAND, org.usfirst.frc330.commands.drivecommands.TurnGyroWaypoint initialized
+2019.04.09.19.18.46.049, INFO   , Robot angle: 0.16200000047683716
+2019.04.09.19.18.46.053, INFO   , Calc angle: 35.16297347771487
+2019.04.09.19.18.46.055, INFO   , angle: 35.16297347771487
+2019.04.09.19.18.46.056, INFO   , Changing Gyro Gains to GyroTurnLow. P=0.02 MaxOutput=0.5 MaxOutputStep=1.0
+2019.04.09.19.18.46.059, INFO   , TurnGyroAbs Setpoint: 35.16297347771487
+2019.04.09.19.18.46.062, INFO   , Max output: 0.5
+2019.04.09.19.18.46.123, INFO   , Target lost
+2019.04.09.19.18.46.149, INFO   , Target acquired
+2019.04.09.19.18.46.190, INFO   , Target lost
+2019.04.09.19.18.46.208, INFO   , Target acquired
+2019.04.09.19.18.46.229, INFO   , Target lost
+2019.04.09.19.18.46.249, INFO   , Target acquired
+2019.04.09.19.18.46.491, INFO   , Target lost
+2019.04.09.19.18.46.511, INFO   , Target acquired
+2019.04.09.19.18.46.529, INFO   , Target lost
+2019.04.09.19.18.46.569, INFO   , Target acquired
+2019.04.09.19.18.46.693, INFO   , Target lost
+2019.04.09.19.18.46.709, INFO   , Target acquired
+2019.04.09.19.18.46.827, INFO   , Target lost
+2019.04.09.19.18.46.848, INFO   , Target acquired
+2019.04.09.19.18.46.911, INFO   , Target lost
+2019.04.09.19.18.46.929, INFO   , Target acquired
+2019.04.09.19.18.46.948, INFO   , Target lost
+2019.04.09.19.18.46.970, INFO   , Target acquired
+2019.04.09.19.18.47.065, INFO   , TurnGyroAbs Final Angle: 32.19199752807617  Setpoint: 35.16297347771487
+2019.04.09.19.18.47.066, COMMAND, org.usfirst.frc330.commands.drivecommands.TurnGyroWaypoint ended
+2019.04.09.19.18.47.066, COMMAND, org.usfirst.frc330.commands.drivecommands.DriveWaypoint initialized
+2019.04.09.19.18.47.294, INFO   , DriveWaypoint x: 82.0 y: 136.0 curX: -0.03207137596745783 curY: 19.993483276395747 curAngle: 32.902000427246094
+2019.04.09.19.18.47.305, INFO   , DriveWaypoint distance: 142.08016278346423 angle: 35.26540274048764
+2019.04.09.19.18.47.306, INFO   , Changing LeftDrive Gains to DriveHigh. P=0.04 MaxOutput=0.9 MaxOutputStep=0.03
+2019.04.09.19.18.47.306, INFO   , Changing RightDrive Gains to DriveHigh. P=0.04 MaxOutput=0.9 MaxOutputStep=0.03
+2019.04.09.19.18.47.307, INFO   , Changing Gyro Gains to GyroDriveHigh. P=0.004 MaxOutput=1.0 MaxOutputStep=1.0
+2019.04.09.19.18.47.374, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.04.09.19.18.47.375, INFO   , Lift Setpoint: 0.0
+2019.04.09.19.18.47.376, INFO   , Lift Final Position: -0.029546010742187503
+2019.04.09.19.18.47.376, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.04.09.19.18.47.376, COMMAND, org.usfirst.frc330.commands.CheckDone initialized
+2019.04.09.19.18.47.377, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.04.09.19.18.47.378, INFO   , Setting hand angle to: 0.0
+2019.04.09.19.18.47.455, INFO   , Target lost
+2019.04.09.19.18.47.481, INFO   , Target acquired
+2019.04.09.19.18.47.923, INFO   , Final hand setpoint: 0.07968749999999858
+2019.04.09.19.18.47.923, INFO   , Final hand angle: -0.4476562500000014
+2019.04.09.19.18.47.924, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.04.09.19.18.48.188, INFO   , Target lost
+2019.04.09.19.18.48.208, INFO   , Target acquired
+2019.04.09.19.18.49.850, INFO   , DriveWaypoint Final Location   X: 77.97595468797748  Y: 135.06850715756553
+2019.04.09.19.18.49.857, INFO   , DriveWaypoint Final DriveTrain Distances   Left: 172.2675764603454  Right: 145.9321942939247
+2019.04.09.19.18.49.858, INFO   , DriveDistance Left Setpoint: 175.29851674512778 Left: 172.29365413373944 Right Setpoint: 148.9002413664038 Right: 145.95827196731875
+2019.04.09.19.18.49.858, COMMAND, org.usfirst.frc330.commands.drivecommands.DriveWaypoint ended
+2019.04.09.19.18.49.869, COMMAND, org.usfirst.frc330.commands.CheckDone ended
+2019.04.09.19.18.50.384, COMMAND, org.usfirst.frc330.commands.ShiftLow initialized
+2019.04.09.19.18.50.385, COMMAND, org.usfirst.frc330.commands.ShiftLow ended
+2019.04.09.19.18.50.386, COMMAND, org.usfirst.frc330.commands.TurnLimelight initialized
+2019.04.09.19.18.50.394, INFO   , Aiming started with target at: 2.5433273315429688
+2019.04.09.19.18.50.395, INFO   , Robot in low gear
+2019.04.09.19.18.50.400, INFO   , Aiming ended with target at: 2.5433273315429688
+2019.04.09.19.18.50.400, COMMAND, org.usfirst.frc330.commands.TurnLimelight ended
+2019.04.09.19.18.50.400, COMMAND, org.usfirst.frc330.commands.DriveLimelight initialized
+2019.04.09.19.18.50.404, INFO   , Aiming started with target at: 2.5569076538085938
+2019.04.09.19.18.50.409, INFO   , Robot in low gear
+2019.04.09.19.18.50.967, INFO   , Aiming ended with target at: 0.644134521484375
+2019.04.09.19.18.50.968, WARNING, org.usfirst.frc330.commands.DriveLimelight timed out
+2019.04.09.19.18.50.970, COMMAND, org.usfirst.frc330.commands.DriveLimelight initialized
+2019.04.09.19.18.50.971, INFO   , Aiming started with target at: 0.644134521484375
+2019.04.09.19.18.50.971, INFO   , Robot in low gear
+2019.04.09.19.18.51.385, INFO   , Aiming ended with target at: 1.2715835571289062
+2019.04.09.19.18.51.385, WARNING, org.usfirst.frc330.commands.DriveLimelight timed out
+2019.04.09.19.18.51.387, COMMAND, org.usfirst.frc330.commands.EjectHatch initialized
+2019.04.09.19.18.51.393, INFO   , Reversing Roller: Hatch
+2019.04.09.19.18.51.393, COMMAND, org.usfirst.frc330.commands.EjectHatch ended
+2019.04.09.19.18.51.604, COMMAND, org.usfirst.frc330.commands.drivecommands.DriveWaypointBackward initialized
+2019.04.09.19.18.51.605, INFO   , DriveWaypoint x: 82.0 y: 136.0 curX: 90.61954145653559 curY: 152.8618020944313 curAngle: 35.04199981689453
+2019.04.09.19.18.51.605, INFO   , DriveWaypoint distance: 18.937182071066005 angle: 207.07554765184935
+2019.04.09.19.18.51.610, INFO   , Backward Angle: 27.075547651849348
+2019.04.09.19.18.51.610, INFO   , Changing LeftDrive Gains to DriveLow. P=0.1 MaxOutput=0.9 MaxOutputStep=0.04
+2019.04.09.19.18.51.611, INFO   , Changing RightDrive Gains to DriveLow. P=0.1 MaxOutput=0.9 MaxOutputStep=0.04
+2019.04.09.19.18.51.611, INFO   , Changing Gyro Gains to GyroDriveLow. P=0.01 MaxOutput=1.0 MaxOutputStep=1.0
+2019.04.09.19.18.52.065, INFO   , DriveWaypoint Final Location   X: 83.19992058558996  Y: 140.35241088179725
+2019.04.09.19.18.52.065, INFO   , DriveWaypoint Final DriveTrain Distances   Left: 179.26866477625546  Right: 153.2308748826846
+2019.04.09.19.18.52.066, INFO   , DriveDistance Left Setpoint: 176.64076644198957 Left: 179.24718904522507 Right Setpoint: 147.23588871900972 Right: 153.2063311900784
+2019.04.09.19.18.52.066, COMMAND, org.usfirst.frc330.commands.drivecommands.DriveWaypointBackward ended
+2019.04.09.19.18.52.184, COMMAND, org.usfirst.frc330.commands.RollerOff initialized
+2019.04.09.19.18.52.185, INFO   , Turning Roller off
+2019.04.09.19.18.52.185, COMMAND, org.usfirst.frc330.commands.RollerOff ended
+2019.04.09.19.18.52.704, COMMAND, org.usfirst.frc330.commands.drivecommands.TurnGyroWaypoint initialized
+2019.04.09.19.18.52.704, INFO   , Robot angle: 35.18199920654297
+2019.04.09.19.18.52.705, INFO   , Calc angle: 176.7940727177354
+2019.04.09.19.18.52.705, INFO   , angle: 176.7940727177354
+2019.04.09.19.18.52.706, INFO   , Changing Gyro Gains to GyroTurnLow. P=0.02 MaxOutput=0.5 MaxOutputStep=1.0
+2019.04.09.19.18.52.706, INFO   , TurnGyroAbs Setpoint: 176.7940727177354
+2019.04.09.19.18.52.707, INFO   , Max output: 0.5
+2019.04.09.19.18.53.009, INFO   , Target lost
+2019.04.09.19.18.53.230, INFO   , LEDs: Hatch attained
+2019.04.09.19.18.53.490, INFO   , Target acquired
+2019.04.09.19.18.53.508, INFO   , Target lost
+2019.04.09.19.18.53.530, INFO   , Target acquired
+2019.04.09.19.18.53.570, INFO   , Target lost
+2019.04.09.19.18.53.630, INFO   , Target acquired
+2019.04.09.19.18.53.710, INFO   , Target lost
+2019.04.09.19.18.53.750, INFO   , Target acquired
+2019.04.09.19.18.53.969, INFO   , Target lost
+2019.04.09.19.18.53.988, INFO   , Target acquired
+2019.04.09.19.18.54.009, INFO   , Target lost
+2019.04.09.19.18.54.029, INFO   , Target acquired
+2019.04.09.19.18.54.049, INFO   , Target lost
+2019.04.09.19.18.54.068, INFO   , Target acquired
+2019.04.09.19.18.54.144, INFO   , TurnGyroAbs Final Angle: 173.93199157714844  Setpoint: 176.7940727177354
+2019.04.09.19.18.54.145, COMMAND, org.usfirst.frc330.commands.drivecommands.TurnGyroWaypoint ended
+2019.04.09.19.18.54.145, COMMAND, org.usfirst.frc330.commands.drivecommands.DriveWaypoint initialized
+2019.04.09.19.18.54.146, INFO   , DriveWaypoint x: 88.0 y: 5.0 curX: 80.62071394797083 curY: 135.87609275610745 curAngle: 173.93199157714844
+2019.04.09.19.18.54.146, INFO   , DriveWaypoint distance: 131.0839636177626 angle: 176.77286551573533
+2019.04.09.19.18.54.146, INFO   , Changing LeftDrive Gains to DriveHigh. P=0.04 MaxOutput=0.9 MaxOutputStep=0.03
+2019.04.09.19.18.54.146, INFO   , Changing RightDrive Gains to DriveHigh. P=0.04 MaxOutput=0.9 MaxOutputStep=0.03
+2019.04.09.19.18.54.147, INFO   , Changing Gyro Gains to GyroDriveHigh. P=0.004 MaxOutput=1.0 MaxOutputStep=1.0
+2019.04.09.19.18.54.169, INFO   , Target lost
+2019.04.09.19.18.54.209, INFO   , Target acquired
+2019.04.09.19.18.54.313, INFO   , Target lost
+2019.04.09.19.18.54.330, INFO   , Target acquired
+2019.04.09.19.18.54.364, COMMAND, org.usfirst.frc330.commands.ShiftHigh initialized
+2019.04.09.19.18.54.365, COMMAND, org.usfirst.frc330.commands.ShiftHigh ended
+2019.04.09.19.18.54.366, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.04.09.19.18.54.367, INFO   , Lift Setpoint: 0.0
+2019.04.09.19.18.54.367, INFO   , Lift Final Position: -0.00134300048828125
+2019.04.09.19.18.54.368, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.04.09.19.18.54.368, COMMAND, org.usfirst.frc330.commands.CheckDone initialized
+2019.04.09.19.18.54.368, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.04.09.19.18.54.368, INFO   , Setting hand angle to: 0.0
+2019.04.09.19.18.54.369, INFO   , Final hand setpoint: 0.07968749999999858
+2019.04.09.19.18.54.370, INFO   , Final hand angle: 0.6070312499999986
+2019.04.09.19.18.54.371, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.04.09.19.18.54.409, INFO   , Target lost
+2019.04.09.19.18.54.429, INFO   , Target acquired
+2019.04.09.19.18.54.469, INFO   , Target lost
+2019.04.09.19.18.54.529, INFO   , Target acquired
+2019.04.09.19.18.54.591, INFO   , Target lost
+2019.04.09.19.18.54.608, INFO   , Target acquired
+2019.04.09.19.18.54.773, INFO   , Target lost
+2019.04.09.19.18.54.810, INFO   , Target acquired
+2019.04.09.19.18.54.829, INFO   , Target lost
+2019.04.09.19.18.54.854, INFO   , Target acquired
+2019.04.09.19.18.54.868, INFO   , Target lost
+2019.04.09.19.18.54.891, INFO   , Target acquired
+2019.04.09.19.18.54.970, INFO   , Target lost
+2019.04.09.19.18.54.989, INFO   , Target acquired
+2019.04.09.19.18.55.128, INFO   , Target lost
+2019.04.09.19.18.55.150, INFO   , Target acquired
+2019.04.09.19.18.55.192, INFO   , Target lost
+2019.04.09.19.18.55.209, INFO   , Target acquired
+2019.04.09.19.18.55.905, INFO   , DriveWaypoint Final Location   X: 90.07234698628349  Y: 8.449785313188075
+2019.04.09.19.18.55.905, INFO   , DriveWaypoint Final DriveTrain Distances   Left: 339.09412306606043  Right: 239.26265339046287
+2019.04.09.19.18.55.906, INFO   , DriveDistance Left Setpoint: 342.67053563319274 Left: 339.10179296999985 Right Setpoint: 242.01071633213698 Right: 239.27645921755385
+2019.04.09.19.18.55.906, COMMAND, org.usfirst.frc330.commands.drivecommands.DriveWaypoint ended
+2019.04.09.19.18.55.925, COMMAND, org.usfirst.frc330.commands.CheckDone ended
+2019.04.09.19.18.56.445, COMMAND, org.usfirst.frc330.commands.ShiftLow initialized
+2019.04.09.19.18.56.446, COMMAND, org.usfirst.frc330.commands.ShiftLow ended
+2019.04.09.19.18.56.446, COMMAND, org.usfirst.frc330.commands.TurnLimelight initialized
+2019.04.09.19.18.56.446, INFO   , Aiming started with target at: 8.808357238769531
+2019.04.09.19.18.56.446, INFO   , Robot in low gear
+2019.04.09.19.18.56.685, INFO   , Aiming ended with target at: 2.8246307373046875
+2019.04.09.19.18.56.685, COMMAND, org.usfirst.frc330.commands.TurnLimelight ended
+2019.04.09.19.18.56.686, COMMAND, org.usfirst.frc330.commands.DriveLimelightCurrentSense initialized
+2019.04.09.19.18.56.690, INFO   , Aiming started with target at: 1.5957565307617188
+2019.04.09.19.18.56.690, INFO   , Robot in low gear
+2019.04.09.19.18.56.694, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredHatchPickup initialized
+2019.04.09.19.18.56.695, COMMAND, org.usfirst.frc330.commands.LoadHatch initialized
+2019.04.09.19.18.56.698, INFO   , CLosing Claw
+2019.04.09.19.18.56.700, INFO   , Turning Roller On: Hatch
+2019.04.09.19.18.56.700, INFO   , GamePiece: Hatch
+2019.04.09.19.18.57.910, INFO   , Target lost
+2019.04.09.19.18.57.929, INFO   , Target acquired
+2019.04.09.19.18.57.949, INFO   , Target lost
+2019.04.09.19.18.57.972, INFO   , Target acquired
+2019.04.09.19.18.57.988, INFO   , Target lost
+2019.04.09.19.18.57.989, INFO   , LEDs: Hatch attained
+2019.04.09.19.18.58.009, INFO   , Target acquired
+2019.04.09.19.18.58.028, INFO   , Target lost
+2019.04.09.19.18.58.205, WARNING, Aiming ended with no target!
+2019.04.09.19.18.58.206, WARNING, org.usfirst.frc330.commands.DriveLimelightCurrentSense timed out
+2019.04.09.19.18.58.288, INFO   , Target acquired
+2019.04.09.19.18.58.311, INFO   , Target lost
+2019.04.09.19.18.58.329, INFO   , Target acquired
+2019.04.09.19.18.58.427, INFO   , Target lost
+2019.04.09.19.18.58.488, INFO   , Target acquired
+2019.04.09.19.18.58.524, COMMAND, org.usfirst.frc330.commands.drivecommands.DriveWaypointBackward initialized
+2019.04.09.19.18.58.525, INFO   , DriveWaypoint x: 88.0 y: 5.0 curX: 92.47731654621491 curY: -26.81634947574868 curAngle: 175.57199096679688
+2019.04.09.19.18.58.525, INFO   , DriveWaypoint distance: 32.12983749442227 angle: 351.98972203095934
+2019.04.09.19.18.58.525, INFO   , Backward Angle: 171.98972203095934
+2019.04.09.19.18.58.526, INFO   , Changing LeftDrive Gains to DriveLow. P=0.1 MaxOutput=0.9 MaxOutputStep=0.04
+2019.04.09.19.18.58.526, INFO   , Changing RightDrive Gains to DriveLow. P=0.1 MaxOutput=0.9 MaxOutputStep=0.04
+2019.04.09.19.18.58.526, INFO   , Changing Gyro Gains to GyroDriveLow. P=0.01 MaxOutput=1.0 MaxOutputStep=1.0
+2019.04.09.19.18.58.533, INFO   , Target lost
+2019.04.09.19.18.58.649, INFO   , Target acquired
+2019.04.09.19.18.58.669, INFO   , Target lost
+2019.04.09.19.18.58.731, INFO   , Target acquired
+2019.04.09.19.18.59.185, INFO   , DriveWaypoint Final Location   X: 88.62839081739494  Y: 1.5385263999193481
+2019.04.09.19.18.59.185, INFO   , DriveWaypoint Final DriveTrain Distances   Left: 346.06913370857643  Right: 245.66855716067332
+2019.04.09.19.18.59.186, INFO   , DriveDistance Left Setpoint: 343.5911448439836 Left: 346.047657977546 Right Setpoint: 241.31604377328424 Right: 245.6409455064914
+2019.04.09.19.18.59.186, COMMAND, org.usfirst.frc330.commands.drivecommands.DriveWaypointBackward ended
+2019.04.09.19.18.59.186, COMMAND, org.usfirst.frc330.commands.LoadHatch interrupted
+2019.04.09.19.18.59.187, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredHatchPickup ended
+2019.04.09.19.18.59.187, COMMAND, org.usfirst.frc330.commands.commandgroups.SensoredHatchPickup interrupted
+2019.04.09.19.18.59.187, COMMAND, org.usfirst.frc330.commands.commandgroups.HatchDefense initialized
+2019.04.09.19.18.59.187, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.04.09.19.18.59.188, INFO   , Setting hand angle to: 57.0
+2019.04.09.19.18.59.189, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.04.09.19.18.59.189, INFO   , Lift Setpoint: 0.0
+2019.04.09.19.18.59.190, INFO   , Lift Final Position: -0.00134300048828125
+2019.04.09.19.18.59.190, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.04.09.19.18.59.625, INFO   , Final hand setpoint: 57.120703125
+2019.04.09.19.18.59.625, INFO   , Final hand angle: 57.56015625
+2019.04.09.19.18.59.625, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.04.09.19.18.59.626, COMMAND, org.usfirst.frc330.commands.CheckDone initialized
+2019.04.09.19.18.59.626, COMMAND, org.usfirst.frc330.commands.CheckDone ended
+2019.04.09.19.18.59.626, COMMAND, org.usfirst.frc330.commands.RollerOnSlowHatch initialized
+2019.04.09.19.18.59.626, INFO   , Turning Roller On: Slow (Hatch)
+2019.04.09.19.18.59.627, COMMAND, org.usfirst.frc330.commands.RollerOnSlowHatch ended
+2019.04.09.19.18.59.627, COMMAND, org.usfirst.frc330.commands.commandgroups.HatchDefense ended
+2019.04.09.19.19.00.205, COMMAND, org.usfirst.frc330.commands.drivecommands.TurnGyroWaypointBackward initialized
+2019.04.09.19.19.00.205, INFO   , Robot angle: 177.7419891357422
+2019.04.09.19.19.00.206, INFO   , Calc angle: -6.575283382559983
+2019.04.09.19.19.00.206, INFO   , angle: 353.42471661744
+2019.04.09.19.19.00.210, INFO   , Backward Angle: 173.42471661744003
+2019.04.09.19.19.00.210, INFO   , Changing Gyro Gains to GyroTurnLow. P=0.02 MaxOutput=0.5 MaxOutputStep=1.0
+2019.04.09.19.19.00.210, INFO   , TurnGyroAbs Setpoint: 173.42471661744003
+2019.04.09.19.19.00.211, INFO   , Max output: 0.5
+2019.04.09.19.19.00.345, INFO   , TurnGyroAbs Final Angle: 176.08200073242188  Setpoint: 173.42471661744003
+2019.04.09.19.19.00.345, COMMAND, org.usfirst.frc330.commands.drivecommands.TurnGyroWaypointBackward ended
+2019.04.09.19.19.01.364, COMMAND, org.usfirst.frc330.commands.drivecommands.DriveWaypointBackward initialized
+2019.04.09.19.19.01.365, INFO   , DriveWaypoint x: 60.0 y: 250.0 curX: 87.82980645017427 curY: 8.453836351158275 curAngle: 175.07199096679688
+2019.04.09.19.19.01.365, INFO   , DriveWaypoint distance: 243.14408752944658 angle: 353.4276308263009
+2019.04.09.19.19.01.366, INFO   , Backward Angle: 173.4276308263009
+2019.04.09.19.19.01.366, INFO   , Changing LeftDrive Gains to DriveHigh. P=0.04 MaxOutput=0.9 MaxOutputStep=0.03
+2019.04.09.19.19.01.366, INFO   , Changing RightDrive Gains to DriveHigh. P=0.04 MaxOutput=0.9 MaxOutputStep=0.03
+2019.04.09.19.19.01.366, INFO   , Changing Gyro Gains to GyroDriveHigh. P=0.004 MaxOutput=1.0 MaxOutputStep=1.0
+2019.04.09.19.19.01.584, COMMAND, org.usfirst.frc330.commands.ShiftHigh initialized
+2019.04.09.19.19.01.585, COMMAND, org.usfirst.frc330.commands.ShiftHigh ended
+2019.04.09.19.19.01.904, COMMAND, org.usfirst.frc330.commands.SetLiftPosition initialized
+2019.04.09.19.19.01.905, INFO   , Lift Setpoint: 0.0
+2019.04.09.19.19.01.905, INFO   , Lift Final Position: -0.00134300048828125
+2019.04.09.19.19.01.906, COMMAND, org.usfirst.frc330.commands.SetLiftPosition ended
+2019.04.09.19.19.01.906, COMMAND, org.usfirst.frc330.commands.CheckDone initialized
+2019.04.09.19.19.01.906, COMMAND, org.usfirst.frc330.commands.SetHandAngle initialized
+2019.04.09.19.19.01.907, INFO   , Setting hand angle to: 0.0
+2019.04.09.19.19.02.384, INFO   , Final hand setpoint: 0.07968749999999858
+2019.04.09.19.19.02.388, INFO   , Final hand angle: -3.3480468750000014
+2019.04.09.19.19.02.389, COMMAND, org.usfirst.frc330.commands.SetHandAngle ended
+2019.04.09.19.19.02.649, INFO   , Target lost
+2019.04.09.19.19.02.669, INFO   , Target acquired
+2019.04.09.19.19.02.829, INFO   , Target lost
+2019.04.09.19.19.02.849, INFO   , Target acquired
+2019.04.09.19.19.02.950, INFO   , Target lost
+2019.04.09.19.19.02.971, INFO   , Target acquired
+2019.04.09.19.19.03.069, INFO   , Target lost
+2019.04.09.19.19.03.805, INFO   , DriveWaypoint Final Location   X: 52.37313401011407  Y: 246.18437469505133
+2019.04.09.19.19.03.805, INFO   , DriveWaypoint Final DriveTrain Distances   Left: 98.52605202510685  Right: -1.3867186322486196
+2019.04.09.19.19.03.806, INFO   , DriveDistance Left Setpoint: 95.83191901594662 Left: 98.49844037092491 Right Setpoint: -4.1238031034696405 Right: -1.4358060174609601
+2019.04.09.19.19.03.807, COMMAND, org.usfirst.frc330.commands.drivecommands.DriveWaypointBackward ended
+2019.04.09.19.19.03.825, COMMAND, org.usfirst.frc330.commands.CheckDone ended
+2019.04.09.19.19.03.888, INFO   , Target acquired
+2019.04.09.19.19.03.909, INFO   , Target lost
+2019.04.09.19.19.03.949, INFO   , Target acquired
+2019.04.09.19.19.03.970, INFO   , Target lost
+2019.04.09.19.19.04.010, INFO   , Target acquired
+2019.04.09.19.19.04.028, INFO   , Target lost
+2019.04.09.19.19.04.844, COMMAND, org.usfirst.frc330.commands.ShiftLow initialized
+2019.04.09.19.19.04.845, COMMAND, org.usfirst.frc330.commands.ShiftLow ended
+2019.04.09.19.19.04.846, COMMAND, org.usfirst.frc330.commands.drivecommands.TurnGyroWaypoint initialized
+2019.04.09.19.19.04.846, INFO   , Robot angle: 171.302001953125
+2019.04.09.19.19.04.846, INFO   , Calc angle: 139.23766995504323
+2019.04.09.19.19.04.846, INFO   , angle: 139.23766995504323
+2019.04.09.19.19.04.847, INFO   , Changing Gyro Gains to GyroTurnLow. P=0.02 MaxOutput=0.5 MaxOutputStep=1.0
+2019.04.09.19.19.04.847, INFO   , TurnGyroAbs Setpoint: 139.23766995504323
+2019.04.09.19.19.04.847, INFO   , Max output: 0.5
+2019.04.09.19.19.05.010, INFO   , Target acquired
+2019.04.09.19.19.05.290, INFO   , Target lost
+2019.04.09.19.19.05.809, INFO   , Target acquired
+2019.04.09.19.19.05.927, INFO   , Disabled Init
+2019.04.09.19.19.05.928, INFO   , Battery Voltage: 11.122385498046874
+2019.04.09.19.19.05.928, INFO   , TurnGyroAbs Final Angle: 171.302001953125  Setpoint: 139.23766995504323
+2019.04.09.19.19.05.928, COMMAND, org.usfirst.frc330.commands.drivecommands.TurnGyroWaypoint interrupted
+2019.04.09.19.19.05.929, COMMAND, org.usfirst.frc330.autoCommands.FrontBackRocket ended
+2019.04.09.19.19.05.929, INFO   , Lift disabled
+2019.04.09.19.19.05.930, INFO   , Hand disabled
+2019.04.09.19.19.05.932, INFO   , Turning Roller off
+2019.04.09.19.19.05.933, INFO   , Turning Claw off
+2019.04.09.19.19.05.935, INFO   , Limelight lights disabled
+2019.04.09.19.19.05.935, INFO   , New pipeline: 0.0
+2019.04.09.19.19.05.956, INFO   , Limelight lights disabled
+2019.04.09.19.19.05.957, INFO   , New pipeline: 0.0
+2019.04.09.19.19.05.983, INFO   , Limelight lights disabled
+2019.04.09.19.19.05.984, INFO   , New pipeline: 0.0
+2019.04.09.19.19.06.004, INFO   , Limelight lights disabled
+2019.04.09.19.19.06.005, INFO   , New pipeline: 0.0
+2019.04.09.19.19.06.021, INFO   , Limelight lights disabled
+2019.04.09.19.19.06.022, INFO   , New pipeline: 0.0
