@@ -36,7 +36,7 @@ public final class ChassisConst {
     public static final PIDGains DriveHigh     = new PIDGains(0.04, 0, 0.30, 0, defaultMaxOutput, 0.03, defaultMinStartOutput, "DriveHigh");   //AP 4/9/19
     public static final PIDGains DriveHighSlow = new PIDGains(0.04, 0, 0.30, 0, 0.4, defaultMaxOutputStep, defaultMinStartOutput, "DriveHighSlow");   //AP 3/26/19
     public static final PIDGains GyroTurnLow   = new PIDGains(0.02, 0, 0.10, 0, 0.5, 1, 0, "GyroTurnLow");  //AP 3/10/19
-    public static final PIDGains GyroTurnHigh  = new PIDGains(0.035,0,0.000,0,1,1,0, "GyroTurnHigh"); //TODO - Find the 2019 value - AP
+    public static final PIDGains GyroTurnHigh  = new PIDGains(0.02,0, 0.20, 0, 0.5, 1,0, "GyroTurnHigh"); //TODO - Find the 2019 value - AP
     public static final PIDGains GyroDriveLow  = new PIDGains(0.010,0,0.000,0,1,1,0, "GyroDriveLow"); //TODO - Find the 2019 value - AP
     public static final PIDGains GyroDriveHigh = new PIDGains(0.004,0,0.000,0,1,1,0, "GyroDriveHigh"); //AP 3/26/19
 
