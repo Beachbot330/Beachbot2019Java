@@ -32,7 +32,7 @@ public final class ChassisConst {
     
     //PID Gains
     public static final PIDGains DriveLow	   = new PIDGains(0.10, 0, 0.00, 0, defaultMaxOutput, defaultMaxOutputStep, defaultMinStartOutput, "DriveLow");    //AP 3/10/19
-    public static final PIDGains DriveLowSlow  = new PIDGains(0.10, 0, 0.00, 0, 0.5, defaultMaxOutputStep, defaultMinStartOutput, "DriveLow");    //AP 4/05/19
+    public static final PIDGains DriveLowSlow  = new PIDGains(0.10, 0, 0.00, 0, 0.4, defaultMaxOutputStep, defaultMinStartOutput, "DriveLow");    //AP 4/05/19
     public static final PIDGains DriveHigh     = new PIDGains(0.04, 0, 0.30, 0, defaultMaxOutput, 0.03, defaultMinStartOutput, "DriveHigh");   //AP 4/9/19
     public static final PIDGains DriveHighSlow = new PIDGains(0.04, 0, 0.30, 0, 0.4, defaultMaxOutputStep, defaultMinStartOutput, "DriveHighSlow");   //AP 3/26/19
     public static final PIDGains GyroTurnLow   = new PIDGains(0.02, 0, 0.10, 0, 0.5, 1, 0, "GyroTurnLow");  //AP 3/10/19
