@@ -66,12 +66,12 @@ public class CargoHatchHighGear extends BBCommandGroup {
         addParallel(new SetLiftPosition(LiftConst.DeployHatchLow));
         addSequential(new DriveLimelight(0.3, 0.5));
         addSequential(new WaitCommand(0.15));
-        addParallel(new EjectHatch());
-        addSequential(new WaitCommand(0.1));
+        addParallel(new EjectHatch(1.0));
+        addSequential(new WaitCommand(0.2));
 
         // Backup
         addSequential(new DriveWaypointBackward(wp1, invert, 3.0, 3.0, true, ChassisConst.DriveHighSlow, ChassisConst.GyroDriveHigh));
-        addSequential(new WaitCommand(0.1)); //TODO: Should we remove this?
+        //addSequential(new WaitCommand(0.1)); //TODO: Should we remove this?
 
         // Drive towards human player station
         addSequential(new TurnGyroWaypoint(wp3, invert, 3.0, 1.5, ChassisConst.GyroDriveHigh));
@@ -117,16 +117,13 @@ public class CargoHatchHighGear extends BBCommandGroup {
         // Place second hatch
         //addSequential(new ShiftHigh());
         
-        addSequential(new DriveLimelight(0.3, 0.8));
-        addSequential(new WaitCommand(0.15));
-        addParallel(new EjectHatch());
+        addSequential(new DriveLimelight(0.3, 0.5));
+        addSequential(new WaitCommand(0.1));
+        addParallel(new EjectHatch(1.0));
         addSequential(new WaitCommand(0.1));
 
-        //backup
-        //addSequential(new ShiftHigh());
-        addSequential(new DriveWaypointBackward(wp4, invert, 3.0, 1.5, true, ChassisConst.DriveHighSlow, ChassisConst.GyroDriveHigh));
-        
-        //end in a position suitable for drivers
+        //backup and end in a position suitable for drivers
+        addParallel(new DriveWaypointBackward(wp4, invert, 3.0, 1.5, true, ChassisConst.DriveHighSlow, ChassisConst.GyroDriveHigh));
         addSequential(new Defense());
         
 
