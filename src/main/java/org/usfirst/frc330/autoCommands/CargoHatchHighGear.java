@@ -71,6 +71,7 @@ public class CargoHatchHighGear extends BBCommandGroup {
 
         // Backup
         addSequential(new DriveWaypointBackward(wp1, invert, 3.0, 3.0, true, ChassisConst.DriveHighSlow, ChassisConst.GyroDriveHigh));
+        addSequential(new RollerOff());
         //addSequential(new WaitCommand(0.1)); //TODO: Should we remove this?
 
         // Drive towards human player station
@@ -88,7 +89,7 @@ public class CargoHatchHighGear extends BBCommandGroup {
         //addSequential(new ShiftLow());
         addSequential(new TurnLimelight(3.0, 1.8));
         addParallel(new SensoredHatchPickup());
-        addSequential(new DriveLimelightCurrentSense(0.2, 1.0, 10));
+        addSequential(new DriveLimelightCurrentSense(0.25, 1.0, 10));
         
         //addSequential(new WaitCommand(0.3));
 
