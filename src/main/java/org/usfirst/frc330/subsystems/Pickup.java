@@ -296,6 +296,13 @@ public class Pickup extends Subsystem {
         }
     }
 
+    public void rollerReverseHatch(double speed) {
+        if(!lockout){
+            intake.set(speed);
+            Logger.getInstance().println("Reversing Roller: Hatch, at speed of " +speed, Logger.Severity.INFO);
+        }
+    }
+
     public void rollerOnBall() {
         if(!lockout){
             intake.set(GrabberConst.BallRollerInSpeed);
