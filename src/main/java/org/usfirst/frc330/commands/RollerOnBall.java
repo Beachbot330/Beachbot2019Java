@@ -39,6 +39,7 @@ public class RollerOnBall extends BBCommand {
     @Override
     protected void initialize() {
         Robot.pickup.rollerOnBall();
+        Robot.pickup.setLastPickup(GamePiece.BALL);
     }
 
     // Called repeatedly when this Command is scheduled to run
