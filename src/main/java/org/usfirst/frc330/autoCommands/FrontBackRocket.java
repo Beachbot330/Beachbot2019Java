@@ -24,7 +24,7 @@ public class FrontBackRocket extends BBCommandGroup {
     Waypoint wp2 = new Waypoint(80, 133, 0);  //Near rocket
     Waypoint wp3 = new Waypoint(85, 00-3, 0);  //Near human player
     Waypoint wp4 = new Waypoint(60, 250, 0);    //Far side of rocket
-    Waypoint wp5 = new Waypoint(88, 216+15, 0);  //Far rocket
+    Waypoint wp5 = new Waypoint(88-18, 216+15, 0);  //Far rocket
     Waypoint wp6 = new Waypoint(78, 230, 0);    //Line up with middle cargo ship
 
     boolean invert = false;
@@ -62,7 +62,7 @@ public class FrontBackRocket extends BBCommandGroup {
         //addSequential(new ShiftLow());
         addSequential(new TurnLimelight(3.0, 2.0));
         addSequential(new DriveLimelight(0.3, 0.5));
-        addParallel(new EjectHatch());
+        addParallel(new EjectHatch(1.0));
         addSequential(new WaitCommand(0.2));
 
         //Pull back from first hatch
@@ -109,14 +109,14 @@ public class FrontBackRocket extends BBCommandGroup {
         addSequential(new ShiftLow());
         addSequential(new TurnGyroWaypoint(wp5, invert, 3.0, 3.0, ChassisConst.GyroTurnLow));
         //addSequential(new WaitCommand(1.0));
-        addSequential(new DriveWaypoint(wp5, invert, 4.0, 4.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
+        //addSequential(new DriveWaypoint(wp5, invert, 4.0, 4.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
 
         
         // Deploy Second Hatch
-        addSequential(new TurnLimelight(3.0, 2.0));
-        addSequential(new DriveLimelight(0.40, 0.55));
+        addSequential(new TurnLimelight(3.0, 1.0));
+        addSequential(new DriveLimelight(0.6, 0.8));
         addSequential(new DriveLimelight(0.2, 0.4));
-        addParallel(new EjectHatch());
+        addParallel(new EjectHatch(1.0));
         addSequential(new WaitCommand(0.5));
 
         //Pull back from second hatch
