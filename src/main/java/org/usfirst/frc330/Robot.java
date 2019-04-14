@@ -79,10 +79,10 @@ public class Robot extends TimedRobot {
         autoProgram.addOption("LeftRed_Hab2RocketHatches", new Hab2TwoHatch(true, false));
 
         // Hab 2 Cargo Ship Autos
-        autoProgram.addOption("RightBlue_CargoHatch", new CargoHatch(false, false));
-        autoProgram.addOption("RightRed_CargoHatch", new CargoHatch(false, true));
-        autoProgram.addOption("LeftBlue_CargoHatch", new CargoHatch(true, false));
-        autoProgram.addOption("LeftRed_CargoHatch", new CargoHatch(true, true));
+        autoProgram.addOption("RightBlue_2CargoHatches", new CargoHatchHighGear(false, false));
+        autoProgram.addOption("LeftBlue_2CargoHatches", new CargoHatchHighGear(true, false));
+        autoProgram.addOption("RightRed_2CargoHatches", new CargoHatchHighGear(false, true));
+        autoProgram.addOption("LeftRed_2CargoHatches", new CargoHatchHighGear(true, true));
 
         autoProgram.addOption("PoorChoice", new AllenTest());
         autoProgram.addOption("ReallyPoorChoice", new CargoHatchHighGear(true, false));

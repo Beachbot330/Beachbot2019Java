@@ -9,7 +9,7 @@ public final class GrabberConst {
 	public static final double BallRollerInSpeed		= 1.0;	// JR 3/17/19
 	public static final double BallRollerOutSpeed		= -1.0; // JR 3/17/19
 	public static final double HatchRollerInSpeed		= -1.0;  // JR 3/17/19
-	public static final double HatchRollerOutSpeed		= 1.0; // ejo 4.13.19
+	public static final double HatchRollerOutSpeed		= 0.5; // ejo 4.13.19
 	public static final double MaxRollerSpeed			= 1.0;	// ejo 2.12.19
 	public static final double RollerSlowSpeed			= 0.2; // JR 3/17/19
 
