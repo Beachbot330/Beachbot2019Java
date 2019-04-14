@@ -85,9 +85,8 @@ public class Robot extends TimedRobot {
         autoProgram.addOption("LeftRed_2CargoHatches", new CargoHatchHighGear(true, true));
 
         autoProgram.addOption("PoorChoice", new AllenTest());
-        autoProgram.addOption("ReallyPoorChoice", new CargoHatchHighGear(true, false));
-        autoProgram.addOption("AreYouCrazy?!", new CargoHatchHighGear(false, false));
         autoProgram.addOption("Somebody Stop Me!", new FrontBackRocket(false, false));
+        autoProgram.addOption("Slow & Steady", new Charge());
 
         SmartDashboard.putData("Auto mode", autoProgram);
 
