@@ -289,7 +289,17 @@ public class Chassis extends Subsystem {
     	temp = new CSVLoggable(this.shuffleboardTab) {
 			public double get() { return navX1.isCalibrating() ? 1: 0; }  		
     	};    	
-    	CSVLogger.getInstance().add("GyroIsCalibrating", temp);
+        CSVLogger.getInstance().add("GyroIsCalibrating", temp);
+        
+        temp = new CSVLoggable(this.shuffleboardTab) {
+            public double get() {return navX1.getWorldLinearAccelX(); }
+        };
+        CSVLogger.getInstance().add("AccelX", temp);
+
+        temp = new CSVLoggable(this.shuffleboardTab) {
+            public double get() {return navX1.getWorldLinearAccelY(); }
+        };
+        CSVLogger.getInstance().add("AccelY", temp);
     	
     	temp = new CSVLoggable(this.shuffleboardTab) {
 			public double get() { return getX(); }  		

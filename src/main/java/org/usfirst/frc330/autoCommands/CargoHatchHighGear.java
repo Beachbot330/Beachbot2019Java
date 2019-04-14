@@ -104,9 +104,7 @@ public class CargoHatchHighGear extends BBCommandGroup {
         
         
         // Turn towards cargo ship
-        //addSequential(new SetHandAngle(HandConst.hatchPlacementLow));       //run in parallel?
         addParallel(new SetLiftPosition(LiftConst.DeployHatchLow));
-        //addSequential(new ShiftLow());
         if(!invert){
             addSequential(new TurnGyroAbs(-80, 3.0, 1.5, ChassisConst.GyroTurnHigh));
         }
@@ -116,11 +114,9 @@ public class CargoHatchHighGear extends BBCommandGroup {
         addSequential(new TurnLimelight(2.5, 0.5));
 
         // Place second hatch
-        //addSequential(new ShiftHigh());
-        
-        addSequential(new DriveLimelight(0.3, 0.5));
-        addSequential(new WaitCommand(0.1));
-        addParallel(new EjectHatch(1.0));
+        addSequential(new DriveLimelight(0.4, 0.5));
+        addSequential(new DriveLimelight(0.2, 0.5));
+        addParallel(new EjectHatch());
         addSequential(new WaitCommand(0.1));
 
         //backup and end in a position suitable for drivers
