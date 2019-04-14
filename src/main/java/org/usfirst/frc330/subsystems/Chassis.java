@@ -386,6 +386,10 @@ public class Chassis extends Subsystem {
         return (shifters.get() == DoubleSolenoid.Value.kForward);
     }
 
+    public double getAccelY() {
+        return navX1.getWorldLinearAccelY();
+    }
+
     /////////////////////////////////////////////////////////////
 	// SET methods
 	/////////////////////////////////////////////////////////////  
