@@ -12,11 +12,7 @@
 package org.usfirst.frc330.commands;
 import edu.wpi.first.wpilibj.command.BBCommand;
 import org.usfirst.frc330.Robot;
-<<<<<<< HEAD
 import org.usfirst.frc330.subsystems.Pickup.GamePiece;
-=======
-import org.usfirst.frc330.subsystems.Pickup.*;
->>>>>>> a0ca9b8de92da7a4b851eda4f3072b8e79285669
 
 /**
  *

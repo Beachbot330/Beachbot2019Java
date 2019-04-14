@@ -20,6 +20,7 @@ public class Charge extends BBCommandGroup {
 
 
     public Charge() {
-        addSequential(new DriveTime(60.0*60.0*10.0, 0.2, 0.2));
+        addSequential(new ShiftHigh());
+        addSequential(new DriveTime(60.0*60.0*10.0, 0.3, 0.3));
     }
 }
