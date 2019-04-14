@@ -30,9 +30,9 @@ public class EjectHatch extends BBCommand {
         this.rollerSpeed = GrabberConst.HatchRollerOutSpeed;
     }
 
-    public EjectHatch(double speed) {
+    public EjectHatch(double rollerSpeed) {
         requires(Robot.pickup);
-        this.rollerSpeed = speed;
+        this.rollerSpeed = rollerSpeed;
     }
 
     // Called just before this Command runs the first time
