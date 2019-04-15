@@ -46,12 +46,10 @@ public class CargoHatchHighGear extends BBCommandGroup {
 
         // Drive off platform to caargo ship
         addSequential(new DriveWaypoint(wp0, invert, 12.0, 5.0, true, ChassisConst.DriveHighSlow, ChassisConst.GyroDriveHigh));
-        //addSequential(new ShiftHigh());
         addSequential(new DriveWaypoint(wp1, invert, 3.0, 3.0, true, ChassisConst.DriveHigh, ChassisConst.GyroDriveHigh));
         
         // Turn towards cargo ship
-        
-       // addSequential(new ShiftLow());
+        addParallel(new SetHandAngle(HandConst.hatchPlacementLow));
         if(!invert){
             addSequential(new TurnGyroAbs(-90, 3.0, 1.5, ChassisConst.GyroTurnHigh));
         }
@@ -61,32 +59,27 @@ public class CargoHatchHighGear extends BBCommandGroup {
         addSequential(new TurnLimelight(2.5, 0.5));
 
         // Place first hatch
-        //addSequential(new ShiftHigh());
         addParallel(new SetHandAngle(HandConst.hatchPlacementLow));
         addParallel(new SetLiftPosition(LiftConst.DeployHatchLow));
-        addSequential(new DriveLimelight(0.3, 0.5));
-        addSequential(new WaitCommand(0.15));
-        addParallel(new EjectHatch(1.0));
-        addSequential(new WaitCommand(0.2));
+        double throttle = 0.4; double timeout = 1.5; double jerkThreshold = 0.6;
+        addSequential(new DriveLimelightUntilJerk(throttle, timeout, jerkThreshold));
+        //addSequential(new DriveLimelight(0.3, 0.5));
+        //addSequential(new WaitCommand(0.15));
+        //addParallel(new EjectHatch(1.0));
+        addSequential(new EjectHatch());
+        addSequential(new WaitCommand(0.1));
 
         // Backup
         addSequential(new DriveWaypointBackward(wp1, invert, 3.0, 3.0, true, ChassisConst.DriveHighSlow, ChassisConst.GyroDriveHigh));
         addSequential(new RollerOff());
-        //addSequential(new WaitCommand(0.1)); //TODO: Should we remove this?
 
         // Drive towards human player station
         addSequential(new TurnGyroWaypoint(wp3, invert, 3.0, 1.5, ChassisConst.GyroDriveHigh));
-        //addSequential(new WaitCommand(2.0));
         BBCommand parallelCommand = new DriveWaypoint(wp3, invert, 3.0, 3.0, true, ChassisConst.DriveHigh, ChassisConst.GyroDriveHigh);
         addSequential(parallelCommand);
-        //addSequential(new WaitCommand(0.2));
-        //addSequential(new ShiftHigh());
-        //addSequential(new HatchDefense());
         addSequential(new CheckDone(parallelCommand));
-        //addSequential(new WaitCommand(100.0));
 
         // Pickup second hatch
-        //addSequential(new ShiftLow());
         addSequential(new TurnLimelight(3.0, 1.8));
         addParallel(new SensoredHatchPickup());
         addSequential(new DriveLimelightCurrentSense(0.25, 1.0, 10));
@@ -94,14 +87,7 @@ public class CargoHatchHighGear extends BBCommandGroup {
         //addSequential(new WaitCommand(0.3));
 
         // Backup and head towards cargo ship
-        //parallelCommand = new DriveWaypointBackward(wp3, invert, 3.0, 1.5, true, ChassisConst.DriveHigh, ChassisConst.GyroDriveHigh);
-        //addSequential(parallelCommand);
-        //addSequential(new WaitCommand(0.2));
-        //addSequential(new ShiftHigh());
-        //addSequential(new WaitCommand(0.2));
-        //addSequential(new HatchDefense());
         addSequential(new DriveWaypointBackward(wp4, invert, 3.0, 3.0, true, ChassisConst.DriveHigh, ChassisConst.GyroDriveHigh));
-        
         
         // Turn towards cargo ship
         addParallel(new SetLiftPosition(LiftConst.DeployHatchLow));
@@ -114,8 +100,8 @@ public class CargoHatchHighGear extends BBCommandGroup {
         addSequential(new TurnLimelight(2.5, 0.5));
 
         // Place second hatch
-        addSequential(new DriveLimelight(0.4, 0.5));
-        addSequential(new DriveLimelight(0.2, 0.5));
+        throttle = 0.4; timeout = 1.5; jerkThreshold = 0.6;
+        addSequential(new DriveLimelightUntilJerk(throttle, timeout, jerkThreshold));
         addParallel(new EjectHatch());
         addSequential(new WaitCommand(0.1));
 

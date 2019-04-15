@@ -30,6 +30,7 @@ public class DriveLimelightUntilJerk extends BBCommand {
     double currentAccel;
     double jerk;
     double jerkThreshold;
+    double ramp;
 
     public DriveLimelightUntilJerk(double throttle, double timeout, double jerkThreshold) {
 
@@ -72,6 +73,7 @@ public class DriveLimelightUntilJerk extends BBCommand {
         }
 
         previousAccel = Robot.chassis.getAccelY();
+        ramp = 0;
     }
 
     // Called repeatedly when this Command is scheduled to run
@@ -81,7 +83,12 @@ public class DriveLimelightUntilJerk extends BBCommand {
         jerk = currentAccel - previousAccel;
         previousAccel = currentAccel;
 
-        Robot.chassis.tankDrive(throttle, throttle);
+        if (ramp < 1.0)
+        {
+            ramp += 0.1;
+        }
+
+        Robot.chassis.tankDrive(throttle*ramp, throttle*ramp);
         
         Logger.getInstance().println("Current jerk: " + jerk, Severity.INFO);
     }
@@ -89,7 +96,7 @@ public class DriveLimelightUntilJerk extends BBCommand {
     // Make this return true when this Command no longer needs to run execute()
     @Override
     protected boolean isFinished() {
-        if(this.isTimedOut() || (Math.abs(jerk) > jerkThreshold)){
+        if(this.isTimedOut() || ((Math.abs(jerk) > jerkThreshold) && ramp > 0.8)){
             //abs of current - accel > threshold
             return true;
         }
