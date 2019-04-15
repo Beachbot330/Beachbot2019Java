@@ -61,7 +61,7 @@ public class FrontBackRocket extends BBCommandGroup {
         // Deploy First Hatch
         //addSequential(new ShiftLow());
         addSequential(new TurnLimelight(3.0, 1.0));
-        addSequential(new DriveLimelight(0.4, 0.6));
+        addSequential(new DriveLimelightUntilJerk(1.0, 1.5, 0.6));
         addSequential(new WaitCommand(0.1));
         addParallel(new EjectHatch(1.0));
         addSequential(new WaitCommand(0.2));

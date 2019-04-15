@@ -72,7 +72,7 @@ public class Robot extends TimedRobot {
         autoProgram.setDefaultOption("Do Nothing", new DoNothing());
         autoProgram.addOption("Hab1Hatch", new Hab1Hatch());
 
-        //Hab 2 Rocket Autos
+        //Hab 2 Rocket Front Autos
         autoProgram.addOption("RightBlue_Hab2RocketHatches", new Hab2TwoHatch(false, false));
         autoProgram.addOption("LeftBlue_Hab2RocketHatches", new Hab2TwoHatch(true, false));
         autoProgram.addOption("RightRed_Hab2RocketHatches", new Hab2TwoHatch(false, false));
@@ -84,9 +84,11 @@ public class Robot extends TimedRobot {
         autoProgram.addOption("RightRed_2CargoHatches", new CargoHatchHighGear(false, true));
         autoProgram.addOption("LeftRed_2CargoHatches", new CargoHatchHighGear(true, true));
 
-        autoProgram.addOption("PoorChoice", new AllenTest());
-        autoProgram.addOption("Somebody Stop Me!", new FrontBackRocket(false, false));
-        autoProgram.addOption("Slow & Steady", new Charge());
+        //Hab 2 Front Back Rocket Autos
+        autoProgram.addOption("RightBlue_Hab2RocketFrontBack", new FrontBackRocket(false, false));
+        autoProgram.addOption("LeftBlue_Hab2RocketFrontBack", new FrontBackRocket(true, false));
+        autoProgram.addOption("RightRed_Hab2RocketFrontBack", new FrontBackRocket(false, false));
+        autoProgram.addOption("LeftRed_Hab2RocketFrontBack", new FrontBackRocket(true, false));
 
         SmartDashboard.putData("Auto mode", autoProgram);
 
