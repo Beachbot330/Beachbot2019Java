@@ -112,13 +112,13 @@ public class FrontBackRocket extends BBCommandGroup {
 
         //Turn towards rocket
         //addSequential(new ShiftLow());
-        //addSequential(new TurnGyroWaypoint(wp5, invert, 6.0, 1.0, ChassisConst.GyroTurnHigh));
+        addSequential(new TurnGyroWaypoint(wp5, invert, 6.0, 1.0, ChassisConst.GyroTurnHigh));
         //addSequential(new WaitCommand(1.0));
         //addSequential(new DriveWaypoint(wp5, invert, 4.0, 4.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
 
         
         // Deploy Second Hatch
-        addSequential(new TurnLimelight(3.0, 0.8));
+        addSequential(new TurnLimelight(3.0, 0.3));
         addSequential(new DriveLimelight(0.4, 0.5));
         addSequential(new DriveLimelight(0.2, 0.3));
         addSequential(new WaitCommand(0.15));
