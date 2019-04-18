@@ -20,11 +20,20 @@ public class FrontBackRocket extends BBCommandGroup {
     //PID Gains
     //PIDGains RampDrive = new PIDGains(0.10, 0, 0.00, 0, 0.3, ChassisConst.defaultMaxOutputStep, ChassisConst.defaultMinStartOutput, "DriveLow");    //AP 3/12/19
 
+    //Original
+    // Waypoint wp1 = new Waypoint(0, 21, 0);      //Hab 1
+    // Waypoint wp2 = new Waypoint(80, 133, 0);  //Near rocket
+    // Waypoint wp3 = new Waypoint(67+15, 0, 0);  //Near human player
+    // Waypoint wp4 = new Waypoint(60, 250, 0);    //Far side of rocket
+    // Waypoint wp5 = new Waypoint(88, 216+15, 0);  //Far rocket
+    // Waypoint wp6 = new Waypoint(50, 230, 0);    //Line up with middle cargo ship
+
+    //End of tuning with backed out screw
     Waypoint wp1 = new Waypoint(0, 21, 0);      //Hab 1
-    Waypoint wp2 = new Waypoint(80, 133, 0);  //Near rocket
-    Waypoint wp3 = new Waypoint(67+15, 0, 0);  //Near human player
+    Waypoint wp2 = new Waypoint(80-5, 133-6, 0);  //Near rocket
+    Waypoint wp3 = new Waypoint(67+15+5, -12, 0);  //Near human player
     Waypoint wp4 = new Waypoint(60, 250, 0);    //Far side of rocket
-    Waypoint wp5 = new Waypoint(88, 216+15, 0);  //Far rocket
+    Waypoint wp5 = new Waypoint(80, 216, 0);  //Far rocket
     Waypoint wp6 = new Waypoint(50, 230, 0);    //Line up with middle cargo ship
 
     boolean invert = false;

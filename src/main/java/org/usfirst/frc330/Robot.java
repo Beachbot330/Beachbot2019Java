@@ -70,7 +70,7 @@ public class Robot extends TimedRobot {
         // Add commands to Autonomous Sendable Chooser
 
         autoProgram.setDefaultOption("Do Nothing", new DoNothing());
-        autoProgram.addOption("Hab1Hatch", new Hab1Hatch());
+        //autoProgram.addOption("Hab1Hatch", new Hab1Hatch());
 
         //Hab 2 Rocket Front Autos
         autoProgram.addOption("RightBlue_Hab2RocketHatches", new Hab2TwoHatch(false, false));
