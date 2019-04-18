@@ -31,10 +31,11 @@ public class FrontBackRocket extends BBCommandGroup {
     //End of tuning with backed out screw
     Waypoint wp1 = new Waypoint(0, 21, 0);      //Hab 1
     Waypoint wp2 = new Waypoint(80-5, 133-6, 0);  //Near rocket
-    Waypoint wp3 = new Waypoint(67+15+5, -12, 0);  //Near human player
+    Waypoint wp3 = new Waypoint(67+15+5+5, -8, 0);  //Near human player
     Waypoint wp4 = new Waypoint(60, 250, 0);    //Far side of rocket
-    Waypoint wp5 = new Waypoint(80, 216, 0);  //Far rocket
+    //Waypoint wp5 = new Waypoint(80+3+3, 216, 0);  //Far rocket
     Waypoint wp6 = new Waypoint(50, 230, 0);    //Line up with middle cargo ship
+    double lastRocketAngle = 138 -5;
 
     boolean invert = false;
 
@@ -70,7 +71,7 @@ public class FrontBackRocket extends BBCommandGroup {
         // Deploy First Hatch
         //addSequential(new ShiftLow());
         addSequential(new TurnLimelight(3.0, 1.0));
-        addSequential(new DriveLimelightUntilJerk(1.0, 1.5, 0.6));
+        addSequential(new DriveLimelightUntilJerk(1.0, 1.5, 1.00));
         addSequential(new WaitCommand(0.1));
         addParallel(new EjectHatch(1.0));
         addSequential(new WaitCommand(0.2));
@@ -123,16 +124,16 @@ public class FrontBackRocket extends BBCommandGroup {
         //addSequential(new ShiftLow());
         //addSequential(new TurnGyroWaypoint(wp5, invert, 6.0, 1.0, ChassisConst.GyroTurnHigh));
         if (invert)
-            addSequential(new TurnGyroAbs(-138, 6.0, 1.0, ChassisConst.GyroTurnHigh));
+            addSequential(new TurnGyroAbs(-lastRocketAngle, 6.0, 1.0, ChassisConst.GyroTurnHigh));
         else
-            addSequential(new TurnGyroAbs(138, 6.0, 1.0, ChassisConst.GyroTurnHigh));
+            addSequential(new TurnGyroAbs(lastRocketAngle, 6.0, 1.0, ChassisConst.GyroTurnHigh));
         //addSequential(new WaitCommand(1.0));
         //addSequential(new DriveWaypoint(wp5, invert, 4.0, 4.0, true, ChassisConst.DriveLow, ChassisConst.GyroDriveLow));
 
         
         // Deploy Second Hatch
         addSequential(new TurnLimelight(3.0, 0.3));
-        addSequential(new DriveLimelightUntilJerk(0.4, 1.5, 0.6));
+        addSequential(new DriveLimelightUntilJerk(0.4, 1.5, 1.25));
         //addSequential(new DriveLimelightUntilJerk(0.25, 0.5));
         addSequential(new WaitCommand(0.15));
         addParallel(new EjectHatch(1.0));
