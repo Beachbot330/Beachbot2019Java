@@ -20,10 +20,10 @@ public class CargoHatchHighGear extends BBCommandGroup {
     //PIDGains RampDrive = new PIDGains(0.10, 0, 0.00, 0, 0.3, ChassisConst.defaultMaxOutputStep, ChassisConst.defaultMinStartOutput, "DriveLow");    //AP 3/12/19
 
     Waypoint wp0 = new Waypoint(0, 90-5, 0);   //hab1
-    Waypoint wp1 = new Waypoint(26, 236, 0); // Near cargo ship
+    Waypoint wp1 = new Waypoint(26, 236+4, 0); // Near cargo ship, first hatch
     Waypoint wp2 = new Waypoint(62, 96+30, 0); //Near rocket
     Waypoint wp3 = new Waypoint(67+5, 00+10, 0); //Near human player
-    Waypoint wp4 = new Waypoint(22, 255+6, 0); //Cargo Ship Far
+    Waypoint wp4 = new Waypoint(22, 255+6+4, 0); //Cargo Ship Far
 
     boolean invert = false;
 
@@ -61,7 +61,7 @@ public class CargoHatchHighGear extends BBCommandGroup {
         // Place first hatch
         addParallel(new SetHandAngle(HandConst.hatchPlacementLow));
         addParallel(new SetLiftPosition(LiftConst.DeployHatchLow));
-        double throttle = 0.4; double timeout = 1.5; double jerkThreshold = 0.6;
+        double throttle = 0.4; double timeout = 1.5; double jerkThreshold = 1.0;
         addSequential(new DriveLimelightUntilJerk(throttle, timeout, jerkThreshold));
         //addSequential(new DriveLimelight(0.3, 0.5));
         //addSequential(new WaitCommand(0.15));
@@ -100,10 +100,10 @@ public class CargoHatchHighGear extends BBCommandGroup {
         addSequential(new TurnLimelight(2.5, 0.5));
 
         // Place second hatch
-        throttle = 0.4; timeout = 1.5; jerkThreshold = 0.6;
+        throttle = 0.4; timeout = 1.5; jerkThreshold = 1.0;
         addSequential(new DriveLimelightUntilJerk(throttle, timeout, jerkThreshold));
         addParallel(new EjectHatch());
-        addSequential(new WaitCommand(0.1));
+        addSequential(new WaitCommand(0.2));
 
         //backup and end in a position suitable for drivers
         addParallel(new DriveWaypointBackward(wp4, invert, 3.0, 1.5, true, ChassisConst.DriveHighSlow, ChassisConst.GyroDriveHigh));
