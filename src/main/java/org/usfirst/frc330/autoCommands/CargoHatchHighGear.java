@@ -23,7 +23,7 @@ public class CargoHatchHighGear extends BBCommandGroup {
     Waypoint wp1 = new Waypoint(26, 236+4, 0); // Near cargo ship, first hatch
     Waypoint wp2 = new Waypoint(62, 96+30, 0); //Near rocket
     Waypoint wp3 = new Waypoint(67+5, 00+10, 0); //Near human player
-    Waypoint wp4 = new Waypoint(22, 255+6+4, 0); //Cargo Ship Far
+    Waypoint wp4 = new Waypoint(22, 255+6+4+5, 0); //Cargo Ship Far
 
     boolean invert = false;
 
@@ -92,10 +92,10 @@ public class CargoHatchHighGear extends BBCommandGroup {
         // Turn towards cargo ship
         addParallel(new SetLiftPosition(LiftConst.DeployHatchLow));
         if(!invert){
-            addSequential(new TurnGyroAbs(-80, 3.0, 1.5, ChassisConst.GyroTurnHigh));
+            addSequential(new TurnGyroAbs(-90, 3.0, 1.5, ChassisConst.GyroTurnHigh));
         }
         else{
-            addSequential(new TurnGyroAbs(80, 3.0, 1.5, ChassisConst.GyroTurnHigh));
+            addSequential(new TurnGyroAbs(90, 3.0, 1.5, ChassisConst.GyroTurnHigh));
         }
         addSequential(new TurnLimelight(2.5, 0.5));
 

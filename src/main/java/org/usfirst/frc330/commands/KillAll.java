@@ -47,7 +47,7 @@ public class KillAll extends BBCommand {
         Robot.lift.stopLift();
         Robot.hand.stopHand();
     	Robot.pickup.rollerOff();
-    	
+    	Robot.frills.enableLimelightLEDs();
     }
 
     // Called repeatedly when this Command is scheduled to run
