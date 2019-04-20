@@ -79,16 +79,25 @@ public class Robot extends TimedRobot {
         autoProgram.addOption("LeftRed_Hab2RocketHatches", new Hab2TwoHatch(true, false));
 
         // Hab 2 Cargo Ship Autos
-        autoProgram.addOption("RightBlue_2CargoHatches", new CargoHatchHighGear(false, false));
-        autoProgram.addOption("LeftBlue_2CargoHatches", new CargoHatchHighGear(true, false));
-        autoProgram.addOption("RightRed_2CargoHatches", new CargoHatchHighGear(false, true));
-        autoProgram.addOption("LeftRed_2CargoHatches", new CargoHatchHighGear(true, true));
+        // autoProgram.addOption("RightBlue_2CargoHatches", new CargoHatchHighGear(false, false));
+        // autoProgram.addOption("LeftBlue_2CargoHatches", new CargoHatchHighGear(true, false));
+        // autoProgram.addOption("RightRed_2CargoHatches", new CargoHatchHighGear(false, true));
+        // autoProgram.addOption("LeftRed_2CargoHatches", new CargoHatchHighGear(true, true));
+
+        // Hab 2 Cargo Ship Autos - No Limelight on first deploy
+        autoProgram.addOption("RightBlue_2CargoHatches", new AltCargoship(false, false));
+        autoProgram.addOption("LeftBlue_2CargoHatches", new AltCargoship(true, false));
+        autoProgram.addOption("RightRed_2CargoHatches", new AltCargoship(false, true));
+        autoProgram.addOption("LeftRed_2CargoHatches", new AltCargoship(true, true));
 
         //Hab 2 Front Back Rocket Autos
         autoProgram.addOption("RightBlue_Hab2RocketFrontBack", new FrontBackRocket(false, false));
         autoProgram.addOption("LeftBlue_Hab2RocketFrontBack", new FrontBackRocket(true, false));
         autoProgram.addOption("RightRed_Hab2RocketFrontBack", new FrontBackRocket(false, false));
         autoProgram.addOption("LeftRed_Hab2RocketFrontBack", new FrontBackRocket(true, false));
+
+        //Test
+        //autoProgram.addOption("TEST ONLY right", new AltCargoship(false, false));
 
         SmartDashboard.putData("Auto mode", autoProgram);
 
