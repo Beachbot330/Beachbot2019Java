@@ -427,10 +427,14 @@ public class Lift extends Subsystem {
 			setLiftPosition(position);
 		}  	
 		
+		//manual pogo
 		gamepadCommand = -Robot.oi.gamePad.getRawAxis(2);
 		if (Math.abs(gamepadCommand) > LiftConst.GamepadDeadZone) {
-    		this.setThrottle(gamepadCommand/Math.abs(gamepadCommand)*Math.pow(gamepadCommand, 2)); //scaled to 0.4 max
-    	}
+    		this.pogoDrive(gamepadCommand/Math.abs(gamepadCommand)*Math.pow(gamepadCommand, 2));
+		}
+		else{
+			this.pogoDrive(0);
+		}
 	}
 
 	public void deployClimbPin() {
@@ -485,11 +489,8 @@ public class Lift extends Subsystem {
 		pogo.set(ControlMode.MotionMagic, inchesToTicks_Pogo(setpoint));
 	}
 
-	public void pogoDrive(double speed) {
-		if (lockout)
-			pogo.set(ControlMode.PercentOutput, speed);
-		else
-			pogo.set(ControlMode.PercentOutput, 0);
+	public void pogoDrive(double speed){
+		pogo.set(ControlMode.PercentOutput, speed);
 	}
 
 }
