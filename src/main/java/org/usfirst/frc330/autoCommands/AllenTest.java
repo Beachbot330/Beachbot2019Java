@@ -23,10 +23,7 @@ public class AllenTest extends BBCommandGroup {
 
     public AllenTest() {
     	
-    	addSequential(new ShiftHigh());
-        addParallel(new Defense());
-
-        addSequential(new DriveDistance(221.5, 1.0, 5.0, false, ChassisConst.DriveHigh));
+    	addSequential(new LimelightConditionalTurnGyroAbs(180, 8.0, 1.5, ChassisConst.GyroTurnHigh)); //Turn towards wall (since we missed seeing the target once)
 
     }
 }

@@ -97,7 +97,7 @@ public class Robot extends TimedRobot {
         autoProgram.addOption("LeftRed_Hab2RocketFrontBack", new FrontBackRocket(true, false));
 
         //Test
-        //autoProgram.addOption("TEST ONLY right", new AltCargoship(false, false));
+        autoProgram.addOption("TEST ONLY", new AllenTest());
 
         SmartDashboard.putData("Auto mode", autoProgram);
 

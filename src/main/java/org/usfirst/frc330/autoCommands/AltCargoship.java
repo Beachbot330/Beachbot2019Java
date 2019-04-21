@@ -20,10 +20,10 @@ public class AltCargoship extends BBCommandGroup {
     //PIDGains RampDrive = new PIDGains(0.10, 0, 0.00, 0, 0.3, ChassisConst.defaultMaxOutputStep, ChassisConst.defaultMinStartOutput, "DriveLow");    //AP 3/12/19
 
     Waypoint wp0 = new Waypoint(0, 85, 0);   //hab1
-    Waypoint wp1 = new Waypoint(26+10, 240-4, 0); // Near cargo ship, first hatch
+    Waypoint wp1 = new Waypoint(26+10, 240-4-4, 0); // Near cargo ship, first hatch
     Waypoint wp2 = new Waypoint(62, 126, 0); //Near rocket
     Waypoint wp3 = new Waypoint(70-5, -5, 0); //Near human player
-    Waypoint wp4 = new Waypoint(22-15, 260-15, 0); //Cargo Ship Far
+    Waypoint wp4 = new Waypoint(22-15, 260-15+4, 0); //Cargo Ship Far
 
     boolean invert = false;
 
@@ -77,6 +77,7 @@ public class AltCargoship extends BBCommandGroup {
         addSequential(new CheckDone(parallelCommand));
 
         // Pickup second hatch
+        addSequential(new LimelightConditionalTurnGyroAbs(180, 8.0, 1.5, ChassisConst.GyroTurnHigh)); //Turn towards wall (since we missed seeing the target once)
         addSequential(new TurnLimelight(3.0, 1.8));
         addParallel(new SensoredHatchPickup());
         addSequential(new DriveLimelightCurrentSense(0.25, 1.0, 10));
