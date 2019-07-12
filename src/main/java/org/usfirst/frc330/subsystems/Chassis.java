@@ -203,7 +203,8 @@ public class Chassis extends Subsystem {
         /////////////////////////////////////////////////////////////  
 		gyroPID = new MultiPIDController(ChassisConst.GyroTurnLow, gyroSource,gyroOutput, 0.02,"Gyro");
         leftDrivePID = new MultiPIDController(ChassisConst.DriveLow, driveEncoderLeft, leftDriveOutput, 0.02,"LeftDrive");
-        rightDrivePID = new MultiPIDController(ChassisConst.DriveLow, driveEncoderRight,rightDriveOutput, 0.02, "RightDrive");
+        //TEMP JDR use left encoder for all drive encoder becasue right is broken
+        rightDrivePID = new MultiPIDController(ChassisConst.DriveLow, driveEncoderLeft,rightDriveOutput, 0.02, "RightDrive");
         limelightPID = new MultiPIDController(ChassisConst.GyroTurnLow, limelightSource, limelightOutput, 0.02, "limelight");
         
         this.shuffleboardTab.add("gyroPID", gyroPID);
@@ -362,7 +363,8 @@ public class Chassis extends Subsystem {
     }
     
     public double getSpeed() {
-    	return (driveEncoderLeft.getRate() + driveEncoderRight.getRate()) / 2;
+        //TEMP JDR use left encoder for all drive encoder becasue right is broken
+    	return (driveEncoderLeft.getRate() /*+ driveEncoderRight.getRate()) / 2*/ );
     }
 
     public double getGyroComp() {
@@ -379,7 +381,8 @@ public class Chassis extends Subsystem {
 	}
 
 	public double getRightDistance() {
-		return driveEncoderRight.getDistance();
+        //TEMP JDR use left encoder for all drive encoder becasue right is broken
+		return driveEncoderLeft.getDistance();
     }
     
     public boolean getIsLowGear(){
