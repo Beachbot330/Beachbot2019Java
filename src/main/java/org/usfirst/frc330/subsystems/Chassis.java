@@ -158,6 +158,7 @@ public class Chassis extends Subsystem {
         driveEncoderLeft.setDistancePerPulse(1.0);
         driveEncoderLeft.setPIDSourceType(PIDSourceType.kDisplacement);
         
+
         rightDrive1 = new Spark(0);
         addChild("rightDrive1",rightDrive1);
         rightDrive1.setInverted(false);
@@ -233,6 +234,9 @@ public class Chassis extends Subsystem {
         		ChassisConst.encoderGearRatio * ChassisConst.Fudgefactor;
         
         driveEncoderRight.setDistancePerPulse(distanceperpulse);
+
+         //TEMP JDR use left encoder for all drive encoder becasue right is broken
+        driveEncoderRight=driveEncoderLeft;
 
         //-----------------------------------------------------------------------
         // Logging
@@ -554,8 +558,9 @@ public class Chassis extends Subsystem {
 		 	    rightEncoderDistance, 
 		 	    gyroAngle;
 		 
-		 leftEncoderDistance  = driveEncoderLeft.getDistance();
-		 rightEncoderDistance = driveEncoderRight.getDistance();
+         leftEncoderDistance  = driveEncoderLeft.getDistance();
+         //TEMP JDR use left encoder for all drive encoder becasue right is broken
+		 rightEncoderDistance = driveEncoderLeft.getDistance();
 		 gyroAngle = getAngle();
 		 distance =  ((leftEncoderDistance - prevLeftEncoderDistance) + (rightEncoderDistance - prevRightEncoderDistance))/2;
 		 x = x + distance * Math.sin(Math.toRadians(gyroAngle));
